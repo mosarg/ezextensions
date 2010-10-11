@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<nodo nome="Inizio sito" descrizione="sito" classe="folder">
+   <nodo nome="Classico" descrizione="scuola" classe="school_front">
+      <nodo nome="Docenti" descrizione="docenti" classe="profgroup">
+         <nodo nome="Altre cose strane" classe="gallery"></nodo>
+         <nodo nome="Adempimenti" classe="folder"></nodo>
+         <nodo nome="Novità" classe="folder"></nodo>
+      </nodo>
+      <nodo nome="Circolari" descrizione="circolari" classe="dir_circolari">
+         <nodo nome="Ata" descrizione="ata" classe="folder_circolari"></nodo>
+         <nodo nome="Studenti" descrizione="rer" classe="folder_circolari"></nodo>
+         <nodo nome="Docenti" classe="folder_circolari"></nodo>
+      </nodo>
+      <nodo nome="Uffici" descrizione="Uffici" classe="ufficio">
+         <nodo nome="Contabilità" classe="ufficio"></nodo>
+         <nodo nome="Personale" classe="ufficio"></nodo>
+      </nodo>
+      <nodo nome="Classi" classe="classgroup" sezione="7">
+         <nodo nome="5b" classe="classe"></nodo>
+      </nodo>
+   </nodo>
+   <nodo nome="scientifico" descrizione="scuola" classe="school_front">
+      <nodo nome="Docenti" descrizione="docenti" classe="profgroup">
+         <nodo nome="Altre cose strane" classe="gallery"></nodo>
+         <nodo nome="Adempimenti" classe="folder"></nodo>
+         <nodo nome="Novità" classe="folder"></nodo>
+      </nodo>
+      <nodo nome="Circolari" descrizione="circolari" classe="dir_circolari">
+         <nodo nome="Ata" descrizione="ata" classe="folder_circolari"></nodo>
+         <nodo nome="Studenti" descrizione="rer" classe="folder_circolari"></nodo>
+         <nodo nome="Docenti" classe="folder_circolari"></nodo>
+      </nodo>
+      <nodo nome="Uffici" descrizione="Uffici" classe="ufficio">
+         <nodo nome="Contabilità" classe="ufficio"></nodo>
+         <nodo nome="Personale" classe="ufficio"></nodo>
+      </nodo>
+   </nodo>
+</nodo>

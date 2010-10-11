@@ -1,0 +1,13 @@
+div.class-net div#map{
+    float:left;
+}
+
+div.class-net div.attribute-partners{
+    float:left;
+    width:150px;
+    margin-left:20px;
+}
+
+div.class-net div.attribute-relation{
+    margin-bottom:2em;
+}

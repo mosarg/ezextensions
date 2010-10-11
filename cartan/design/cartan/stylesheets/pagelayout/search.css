@@ -1,0 +1,38 @@
+div#searchbox
+{
+/*width: 40em;*/ /* Needs to be sufficient width to fit both text input and submit button to avoid Konqueror breaking the line between them */
+margin-top: 0.8em;
+margin-right: 1em;
+text-align: right;
+float: right;
+}
+
+div#searchbox img
+{
+display: block;
+float: left;
+margin-top: 6px;
+margin-right: 6px;
+}
+
+input#searchtext
+{
+border: 1px solid #c3c7c5;
+background-image: url(../images/search-input-bg.png);
+background-position: left bottom;
+background-repeat: repeat-x;
+font-size: 0.85em;
+height: 15px;
+padding: 0;
+width: 222px;
+float: left;
+margin-right: 5px;
+}
+
+input#searchbutton
+{
+margin-top: 0;
+margin-bottom: -0.5em;
+display: block;
+float: left;
+}

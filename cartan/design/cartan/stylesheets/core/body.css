@@ -1,0 +1,10 @@
+body /* These becomes the initial settings for most other elements */
+{
+    font-family: Helvetica, sans-serif;
+    font-size: 0.8em;
+    text-align: center; /* IE method for centering page if it has fixed width */
+    margin: 0 0 0;
+    padding: 0;
+    background: white;
+  
+ }

@@ -1,0 +1,34 @@
+/* 
+    Document   : article
+    Created on : Nov 28, 2009, 5:54:24 PM
+    Author     : mosa
+    Description:
+        article line view css
+*/
+
+div.content-view-line div.class-article a,div.content-view-line div.class-article-mainpage a{
+    text-decoration:none;
+    font-size:3em;
+    text-shadow:2px 2px 2px black;
+}
+
+div.content-view-line h2.attribute-header:hover{
+    background:rgba(0,0,0,0.5);
+}
+
+div.content-view-line div.class-article div.attribute-short
+{
+    font-weight: normal;
+}
+
+div.content-view-full div.content-view-line .class-article div.attribute-image{
+    width:100%;
+    text-align: center;
+}
+div.content-view-full div.content-view-line .class-article div.attribute-image img{
+   float:none;
+}
+
+div.content-view-full div.content-view-line a.go_on{
+    font-size:1.3em;
+}

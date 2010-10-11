@@ -1,0 +1,51 @@
+div.gradient{
+    height:40px;
+    float:left;
+    }
+div#color_bar{
+    float:left;
+    width:700px;
+    height:40px;
+    margin-bottom:2em;
+}
+div#mapid{float:left;}
+
+div#flux_bar{
+    float:left;
+    clear:right;
+    height:500px;
+    width:50px;
+    margin-left:2em;
+}
+div.percent_bar{
+    background:black;
+    width:100%;
+    margin-top:10px;
+    margin-bottom:10px;
+   
+}
+div.percent_bar span{
+    position:relative;
+    left:60px;
+    font-size:0.7em;
+}
+
+div#color_bar div.distance{
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    rotate:(-90deg);
+    font-size:0.7em;
+    position:relative;
+    top:-1.8em;
+}
+div#flux_bar div.legend{
+    width:200px;
+}
+
+div#flux_bar div.legend span{
+    position:relative;
+    top:-1em;
+}
+div.content-view-full div.class-flussi div.attribute-short{
+    margin-bottom:3em;
+}

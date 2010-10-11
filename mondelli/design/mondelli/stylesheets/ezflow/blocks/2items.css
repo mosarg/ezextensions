@@ -1,0 +1,35 @@
+/* 
+    Document   : 2items
+    Created on : Dec 7, 2009, 9:49:15 AM
+    Author     : mosa
+    Description:
+        2items block start
+*/
+
+div.block-type-2items img{
+    float:left;
+    margin-right:0.5em;
+}
+
+div.block-type-2items div.border-box{
+    overflow:hidden;
+}
+
+div.block-type-2items span.small_subtitle{
+    font-weight:bold;
+}
+div.block-type-2items div.attribute-header h2 a
+{
+    text-decoration: none;
+    text-shadow:1px 1px 1px black;
+}
+
+div.block-type-2items div.attribute-image
+{
+    float: left;
+    margin-right: 0.5em;
+    margin-left: 0;
+}
+div.block-type-2items a.go_on{
+    font-size:0.9em;
+}

@@ -1,0 +1,36 @@
+/* 
+    Document   : generics
+    Created on : Aug 14, 2009, 2:43:07 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.square-icon{
+    clear:none;
+    float:left;
+    height:10em;
+    width:9em;
+    overflow:hidden;
+    text-align:center;
+    margin-right:1.5em;
+    margin-top:1em;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    -o-border-radius:7px;
+    -khtml-border-radius:7px;
+    border-radius:7px;
+   }
+
+   .square-icon h2 a{
+       color:gray;
+   }
+    .square-icon h2 a:hover{
+       color:#767676;
+   }
+.attribute-short h2 a:hover{color:#ffa800;}

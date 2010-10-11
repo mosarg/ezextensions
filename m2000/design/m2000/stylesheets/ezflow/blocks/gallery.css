@@ -1,0 +1,31 @@
+/* 
+    Document   : gallery
+    Created on : Dec 7, 2009, 9:58:17 AM
+    Author     : mosa
+    Description:
+       block gallery style
+*/
+div.block-type-gallery div.left h2
+{
+    margin: 0.25em 0 0.5em 0.75em;
+    color: #000000;
+}
+
+div.block-type-gallery div.right
+{
+    padding: 0.25em 0.5em 0.5em 0;
+}
+
+div.block-type-gallery div.attribute-caption p
+{
+    margin: 0.25em 0 0 0;
+    color: #004276;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+}
+
+div.block-type-gallery div.attribute-image
+{
+    float: none;
+    margin: 0;
+}

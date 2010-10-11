@@ -1,0 +1,6 @@
+p
+{
+    margin: 0.5em 0 0.5em 0;
+    line-height: 1.25em; /* This is aprox. default line height in most popular browsers; set explicitly to ensure consitency. */
+    text-align:justify;
+}

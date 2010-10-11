@@ -1,0 +1,131 @@
+
+div.calendar-ajax-block td:hover{
+    color:#580000;
+    text-decoration:none;
+}
+
+div.calendar-ajax-block div.cal-toolbar{
+    padding:0 1.5em;
+    position:relative;
+    top:-0.25em;
+}
+
+div.calendar-ajax-block div.cal-header{
+    position:relative;
+    top:2em;
+    text-align: center;
+}
+
+div.calendar-ajax-block{
+     background: url(../images/sfondi/calendario_back4.png) no-repeat;
+     height:310px;
+     overflow:visible;
+}
+
+div.content-view-block div.calendar-ajax-block table.block_calendar{
+    width:90%;
+    font-family:Conei;
+    padding:1em 1em 1em 3em;
+    height:180px;
+}
+
+
+
+table.block_calendar th{
+    color:#6e0000;
+}
+
+div.calendar-ajax-block div.monthName{
+    font-size:2em;
+    font-family:Conei;
+}
+
+div.calendar-ajax-block div.cal-toolbar a{
+    font-size:1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color:#a60101;
+}
+div.calendar-ajax-block div.cal-toolbar a:hover{
+    color:#661e1e;
+}
+
+div.calendar-ajax-block a.prev{
+    float:left;
+    
+}
+
+div.calendar-ajax-block a.next{
+    float:right;
+    
+}
+table.block_calendar td {
+    text-decoration:none;
+    font-weight:bold;
+    color:#918369;
+    text-align: center;
+}
+
+table.block_calendar td.pad{
+    background: none;
+}
+
+div.calendar-ajax-block  div.legend{
+    font-family:Conei;
+    margin-top:0.5em;
+    padding-left:3em;
+
+}
+div.calendar-ajax-block div.legend a{
+    color:#d48e1f;
+}
+div.calendar-ajax-block div.legend a:hover{
+   color:#580000;
+}
+
+
+div.calendar-ajax-block  div.legend div.calendar_entry{
+    float:left;
+    margin-right:0.5em;
+}
+ .small_square{
+    float:left;
+    height:15px;
+    width:15px;
+    margin-right:0.5em;
+    display:block;
+    font-weight: bold;
+    font-size:1.4em;
+  }
+
+table.block_calendar td.dayWevents{
+    /*background:url(../images/sfondi/bullet_back3.png) no-repeat;*/
+    background:rgba(0,0,0,0.5);
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    color:white;
+    
+   
+}
+
+table.block_calendar div.popup{
+    overflow: visible;
+    position:absolute;
+    width:250px;
+}
+
+table.block_calendar ul.popup{
+    background:url(../images/sfondi/dropdown_back.png);
+    float:left;
+    padding:1em;
+    width:88%;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-box-shadow:2px 2px 2px black;
+    -webkit-box-shadow:2px 2px 2px black;
+  }
+table.block_calendar ul.popup li{
+    color:white;
+    font-weight:bold;
+
+}

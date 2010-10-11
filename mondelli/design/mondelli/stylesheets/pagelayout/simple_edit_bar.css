@@ -1,0 +1,69 @@
+div.control-bar{
+    overflow: visible;
+    height:80px;
+    padding:1em;
+    background: rgba(0,0,0,0.5);
+    position:absolute;
+    top:60px;
+}
+div.control-bar form{
+    float:left;
+}
+
+div.control-bar div.insert_button form{
+}
+
+input.tools_button{
+    height:64px;
+    width:64px;
+    border:0;
+}
+
+div.insert_button_event{
+    display:none;
+}
+div.insert_button_comment{
+    display:none;
+}
+
+div.insert_button{
+    float:left;
+    padding:0 1em 0 1em;
+}
+div.insert_button a{
+    float:left;
+}
+
+div.insert_button:hover{
+    background: rgba(255,255,255,0.6);
+}
+div.insert_button span{
+    float:left;
+    clear:both;
+    color:white;
+    font-weight: bold;
+    width:100%;
+}
+div.insert_button span:hover{
+    color:yellow;
+}
+
+input.insert_button_folder{
+    background:url(../images/props/folder.png) no-repeat top center;
+
+}
+input.insert_button_gallery{
+    background:url(../images/props/gallery.png) no-repeat top center;
+}
+input.insert_button_article{
+    background:url(../images/props/article.png) no-repeat top center;
+}
+input.insert_button_image{
+    background:url(../images/props/picture.png) no-repeat top center;
+}
+input.edit_button_edit{
+     background:url(../images/props/edit.png) no-repeat top center;
+}
+input.edit_button_remove{
+     background:url(../images/props/trash.png) no-repeat top center;
+}

@@ -1,0 +1,81 @@
+/*
+    Document   : 3items
+    Created on : Dec 7, 2009, 9:50:38 AM
+    Author     : mosa
+    Description:
+        3items block style
+*/
+div.block-type-3items a.go_on{
+    float:left;
+    font-size:0.8em;
+    margin-top:0.4em;
+}
+
+div.content-view-full div.block-type-3items div.attribute-header h2 a {
+    display:block;
+    float:left;
+  
+
+}
+
+div.content-view-full div.block-type-3items div.attribute-header span{
+    font-size:0.8em;
+      color:#32491e;
+      font-size:0.7em;
+}
+div.block-type-3items{
+    overflow:hidden;
+    float:left;
+    margin-top:1.5em;
+}
+div.block-type-3items div.attribute-header-block h2
+{
+     margin-bottom: 1.25em;
+     border-bottom:2px solid rgba(255,255,255,0.5);
+
+}
+div.block-type-3items>div.attribute-header-block>h2{
+    border-bottom:2px solid white;
+}
+
+div.block-type-3items div.class-article
+{
+padding:1em;
+   
+}
+
+div.block-type-3items div.attribute-header h2{
+
+    }
+
+div.block-type-3items  div.class-article div.attribute-header h2
+{
+     padding:0;
+     border-bottom:2px solid rgba(255,255,255,0.5);
+}
+
+div.content-view-full div.block-type-3items  div.class-article div.attribute-short {
+float:left;
+text-align: justify;
+}
+
+div.block-type-3items div.class-article div.attribute-header h2 a:hover{
+
+}
+div.content-view-full div.block-type-3items div.attribute-image
+{
+    float:left;
+    padding:0;
+}
+
+div.content-view-full div.block-type-3items div.attribute-image div.image-wrapper img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+div.block-type-3items div.separator
+{
+    height: 1px;
+    margin: 0.75em 0 0.75em 0;
+}

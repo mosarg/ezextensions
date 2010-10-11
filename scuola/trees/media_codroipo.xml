@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<nodo nome="Inizio sito" descrizione="sito" classe="folder">
+   <nodo nome="Liceo" descrizione="scuola" classe="folder">
+      <nodo nome="Articoli" classe="folder"></nodo>
+      <nodo nome="Progetti" classe="folder"></nodo>
+      <nodo nome="Decorazioni" classe="folder"></nodo>
+      <nodo nome="Presentazioni" classe="folder"></nodo>
+   </nodo>
+   <nodo nome="Ipsaa" descrizione="scuola" classe="folder">
+      <nodo nome="Articoli" classe="folder"></nodo>
+      <nodo nome="Progetti" classe="folder"></nodo>
+      <nodo nome="Decorazioni" classe="folder"></nodo>
+      <nodo nome="Presentazioni" classe="folder"></nodo>
+   </nodo>
+   <nodo nome="Ipsia" descrizione="scuola" classe="folder">
+      <nodo nome="Articoli" classe="folder"></nodo>
+      <nodo nome="Progetti" classe="folder"></nodo>
+      <nodo nome="Decorazioni" classe="folder"></nodo>
+      <nodo nome="Presentazioni" classe="folder"></nodo>
+   </nodo>
+   <nodo nome="Ipsc" descrizione="scuola" classe="folder">
+      <nodo nome="Articoli" classe="folder"></nodo>
+      <nodo nome="Progetti" classe="folder"></nodo>
+      <nodo nome="Decorazioni" classe="folder"></nodo>
+      <nodo nome="Presentazioni" classe="folder"></nodo>
+   </nodo>
+   <nodo nome="Itc" descrizione="scuola" classe="folder">
+      <nodo nome="Articoli" classe="folder"></nodo>
+      <nodo nome="Progetti" classe="folder"></nodo>
+      <nodo nome="Decorazioni" classe="folder"></nodo>
+      <nodo nome="Presentazioni" classe="folder"></nodo>
+   </nodo>
+   <nodo nome="Istituto" classe="folder">
+      <nodo nome="Articoli" classe="folder"></nodo>
+      <nodo nome="Progetti" classe="folder"></nodo>
+      <nodo nome="Decorazioni" classe="folder"></nodo>
+      <nodo nome="Presentazioni" classe="folder"></nodo>
+   </nodo>
+</nodo>

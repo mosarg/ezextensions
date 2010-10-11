@@ -1,0 +1,49 @@
+/* 
+    Document   : page_navigation
+    Created on : Dec 6, 2009, 8:05:20 PM
+    Author     : mosa
+    Description:
+page navigation layout
+*/
+
+/* NAVIGATORS */
+
+div.content-navigator
+{
+    display: block;
+}
+
+div.content-navigator div
+{
+    display: inline;
+    text-align: center;
+}
+
+div.content-navigator div.content-navigator-separator, div.content-navigator div.content-navigator-separator-disabled
+{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+div.content-navigator div.content-navigator-arrow
+{
+    font-size: 150%;
+}
+
+/* PAGE NAVIGATION */
+
+div.pagenavigator
+{
+    text-align: center;
+    clear: both;
+}
+
+div.pagenavigator span.previous
+{
+    float: left;
+}
+
+div.pagenavigator span.next
+{
+    float: right;
+}

@@ -1,0 +1,54 @@
+/* 
+    Document   : article
+    Created on : Nov 28, 2009, 5:38:45 PM
+    Author     : mosa
+    Description:
+        Article full view style sheet part.
+*/
+
+
+div.content-view-full>div.class-article{
+    padding:1em;
+    margin:1.5em;
+}
+
+div.class-article div.attribute-short p a{
+    color:gray;
+    text-decoration:underline;
+}
+div.content-view-full div.class-article div.attribute-image{
+    padding-right:1em;
+    padding-bottom:1em;
+    float:left;
+}
+div.content-view-full div.class-article div.attribute-short
+{
+
+}
+div.content-view-full div.class-article div.attribute-byline
+{
+    background-image: none;
+    padding-bottom: 0;
+    margin-bottom: 1em;
+}
+div.content-view-full div.class-article div.attribute-long
+{
+    background-image: none;
+    padding-bottom: 56px;
+}
+
+div.content-view-full div.class-article div.attribute-header h1
+{
+    background: none;
+    padding-bottom: 0;
+    margin-bottom: 0.25em;
+}
+
+div.content-view-full div.class-article div.attribute-byline
+{
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    margin-bottom: -0.25em;
+    display: block;
+}

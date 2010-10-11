@@ -1,0 +1,63 @@
+div#languages
+{
+text-align: right;
+font-size: 0.85em;
+font-family: Tahoma, Arial, Helvetica, sans-serif;
+height:130px;
+width:10%;
+right:5%;
+position:absolute;
+
+
+}
+
+div#languages ul{
+
+    width:3em;
+    height:100%;
+    float:right;
+    padding-right:0.9em;
+}
+
+div#languages a
+{
+color: #42456c;
+text-decoration: none;
+font-weight:bold;
+font-size:1.1em;
+}
+
+div#languages ul li
+{
+background-position: 0 0.5em;
+padding-left: 12px;
+margin-left: 0.5em;
+display:block;
+}
+
+
+div#languages li{
+     width:70px;
+    height:30px;
+    position:relative;
+    right:4em;
+
+}
+div#languages li.current_siteaccess a
+{
+
+position:relative;
+color: white;
+font-weight:bold;
+font-size:1.3em;
+
+
+}
+
+div#languages ul li a{
+    padding-right:2em;
+
+}
+div#languages ul li.current_siteaccess{
+   padding-top:0.6em;
+}

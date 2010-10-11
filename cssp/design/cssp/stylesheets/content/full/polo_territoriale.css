@@ -1,0 +1,15 @@
+div.content-view-full div.polo-territoriale div.related_schools a{
+    display:block;
+    float:left;
+    clear:both;
+    background:url(../images/icons/school-icon_medium.png) no-repeat left;
+    padding-left:70px;
+    height:40px;
+    padding-top:16px;
+    color:#306393;
+}
+
+div.content-view-full div.polo-territoriale div.related_schools {
+    width:100%;
+    margin-top:6em;
+}

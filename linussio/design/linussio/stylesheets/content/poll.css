@@ -1,0 +1,138 @@
+/* 
+    Document   : poll.css
+    Created on : Jul 20, 2009, 9:41:39 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+div.poll-result td.poll-resultbar td.poll-percentage, div.poll-result td.poll-resultbar td.poll-votecount
+{
+    font-style: italic;
+    font-size: 85%;
+}
+
+div.poll-result td.poll-resultbar td.poll-percentage
+{
+    text-align: left;
+}
+
+div.poll-result td.poll-resultbar td.poll-votecount
+{
+    text-align: right;
+}
+
+div.poll-result p
+{
+    font-weight: bold;
+}
+
+div.poll-result div.chart-bar-resultbox
+{
+    margin: 0.5em 0 0.5em 0;
+    width: 100%;
+}
+
+div.poll-result div.chart-bar-resultbar
+{
+    height: 14px;
+}
+
+div.poll-result td.poll-resultname
+{
+    padding-right: 5px;
+}
+
+div.poll-result td.poll-resultbar
+{
+    padding-left: 5px;
+}
+
+div.poll-result td.poll-resultbar table
+{
+    width: 300px;
+}
+
+div.poll-result div.chart-bar-resultbox
+{
+    background-color: #eeeeee;
+}
+
+div.poll-result div.chart-bar-resultbar
+{
+    background-color: #444;
+}
+
+
+div.content-poll-results
+{
+    width: 100%;
+}
+
+div.content-poll-results ul
+{
+    margin-left: 0;
+}
+
+div.content-poll-results li
+{
+    list-style-type: none;
+}
+
+div.content-poll-results span.option
+{
+    font-weight: bold;
+    float: left;
+}
+
+div.content-poll-results span.votes
+{
+    font-weight: normal;
+}
+
+div.content-poll-results span.value
+{
+    font-weight: bold;
+    margin-top: 1.7em;
+    float: right;
+}
+
+div.content-poll-results div.resultblock
+{
+    width: 100%;
+    margin: -1.2em 0 0.5em 0;
+    float: left;
+}
+
+div.content-poll-results div.resultedge-start
+{
+    padding-right: 4em;
+}
+
+div.content-poll-results div.resultedge-end
+{
+    border: 1px solid black;
+}
+
+div.content-poll-results div.resultbox
+{
+    background-color: #bcbbaf;
+    width: 100%;
+}
+
+div.content-poll-results div.resultbar
+{
+    background-color: #4b7198;
+    height: 20px;
+}
+
+div.content-poll-results div.result-divider
+{
+    height: 20px;
+}

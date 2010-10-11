@@ -1,0 +1,94 @@
+/* 
+    Document   : ie7fix
+    Created on : Aug 19, 2009, 9:00:28 AM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+div#logo{
+    right:0;
+}
+
+div #header div#school_menu li {
+    height:120px;
+    width:120px;
+}
+div#header div#school_menu ul.top_school_big li{
+    height:auto;
+    width:auto;
+}
+div#header div#school_menu ul.top_school_big{
+    width:65%;
+}
+div#user_links{
+      background:gray;
+    }
+    div#links{
+    text-align: center;
+    font-size: 0.85em;
+    font-weight: bold;
+    background:gray;
+    }
+
+    div#sidemenu  ul li div.second_level_menu{
+    height:1.5em;
+}
+div#sidemenu  ul li div.third_level_menu{
+    height:1.5em;
+}
+div#sidemenu  ul li div.fourth_level_menu{
+    height:1.5em;
+}
+div#sidemenu  ul li div.second_level_menu a span{
+    position:relative;
+    right:2em;
+    top:-2em;
+}
+div#sidemenu  ul li div.third_level_menu a span{
+    position:relative;
+    right:-6em;
+    top:-2em;
+}
+div#sidemenu  ul li div.fourth_level_menu a span{
+    position:relative;
+    right:2em;
+    top:-2em;
+}
+#page{filter:gray;}
+
+div.iesucks{
+    background:red;
+    border:2px solid white;
+}
+div.iesucks p{
+    color:white;
+    font-weight:bold;
+}
+div.iesucks a{
+    color:#fff15b;
+    font-style:italic;
+    font-size:1.5em;
+    font-weight:bold;
+}
+div.iesucks a:hover{
+    color:white;
+    font-style:italic;
+}
+div.iesucksmore{
+    height:40em;
+}
+div.iesucksmore p{
+    color:black;
+    font-size:2em;
+    font-weight:bold;}
+div.iesucksmore a{font-weight:bold;
+                  font-size:1.5em;
+                  color:red;
+display:block;}
+div.iesucksmore a:hover{color:black;}

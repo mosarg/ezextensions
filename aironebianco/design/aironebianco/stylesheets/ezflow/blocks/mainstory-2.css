@@ -1,0 +1,27 @@
+/* 
+    Document   : mainstory-2
+    Created on : Dec 7, 2009, 9:47:55 AM
+    Author     : mosa
+    Description:
+        Mainstory-2 block style
+*/
+
+div.block-type-mainstory div.mainstory-2 div.attribute-image
+{
+  padding-bottom: 12px;
+}
+
+div.block-type-mainstory div.mainstory-2 div.attribute-header
+{
+    padding: 0 0 1px 10px;
+}
+
+div.block-type-mainstory div.mainstory-2 div.attribute-header a
+{
+
+}
+
+div.block-type-mainstory div.mainstory-2 div.attribute-short p
+{
+    margin-bottom: 0;
+}

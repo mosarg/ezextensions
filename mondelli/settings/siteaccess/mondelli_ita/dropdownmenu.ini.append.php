@@ -1,0 +1,10 @@
+[DropDownMenuContentSettings] 
+TopList[]
+TopList[]=folder
+TopList[]=frontpage
+TopList[]=event_calendar
+TopList[]=article
+TopListRestricted[]
+TopListRestricted[]=folder
+TopListRestricted[]=article
+TopListRestricted[]=event_calendar

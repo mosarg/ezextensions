@@ -1,0 +1,216 @@
+/* common styling */
+.menu{
+    font-weight:bold;
+}
+
+.menu {
+    height:40px;
+    /*padding-top:6px;*/
+    float:left; width:100%; font-family: verdana, arial, sans-serif;
+    background:#cacaca;
+    padding-top:5px;
+}
+.menu ul {
+    padding:0;margin:0;list-style-type:none;
+    z-index: 1;
+    /*background:#535f8f;*/
+    background:rgba(83,95,143,0.7);
+}
+.menu ul li {
+    float:left; position:relative; background:none;
+    z-index: 1;
+     -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+}
+
+div.menu>ul>li:hover{
+    /*padding-top:2px;*/
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    -o-border-radius:7px;
+    border-radius:7px;
+    background:#2c2c2c;
+    height:30px;
+    padding:0;
+    margin:0;
+}
+
+.menu>ul>li:hover>a{color:white;}
+
+.menu>ul>li:hover>a:visited{color:white;}
+/* */
+
+.menu ul li a, .menu ul li a:visited {
+    float:left;
+    display:block;
+    text-decoration:none;
+    color:white;
+    padding:0px 15px;
+    line-height:20px;
+    height:20px;
+    border-bottom:3px solid transparent;
+    padding-top:0.5em;
+}
+
+.menu ul li:hover {
+    width:auto;
+    background:#444870;
+   
+}
+
+.menu ul li ul {
+    display: none;
+}
+
+.menu table {
+    margin:0;
+    border-collapse:collapse;
+    font-size:11px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+/* specific to non IE browsers */
+.menu ul li:hover ul {
+    display:block;
+    position:absolute;
+    top:28px;
+    margin-top:1px;
+    left:0;width:154px;
+    border-bottom:1px solid transparent;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+}
+.menu ul li:hover ul.endstop {
+    left:-92px;
+}
+.menu ul li:hover ul li ul {
+    display: none;
+}
+.menu ul li:hover ul li a {
+    display:block;
+    color:white;
+    height:auto;
+    line-height:15px;
+    padding:4px 16px;
+    width:120px;
+    border:1px solid transparent;
+    border-bottom:0;
+}
+.menu ul li:hover ul li a.drop {
+ 
+}
+.menu ul li:hover ul li a:hover {
+    color:white;
+}
+.menu ul li:hover ul li a:hover.drop {
+   
+}
+.menu ul li:hover ul li:hover ul {
+    display:block; position:absolute; left:153px; top:-1px;
+}
+.menu ul li:hover ul li:hover ul.left {
+    left:-153px;
+}
+
+/*
+.menu ul li ul li ul li {
+	border: 2px solid red ;
+	}
+*/
+
+/* Added to hide the 3 level */
+.menu ul li:hover ul li:hover ul li ul {
+    display: none;
+}
+
+/* Added to display the 4 level */
+.menu ul li:hover ul li:hover ul li:hover ul {
+    display: block;
+}
+
+/* Added to hide the 4 level */
+.menu ul li:hover ul li:hover ul li ul {
+    display: none;
+}
+
+/* Added to display the 4 level */
+.menu ul li:hover ul li:hover ul li:hover ul {
+    display: block;
+}
+
+/* specific to IE5.5 and IE6 browsers */
+.menu ul li a:hover ul {
+    display:block;position:absolute;top:30px; top:33px; left:0; border-bottom:1px solid #5F5F5F;
+}
+
+.menu ul li a:hover ul.endstop {
+    left: -92px;
+}
+.menu ul li a:hover ul li a {
+    display:block;color:#AFC841; height:1px; line-height:15px; padding:4px 16px; width:154px; width:120px; border:1px transparent; border-bottom:0;
+}
+.menu ul li a:hover ul li a.drop {
+
+}
+.menu ul li a:hover ul li a ul {
+    visibility:hidden; position:absolute; height:0; width:0;
+}
+
+/* Added to hide level 4 */
+.menu ul li a:hover ul li a:hover ul li ul {
+    visibility:hidden; position:absolute; height:0; width:0;
+}
+
+/* Added to display level 4 */
+.menu ul li a:hover ul li a:hover ul li a:hover ul {
+    visibility:visible; position:absolute; top:0;color:#5F5F5F; left:153px;
+}
+
+/* Added to display level 4 on the left */
+.menu ul li a:hover ul li a:hover ul li a:hover ul.left {
+    left:-153px;
+}
+
+.menu ul li a:hover ul li a:hover {
+   
+    color:white;
+}
+.menu ul li a:hover ul li a:hover.drop {
+ 
+}
+.menu ul li a:hover ul li a:hover ul {
+    visibility:visible; position:absolute; top:0;color:white; left:153px;
+}
+.menu ul li a:hover ul li a:hover ul.left {
+    left:-153px;
+}
+
+
+/* OVERRIDE FOR DEFAULT EZWEBIN STYLES */
+
+/* ORDERED AND UNORDERED LISTS */
+
+div.menu ul, ol
+{
+    margin: 0;
+    padding: 0;
+}
+
+div.menu ul ul, ol ul
+{
+    margin: 0;
+}
+
+div.menu ul ol, ol ol
+{
+    margin: 0;
+}
+
+div.menu li
+{
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+}

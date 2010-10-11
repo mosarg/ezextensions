@@ -1,0 +1,29 @@
+/* 
+    Document   : history
+    Created on : Dec 6, 2009, 8:51:44 PM
+    Author     : mosa
+    Description:
+        history list view
+*/
+
+/* HISTORY */
+div.content-history div.context-controls div.left
+{
+    width: 18%;
+}
+
+div.content-history div.context-controls div.right
+{
+    width: 80%;
+    text-align: right;
+}
+
+div.content-history div.context-controls div.right input.button
+{
+    display: inline;
+}
+
+div#diffview div.context-toolbar div.block ul li
+{
+    background: none;
+}

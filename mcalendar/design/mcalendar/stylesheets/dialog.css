@@ -1,0 +1,48 @@
+/* 
+    Document   : dialog
+    Created on : Dec 8, 2009, 10:57:56 AM
+    Author     : mosa
+    Description:
+    Calendar dialog styles
+*/
+
+div.ui-dialog-titlebar{
+    background:white;
+    height:2em;
+    width:100%;
+    padding-right:2em;
+    margin-bottom:2em;
+    background:gray;
+}
+div.ui-dialog-titlebar a{
+    color:white;
+}
+
+div.ui-dialog-buttonpane{
+   height:auto;
+    padding-right:2em;
+    width:100%;
+}
+div.ui-dialog-buttonpane button{
+    font-weight:bold;
+    margin:1em;
+    padding:0.5em;
+}
+div.ui-dialog{
+    -moz-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+    -webkit-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+    -o-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+    -khtml-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+    box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+    background:white;
+    padding-right:2em;
+    border-bottom:3px solid gray;
+}
+div.ui-widget-overlay{
+    background:gray;
+    opacity:0.5;
+    left:0;
+    top:0;
+    position:absolute;
+}
+

@@ -1,0 +1,26 @@
+div.block-type-2items-big{
+
+}
+
+
+
+div.block-type-2items-big h2{
+
+}
+div.block-type-2items-big p{
+    display:block;
+    float:left;
+    width:48%;
+    font-weight: bold;
+}
+
+div.block-type-2items-big div.bigbody{
+    height:10em;
+    overflow:visible;
+    width:100%;
+}
+
+div.block-type-2items-big div.image-wrapper{
+    float:left;
+    width:40%;
+}

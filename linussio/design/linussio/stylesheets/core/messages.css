@@ -1,0 +1,50 @@
+/* 
+    Document   : messages
+    Created on : Jul 21, 2009, 9:39:26 AM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+/* HORIZONTAL RULERS */
+
+hr /* General formatting for all horizontal rulers */
+{
+    color: #ffffff; /* Color must be set to the same as the background color to hide default formatting in IE */
+    border: none; /* All borders must be removed as they are default for Opera */
+    border-top: 1px solid #e0e0e0; /* This single top border is the one replacing the default look of the ruler */
+    height: 1px;
+    margin: 0.35em 0 0.35em 0; /* Be aware that these margins may not be calculated consistently across browsers */
+}
+
+
+/* MESSAGES TO THE USER */
+
+div.message-confirmation, div.message-feedback, div.message-warning, div.message-error, div.warning
+{
+    margin: 0.5em 0 1em 0;
+    padding: 0.5em 1em 0.5em 1em;
+    border: 6px solid #808080;
+    background-color: #f8f8f8;
+}
+
+div.message-feedback
+{
+    border-color: #40b040;
+}
+
+div.message-warning, div.warning
+{
+    border-color: #c0c040;
+}
+
+div.message-error
+{
+    border-color: #c04040;
+}

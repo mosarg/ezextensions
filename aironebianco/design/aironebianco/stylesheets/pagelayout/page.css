@@ -1,0 +1,25 @@
+div#page {
+    text-align: left;
+    background:#85c226;
+    -moz-box-shadow:0 10px 18px black;
+    -webkit-box-shadow:0 10px 18px black;
+    -o-box-shadow:0 10px 18px black;
+    border-top:4px solid white;
+}
+
+div#page-wrapper{
+    width:900px;
+    margin: 0 auto 0 auto;
+}
+
+div#page-width1, div#page-width2, div#page-width3
+{
+    position: relative;
+}
+
+div#page-width1, div#page-width2, div#page-width3, div#page-width4, div#page-width5, div#page-width7
+{
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+}

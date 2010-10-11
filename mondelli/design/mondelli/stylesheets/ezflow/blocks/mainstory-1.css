@@ -1,0 +1,50 @@
+
+div.block-type-mainstory div.trans-background
+{
+    padding: 0;
+    background-color: #000000;
+    color: #FFFFFF;
+    opacity: 0.5;
+    -moz-opacity: .50;
+    filter: alpha(opacity=50);
+    position: absolute;
+    width: 321px;
+    height: 57px;
+    margin-top: -67px;
+    z-index: 0;
+}
+
+div.block-type-mainstory div.attribute-link
+{
+    width: 301px;
+    padding: 10px;
+    height: 37px;
+    visibility: visible;
+    color:#FFFFFF;
+    margin-top: -67px;
+    position: absolute;
+    z-index: 1;
+}
+
+div.block-type-mainstory div.attribute-link a
+{
+    font-family: Conei;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    font-size:1.5em;
+}
+
+div.block-type-mainstory div.attribute-image
+{
+    float: none;
+    margin: 0;
+    padding-bottom:10px;
+   
+}
+
+div.block-type-mainstory div.attribute-image img
+{
+    display: block;
+
+}

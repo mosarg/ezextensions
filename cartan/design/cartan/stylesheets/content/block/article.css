@@ -1,0 +1,18 @@
+/* 
+    Document   : article
+    Created on : Dec 7, 2009, 10:14:35 AM
+    Author     : mosa
+    Description:
+    article block display
+*/
+
+
+
+div.class-article div.color_block{
+    background:url(../images/decorazioni/sfondo_evidenza.png) repeat-x;
+    height:117px;
+    border:2px solid #9ea036;
+    margin-bottom:1em;
+    padding:0.3em 0.5em 0;
+    width:20em;
+}

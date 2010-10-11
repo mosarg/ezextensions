@@ -1,0 +1,29 @@
+Come eliminare il check dei permessi durante la creazione di un feed rss
+da dati in un area riservata:
+
+file: ezrssexportitem.php
+
+modificare:
+$nodesParams[] = array( 'ParentNodeID' => $rssSource->SourceNodeID,
+                                        'ResultID' => $rssSource->ID,
+                                        'Depth' => $depth,
+                                        'DepthOperator' => 'eq',
+                                        'MainNodeOnly' => $objectListFilter['main_node_only'],
+                                        'ClassFilterType' => 'include',
+                                        'ClassFilterArray' => array( intval( $rssSource->ClassID ) )
+
+
+in:
+                                       );
+$nodesParams[] = array( 'ParentNodeID' => $rssSource->SourceNodeID,
+                                        'ResultID' => $rssSource->ID,
+                                        'Depth' => $depth,
+                                        'DepthOperator' => 'eq',
+                                        'MainNodeOnly' => $objectListFilter['main_node_only'],
+                                        'ClassFilterType' => 'include',
+                                        'ClassFilterArray' => array( intval( $rssSource->ClassID ) ),
+                                        'Limitation'=>array()
+                                       );
+
+in questo modo non vengono imposte le limitazioni sull'accesso agli oggetti:
+USARE CON MODERAZIONE

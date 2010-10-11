@@ -1,0 +1,54 @@
+/* 
+    Document   : profgroup
+    Created on : Dec 6, 2009, 5:54:09 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+        profgroup full view style
+
+*/
+
+
+div.content-view-full div.class-profgroup div.show_all{
+    float:left;
+    margin-left:1em;
+    padding:0.5em;
+    background:gray;
+}
+div.content-view-full div.class-profgroup div.show_all a{
+    color:white;
+    font-weight:bold;
+}
+div.content-view-full div.class-profgroup select{
+    float:left;
+}
+div.content-view-full div.class-profgroup input{
+    float:left;
+}
+div.content-view-full div.class-profgroup div.content-view-line{
+    float:left;
+    clear:both;
+    width:100%;
+    height:85px;
+}
+div.content-view-full div.class-profgroup div.legend{
+    width:100%;
+    clear:both;
+    padding-left:100px;
+    margin-bottom:2em;
+    overflow:hidden;
+    padding-top:0.5em;
+    height:2em;
+    background:#b6b3b9;
+    color:white;
+
+}
+div.content-view-full div.class-profgroup div.legend div{
+    float:left;
+    width:25%;
+    font-weight:bold;
+    overflow:hidden;
+}
+div.content-view-full div.class-profgroup div.dark,div.light{
+    margin-bottom:1em;
+}

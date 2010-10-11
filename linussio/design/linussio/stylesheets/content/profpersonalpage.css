@@ -1,0 +1,83 @@
+/* 
+    Document   : profpersonalpage
+    Created on : Jul 20, 2009, 9:21:35 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+/*prof personal page*/
+
+div.prof_personal_info{
+
+}
+table.related_class{
+    padding: 0.2em 2em 0 0.3em;
+}
+table.related_class td{
+    padding:0 1em 0.2em ;
+}
+
+div.teach_class{
+    width:100%;
+    clear:both;
+    border-bottom:3px solid #A3A3A3;
+    border-top:2px solid #A3A3A3;
+
+}
+div.prof_picture{
+    float:left;
+    padding-right:1em;
+    padding-bottom:2em;
+    }
+div.prof_description{
+    text-align:justify;
+}
+
+div#contatti{
+    padding:1em;
+}
+
+div#email{}
+div#telefono{
+    padding-top:1em;
+}
+
+
+div.helper_prof{}
+div.helper_prof_materie{
+    font-style:italic;
+    font-weight:bold;
+    padding-bottom:1em;
+}
+div.helper_prof_parlor{}
+div.helper_prof_parlor div {
+   float:left;
+   padding:1em;
+   text-align:justify;
+   font-family:sans-serif;
+}
+div.helper_prof_orario{
+    clear:both;
+
+}
+table#docenti{
+    width:100%;
+}
+
+select.red{background:red;font-size:10em;}
+div.edit-prof{width:100%;}
+div.edit-prof div.main-content{
+    float:left;
+    width:60%;
+}
+div.edit-prof div.profile_info{
+    padding:1.5em;
+width: 30%;
+float: left;
+background:#cdcdcd;
+}

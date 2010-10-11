@@ -1,0 +1,13 @@
+/* 
+    Document   : image
+    Created on : Dec 6, 2009, 8:20:12 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+        Image full view style
+*/
+div.content-view-full div.class-image div.attribute-image
+{
+    margin-left: 0;
+    float: none;
+}

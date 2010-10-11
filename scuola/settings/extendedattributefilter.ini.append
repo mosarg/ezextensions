@@ -1,0 +1,12 @@
+<?php
+/* 
+
+[Scuolastudents]
+ExtensionName=scuola
+ClassName=scuolaStudentsExtendedFilter
+MethodName=createSqlParts
+FileName=classes/scuolastudentsextendedfilter.php
+
+*/
+
+?>

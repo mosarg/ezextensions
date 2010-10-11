@@ -1,0 +1,29 @@
+/* 
+    Document   : forum.css
+    Created on : Nov 28, 2009, 8:13:48 PM
+    Author     : mosa
+    Description:
+    forum full view
+*/
+
+input.forum-new-reply
+{
+    margin: 0.75em 0.25em 0.25em 0;
+}
+input.forum-new-topic
+{
+    margin: 0.75em 0.25em 0.25em 0;
+}
+input.forum-keep-me-updated
+{
+    margin: 0.75em 0.25em 0.25em 0;
+}
+div.content-view-full div.class-forum-topic table.forum p.date
+{
+    font-weight: bold;
+}
+div.content-view-full div.class-forum-topic table.forum p.author-signature
+{
+    border-top: 1px solid #fff;
+    padding-top: 5px;
+}

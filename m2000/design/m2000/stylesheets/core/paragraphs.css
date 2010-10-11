@@ -1,0 +1,19 @@
+/* 
+    Document   : paragraphs
+    Created on : Jul 21, 2009, 9:36:06 AM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+        Standard paragraphs styles
+*/
+
+
+
+/* PARAGRAPHS */
+
+p
+{
+    margin: 0.5em 0 0.5em 0;
+    line-height: 1.25em; 
+    text-align:justify;
+}

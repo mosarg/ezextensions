@@ -1,0 +1,43 @@
+/* 
+    Document   : shadows
+    Created on : Dec 6, 2009, 8:54:55 PM
+    Author     : mosa
+    Description:
+    shadow styles
+
+*/
+
+.shadow{
+    
+}
+.shadowmore{
+    -moz-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+    -webkit-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+    -o-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+    -khtml-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+    box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+}
+
+
+.shadowdark{
+    -moz-box-shadow:3px 3px 8px rgba(58,58,58,0.9);
+    -webkit-box-shadow:3px 3px 8px rgba(58,58,58,0.9);
+    -o-box-shadow:3px 3px 8px rgba(58,58,58,0.9);
+    -khtml-box-shadow:3px 3px 8px rgba(58,58,58,0.9);
+    box-shadow:3px 3px 8px rgba(58,58,58,0.9);
+}
+
+.softshadow{
+    -moz-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+    -o-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+    -khtml-box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+    box-shadow:2px 2px 3px rgba(0,0,0,0.5);
+}
+.whiteshadow{
+    -moz-box-shadow:2px 2px 3px rgba(255,255,255,0.8);
+    -webkit-box-shadow:2px 2px 3px rgba(255,255,255,0.8);
+    -o-box-shadow:2px 2px 3px rgba(255,255,255,0.8);
+    -khtml-box-shadow:2px 2px 3px rgba(255,255,255,0.8);
+    box-shadow:2px 2px 3px rgba(255,255,255,0.8);
+}

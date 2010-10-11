@@ -1,0 +1,100 @@
+/* 
+    Document   : login
+    Created on : Mar 21, 2010, 2:08:43 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+div.user-login{
+    padding:2em;
+    width:40%;
+    margin:0 auto 0 auto;
+}
+
+div.user-login form label{
+    font-family:Bleeding;
+    font-size:1.5em;
+    color:#791818;
+}
+
+div.user-login form input.halfbox{
+    border:0;
+    height:1em;
+    padding:0.5em;
+    font-size:2em;
+    width:48%;
+    background:#f1dbb8;
+}
+
+div#login_handle{
+ }
+
+div#ajax_login_form{
+    background: #84c226 url(../images/sfondi/sfondo_drop_down_green.png) top left repeat-x;
+    padding:2em;
+    position:absolute;
+    display:none;
+    width:180px;
+    height:auto;
+    z-index:1500;
+}
+div#login_wrapper{
+    overflow: hidden;
+    position: absolute;
+    width:180px;
+    height:300px;
+   }
+
+div#login_wrapper  div.error_box{
+    color:white;
+    font-size:1.1em;
+    margin-bottom:1em;
+    padding:1em;
+    margin:0.5em;
+    background:rgba(255,255,255,0.5);
+    display: none;
+    font-weight: bold;
+    text-shadow:1px 1px 1px black;
+}
+
+div#login_wrapper input{
+    height:20px;
+    margin-bottom:10px;
+    width:100%;
+}
+
+div#login_wrapper .block h2{
+    color:white;
+    text-shadow:2px 2px 2px black;
+}
+
+div#login_wrapper button{
+    border:2px solid #2f5700;
+    height:20px;
+    width:80px;
+    color:white;
+    vertical-align: middle;
+    background:#73a413;
+    font-size:1.2em;
+    font-weight: bold;
+    padding-bottom:1.5em;
+   }
+
+div#login_wrapper button:hover{
+    background:#405c0a;
+    
+}
+
+div.links-box{
+        border-top:2px solid #025800;
+        margin-left:-2em;
+        margin-top:1em;
+        padding-left:2em;
+        padding-top:1em;
+        width:130%;
+    }
+    div.links-box img{
+        position:relative;
+        top:0.5em;
+}

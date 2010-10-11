@@ -1,0 +1,32 @@
+
+div.block-item div.block-element{
+    background:white;
+    padding:1em;
+}
+
+div.content-view-full div.block-item div.block-element .attribute-short{
+    font-size:1.1em;
+    font-weight: normal;
+}
+
+div.content-view-full div.block-item div.block-element div.attribute-image{
+    float:right;
+    padding-bottom:0;
+    padding-right:0;
+    margin:0;
+    border:2px solid black;
+}
+
+div.content-view-full div.block-item div.block-element div.left-column{
+    width:50%;
+    float:left;
+}
+
+div.content-view-full div.block-item div.block-element div.attribute-header h2{
+    padding:0;
+}
+
+div.content-view-full div.block-item div.block-element a.go_on{
+    display:block;
+    width:100%;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<nodo item="y" tlversion="1.2.3"
+line0="{*nome*}"
+line1="{*nome*}"
+childtype="nodo"
+icon="round_plus">
+<nome type="Text" ref="y">Inizio sito</nome>
+<descrizione type="Text">sito</descrizione>
+<classe type="Text">folder</classe>
+<sezione type="Text"></sezione>
+<state type="Text"></state>
+<nodo item="y">
+<nome>Ipsaa</nome>
+<descrizione>scuola</descrizione>
+<classe>school_front</classe>
+<state>6</state>
+</nodo>
+<DEFAULT item="n"
+line0="{*Name*}"
+line1="{*Name*}">
+<Name type="Text" ref="y"></Name>
+</DEFAULT>
+<classe item="n"
+line0="{*nome*}"
+line1="{*nome*}"
+icon="person">
+<nome type="Text" ref="y"></nome>
+<indirizzo type="Text"></indirizzo>
+<lettsezione type="Text"></lettsezione>
+<classe type="Text"></classe>
+<state type="Text"></state>
+</classe>
+<ROOT item="n"
+line0="{*Name*}"
+line1="{*Name*}"
+childtype="DEFAULT">
+<Name type="Text" ref="y"></Name>
+</ROOT>
+</nodo>

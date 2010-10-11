@@ -1,0 +1,38 @@
+/* 
+    Document   : proffolder
+    Created on : Dec 6, 2009, 5:43:52 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+        proffolder line view style
+*/
+div.content-view-line div.class-proffolder div.prof-icon{
+    width:85px;
+    height:85px;
+    background:url(../images/icons/prof-icon.png) no-repeat center;
+    float:left;
+}
+div.content-view-line div.class-proffolder h4{
+    float:left;
+    width:15em;
+    height:85px;
+    border-right:4px solid gray;
+}
+div.content-view-line div.class-proffolder h4 a{
+    position:relative;
+    top:2em;
+}
+div.content-view-line div.class-proffolder div.attribute-short{
+    float:left;
+    width:24%;
+    text-align:center;
+    vertical-align:middle;
+    height:85px;
+    border-right:4px solid gray;
+}
+div.content-view-line div.class-proffolder div.attribute-short span{
+    position:relative;
+    top:2em;
+    font-weight:bold;
+    font-size:1.1em;
+}

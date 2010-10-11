@@ -1,0 +1,37 @@
+/* 
+    Document   : gallery
+    Created on : Dec 7, 2009, 9:13:21 AM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+        gallery full view style
+*/
+
+div.content-view-full div.class-gallery{
+    overflow: hidden;
+    padding:1.5em;
+}
+
+
+div.content-view-full div.class-gallery div.content-view-galleryline div.attribute-image p
+{
+
+    margin: 0;
+    padding: 0;
+}
+
+
+div.content-view-full div.class-gallery div.caption a.image_comment{
+    color:red;
+    text-shadow:1px 1px 1px black;
+}
+div.content-view-full div.class-gallery div.caption a.image_comment:hover{
+    color:white;
+}
+div.content-view-full div.class-gallery div.caption a{
+    color:white;
+}
+
+div.content-view-full div.class-gallery div.caption a:hover{
+    color:#ffa800;
+}

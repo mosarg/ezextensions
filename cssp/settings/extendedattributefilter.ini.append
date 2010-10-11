@@ -1,0 +1,12 @@
+<?php
+/* 
+
+[csspscuole]
+ExtensionName=cssp
+ClassName=scuolaExtendedFilter
+MethodName=createSqlParts
+FileName=classes/scuolaextendedfilter.php
+
+*/
+
+?>

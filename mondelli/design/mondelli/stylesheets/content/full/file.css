@@ -1,0 +1,31 @@
+/* 
+    Document   : file
+    Created on : Nov 28, 2009, 8:02:17 PM
+    Author     : mosa
+    Description:
+       file full view css
+*/
+
+
+div.class-file table.comparison-file{
+    width:100%;
+}
+div.class-file table.comparison-file td{
+    height:2em;
+    border-bottom:2px solid #b5b1b1;
+}
+div.class-file table.comparison-file th{
+    background:gray;
+    height:2em;
+    padding:0.3em;
+    color:white;
+}
+div.class-file table.comparison-file td.title{
+    font-weight:bold;
+}
+
+div.class-file table.comparison-file a{
+    font-weight:bold;
+    text-decoration:none;
+
+}

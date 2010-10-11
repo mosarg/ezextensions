@@ -1,0 +1,112 @@
+form
+{
+    margin: 0;
+    padding: 0;
+}
+
+label
+{
+    font-weight: bold;
+    padding-right: 0.5em;
+    display: block;
+    white-space: nowrap;
+}
+
+input, select
+{
+    font-family: Arial, Helvetica, sans-serif; /* Needs to be set for some browsers, to prevent other default font from being used */
+}
+
+input.box, input.halfbox
+{
+    font-size: 1em;
+}
+
+textarea
+{
+    font-family: Arial, Helvetica, sans-serif; /* Usually defaulted to monospaced font; so it needs to be set if to change */
+    font-size: 1em; /* Needs to be specified for IE */
+}
+
+optgroup
+{
+    font-weight: bold;
+    font-style: normal;
+}
+
+input.button, input.defaultbutton
+{
+    -moz-border-image:url(../images/buttons/button_back.png) 10 10 10 10 stretch stretch;
+    -webkit-border-image:url(../images/buttons/button_back.png) 10 10 10 10 stretch stretch;
+    border-image:url(../images/buttons/button_back.png) 10 10 10 10 stretch stretch;
+    /*ackground: url(../images/buttons/button_back.png) no-repeat;*/
+    background: transparent;
+    height:50px;
+    border: 10px;
+    font-size: 1.5em;
+    margin: 0.25em 0 0.25em 0;
+    color:#791818;
+    font-family:Conei;
+    padding-bottom:0.3em;
+}
+
+input.button:hover, input.defaultbutton:hover{
+    color:white;
+    text-shadow:1px 1px 1px black;
+}
+
+input.box, textarea.box
+{
+    width: 100%;
+    border: 1px solid #A5ACB2;
+    font-size: 1em;
+}
+
+input.halfbox, textarea.halfbox
+{
+    width: 48%;
+}
+
+div.input, div.textarea
+{
+    margin: 0.5em 0 0.5em 0;
+    padding: 0 0.25em 0 0.25em;
+    border: 1px solid;
+    border-color: #808080 #e0e0e0 #e0e0e0 #808080;
+}
+
+div.textarea
+{
+    padding-right: 0;
+}
+
+div.input input, div.textarea textarea
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+fieldset
+{
+    border: 1px solid #ccccc3;
+    padding: 0.5em;
+}
+
+legend
+{
+    font-weight: bold;
+    color: #000000;
+    padding: 0 0.25em 0 0.25em;
+}
+
+fieldset label
+{
+    color: #000000;
+}
+
+fieldset input.button
+{
+    margin-top: 0.5em;
+}

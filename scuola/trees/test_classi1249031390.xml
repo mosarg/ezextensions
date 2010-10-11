@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodo nome="Inizio sito" descrizione="sito" classe="folder">
+   <nodo nome="Ipsaa" descrizione="scuola" classe="school_front" state="6" nodeID="869">
+      <nodo nome="Classi" classe="classgroup" sezione="7" nodeID="870">
+         <classe nome="5AO" indirizzo="aziendale" lettsezione="AO" classe="classe" state="6" articolata="1" nodeID="871">
+            <nodo nome="Compiti" classe="folder" nodeID="872"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="873"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="874"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="875"/>
+            <nodo nome="Libri" classe="folder" nodeID="876">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="877"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="878"/>
+            </nodo>
+         </classe>
+         <classe nome="5BT" indirizzo="turistico" lettsezione="BT" classe="classe" state="6" articolata="1" nodeID="879">
+            <nodo nome="Compiti" classe="folder" nodeID="880"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="881"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="882"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="883"/>
+            <nodo nome="Libri" classe="folder" nodeID="884">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="885"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="886"/>
+            </nodo>
+         </classe>
+         <classe nome="4AO" indirizzo="azienzale" lettsezione="AO" classe="classe" state="6" nodeID="887">
+            <nodo nome="Compiti" classe="folder" nodeID="888"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="889"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="890"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="891"/>
+            <nodo nome="Libri" classe="folder" nodeID="892">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="893"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="894"/>
+            </nodo>
+         </classe>
+      </nodo>
+   </nodo>
+</nodo>

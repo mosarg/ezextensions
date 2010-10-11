@@ -1,0 +1,24 @@
+/* 
+    Document   : 3zones-1
+    Created on : Dec 7, 2009, 10:17:23 AM
+    Author     : mosa
+    Description:
+      3zones layout 1
+*/
+
+div.zone-layout-3zoneslayout1 div.border-mc
+{
+    padding: 0;
+}
+
+div.zone-layout-3zoneslayout1 div.content-columns
+{
+    padding: 0 0 0 486px;
+}
+
+div.zone-layout-3zoneslayout1 div.leftcol-position
+{
+    width: 486px;
+    margin-left: -486px;
+    background:none;
+}

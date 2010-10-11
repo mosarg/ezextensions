@@ -1,0 +1,41 @@
+/* 
+    Document   : 4zon
+    Created on : Dec 7, 2009, 10:18:36 AM
+    Author     : mosa
+    Description:
+        4zone style
+*/
+
+div.zone-layout-4zone  div.content-columns
+{
+    float:left;
+    width:60%;
+}
+div.zone-layout-4zone div.left-subzone div.col-0{
+    float:left;
+    width:100%;
+    clear:both;
+}
+div.zone-layout-4zone div.left-subzone div.two-columns{
+    float:left;
+    width:100%;
+    margin-top:1em;}
+div.zone-layout-4zone div.left-subzone div.col-1{
+    float:left;
+    width:48%;
+}
+div.zone-layout-4zone div.left-subzone div.col-2{
+    float:left;
+    width:48%;
+    margin-left:1%;
+    padding-left:1%;
+    background:#f8f8f8;
+}
+div.zone-layout-4zone  div.maincol-position
+{
+    float:left;
+    width:33%;
+    margin-left:2%;
+    padding:2%;
+    background:#e0e0e0;
+}

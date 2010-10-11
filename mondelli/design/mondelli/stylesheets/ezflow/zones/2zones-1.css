@@ -1,0 +1,49 @@
+/* 
+    Document   : 2zones-1
+    Created on : Dec 7, 2009, 10:16:10 AM
+    Author     : mosa
+    Description:
+     2zones layout 2
+*/
+
+div.zone-layout-2zoneslayout1 div.leftcol {
+    padding:0 1em 0 3em;
+}
+div.zone-layout-2zoneslayout1 div.border-mc
+{
+    padding: 0;
+}
+
+div.zone-layout-2zoneslayout1 div.content-columns
+{
+    padding: 0 0 0 586px;
+}
+
+div.zone-layout-2zoneslayout1 div.leftcol-position
+{
+    width: 586px;
+    margin-left: -586px;
+}
+
+div.zone-layout-2zoneslayout1 div.newsletter{
+    height:100px;
+    padding:0;
+    margin:0;
+    background: none;
+}
+div.zone-layout-2zoneslayout1 div.newsletter img{
+    float:left;
+}
+div.zone-layout-2zoneslayout1 div.newsletter h2 a{
+    color:white;
+    font-weight: normal;
+    font-family: Bleeding;
+    font-size:1.4em;
+    line-height: 1.6em;
+    position: relative;
+    top:20px;
+    left:-50px;
+}
+div.zone-layout-2zoneslayout1 div.newsletter h2 a:hover{
+    color:yellow;
+}

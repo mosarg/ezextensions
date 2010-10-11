@@ -1,0 +1,24 @@
+div.zone-layout-2zone{
+    clear:right;
+}
+div.zone-layout-2zone div.colonna_s
+{
+    width:46%;
+    float:left;
+    margin:1%;
+    padding:1%;
+    background:#e0e0e0;
+}
+
+div.zone-layout-2zone div.colonna_d
+{
+   width:46%;
+   margin:1%;
+   padding:1%;
+   float:left;
+}
+div.zone-layout-2zone div.pos_colonne{
+    overflow:hidden;
+    width:100%;
+}
+

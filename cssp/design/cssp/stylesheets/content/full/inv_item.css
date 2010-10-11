@@ -1,0 +1,48 @@
+div.inv_item table.item-description{
+
+}
+
+div.inv_item table.item-description td h2{
+    background: #c9c9c9;
+    color:gray;
+    margin:0;
+    padding:0.4em;
+    border:1px dashed gray;
+    
+}
+div.inv_item table.item-description td{
+    font-size:1.1em;
+    
+}
+
+div.inv_item div.separator{
+    height:2em;
+    width:100%;
+
+}
+
+div.inv_item div#inv_item_interface {
+    width:100%;
+    overflow: hidden;
+
+}
+
+div.inv_item div#inv_item_interface a{
+
+}
+div.inv_item div#inv_item_interface button{
+    font-weight: bold;
+    
+}
+div.inv_item div#inv_item_interface div#related_events {
+    float:right;
+}
+
+div.inv_item div#inv_item_interface span.time_start {
+    font-weight: 400;
+    color:gray;
+}
+div.inv_item div#inv_item_interface span.time_end{
+    font-weight:400;
+    color:black;
+}

@@ -1,0 +1,82 @@
+/* 
+    Document   : misc.css
+    Created on : Jul 20, 2009, 9:47:25 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+/*class manage*/
+li.list_header{
+    margin-left:-1em;
+}
+
+/*page edit controls*/
+div.controls{
+    float:left;
+    padding-right:2em;
+    }
+      div.wip{
+        position:relative;
+        background:red;
+        padding:0.3em;
+        width:40em;
+            margin-bottom:2em;
+           }
+      div.wip p{font-size:1.25em;
+           color:white;
+           font-weight:bold;
+      text-align:center;}
+
+      /*class manage*/
+
+
+li.list_header{
+    margin-left:-1em;
+}
+
+/*page edit controls*/
+div.controls{
+    float:left;
+    padding-right:2em;
+    }
+
+
+    div.ajax-form{
+        position:absolute;
+        width:350px;
+        height:350px;
+        background:#c3c3c3;
+        padding:1em;
+        border:5px solid gray;
+        z-index:1000;
+
+    }
+    div#ajax-edit{
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:rgba(160,160,160,0.8);
+    }
+    div.ajax-form input#text{}
+    div.ajax-form input#short_title{}
+
+    div.ajax-form select#from_time,div.ajax-form select#to_time{
+        height:2.5em;
+        width:93%;
+        font-size:1.2em;
+         }
+
+  h4.mandatory {font-family:serif;
+      font-style:italic;}
+
+      h4.mandatory:before{
+          content:'* ';
+          color:red;
+      }

@@ -1,0 +1,85 @@
+/* 
+    Document   : quotes.css
+    Created on : Jul 20, 2009, 9:42:17 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+div.quote
+{
+    background-image: url(../images/quote-tl.gif);
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding-top: 19px;
+}
+
+div.quote-design
+{
+    padding-bottom: 19px;
+    background-image: url(../images/quote-br.gif);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+div.quote-design p.author
+{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* SEPARATOR */
+
+div.separator
+{
+    background-image: url(../images/separator.jpg);
+    background-repeat: no-repeat;
+    height: 20px;
+    clear: both;
+}
+
+/* SPLIT THREE */
+
+div.split
+{
+    clear: both;
+}
+
+div.split-content
+{
+    border: none;
+}
+
+div.split div.three-left
+{
+    width: 31%;
+    float: left;
+}
+
+div.split div.three-right
+{
+    width: 31%;
+    float: right;
+}
+
+div.split div.three-center
+{
+    margin: 0 35% 0 35%;
+}
+
+div.break
+{
+    clear: both;
+    font-size: 1px; /* Fix for IE */
+    height: 1px;
+    margin-bottom: -1px;
+}
