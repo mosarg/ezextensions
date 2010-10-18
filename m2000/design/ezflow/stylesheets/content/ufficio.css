@@ -1,0 +1,76 @@
+/* 
+    Document   : ufficio.css
+    Created on : Jul 21, 2009, 8:50:49 AM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+/*ufficio*/
+
+div.class-ufficio{
+    overflow:hidden;
+}
+
+div.class-ufficio div.ufficio_extra-info div.attribute-page{
+    background: #dbdbdb;
+    padding:1em;
+    margin-bottom:1em;
+}
+
+div.ufficio_icon{
+   width:161px;
+   height:171px;
+   padding:1em;
+   background:url(../images/decorazioni/sfondo_icona.png) no-repeat;
+   margin-top:1.5em;
+   float:left;
+}
+div.ufficio_icon a{
+    color:white;
+}
+div.ufficio_icon h2,span{
+}
+
+
+div.class-ufficio div.uffici_correlati{
+    background:#e0ece5;
+    padding:1em;
+}
+div.class-ufficio div.contatti{
+    margin-top:1em;
+    background:#cadfd3;
+    padding:1em;
+
+}
+div.class-ufficio div.resp_ufficio{
+    background:#94bac8;
+    padding:1em;
+
+}
+div.class-ufficio div.resp_ufficio h2{
+  color:white;
+  margin:0;
+}
+div.class-ufficio div.resp_ufficio span{
+    font-weight:bold;
+}
+
+table.minimal_list tr.empty{height:3em;}
+div.class-ufficio table.minimal_list h3{clear:both;display:inline;}
+div.class-ufficio div.content-view-full{
+    float:left;
+    text-align:justify;
+    width:70%;
+}
+div.class-ufficio div.ufficio_extra-info{
+float:right;
+width:28%;
+margin-left:1%;
+}

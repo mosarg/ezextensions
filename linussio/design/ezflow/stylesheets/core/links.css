@@ -1,0 +1,41 @@
+/* 
+    Document   : links
+    Created on : Jul 21, 2009, 9:36:23 AM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/* LINKS */
+
+a
+{
+    color: #ffa800;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+a:hover
+{
+    color: #ffd617;
+    text-decoration:none;
+}
+
+a img
+{
+    border: none; /* Some browsers may display a border around a linked image without this attribute set to _none_. */
+}
+
+a.external:after{
+    content:url(../images/icons/external_link_small.png);
+    margin-left:0.1em;
+ }
+
+ h2 a{color:gray;}
+ h2 a:hover{color:white;}
+ 

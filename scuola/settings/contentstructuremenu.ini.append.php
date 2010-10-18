@@ -1,0 +1,20 @@
+<?php /*
+[TreeMenu]
+Dynamic=enabled
+ShowClasses[]
+ShowClasses[]=classgroup
+ShowClasses[]=school_front
+ShowClasses[]=profgroup
+ShowClasses[]=proffolder
+ShowClasses[]=dir_circolari
+ShowClasses[]=folder
+ShowClasses[]=user_group
+ShowClasses[]=frontpage
+ShowClasses[]=forums
+ShowClasses[]=macroarea
+ShowClasses[]=folder_circolari
+ShowClasses[]=ufficio
+ShowClasses[]=m2000_front
+ShowClasses[]=dmsfolder
+MaxNodes=350
+*/?>

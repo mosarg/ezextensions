@@ -1,0 +1,189 @@
+/* 
+    Document   : columns
+    Created on : Jul 20, 2009, 11:05:54 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+div.content-columns
+{
+    
+}
+
+div.leftcol-position
+{
+    width: 10em;
+    margin-left: -10em;
+    float: left;
+    position: relative; /* Fix */
+    display: inline; /* Fix for IE double margin bug */
+}
+
+div.leftcol
+{
+    position: relative;
+    padding-right:1em;
+}
+
+div.maincol-position
+{
+    width: 100%;
+    float: left;
+}
+
+div.maincol
+{
+    position: relative;
+}
+
+div.rightcol-position
+{
+    width: 10em;
+    margin-right: -10em;
+    float: right;
+    position: relative; /* Fix */
+    display: inline; /* Fix for IE double margin bug */
+}
+
+div.rightcol
+{
+    position: relative;
+}
+
+.float-break
+{
+    height: 1%;
+}
+
+.float-break:after
+{
+    content: "-";
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+div.noleftcol div.content-columns
+{
+    padding-left: 0;
+}
+
+div.noleftcol div.leftcol-position
+{
+    display: none;
+}
+
+div.norightcol div.content-columns
+{
+    padding-right: 0;
+}
+
+div.norightcol div.rightcol-position
+{
+    display: none;
+}
+
+
+div.columns-two, div.columns-three, div.columns-four
+{
+    height: 1%; /* Fix for IE */
+    position: relative;
+}
+
+div.columns-two:after, div.columns-three:after, div.columns-four:after
+{
+    content: "-";
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+div.columns-two div.col-1, div.columns-two div.col-2, div.columns-three div.col-1, div.columns-three div.col-2, div.columns-four div.col-1, div.columns-four div.col-2, div.columns-four div.col-3, div.columns-four div.col-4
+{
+    width: 100%;
+}
+
+div.columns-three div.col-1-2, div.columns-three div.col-3, div.columns-four div.col-1-2, div.columns-four div.col-3-4
+{
+    width: 50%;
+}
+
+
+
+div.columns-two, div.columns-three div.col-1-2, div.columns-four, div.columns-four div.col-1-2, div.columns-four div.col-3-4
+{
+    padding-right: 50%;
+}
+
+div.columns-three
+{
+    margin-right: 2px; /* This value may need to be tuned depending on most expected width of div.columns-three */
+    padding-right: 33%;
+}
+
+div.columns-two div.col-1, div.columns-two div.col-2, div.columns-three div.col-1-2, div.columns-three div.col-1, div.columns-three div.col-2, div.columns-three div.col-3, div.columns-four div.col-1-2, div.columns-four div.col-1, div.columns-four div.col-2, div.columns-four div.col-3-4, div.columns-four div.col-3, div.columns-four div.col-4
+{
+    float: left;
+    display: inline; /* Fix for IE */
+}
+
+div.columns-two div.col-content, div.columns-three div.col-content, div.columns-four div.col-content
+{
+    position: relative;
+}
+
+div.columns-two div.col-1 div.col-content
+{
+    margin-right: 0.5em;
+}
+
+div.columns-two div.col-2 div.col-content
+{
+    margin-left: 0.5em;
+}
+
+div.columns-three div.col-1 div.col-content
+{
+    margin-right: 0.66em;
+}
+
+div.columns-three div.col-2 div.col-content
+{
+    margin: 0 0.33em 0 0.33em;
+}
+
+div.columns-three div.col-3 div.col-content
+{
+    margin-left: 0.66em;
+}
+
+div.columns-four div.col-1 div.col-content
+{
+    margin-right: 0.75em;
+}
+
+div.columns-four div.col-2 div.col-content
+{
+    margin: 0 0.5em 0 0.25em;
+}
+
+div.columns-four div.col-3 div.col-content
+{
+    margin: 0 0.25em 0 0.5em;
+}
+
+div.columns-four div.col-4 div.col-content
+{
+    margin-left: 0.75em;
+}

@@ -1,0 +1,3809 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<nodo item="y" tlversion="1.2.3"
+line0="{*nome*}"
+line1="{*nome*}"
+childtype="nodo"
+icon="round_plus">
+<nome type="Text" ref="y">Inizio sito</nome>
+<descrizione type="Text">sito</descrizione>
+<classe type="Text">folder</classe>
+<sezione type="Text"></sezione>
+<state type="Text"></state>
+<nodo item="y">
+<nome>Liceo</nome>
+<descrizione>scuola</descrizione>
+<classe>school_front</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Docenti</nome>
+<descrizione>docenti</descrizione>
+<classe>profgroup</classe>
+<sezione>16</sezione>
+<nodo item="y">
+<nome>Adempimenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Novità</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Classi</nome>
+<classe>classgroup</classe>
+<sezione>7</sezione>
+<classe item="y"
+line0="{*nome*}"
+line1="{*nome*}"
+icon="person">
+<nome type="Text" ref="y">1AL</nome>
+<indirizzo type="Text">pni</indirizzo>
+<lettsezione type="Text">al</lettsezione>
+<classe type="Text">classe</classe>
+<state type="Text">6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>2AL</nome>
+<indirizzo>pni</indirizzo>
+<lettsezione>al</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>3AL</nome>
+<indirizzo>pni</indirizzo>
+<lettsezione>al</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>4AL</nome>
+<indirizzo>pni</indirizzo>
+<lettsezione>al</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>5AL</nome>
+<indirizzo>pni</indirizzo>
+<lettsezione>al</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>1BL</nome>
+<indirizzo>pni</indirizzo>
+<lettsezione>bl</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>2BL</nome>
+<indirizzo>pni</indirizzo>
+<lettsezione>bl</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>3BL</nome>
+<indirizzo>pni</indirizzo>
+<lettsezione>bl</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>4BL</nome>
+<indirizzo>pni</indirizzo>
+<lettsezione>bl</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>5BL</nome>
+<indirizzo>pni</indirizzo>
+<lettsezione>bl</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>1CL</nome>
+<indirizzo>pni</indirizzo>
+<lettsezione>cl</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>2CL</nome>
+<indirizzo>pni</indirizzo>
+<lettsezione>cl</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>3CL</nome>
+<indirizzo>pni</indirizzo>
+<lettsezione>cl</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>4CL</nome>
+<indirizzo>pni</indirizzo>
+<lettsezione>cl</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>5CL</nome>
+<indirizzo>pni</indirizzo>
+<lettsezione>cl</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>3DL</nome>
+<indirizzo>ordinario</indirizzo>
+<lettsezione>dl</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>4DL</nome>
+<indirizzo>ordinario</indirizzo>
+<lettsezione>dl</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>5DL</nome>
+<indirizzo>ordinario</indirizzo>
+<lettsezione>dl</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<nodo item="y">
+<nome>Informazioni</nome>
+<classe>article_mainpage</classe>
+<sezione>8</sezione>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Calendario generale</nome>
+<classe>multicalendar</classe>
+<sezione>8</sezione>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Forum Studenti</nome>
+<descrizione>forum</descrizione>
+<classe>forum</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Didattica</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>Dipartimenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Piani di studio</nome>
+<classe>article_mainpage</classe>
+</nodo>
+<nodo item="y">
+<nome>Progetti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri consigliati</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Terza area</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Circolari</nome>
+<descrizione>circolari</descrizione>
+<classe>dir_circolari</classe>
+<sezione>9</sezione>
+<nodo item="y">
+<nome>Ata</nome>
+<descrizione>ata</descrizione>
+<classe>folder_circolari</classe>
+</nodo>
+<nodo item="y">
+<nome>Studenti</nome>
+<descrizione>rer</descrizione>
+<classe>folder_circolari</classe>
+</nodo>
+<nodo item="y">
+<nome>Docenti</nome>
+<classe>folder_circolari</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Uffici</nome>
+<descrizione>Uffici</descrizione>
+<classe>m2000_front</classe>
+<sezione>9</sezione>
+<state>6</state>
+<nodo item="y">
+<nome>Ufficio periferico</nome>
+<classe>ufficio</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Contatti</nome>
+<classe>contatti</classe>
+<sezione>9</sezione>
+</nodo>
+<nodo item="y">
+<nome>Orientamento</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>In entrata</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>In uscita</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Informazioni</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>Logistica</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Mensa</nome>
+<classe>article_mainpage</classe>
+</nodo>
+<nodo item="y">
+<nome>Trasporti</nome>
+<classe>article_mainpage</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Annunci</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario</nome>
+<classe>blog</classe>
+</nodo>
+<nodo item="y">
+<nome>Urgenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Edificio</nome>
+<sezione>article_mainpage</sezione>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Laboratori</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Ipsia</nome>
+<descrizione>scuola</descrizione>
+<classe>school_front</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Docenti</nome>
+<descrizione>docenti</descrizione>
+<classe>profgroup</classe>
+<sezione>16</sezione>
+<nodo item="y">
+<nome>Adempimenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Novità</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Classi</nome>
+<classe>classgroup</classe>
+<sezione>7</sezione>
+<classe item="y">
+<nome>1OMT</nome>
+<indirizzo>opmeccanico</indirizzo>
+<lettsezione>om</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>2OM</nome>
+<indirizzo>opmeccanico</indirizzo>
+<lettsezione>om</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>3OM</nome>
+<indirizzo>opmeccanico</indirizzo>
+<lettsezione>om</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>4TIM</nome>
+<indirizzo>tecmeccanico</indirizzo>
+<lettsezione>tim</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>5TIM</nome>
+<indirizzo>tecmeccanico</indirizzo>
+<lettsezione>tim</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<nodo item="y">
+<nome>Informazioni</nome>
+<classe>article_mainpage</classe>
+<sezione>8</sezione>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Calendario generale</nome>
+<classe>multicalendar</classe>
+<sezione>8</sezione>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Forum Studenti</nome>
+<descrizione>forum</descrizione>
+<classe>forum</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Didattica</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>Dipartimenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Piani di studio</nome>
+<classe>article_mainpage</classe>
+</nodo>
+<nodo item="y">
+<nome>Progetti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri consigliati</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Terza area</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Circolari</nome>
+<descrizione>circolari</descrizione>
+<classe>dir_circolari</classe>
+<sezione>9</sezione>
+<nodo item="y">
+<nome>Ata</nome>
+<descrizione>ata</descrizione>
+<classe>folder_circolari</classe>
+</nodo>
+<nodo item="y">
+<nome>Studenti</nome>
+<descrizione>rer</descrizione>
+<classe>folder_circolari</classe>
+</nodo>
+<nodo item="y">
+<nome>Docenti</nome>
+<classe>folder_circolari</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Uffici</nome>
+<descrizione>Uffici</descrizione>
+<classe>m2000_front</classe>
+<sezione>9</sezione>
+<state>6</state>
+<nodo item="y">
+<nome>Ufficio periferico</nome>
+<classe>ufficio</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Orientamento</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>In entrata</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>In uscita</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Informazioni e notizie</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>Logistica</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Mensa</nome>
+<classe>article_mainpage</classe>
+</nodo>
+<nodo item="y">
+<nome>Trasporti</nome>
+<classe>article_mainpage</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Annunci</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario</nome>
+<classe>blog</classe>
+</nodo>
+<nodo item="y">
+<nome>Urgenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Edificio</nome>
+<sezione>article_mainpage</sezione>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Laboratori</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Itc</nome>
+<descrizione>scuola</descrizione>
+<classe>school_front</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Docenti</nome>
+<descrizione>docenti</descrizione>
+<classe>profgroup</classe>
+<sezione>16</sezione>
+<nodo item="y">
+<nome>Adempimenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Novità</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Classi</nome>
+<classe>classgroup</classe>
+<sezione>7</sezione>
+<classe item="y">
+<nome>1Ai</nome>
+<indirizzo>igea</indirizzo>
+<lettsezione>ai</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>2Ai</nome>
+<indirizzo>igea</indirizzo>
+<lettsezione>ai</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>3Ai</nome>
+<indirizzo>igea</indirizzo>
+<lettsezione>ai</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>4Ai</nome>
+<indirizzo>igea</indirizzo>
+<lettsezione>ai</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>5Ai</nome>
+<indirizzo>igea</indirizzo>
+<lettsezione>ai</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>1Ape</nome>
+<indirizzo>erica</indirizzo>
+<lettsezione>ape</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>2Ape</nome>
+<indirizzo>erica</indirizzo>
+<lettsezione>ape</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>3Ape</nome>
+<indirizzo>erica</indirizzo>
+<lettsezione>ape</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>4Ape</nome>
+<indirizzo>erica</indirizzo>
+<lettsezione>ape</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>5Ape</nome>
+<indirizzo>erica</indirizzo>
+<lettsezione>ape</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<nodo item="y">
+<nome>Informazioni</nome>
+<classe>article_mainpage</classe>
+<sezione>8</sezione>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Calendario generale</nome>
+<classe>multicalendar</classe>
+<sezione>8</sezione>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Forum Studenti</nome>
+<descrizione>forum</descrizione>
+<classe>forum</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Didattica</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>Dipartimenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Piani di studio</nome>
+<classe>article_mainpage</classe>
+</nodo>
+<nodo item="y">
+<nome>Progetti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri consigliati</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Terza area</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Circolari</nome>
+<descrizione>circolari</descrizione>
+<classe>dir_circolari</classe>
+<sezione>9</sezione>
+<nodo item="y">
+<nome>Ata</nome>
+<descrizione>ata</descrizione>
+<classe>folder_circolari</classe>
+</nodo>
+<nodo item="y">
+<nome>Studenti</nome>
+<descrizione>rer</descrizione>
+<classe>folder_circolari</classe>
+</nodo>
+<nodo item="y">
+<nome>Docenti</nome>
+<classe>folder_circolari</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Uffici</nome>
+<descrizione>Uffici</descrizione>
+<classe>m2000_front</classe>
+<sezione>9</sezione>
+<state>6</state>
+<nodo item="y">
+<nome>Ufficio periferico</nome>
+<classe>ufficio</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Contatti</nome>
+<classe>contatti</classe>
+<sezione>9</sezione>
+</nodo>
+<nodo item="y">
+<nome>Orientamento</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>In entrata</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>In uscita</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Informazioni e notizie</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>Logistica</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Mensa</nome>
+<classe>article_mainpage</classe>
+</nodo>
+<nodo item="y">
+<nome>Trasporti</nome>
+<classe>article_mainpage</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Annunci</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario</nome>
+<classe>blog</classe>
+</nodo>
+<nodo item="y">
+<nome>Urgenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Edificio</nome>
+<sezione>article_mainpage</sezione>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Laboratori</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Iti Cervignano</nome>
+<descrizione>scuola</descrizione>
+<classe>school_front</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Docenti</nome>
+<descrizione>docenti</descrizione>
+<classe>profgroup</classe>
+<sezione>16</sezione>
+<nodo item="y">
+<nome>Adempimenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Novità</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Classi</nome>
+<classe>classgroup</classe>
+<sezione>7</sezione>
+<classe item="y">
+<nome>1AT</nome>
+<indirizzo>biennio</indirizzo>
+<lettsezione>at</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>1BT</nome>
+<indirizzo>biennio</indirizzo>
+<lettsezione>bt</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>1CT</nome>
+<indirizzo>biennio</indirizzo>
+<lettsezione>ct</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>1DT</nome>
+<indirizzo>biennio</indirizzo>
+<lettsezione>dt</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>2AT</nome>
+<indirizzo>biennio</indirizzo>
+<lettsezione>at</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>2BT</nome>
+<indirizzo>biennio</indirizzo>
+<lettsezione>bt</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>2CT</nome>
+<indirizzo>biennio</indirizzo>
+<lettsezione>ct</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>2DT</nome>
+<indirizzo>biennio</indirizzo>
+<lettsezione>dt</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>3CH</nome>
+<indirizzo>chimica</indirizzo>
+<lettsezione>ch</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>4CH</nome>
+<indirizzo>chimica</indirizzo>
+<lettsezione>ch</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>5CH</nome>
+<indirizzo>chimica</indirizzo>
+<lettsezione>ch</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>3AELI</nome>
+<indirizzo>elettronica</indirizzo>
+<lettsezione>aeli</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>3BELI</nome>
+<indirizzo>elettronica</indirizzo>
+<lettsezione>beli</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>4AELI</nome>
+<indirizzo>elettronica</indirizzo>
+<lettsezione>aeli</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>5AELI</nome>
+<indirizzo>elettronica</indirizzo>
+<lettsezione>aeli</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<nodo item="y">
+<nome>Informazioni</nome>
+<classe>article_mainpage</classe>
+<sezione>8</sezione>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Calendario generale</nome>
+<classe>multicalendar</classe>
+<sezione>8</sezione>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Forum Studenti</nome>
+<descrizione>forum</descrizione>
+<classe>forum</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Didattica</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>Dipartimenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Piani di studio</nome>
+<classe>article_mainpage</classe>
+</nodo>
+<nodo item="y">
+<nome>Progetti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri consigliati</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Terza area</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Circolari</nome>
+<descrizione>circolari</descrizione>
+<classe>dir_circolari</classe>
+<sezione>9</sezione>
+<nodo item="y">
+<nome>Ata</nome>
+<descrizione>ata</descrizione>
+<classe>folder_circolari</classe>
+</nodo>
+<nodo item="y">
+<nome>Studenti</nome>
+<descrizione>rer</descrizione>
+<classe>folder_circolari</classe>
+</nodo>
+<nodo item="y">
+<nome>Docenti</nome>
+<classe>folder_circolari</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Uffici</nome>
+<descrizione>Uffici</descrizione>
+<classe>m2000_front</classe>
+<sezione>9</sezione>
+<state>6</state>
+<nodo item="y">
+<nome>Ufficio periferico</nome>
+<classe>ufficio</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Contatti</nome>
+<classe>contatti</classe>
+<sezione>9</sezione>
+</nodo>
+<nodo item="y">
+<nome>Orientamento</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>In entrata</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>In uscita</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Informazioni e notizie</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>Logistica</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Mensa</nome>
+<classe>article_mainpage</classe>
+</nodo>
+<nodo item="y">
+<nome>Trasporti</nome>
+<classe>article_mainpage</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Annunci</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario</nome>
+<classe>blog</classe>
+</nodo>
+<nodo item="y">
+<nome>Urgenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Edificio</nome>
+<sezione>article_mainpage</sezione>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Laboratori</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Iti San Giorgio</nome>
+<descrizione>scuola</descrizione>
+<classe>school_front</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Docenti</nome>
+<descrizione>docenti</descrizione>
+<classe>profgroup</classe>
+<sezione>16</sezione>
+<nodo item="y">
+<nome>Adempimenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Novità</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Classi</nome>
+<classe>classgroup</classe>
+<sezione>7</sezione>
+<classe item="y">
+<nome>1ABM</nome>
+<indirizzo>bienniomeccanica</indirizzo>
+<lettsezione>abm</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>2ABM</nome>
+<indirizzo>bienniomeccanica</indirizzo>
+<lettsezione>abm</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>3ATM</nome>
+<indirizzo>trienniomeccanica</indirizzo>
+<lettsezione>atm</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>4ATM</nome>
+<indirizzo>trienniomeccanica</indirizzo>
+<lettsezione>atm</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>5ATM</nome>
+<indirizzo>trienniomeccanica</indirizzo>
+<lettsezione>atm</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<nodo item="y">
+<nome>Informazioni</nome>
+<classe>article_mainpage</classe>
+<sezione>8</sezione>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Calendario generale</nome>
+<classe>multicalendar</classe>
+<sezione>8</sezione>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Forum Studenti</nome>
+<descrizione>forum</descrizione>
+<classe>forum</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Didattica</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>Dipartimenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Piani di studio</nome>
+<classe>article_mainpage</classe>
+</nodo>
+<nodo item="y">
+<nome>Progetti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri consigliati</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Terza area</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Circolari</nome>
+<descrizione>circolari</descrizione>
+<classe>dir_circolari</classe>
+<sezione>9</sezione>
+<nodo item="y">
+<nome>Ata</nome>
+<descrizione>ata</descrizione>
+<classe>folder_circolari</classe>
+</nodo>
+<nodo item="y">
+<nome>Studenti</nome>
+<descrizione>rer</descrizione>
+<classe>folder_circolari</classe>
+</nodo>
+<nodo item="y">
+<nome>Docenti</nome>
+<classe>folder_circolari</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Uffici</nome>
+<descrizione>Uffici</descrizione>
+<classe>m2000_front</classe>
+<sezione>9</sezione>
+<state>6</state>
+<nodo item="y">
+<nome>Ufficio periferico</nome>
+<classe>ufficio</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Contatti</nome>
+<classe>contatti</classe>
+<sezione>9</sezione>
+</nodo>
+<nodo item="y">
+<nome>Orientamento</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>In entrata</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>In uscita</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Informazioni e notizie</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>Logistica</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Mensa</nome>
+<classe>article_mainpage</classe>
+</nodo>
+<nodo item="y">
+<nome>Trasporti</nome>
+<classe>article_mainpage</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Annunci</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario</nome>
+<classe>blog</classe>
+</nodo>
+<nodo item="y">
+<nome>Urgenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Edificio</nome>
+<sezione>article_mainpage</sezione>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Laboratori</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Ipssct</nome>
+<descrizione>scuola</descrizione>
+<classe>school_front</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Docenti</nome>
+<descrizione>docenti</descrizione>
+<classe>profgroup</classe>
+<sezione>16</sezione>
+<nodo item="y">
+<nome>Adempimenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Novità</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Classi</nome>
+<classe>classgroup</classe>
+<sezione>7</sezione>
+<classe item="y">
+<nome>1Apr</nome>
+<indirizzo>opimptur</indirizzo>
+<lettsezione>apr</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>2Apr</nome>
+<indirizzo>opimptur</indirizzo>
+<lettsezione>apr</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>3ApT</nome>
+<indirizzo>tecimptur</indirizzo>
+<lettsezione>apt</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>4ApT</nome>
+<indirizzo>tecimptur</indirizzo>
+<lettsezione>apt</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>5ApT</nome>
+<indirizzo>tecimptur</indirizzo>
+<lettsezione>apt</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>1Bpr</nome>
+<indirizzo>opgestaz</indirizzo>
+<lettsezione>bpr</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>2Bpr</nome>
+<indirizzo>opgestaz</indirizzo>
+<lettsezione>bpr</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>3BpA</nome>
+<indirizzo>tecgestaz</indirizzo>
+<lettsezione>bpa</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>3BpA</nome>
+<indirizzo>tecgestaz</indirizzo>
+<lettsezione>bpa</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<classe item="y">
+<nome>5BpA</nome>
+<indirizzo>tecgestaz</indirizzo>
+<lettsezione>bpa</lettsezione>
+<classe>classe</classe>
+<state>6</state>
+<nodo item="y">
+<nome>Compiti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario di classe</nome>
+<classe>blog</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Elaborati</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>article_mainpage</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Recensioni</nome>
+<classe>folder</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+</classe>
+<nodo item="y">
+<nome>Informazioni</nome>
+<classe>article_mainpage</classe>
+<sezione>8</sezione>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Forum Studenti</nome>
+<descrizione>forum</descrizione>
+<classe>forum</classe>
+<sezione>10</sezione>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Calendario generale</nome>
+<classe>multicalendar</classe>
+<sezione>8</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Didattica</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>Dipartimenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Piani di studio</nome>
+<classe>article_mainpage</classe>
+</nodo>
+<nodo item="y">
+<nome>Progetti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri di testo</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Libri consigliati</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Terza area</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Circolari</nome>
+<descrizione>circolari</descrizione>
+<classe>dir_circolari</classe>
+<sezione>9</sezione>
+<nodo item="y">
+<nome>Ata</nome>
+<descrizione>ata</descrizione>
+<classe>folder_circolari</classe>
+</nodo>
+<nodo item="y">
+<nome>Studenti</nome>
+<descrizione>rer</descrizione>
+<classe>folder_circolari</classe>
+</nodo>
+<nodo item="y">
+<nome>Docenti</nome>
+<classe>folder_circolari</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Uffici</nome>
+<descrizione>Uffici</descrizione>
+<classe>m2000_front</classe>
+<sezione>9</sezione>
+<state>6</state>
+<nodo item="y">
+<nome>Ufficio periferico</nome>
+<classe>ufficio</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Contatti</nome>
+<classe>contatti</classe>
+<sezione>9</sezione>
+</nodo>
+<nodo item="y">
+<nome>Orientamento</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>In entrata</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>In uscita</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Informazioni e notizie</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>Logistica</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Mensa</nome>
+<classe>article_mainpage</classe>
+</nodo>
+<nodo item="y">
+<nome>Trasporti</nome>
+<classe>article_mainpage</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Annunci</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Calendario</nome>
+<classe>event_calendar</classe>
+</nodo>
+<nodo item="y">
+<nome>Diario</nome>
+<classe>blog</classe>
+</nodo>
+<nodo item="y">
+<nome>Urgenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Edificio</nome>
+<sezione>article_mainpage</sezione>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Laboratori</nome>
+<classe>folder</classe>
+<sezione>8</sezione>
+<state>6</state>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Personale</nome>
+<classe>m2000_front</classe>
+<sezione>9</sezione>
+<nodo item="y">
+<nome>Dirigente scolastico</nome>
+<classe>dipendenti</classe>
+</nodo>
+<nodo item="y">
+<nome>Dsga</nome>
+<classe>dipendenti</classe>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Docenti</nome>
+<classe>dipendenti</classe>
+<nodo item="y">
+<nome>Graduatorie</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Ata</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Assistenti amministrativi</nome>
+<classe>dipendenti</classe>
+</nodo>
+<nodo item="y">
+<nome>Assistenti tecnici</nome>
+<classe>dipendenti</classe>
+</nodo>
+<nodo item="y">
+<nome>Collaboratori scolastici</nome>
+<classe>dipendenti</classe>
+</nodo>
+<nodo item="y">
+<nome>Cuochi</nome>
+<classe>dipendenti</classe>
+</nodo>
+<nodo item="y">
+<nome>Guardarobieri</nome>
+<classe>dipendenti</classe>
+</nodo>
+<nodo item="y">
+<nome>Graduatoria</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Segreteria</nome>
+<classe>m2000_front</classe>
+<sezione>9</sezione>
+<nodo item="y">
+<nome>Ufficio alunni</nome>
+<classe>ufficio</classe>
+<nodo item="y">
+<nome>Bacheca</nome>
+<classe>blog</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Ufficio personale</nome>
+<classe>ufficio</classe>
+<nodo item="y">
+<nome>Bacheca</nome>
+<classe>blog</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Ufficio contabilità</nome>
+<classe>ufficio</classe>
+<nodo item="y">
+<nome>Bacheca</nome>
+<classe>blog</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Ufficio protocollo</nome>
+<classe>ufficio</classe>
+<nodo item="y">
+<nome>Bacheca</nome>
+<classe>blog</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Ufficio presidenza</nome>
+<classe>ufficio</classe>
+<nodo item="y">
+<nome>Bacheca</nome>
+<classe>blog</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Ufficio dsga</nome>
+<classe>ufficio</classe>
+<nodo item="y">
+<nome>Bacheca</nome>
+<classe>blog</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Ufficio tecnico</nome>
+<classe>ufficio</classe>
+<nodo item="y">
+<nome>Prenotazioni</nome>
+<classe>event_calendar</classe>
+<sezione>14</sezione>
+</nodo>
+<nodo item="y">
+<nome>Bandi</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Eventi</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Assistenti tecnici</nome>
+<classe>dipendenti</classe>
+</nodo>
+<nodo item="y">
+<nome>Gestione laboratori</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Didattica</nome>
+<classe>m2000_front</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>Progetti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Corsi</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Scuola aperta</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Macroaree</nome>
+<classe>macroarea</classe>
+<sezione>8</sezione>
+<nodo item="y">
+<nome>Formazione ricerca ed innovazione</nome>
+<classe>macroarea</classe>
+</nodo>
+<nodo item="y">
+<nome>Promozione del benessere psicofisico e del successo scolastico</nome>
+<classe>macroarea</classe>
+</nodo>
+<nodo item="y">
+<nome>Integrazione degli allievi stranieri</nome>
+<classe>macroarea</classe>
+</nodo>
+<nodo item="y">
+<nome>Educazione interculturale</nome>
+<classe>macroarea</classe>
+</nodo>
+<nodo item="y">
+<nome>Integrazione degli studenti diversamente abili</nome>
+<classe>macroarea</classe>
+</nodo>
+<nodo item="y">
+<nome>Orientamento</nome>
+<classe>macroarea</classe>
+</nodo>
+<nodo item="y">
+<nome>Formazione integrata</nome>
+<classe>macroarea</classe>
+</nodo>
+<nodo item="y">
+<nome>Educazione ambientale</nome>
+<classe>macroarea</classe>
+</nodo>
+<nodo item="y">
+<nome>Educazione alla cittadinanza</nome>
+<classe>macroarea</classe>
+</nodo>
+<nodo item="y">
+<nome>Approfondimenti</nome>
+<classe>macroarea</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Contatti</nome>
+<classe>contatti</classe>
+<sezione>9</sezione>
+</nodo>
+<nodo item="y">
+<nome>Newsletter</nome>
+<classe>folder</classe>
+<sezione>15</sezione>
+<nodo item="y">
+<nome>Edizioni</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>Docenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Ata</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Studenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Genitori</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Istituto</nome>
+<classe>m2000_front</classe>
+<nodo item="y">
+<nome>Organigramma</nome>
+<classe>article_mainpage</classe>
+<sezione>9</sezione>
+<state>6</state>
+</nodo>
+<nodo item="y">
+<nome>Circolari</nome>
+<classe>dir_circolari</classe>
+<sezione>9</sezione>
+<nodo item="y">
+<nome>Ata</nome>
+<classe>folder_circolari</classe>
+</nodo>
+<nodo item="y">
+<nome>Docenti</nome>
+<classe>folder_circolari</classe>
+</nodo>
+<nodo item="y">
+<nome>Studenti</nome>
+<classe>folder_circolari</classe>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Notizie</nome>
+<classe>folder</classe>
+<sezione>9</sezione>
+<nodo item="y">
+<nome>Diario</nome>
+<classe>blog</classe>
+</nodo>
+<nodo item="y">
+<nome>Urgenti</nome>
+<classe>folder</classe>
+</nodo>
+<nodo item="y">
+<nome>Annunci</nome>
+<classe>folder</classe>
+<nodo item="y">
+<nome>2009/2010</nome>
+<classe>folder</classe>
+</nodo>
+</nodo>
+</nodo>
+<nodo item="y">
+<nome>Bandi e concorsi</nome>
+<classe>folder</classe>
+<sezione>9</sezione>
+</nodo>
+<nodo item="y">
+<nome>Pof</nome>
+<classe>article_mainpage</classe>
+<sezione>8</sezione>
+</nodo>
+</nodo>
+<DEFAULT item="n"
+line0="{*Name*}"
+line1="{*Name*}">
+<Name type="Text" ref="y"></Name>
+</DEFAULT>
+<ROOT item="n"
+line0="{*Name*}"
+line1="{*Name*}"
+childtype="DEFAULT">
+<Name type="Text" ref="y"></Name>
+</ROOT>
+</nodo>

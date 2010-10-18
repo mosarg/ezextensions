@@ -1,0 +1,4 @@
+<div class="block">
+    <label>Test da tradurre:</label>
+    <p>{$class_attribute.data_text1}</p>
+</div>

@@ -1,0 +1,33 @@
+/* 
+    Document   : survey
+    Created on : Sep 11, 2009, 4:42:38 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+div.survey label{
+
+}
+div.survey-view label{}
+
+div.survey-choices label{
+    font-weight:normal;
+    font-style:italic;
+}
+
+
+div.content-view-line div.class-survey{float:left;
+width:100%;
+clear:both;}
+
+div.content-view-line div.class-survey h2{padding:0.4em;}
+div.content-view-line div.class-survey h2 a{color:white;}
+div.content-view-line div.class-survey div.attribute-short img{float:left;
+margin:0.5em;}
+div.content-view-line div.class-survey div.attribute-short p{}

@@ -1,0 +1,195 @@
+/* 
+    Document   : embed.css
+    Created on : Jul 20, 2009, 9:38:29 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+div.content-view-line h2{
+    padding-top:0.8em;
+    padding-bottom:0.2em;
+    font-size:1.1em;
+    background:url(../images/decorazioni/dropdown_back2.png);
+}
+div.highlighted_object
+{
+    background-image: url(../images/highlighted_object_bg.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    padding-bottom: 9px;
+}
+
+div.highlighted_object h2
+{
+    margin-top: 0;
+    color: #525345;
+    font-size: 1.4em;
+    font-weight: normal;
+}
+
+div.highlighted_object h2 a
+{
+    color: #525345;
+}
+
+/* EMBED - ITEMIZED SUB ITEMS */
+
+div.itemized_sub_items
+{
+    width: 18em;
+}
+
+div.itemized_sub_items div.content-view-embed h2
+{
+    padding-left: 0.75em;
+    font-size: 1.4em;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+div.itemized_sub_items div.content-view-embed h2 a
+{
+    color: #535548;
+    text-decoration: none;
+}
+
+div.itemized_sub_items div.content-view-embed ul
+{
+    margin: 0;
+}
+
+div.itemized_sub_items div.content-view-embed ul li
+{
+    margin: 0.25em 0 0.25em 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+    background-image: none;
+}
+
+div.itemized_sub_items div.content-view-embed ul li a
+{
+    background-image: url(../images/sidemenu_bullet.png);
+    background-position: 0.2em 0.5em;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    display: block;
+    font-size: 0.9em;
+}
+
+div.itemized_sub_items div.content-view-embed div.attribute-byline
+{
+    margin: 0 0 0 17px;
+    font-size: 0.9em;
+    padding: 0;
+    background: none;
+    font-weight: normal;
+}
+
+/* EMBED - ITEMIZED SUBTREE ITEMS */
+
+div.itemized_subtree_items
+{
+    width: 18em;
+}
+
+div.itemized_subtree_items div.content-view-embed h2
+{
+    padding-left: 0.75em;
+    font-size: 1.4em;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+div.itemized_subtree_items div.content-view-embed h2 a
+{
+    color: #535548;
+    text-decoration: none;
+}
+
+div.itemized_subtree_items div.content-view-embed ul
+{
+    margin: 0;
+}
+
+div.itemized_subtree_items div.content-view-embed ul li
+{
+    margin: 0.25em 0 0.25em 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+    background-image: none;
+}
+
+div.itemized_subtree_items div.content-view-embed ul li a
+{
+    background-image: url(../images/sidemenu_bullet.png);
+    background-position: 0.2em 0.5em;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    display: block;
+    font-size: 0.9em;
+}
+
+/* EMBED - VERTICALLY LISTED SUB ITEMS */
+
+div.vertically_listed_sub_items div.content-view-embed div.content-view-children
+{
+    font-size: 0.85em;
+}
+
+div.vertically_listed_sub_items div.content-view-embed div.content-view-children div.separator
+{
+    display: none;
+}
+
+div.vertically_listed_sub_items
+{
+    margin-bottom: 0.5em;
+}
+
+div.vertically_listed_sub_items div.content-view-embed h2
+{
+    padding-left: 1em;
+    font-size: 1.4em;
+    font-weight: normal;
+}
+
+div.vertically_listed_sub_items div.content-view-embed div.content-view-line h2
+{
+    padding-left: 0;
+    font-size: 1.2em;
+}
+
+/* EMBED - HORIZONTALLY LISTED SUB ITEMS */
+
+div.horizontally_listed_sub_items div.content-view-embed div.content-view-horizontallylistedsubitems
+{
+    text-align: left;
+}
+
+div.horizontally_listed_sub_items div.content-view-embed div.split-content
+{
+    font-size: 0.85em;
+}
+
+div.horizontally_listed_sub_items div.content-view-embed h2
+{
+    padding-left: 1em;
+    font-size: 1.4em;
+    font-weight: normal;
+    margin-top: 0;
+    padding-top: 0.25em;
+}
+
+div.horizontally_listed_sub_items div.content-view-embed div.content-view-horizontallylistedsubitems h2
+{
+    padding-left: 0;
+    font-size: 1.2em;
+}

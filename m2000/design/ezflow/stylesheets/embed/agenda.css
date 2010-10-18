@@ -1,0 +1,71 @@
+/* 
+    Document   : agenda
+    Created on : Aug 8, 2009, 5:42:06 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+div.content-view-embed div.calendar-month-view h4{
+    text-align:center;
+}
+div.content-view-embed div.calendar-month-view  a{color:white;}
+div.content-view-embed div.calendar-month-view td div.showhide{
+    padding:0;
+    display:none;
+    border-bottom:2px solid #949494;
+    position:absolute;
+}
+div.content-view-embed div.calendar-month-view td div.showhide div.event_small{
+    width:9em;
+    height:3em;
+    border:0;
+    padding:0;
+    margin:0;
+    border-bottom:2px solid white;
+    background:url(../../images/decorazioni/dropdown_back.png);
+}
+div.content-view-embed div.calendar-month-view td div.showhide div.event_small:hover{
+    background:url(../../images/decorazioni/dropdown_back_hover.png);}
+div.content-view-embed div.calendar-month-view td div.showhide div.event_small a{
+    color:white;
+    font-weight:bold;
+    position:relative;
+    top:1em;
+    left:0.5em;
+
+}
+div.content-view-embed  div.class-event-calendar div.calendar-month-view table{
+    width:15em;
+    height:15em;
+    float:none;
+    margin-left:auto;
+    margin-right:auto;}
+div.content-view-embed  div.class-event-calendar div.calendar-month-view tr{height:1em;}
+div.content-view-embed  div.class-event-calendar div.calendar-month-view tr.days,tr.first_row{height:1em;}
+div.content-view-embed  div.class-event-calendar div.calendar-month-view tr.calendar_heading{
+    background:gray;
+}
+div.content-view-embed  div.class-event-calendar div.calendar-month-view tr.calendar_heading_days{
+    font-size:0.9em;
+}
+div.content-view-embed  div.class-event-calendar div.calendar-month-view tr.calendar_heading th{
+    color:white;
+}
+
+div.content-view-embed  div.class-event-calendar div.calendar-month-view tr.calendar_heading a{font-size:1em;}
+div.content-view-embed  div.class-event-calendar div.calendar-month-view tr td{background:white;
+                                                                               border: 1px solid #b3b3b3;}
+
+
+
+div.content-view-embed  div.class-event-calendar div.calendar-month-view tr td.evcont{
+    background:url(../../images/decorazioni/violet_back.png);}
+
+div.content-view-embed  div.class-event-calendar div.calendar-month-view tr td.ezagenda_selected{
+    background:url(../../images/decorazioni/violet_back.png);
+}
+
+
+
+

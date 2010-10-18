@@ -1,0 +1,519 @@
+/* 
+    Document   : agenda
+    Created on : Jul 20, 2009, 9:43:21 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+
+/*line views*/
+
+div.class-event-calendar div.controls form
+{float:left;}
+
+div.class-event-calendar div.controls{
+    float:right;
+    padding:0;
+    position:relative;
+    top:-1em;
+    right:-1em;
+}
+a.remove-event{
+    float:left;
+    font-size:2em;
+    font-weight:bold;
+    color:red;
+    display:block;
+    float:left;
+    height:32px;
+    width:32px;
+    background:url(../images/icons/trash_small.png) no-repeat;
+}
+
+a.remove-event:hover{
+    cursor:pointer;
+}
+
+a.add-event{
+    float:right;
+    margin-right:1em;
+    background:#CDCDCD;
+    color:#55822C;
+    padding:0.4em;
+    display:block;
+    font-size:1.2em;
+    font-weight:bold;
+    cursor:pointer;
+}
+a.add-event-week{
+    float:right;
+    margin-right:1em;
+    background:#CDCDCD;
+    color:#55822C;
+    padding:0.4em;
+    display:block;
+    font-size:1.2em;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+div.multicalendar-legend{
+    float:left;
+    margin-right:2.5%;
+    margin-top:4em;
+    width:15%;
+    padding:1em 0.5em 0.5em;
+    background:#cdcdcd;
+}
+
+div.multicalendar-legend li{
+    height:2em;
+    padding-top:0.6em;
+}
+div.multicalendar-legend li a{
+    text-decoration:none;
+    font-weight:bold;
+    color:gray;
+}
+
+div.multicalendar-legend input{float:right;
+                               margin-right:0.5em;}
+div.class-multicalendar{
+    float:left;
+    width:80%;
+}
+
+div.content-view-line  div.event-calendar-icon{
+
+    background:#989898 url(../images/icons/calendar1.png) no-repeat center;
+
+}
+
+div.content-view-line  div.event-calendar-icon a{
+    color:white;
+}
+
+div.class-event-calendar div.view{
+    height:2.5em;
+    background:#b5b1b1;
+    padding:0.5em;
+    width:7em;
+    float:left;
+    text-align:center;
+    border-left:2px solid transparent;
+    border-right:2px solid transparent;
+    border-top:2px solid transparent;
+}
+div.class-event-calendar div.view-selected{
+    height:2.5em;
+    background:#ececec;
+    padding:0.5em;
+    width:7em;
+    float:left;
+    text-align:center;
+    border-left:2px solid gray;
+    border-right:2px solid gray;
+    border-top:2px solid gray;
+    font-weight:bold;
+
+}
+
+div.class-event-calendar div.view a{
+    color:white;
+    font-weight:bold;
+    text-decoration:none;
+}
+div.class-event-calendar div.view a:hover{
+    color:#ffe1a8;
+}
+div.class-event-calendar div.calendar-week-view{
+
+}
+
+div.class-event-calendar div.calendar-week-view tr.calendar_heading{
+    text-align:center;
+    height:2.7em;
+    background:gray;
+
+}
+
+div.class-event-calendar div.calendar-week-view tr.calendar_heading_days{
+    text-align:center;
+    height:3em;
+    background:#b5b1b1;
+    color:white;
+}
+
+div.class-event-calendar div.calendar-week-view table.week-view{
+    width:100%;
+    float:left;
+}
+
+div.class-event-calendar div.calendar-week-view tr.days td{
+    width:14.27%;
+    border:2px solid #b3b3b3;
+    vertical-align:top;
+}
+div.class-event-calendar div.calendar-month-view tr.days td{
+    width:14.27%;
+    border:2px solid #b3b3b3;
+    vertical-align:top;
+}
+
+div.timespan{
+    padding-top:3em;
+}
+
+div.class-event-calendar div.calendar-week-view tr.days td div.timespan{
+    height:30em;}
+div.class-event-calendar div.calendar-week-view tr.days td div.timespan div.event_small{
+    height:3em;
+    border:2px solid black;
+    margin:3px;
+    padding:4px;
+}
+div.class-event-calendar div.calendar-month-view{
+
+}
+div.class-event-calendar div.calendar-month-view tr.calendar_heading{
+    text-align:center;
+    height:2.7em;
+    background:gray;
+   
+}
+div.class-event-calendar div.calendar-month-view tr.calendar_heading_days{
+    text-align:center;
+    height:3em;
+    background:#b5b1b1;
+    color:white;
+}
+div.class-event-calendar div.calendar-month-view table.month-view{
+    width:100%;
+    float:left;
+}
+
+div.class-event-calendar div.calendar-month-view tr.days{
+    height:6em;
+}
+
+div.class-event-calendar div.calendar-month-view tr.days td div.counter{
+    padding-left:0.5em;
+    padding-top:0.5em;
+    width:100%;
+    font-weight:bold;
+}
+div.class-event-calendar div.calendar-month-view tr.days td.last_col{
+
+}
+div.class-event-calendar div.calendar-month-view tr.days td.next_month{
+    background:#eaeaea;
+}
+div.class-event-calendar div.calendar-month-view tr.days td.previous_month{
+    background:#eaeaea;
+}
+div.class-event-calendar div.calendar-month-view td.last_col{
+    background:url(../images/calendar/holly_stripes.jpg);
+}
+div.class-event-calendar div.calendar-month-view td div.event_small{
+    margin:4px;
+    font-weight:bold;
+    padding:1em;
+}
+div.class-event-calendar div.calendar-month-view tr.first_row{}
+
+div.class-event-calendar div.calendar-month-view tr.days td.ezagenda_selected{
+    background:url(../images/decorazioni/violet_back.png);
+}
+div#agenda_programma{
+
+}
+/*div.block-event-programview{width:20em;}*/
+div#agenda_programma td.block_month_label{
+    background:#a7a9ac;
+    padding-left:0.5em;
+    width:25%;
+}
+
+
+
+div#agenda_programma td.block_month_info{
+    background:#f1f1f1;
+    padding-left:0.25em;
+    width:200px;
+}
+div#agenda_programma table.block_month_event{
+    margin-bottom:0.5em;
+    table-layout:fixed;
+    width:100%;
+}
+div#agenda_programma table.block_month_event a {color:#a7a9ac; }
+div#agenda_programma table.block_month_event tr{height:3em;}
+div.block-event-programview div.attribute-header{
+    font-weight:bold;
+    margin-bottom:0.5em;
+    width:100%;
+    background: gray;
+    padding:0.3em;
+}
+
+div.block-event-programview div.attribute-header a{
+    color:white;}
+div#agenda_programma table.block_month_event td div.slide-content{
+    position:relative;
+    left:1000em;
+    overflow:hidden;
+    text-align:justify;
+    width:85%;
+    height:0;
+}
+div#agenda_programma table.block_month_event td:hover div.slide-content{
+    background:#f1f9f3;
+    left:0;
+    position:relative;
+    height:100%;
+    padding:0.5em;
+    margin-bottom:0.5em;
+    overflow:visible;
+    width:85%;
+}
+div#agenda_programma h5{
+    color:white;
+}
+
+
+
+div#ezagenda_calendar_left
+{
+    width: 228px;
+    float: left;
+}
+div#ezagenda_calendar_container
+{
+    width: 228px;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+
+div#ezagenda_calendar_container table
+{
+
+    background-repeat: repeat-x;
+    background-position: top left;
+    background-color: #F0F0F0;
+    margin: auto;
+    text-align: left;
+    font-size: 0.85em;
+}
+
+div#ezagenda_calendar_container table th
+{
+    font-weight: bold;
+    text-align: center;
+    height: 20px;
+    border: 1px solid;
+    border-color: #fefffc #dee0dd #dee0dd #fefffc;
+    border-top: 0px;
+}
+
+div#ezagenda_calendar_container table td
+{
+    padding: 8px;
+    border: 1px solid;
+    border-color: #fefffc #dee0dd #dee0dd #fefffc;
+    text-align: center;
+}
+
+div#ezagenda_calendar_container table .first_col
+{
+    border-left: 0px;
+}
+
+div#ezagenda_calendar_container table .last_col
+{
+    border-right: 0px;
+}
+
+div.class-event-calendar table  tr.calendar_heading th
+{
+    border: 0px;
+ 
+     color:white;
+}
+
+div.class-event-calendar  tr.calendar_heading th a
+{
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+    font-size:2em;
+}
+
+
+div#ezagenda_calendar_container table td.ezagenda_current, div#ezagenda_calendar_container table td.ezagenda_current a
+{
+    color: #df1d42;
+    font-weight: bold;
+}
+
+div#ezagenda_calendar_right
+{
+    vertical-align: top;
+    padding-left: 12px;
+    margin-left: 225px;
+}
+
+.event-calendar-programview div#ezagenda_calendar_right
+{
+    margin-left: auto;
+    padding: 0;
+}
+.event-calendar-programview .block .right
+{
+    text-align: right;
+}
+.event-calendar-programview div.forward{
+    float:right;
+    font-size:1.1em;
+    font-weight:bold;
+    margin-top:1em;
+}
+.event-calendar-programview div.backward{
+    float:left;
+    font-size:1.1em;
+    font-weight:bold;
+    margin-top:1em;
+}
+
+div#ezagenda_calendar_right table.ezagenda_month_event
+{
+    border: 1px solid #f1f1ed;
+    margin-bottom: 5px;
+    width: 99%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    vertical-align: top;
+}
+
+table.ezagenda_month_event {
+    width:100%;
+}
+
+table.ezagenda_month_event td{
+    border-bottom:4px solid #b1b1b1;
+}
+
+table.ezagenda_month_event th{
+    font-size:2em;
+    border-bottom:4px solid gray;
+}
+table.ezagenda_month_event tr.table-header{
+    height:4em;
+    vertical-align:top;
+}
+table.ezagenda_month_event td.ezagenda_month_label
+{
+    vertical-align: top;
+    padding: 0;
+    width: 70px;
+}
+
+table.ezagenda_month_event td.ezagenda_month_label h2
+{
+    border: 1px solid #d2d2c5;
+    padding: 4px;
+    color:#979797;
+    font-size: 1.8em;
+    font-weight: normal;
+    width: 40px;
+    margin: 9px 10px;
+    text-align: center;
+}
+
+table.ezagenda_month_event td.ezagenda_month_label h2 span.ezagenda_month_label_date
+{
+    display: block;
+}
+
+table.ezagenda_month_event td.ezagenda_month_info
+{
+    vertical-align: top;
+    padding-top: 8px;
+}
+
+table.ezagenda_month_event td.ezagenda_month_info h4, div#ezagenda_calendar_today div.ezagenda_day_event h4
+{
+    margin: 0;
+    font-size: 1.1em;
+}
+
+table.ezagenda_month_event td.ezagenda_month_info p
+{
+    margin-top: 0;
+    margin-bottom: 5px;
+    clear: both;
+}
+
+table.ezagenda_month_event span.ezagenda_date
+{
+    float: left;
+    margin-right: 6px;
+}
+
+div#ezagenda_calendar_today
+{
+    /*    float: left;*/
+    margin-top: 14px;
+    width: 228px;
+}
+
+div#ezagenda_calendar_today div.ezagenda_day_event
+{
+    border: 1px solid #f1f1ed;
+    margin-bottom: 4px;
+    padding: 7px;
+}
+
+
+span.ezagenda_keyword
+{
+    display: block;
+    font-size: 90%;
+    color: #888;
+}
+
+span.ezagenda_date
+{
+    display: block;
+    font-size: 90%;
+    color: #555;
+}
+
+
+div#sidebar_calendar_today div
+{
+    text-align: left;
+    padding-left: 10px
+}
+
+div#sidebar_calendar_today a
+{
+    display: block;
+    text-decoration: none;
+    position: relative
+}
+
+div#sidebar_calendar_today a span.ezagenda_date
+{
+    position: absolute;
+    right: 10px;
+    top: 0em;
+}

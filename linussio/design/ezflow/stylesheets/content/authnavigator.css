@@ -1,0 +1,88 @@
+/* 
+    Document   : authnavigator
+    Created on : Jul 20, 2009, 9:24:43 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+div.content-view-full div.attribute-byline p.author
+{
+    margin-right: 0.2em;
+    display: inline;
+    font-size: 0.9em;
+}
+
+div.content-view-full div.attribute-byline p.date
+{
+    margin: 0 0.2em 0 0.2em;
+    display: inline;
+    color: #CCCCCC;
+    font-size: 0.9em;
+}
+
+div.content-view-full div.attribute-byline p.placement
+{
+    margin-left: 0.2em;
+    display: inline;
+}
+
+div.content-view-full div.attribute-byline p.count
+{
+    margin-left: 0.2em;
+    display: inline;
+}
+
+/* AUTHOR AND DATE FOR ALL CHILD OBJECTS */
+
+div.content-view-full div.content-view-line div.attribute-byline p
+{
+    display: inline;
+}
+
+/* NAVIGATORS */
+
+div.content-navigator
+{
+    display: block;
+}
+
+div.content-navigator div
+{
+    display: inline;
+    text-align: center;
+}
+
+div.content-navigator div.content-navigator-separator, div.content-navigator div.content-navigator-separator-disabled
+{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+div.content-navigator div.content-navigator-arrow
+{
+    font-size: 150%;
+}
+
+/* PAGE NAVIGATION */
+
+div.pagenavigator
+{
+    text-align: center;
+    clear: both;
+}
+
+div.pagenavigator span.previous
+{
+    float: left;
+}
+
+div.pagenavigator span.next
+{
+    float: right;
+}

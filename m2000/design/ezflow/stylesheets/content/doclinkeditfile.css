@@ -1,0 +1,159 @@
+/* 
+    Document   : docLinkEditFile
+    Created on : Jul 20, 2009, 9:33:46 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+
+div.content-view-full div.class-documentation-page div.attribute-byline
+{
+    clear: both;
+    font-size: 0.85em;
+    font-weight: bold;
+    background-image: url(../images/attribute_header_bg_medium.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 4em;
+    padding-top: 10px;
+    margin-top: 2em;
+}
+
+div.content-view-full div.class-documentation-page div.attribute-byline p
+{
+    display: inline;
+}
+
+div.content-view-full div.class-documentation-page div.attribute-byline p.published
+{
+    text-align: left;
+    float: left;
+    width: 48%;
+}
+
+div.content-view-full div.class-documentation-page div.attribute-byline p.modified
+{
+    text-align: right;
+    float: right;
+    width: 48%;
+}
+
+/* LINK */
+
+div.content-view-line div.class-link div.controls
+{
+    margin-bottom: 0.75em;
+}
+
+/* EDIT */
+
+div.content-edit div.attribute-header h1.long
+{
+    padding-bottom: 46px;
+}
+
+div.content-edit div.attribute-language
+{
+    margin-top: -43px;
+    margin-bottom: 20px;
+    padding-left: 2px;
+}
+
+/* EDIT - MULTIOPTION */
+
+div.block table.special
+{
+    border-bottom: 1px solid #EAE8E1;
+    margin-bottom: 0.5em;
+}
+
+div.block table.special th.tight
+{
+    width: 3%;
+    text-align: left;
+}
+
+div.block table.special th
+{
+    width: 94%;
+    text-align: left;
+}
+
+/* FILE */
+
+div.content-view-line div.class-file 
+{
+    float:left;
+    overflow:visible;
+    width:100%;
+}
+div.content-view-line div.class-file a{float:left;
+font-weight:bold;
+color:gray;
+text-decoration:none;}
+
+div.content-view-line div.class-file a:hover{
+    color:black;
+}
+
+div.content-view-line div.class-file p{float:left;}
+div.content-view-line div.class-file img{
+    position:relative;
+    top:0.6em;
+}
+div.content-view-line div.class-file div.attribute-description{
+    float:left;
+    padding-top:4em;
+}
+div.content-view-line div.class-file h2 a{color:white;}
+div.content-view-line div.class-file h2 a:hover{color:black;}
+div.content-view-line div.class-file h2{
+    float:left;
+    padding-left:0.3em;
+    padding-bottom:0.3em;
+    width:100%;
+}
+div.content-view-line div.class-file div.attribute-file
+{
+    height:auto;
+    border-bottom:2px solid #cdcdcd;
+    overflow:visible;
+    float:left;
+    width:100%;
+}
+div.content-view-line div.class-file p.time{
+    float:left;
+    font-style:italic;
+    margin-left:0.6em;
+    margin-top:0.75em;
+}
+
+div.class-file table.comparison-file{
+    width:100%;
+}
+div.class-file table.comparison-file td{
+    height:2em;
+        border-bottom:2px solid #b5b1b1;
+}
+div.class-file table.comparison-file th{
+    background:gray;
+    height:2em;
+    padding:0.3em;
+    color:white;
+    }
+div.class-file table.comparison-file td.title{
+    font-weight:bold;
+}
+
+div.class-file table.comparison-file a{
+    font-weight:bold;
+    text-decoration:none;
+    
+}

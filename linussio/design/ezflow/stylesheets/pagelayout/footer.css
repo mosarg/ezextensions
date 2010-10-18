@@ -1,0 +1,37 @@
+/* 
+    Document   : footer
+    Created on : Jul 21, 2009, 8:57:26 AM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+/* FOOTER */
+div#footer
+{
+margin-top: 4em;
+clear: both; /* Ensures that the footer is pushed properly below the columns */
+text-align: center;
+padding-bottom: 1em;
+}
+div#footer div.border-content
+{
+padding: 1.25em;
+text-align: center;
+font-size: 0.8em;
+color: #7f7f7f;
+
+}
+div#footer address
+{
+font-style:normal;
+}
+
+div#extrainfo
+{
+padding: 0m;
+}

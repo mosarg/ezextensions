@@ -1,0 +1,62 @@
+/* 
+    Document   : boxes
+    Created on : Jul 20, 2009, 9:23:59 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/*content m2000*/
+
+ul li
+{
+    padding-left: 14px;
+    background-image: url(../images/bullet_list.png);
+    background-repeat: no-repeat;
+    background-position: 0 0.4em;
+    list-style-type: none;
+}
+
+/* Translation */
+
+div.block div.original
+{
+    background-color: #ecece4;
+    margin: 0.5em 0 0.5em 0;
+    padding: 0.2em;
+    border: 1px dashed #bfbeb6;
+}
+
+/* BOX GENERAL DESIGN */
+
+div.border-box
+{
+    margin-bottom: 1em;
+}
+
+/* Infobox - header*/
+
+div.infobox-header
+{
+    margin-bottom: 0;
+}
+
+div.infobox-header h2
+{
+    margin: 5px 0px 6px 0px;
+    padding: 0;
+    font-size: 14px;
+}
+
+/* Infobox */
+
+div.infobox div.attribute-image
+{
+    margin: 0.5em 0.5em 0.5em 0;
+    float: left;
+}

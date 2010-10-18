@@ -1,0 +1,35 @@
+/* 
+    Document   : circolari.css
+    Created on : Jul 27, 2009, 10:35:26 AM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+div.class-dir_circolari{
+
+}
+
+div.class-dir_circolari div.content-view-children{
+background:#e9f4f4;
+padding:1em;
+overflow:hidden;
+text-align:center;
+margin-top:2em;
+
+}
+
+div.class-dir_circolari div.content-view-children div.circolari_icon{
+    float:left;
+    margin:1em;
+
+}
+
+div.circolari_icon{
+
+}

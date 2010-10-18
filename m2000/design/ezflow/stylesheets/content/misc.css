@@ -1,0 +1,122 @@
+/* 
+    Document   : misc.css
+    Created on : Jul 20, 2009, 9:47:25 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+/*class manage*/
+
+
+li.list_header{
+    margin-left:-1em;
+}
+
+/*page edit controls*/
+div.controls{
+    float:left;
+    padding-right:2em;
+    }
+
+
+    div.ajax-form{
+        position:absolute;
+        width:350px;
+        height:350px;
+        background:#c3c3c3;
+        padding:1em;
+        border:5px solid gray;
+        z-index:1000;
+        
+    }
+    div#ajax-edit{
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:rgba(160,160,160,0.8);
+    }
+    div.ajax-form input#text{}
+    div.ajax-form input#short_title{}
+
+    div.ajax-form select#from_time,div.ajax-form select#to_time{
+        height:2.5em;
+        width:93%;
+        font-size:1.2em;
+         }
+
+
+    .shadow{
+        -moz-box-shadow:3px 3px 8px rgba(196,196,196,0.8);
+        -webkit-box-shadow:3px 3px 8px rgba(196,196,196,0.8);
+        -o-box-shadow:3px 3px 8px rgba(196,196,196,0.8);
+         -khtml-box-shadow:3px 3px 8px rgba(196,196,196,0.8);
+        box-shadow:3px 3px 8px rgba(196,196,196,0.8);
+    }
+    .shadowmore{
+        -moz-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+        -webkit-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+        -o-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+         -khtml-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+        box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+    }
+
+
+    .shadowdark{
+        -moz-box-shadow:3px 3px 8px rgba(58,58,58,0.9);
+        -webkit-box-shadow:3px 3px 8px rgba(58,58,58,0.9);
+        -o-box-shadow:3px 3px 8px rgba(58,58,58,0.9);
+         -khtml-box-shadow:3px 3px 8px rgba(58,58,58,0.9);
+        box-shadow:3px 3px 8px rgba(58,58,58,0.9);
+    }
+
+    .rounded{
+        -moz-border-radius:7px;
+        -webkit-border-radius:7px;
+        -o-border-radius:7px;
+        border-radius:7px;
+    }
+
+    .roundedmore{
+        -moz-border-radius:12px;
+        -webkit-border-radius:12px;
+        -o-border-radius:12px;
+        border-radius:12px;
+    }
+    .roundedtop{
+        -moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	-khtml-border-radius-topleft: 10px;
+	-khtml-border-radius-topright: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+    }
+
+    div.wip{
+        position:relative;
+        background:red;
+        padding:0.3em;
+        width:40em;
+            margin-bottom:2em;
+           }
+      div.wip p{font-size:1.25em;
+           color:white;
+           font-weight:bold;
+      text-align:center;}
+
+      h4.mandatory {font-family:serif;
+      font-style:italic;}
+
+      h4.mandatory:before{
+          content:'* ';
+          color:red;
+      }

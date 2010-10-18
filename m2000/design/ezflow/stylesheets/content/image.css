@@ -1,0 +1,225 @@
+/* 
+    Document   : image
+    Created on : Jul 20, 2009, 9:30:41 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+div.image-controls{
+    position:absolute;
+    margin-top:1em;
+    margin-left:1em;
+}
+
+
+div.attribute-image
+{
+    margin: 0.25em 0 0.5em 0;
+}
+
+div.content-view-full div.attribute-image
+{
+    float: right;
+    margin-left: 0.5em;
+    margin-right: 0;
+}
+
+div.content-view-full div.class-image div.attribute-image
+{
+    margin-left: 0;
+    float: none;
+}
+
+div.content-view-full div.attribute-image div.caption
+{
+    background-color: #EAE9E1;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 2px 0 0 0;
+}
+
+div.content-view-full div.attribute-image div.caption p
+{
+    padding: 3px;
+    margin: 0;
+}
+
+div.content-view-line div.attribute-image
+{
+    float: left;
+    margin-right: 0.5em;
+    margin-left: 0;
+}
+
+div.content-view-embed div.attribute-image
+{
+    float: left;
+    margin-right: 0.5em;
+    margin-left: 0;
+}
+
+div.object-left div.content-view-embed div.class-image div.attribute-image
+{
+    margin: 0;
+    float: none;
+}
+
+div.object-right div.content-view-embed div.class-image div.attribute-image
+{
+    margin: 0;
+    float: none;
+}
+
+div.object-center div.class-image
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+div.object-center div.content-view-embed div.class-image div.attribute-image
+{
+    margin: 0;
+    float: none;
+}
+
+div.content-view-embed div.class-image div.attribute-caption
+{
+    background-color: #EAE9E1;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 2px 0 0 0;
+}
+
+div.object-center div.content-view-embed div.class-image div.attribute-caption
+{
+    margin: 2px auto 0 auto;
+}
+
+div.content-view-embed div.class-image div.attribute-caption p
+{
+    padding: 3px;
+    margin: 0;
+}
+
+/* ARTICLE */
+
+div.content-view-full div.class-article div.attribute-header h1
+{
+    background: none;
+    padding-bottom: 0;
+    margin-bottom: 0.25em;
+}
+
+div.content-view-full div.class-article div.attribute-byline
+{
+    background-image: url(../images/attribute_header_bg_medium.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    margin-bottom: -0.25em;
+    display: block;
+}
+
+div.content-view-full div.class-article div.attribute-short
+{
+    font-weight: bold;
+}
+
+div.content-view-line div.class-article div.attribute-short
+{
+    font-weight: normal;
+}
+
+div.content-view-embed div.class-article div.attribute-short
+{
+    font-weight: normal;
+}
+
+div.content-view-full div.class-article div.attribute-long
+{
+    background-image: url(../images/attribute_header_bg_medium.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    padding-bottom: 56px;
+}
+
+div.attribute-tipafriend
+{
+    background-image: url(../images/attribute_header_bg_medium.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-top: 2em;
+}
+
+div.attribute-tipafriend p
+{
+    padding-top: 2em;
+}
+
+div.attribute-tipafriend a
+{
+    padding-left: 26px;
+    background-position: left center;
+}
+
+/* COMMENT */
+
+div.content-view-full div.class-comment div.attribute-header h1
+{
+    background: none;
+    padding-bottom: 0;
+    margin-bottom: 0.25em;
+}
+
+div.content-view-full div.class-comment div.attribute-byline
+{
+    background-image: url(../images/attribute_header_bg_medium.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    padding-bottom: 25px;
+    margin-bottom: -0.25em;
+    display: block;
+}
+
+div.content-view-line div.class-comment
+{
+    border: 1px solid #EAE8E1;
+    padding: 0.5em 0.5em 0.25em 0.5em;
+    margin: 1em 0 1em 0;
+}
+
+div.content-view-line div.class-comment div.attribute-byline
+{
+    background: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+div.content-view-line div.class-comment p.author
+{
+    float: right;
+    clear: right;
+    width: 48%;
+    display: block;
+    text-align: right;
+    margin-top: -0.1em;
+    font-style: italic;
+}
+
+div.content-view-line div.class-comment p.date
+{
+    float: left;
+    clear: left;
+    width: 48%;
+    display: block;
+    margin: 0 0.2em 0 0.2em;
+    color: #CCCCCC;
+    font-size: 0.9em;
+}
+

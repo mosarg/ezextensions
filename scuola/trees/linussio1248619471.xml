@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodo nome="Inizio sito" descrizione="sito" classe="folder">
+   <nodo nome="Ipsaa" descrizione="scuola" classe="school_front" nodeID="1293">
+      <nodo nome="Docenti" descrizione="docenti" classe="profgroup" sezione="8" nodeID="1294">
+         <nodo nome="Adempimenti" classe="folder" nodeID="1295"/>
+         <nodo nome="Novità" classe="folder" nodeID="1296"/>
+      </nodo>
+      <nodo nome="Classi" classe="classgroup" sezione="7" nodeID="1297">
+         <classe nome="testclass" indirizzo="straniero" lettsezione="tyu" classe="classe" state="6" nodeID="1298"/>
+      </nodo>
+      <nodo nome="Didattica" classe="folder" sezione="8" nodeID="1299">
+         <nodo nome="Dipartimenti" classe="folder" nodeID="1300"/>
+         <nodo nome="Piani di studio" classe="article_mainpage" nodeID="1301"/>
+         <nodo nome="Progetti" classe="folder" nodeID="1302"/>
+         <nodo nome="Libri di testo" classe="folder" nodeID="1303"/>
+         <nodo nome="Libri consigliati" classe="folder" nodeID="1304"/>
+      </nodo>
+      <nodo nome="Circolari" descrizione="circolari" classe="dir_circolari" sezione="9" nodeID="1305">
+         <nodo nome="Ata" descrizione="ata" classe="folder_circolari" nodeID="1306"/>
+         <nodo nome="Studenti" descrizione="rer" classe="folder_circolari" nodeID="1307"/>
+         <nodo nome="Docenti" classe="folder_circolari" nodeID="1308"/>
+         <nodo nome="Educatori" classe="folder_circolari" nodeID="1309"/>
+      </nodo>
+      <nodo nome="Uffici" descrizione="Uffici" classe="m2000_front" sezione="9" nodeID="1310">
+         <nodo nome="Ufficio periferico" classe="ufficio" nodeID="1311"/>
+      </nodo>
+      <nodo nome="Contatti" classe="contatti" sezione="9" nodeID="1312"/>
+      <nodo nome="Orientamento" classe="folder" sezione="8" nodeID="1313">
+         <nodo nome="In entrata" classe="folder" nodeID="1314"/>
+         <nodo nome="In uscita" classe="folder" nodeID="1315"/>
+      </nodo>
+      <nodo nome="Informazioni e notizie" classe="folder" sezione="8" nodeID="1316">
+         <nodo nome="Logistica" classe="folder" nodeID="1317">
+            <nodo nome="Mensa" classe="article_mainpage" nodeID="1318"/>
+            <nodo nome="Trasporti" classe="article_mainpage" nodeID="1319"/>
+         </nodo>
+         <nodo nome="Annunci" classe="folder" nodeID="1320"/>
+         <nodo nome="Calendario" classe="event_calendar" nodeID="1321"/>
+         <nodo nome="Diario" classe="blog" nodeID="1322"/>
+         <nodo nome="Urgenti" classe="folder" nodeID="1323"/>
+      </nodo>
+   </nodo>
+   <nodo nome="Istituto" classe="m2000_front" nodeID="1324">
+      <nodo nome="Organigramma" classe="article_mainpage" sezione="9" state="6" nodeID="1325"/>
+      <nodo nome="Circolari" classe="dir_circolari" sezione="9" nodeID="1326">
+         <nodo nome="Ata" classe="folder_circolari" nodeID="1327"/>
+         <nodo nome="Docenti" classe="folder_circolari" nodeID="1328"/>
+         <nodo nome="Studenti" classe="folder_circolari" nodeID="1329"/>
+         <nodo nome="Educatori" classe="folder_circolari" nodeID="1330"/>
+      </nodo>
+      <nodo nome="Notizie" classe="folder" sezione="9" nodeID="1331">
+         <nodo nome="Diario" classe="blog" nodeID="1332"/>
+         <nodo nome="Urgenti" classe="folder" nodeID="1333"/>
+         <nodo nome="Annunci" classe="folder" nodeID="1334">
+            <nodo nome="2009/2010" classe="folder" nodeID="1335"/>
+         </nodo>
+      </nodo>
+      <nodo nome="Bandi e concorsi" classe="folder" sezione="9" nodeID="1336"/>
+      <nodo nome="Pof" classe="article_mainpage" sezione="8" nodeID="1337"/>
+   </nodo>
+   <nodo nome="Contatti" classe="contatti" sezione="9" nodeID="1338"/>
+   <nodo nome="Personale" classe="m2000_front" sezione="9" nodeID="1339">
+      <nodo nome="Dirigente scolastico" classe="dipendenti" nodeID="1340"/>
+      <nodo nome="Dsga" classe="dipendenti" state="6" nodeID="1341"/>
+      <nodo nome="Docenti" classe="dipendenti" nodeID="1342">
+         <nodo nome="Graduatorie" classe="folder" nodeID="1343"/>
+      </nodo>
+      <nodo nome="Educatori" classe="dipendenti" nodeID="1344">
+         <nodo nome="Graduatorie" classe="folder" nodeID="1345"/>
+      </nodo>
+      <nodo nome="Ata" classe="folder" nodeID="1346">
+         <nodo nome="Assistenti amministrativi" classe="dipendenti" nodeID="1347"/>
+         <nodo nome="Assistenti tecnici" classe="dipendenti" nodeID="1348"/>
+         <nodo nome="Collaboratori scolastici" classe="dipendenti" nodeID="1349"/>
+         <nodo nome="Cuochi" classe="dipendenti" nodeID="1350"/>
+         <nodo nome="Guardarobieri" classe="dipendenti" nodeID="1351"/>
+         <nodo nome="Graduatoria" classe="folder" nodeID="1352"/>
+      </nodo>
+   </nodo>
+   <nodo nome="Segreteria" classe="m2000_front" sezione="9" nodeID="1353">
+      <nodo nome="Ufficio alunni" classe="ufficio" nodeID="1354">
+         <nodo nome="Bacheca" classe="blog" nodeID="1355"/>
+      </nodo>
+      <nodo nome="Ufficio personale" classe="ufficio" nodeID="1356">
+         <nodo nome="Bacheca" classe="blog" nodeID="1357"/>
+      </nodo>
+      <nodo nome="Ufficio contabilità" classe="ufficio" nodeID="1358">
+         <nodo nome="Bacheca" classe="blog" nodeID="1359"/>
+      </nodo>
+      <nodo nome="Ufficio protocollo" classe="ufficio" nodeID="1360">
+         <nodo nome="Bacheca" classe="blog" nodeID="1361"/>
+      </nodo>
+      <nodo nome="Ufficio presidenza" classe="ufficio" nodeID="1362">
+         <nodo nome="Bacheca" classe="blog" nodeID="1363"/>
+      </nodo>
+      <nodo nome="Ufficio dsga" classe="ufficio" nodeID="1364">
+         <nodo nome="Bacheca" classe="blog" nodeID="1365"/>
+      </nodo>
+   </nodo>
+</nodo>

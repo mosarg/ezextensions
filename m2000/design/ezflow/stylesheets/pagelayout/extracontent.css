@@ -1,0 +1,35 @@
+/* 
+    Document   : extracontent
+    Created on : Jul 21, 2009, 8:57:02 AM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+/* EXTRA CONTENT */
+div#extrainfo-position
+{
+width: 280px;
+margin-right: -320px;
+float: left;
+padding:10px;
+background:#cdcdcd;
+margin-left:15px;
+}
+div.noextrainfo div#extrainfo-position
+{
+display: none;
+}
+div#extrainfo
+{
+    padding-left:2em;
+}
+div#extrainfo div.border-box{
+    clear:both;
+margin-bottom:1em;}

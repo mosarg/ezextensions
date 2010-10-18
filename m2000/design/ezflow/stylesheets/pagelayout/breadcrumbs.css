@@ -1,0 +1,47 @@
+/* 
+    Document   : breadcrumbs
+    Created on : Jul 21, 2009, 8:58:03 AM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+
+/* PATH */
+div#path
+{
+padding: 1em 0.5em 0.5em 2em;
+font-size: 0.85em;
+color: #605c90;
+clear: both;
+}
+div#path p
+{
+margin: 0;
+}
+div#path a
+{
+color: #605c00;
+display: block;
+float: left;
+text-decoration: none;
+background-image: url(../images/path-a-bg.gif);
+background-repeat: repeat-x;
+background-position: left bottom;
+padding: 0 0 1px 0;
+margin-right: 4px;
+}
+div#path span.path-separator
+{
+color: #ddb94d;
+display: block;
+font-weight:bold;
+float: left;
+margin-right: 4px;
+}

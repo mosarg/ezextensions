@@ -1,0 +1,243 @@
+/* 
+    Document   : zones.css
+    Created on : Jul 20, 2009, 11:03:00 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/* GLOBAL ZONE: START */
+div#extrainfo div.border-mc
+{
+    padding: 0;
+}
+/* GLOBAL ZONE: END */
+
+
+/* 3zone m2000: START*/
+
+div.zone-layout-3zone {
+    margin-top:3em;
+}
+
+div.zone-layout-3zone div.sinistra{
+    width:53%;
+
+    float:left;
+    padding: 0 1%;
+
+}
+div.zone-layout-3zone div.centrale{
+
+    float:left;
+    width:25%;
+    padding:0 1%;
+    background:#ecebed;
+}
+div.zone-layout-3zone div.destra{
+
+    float:left;
+    width:16%;
+    padding:0 1%;
+}
+div.class-article div.color_block{
+    background:url(../images/decorazioni/sfondo_evidenza.png) repeat-x;
+    height:117px;
+    border:2px solid #9ea036;
+    margin-bottom:1em;
+    padding:0.3em 0.5em 0;
+    width:20em;
+}
+
+/*1 ZONAH START*/
+
+div.zone-layout-1zonah{
+    
+}
+
+div.zone-layout-1zonah div.block-element{
+width:25em;
+float:left;
+height:100%;
+min-height:25em;}
+
+div.zone-layout-1zonah div.pos_colonne{
+    width:100%;
+}
+
+
+/*1 ZONAH END*/
+
+
+/* 3zone m2000: END*/
+
+/* COLUMNS 2zoneslayout1: START */
+
+div.zone-layout-2zoneslayout1 div.border-mc
+{
+    padding: 0;
+}
+
+div.zone-layout-2zoneslayout1 div.content-columns
+{
+    padding: 0 0 0 486px;
+}
+
+div.zone-layout-2zoneslayout1 div.leftcol-position
+{
+    width: 486px;
+    margin-left: -486px;
+}
+
+/* COLUMNS 2zoneslayout1: END */
+
+/* COLUMNS 2zoneslayout2: START */
+
+div.zone-layout-2zoneslayout2 div.border-mc
+{
+    padding: 0;
+}
+
+div.zone-layout-2zoneslayout2 div.content-columns
+{
+    padding: 0 0 0 284px;
+}
+
+div.zone-layout-2zoneslayout2 div.leftcol-position
+{
+    width: 284px;
+    margin-left: -284px;
+}
+
+/* COLUMNS 2zoneslayout2: END */
+
+/* COLUMNS 3zoneslayout1: START */
+
+div.zone-layout-3zoneslayout1 div.border-mc
+{
+    padding: 0;
+}
+
+div.zone-layout-3zoneslayout1 div.content-columns
+{
+    padding: 0 0 0 486px;
+}
+
+div.zone-layout-3zoneslayout1 div.leftcol-position
+{
+    width: 486px;
+    margin-left: -486px;
+    background:none;
+}
+
+/* COLUMNS 3zoneslayout1: END */
+
+/* COLUMNS 3zoneslayout2: START */
+
+div.zone-layout-3zoneslayout2 div.border-mc
+{
+    padding: 0;
+}
+
+div.zone-layout-3zoneslayout2 div.content-columns
+{
+    padding: 0 0 0 284px;
+}
+
+div.zone-layout-3zoneslayout2 div.leftcol-position
+{
+    width: 284px;
+    margin-left: -284px;
+}
+
+/* COLUMNS 3zoneslayout2: END */
+
+/* COLUMNS 4zoneslayout1: START */
+
+
+
+div.zone-layout-4zone  div.content-columns
+{
+   float:left;
+   
+   width:60%;
+}
+div.zone-layout-4zone div.left-subzone{
+   
+}
+div.zone-layout-4zone div.left-subzone div.col-0{
+    float:left;
+    width:100%;
+    clear:both;
+}
+div.zone-layout-4zone div.left-subzone div.two-columns{float:left;
+width:100%;
+margin-top:1em;}
+div.zone-layout-4zone div.left-subzone div.col-1{
+    float:left;
+    width:48%;
+  }
+div.zone-layout-4zone div.left-subzone div.col-2{
+    float:left;
+    width:48%;
+   
+    margin-left:1%;
+    padding-left:1%;
+    background:#f8f8f8;
+}
+
+div.zone-layout-4zone  div.maincol-position
+{
+   float:left;
+   width:33%;
+   
+   margin-left:2%;
+   padding:2%;
+   background:#e0e0e0;
+}
+div.zone-layout-4zone  div.maincol-position div.right-subzone{ }
+/* COLUMNS 4zoneslayout1: END */
+/* CONTENT EDIT FRONTPAGE: START */
+div.content-edit-frontpage div.content-columns
+{
+    padding: 0 0 0 225px;
+}
+div.content-edit-frontpage div.leftcol-position
+{
+    width: 225px;
+    margin-left: -225px;
+}
+
+div.content-edit-frontpage div.maincol
+{
+    padding-left: 10px;
+}
+
+div.content-edit-frontpage div.border-mc
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* CONTENT EDIT FRONTPAGE: END */
+
+/* CLASS zone-layout-2zone*/
+
+div.zone-layout-2zone div.colonna_s{
+    float:left;
+    padding-right:3em;
+    width:32%;
+
+}
+div.zone-layout-2zone div.colonna_d{
+    float:left;
+    width:63%;
+    border-left:2px dashed gray;
+    padding-top:0.6em;
+    background:#e0e0e0;
+}

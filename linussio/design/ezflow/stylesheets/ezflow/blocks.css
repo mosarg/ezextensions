@@ -1,0 +1,598 @@
+/* 
+    Document   : blocks
+    Created on : Jul 20, 2009, 11:01:47 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+
+/*contatti block item*/
+
+div.class-contatti-item{
+    font-size:0.85em;
+}
+div.class-contatti-item table.micro-list{}
+
+div.class-contatti-item h3.small{
+    float:left;
+    margin-right:1em;
+    display:block;
+    height:0.4em;
+    width:4em;
+    padding:0.3em;
+    color:white;
+    font-size:0.95em;
+}
+
+div.class-contatti-item tr{
+    background:#7a9a8c;
+}
+div.class-contatti-item .empty{
+    background:none;
+    height:0.3em;
+}
+div.class-contatti-item a{
+    margin:0;
+    padding:0;
+    color:white;
+}
+/* BLOCK SEPARATOR: START */
+
+div.block-separator
+{
+    height: 1px;
+    margin: 0.5em 0 0.5em 0;
+}
+
+/* BLOCK SEPARATOR: END */
+/* BLOCK MAIN STORY 1: START */
+
+div.block-type-mainstory div.trans-background
+{
+    padding: 0;
+    background-color: #000000;
+    color: #FFFFFF;
+    opacity: 0.5;
+    -moz-opacity: .50;
+    position: absolute;
+    width: 321px;
+    height: 57px;
+    margin-top: -57px;
+    z-index: 0;
+}
+
+div.block-type-mainstory div.attribute-link
+{
+    width: 301px;
+    padding: 10px;
+    height: 37px;
+    visibility: visible;
+    color:#FFFFFF;
+    margin-top: -57px;
+    position: absolute;
+    z-index: 1;
+}
+
+div.block-type-mainstory div.attribute-link a
+{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+}
+
+div.block-type-mainstory div.attribute-image
+{
+    float: none;
+    margin: 0;
+}
+
+
+div.block-type-mainstory div.class-article  div.attribute-image
+{
+    float: left;
+    margin: 0;
+}
+div.block-type-mainstory div.attribute-image img
+{
+    display: block;
+}
+
+/* BLOCK MAIN STORY 1: END */
+
+
+/* BLOCK BOX 4: END */
+
+/* BLOCK MAIN STORY 2: START */
+
+div.block-style4-box-inside div.attribute-image
+{
+    /* background-image: url(../images/main-story-2/img-bg.png);*/
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    padding-bottom: 12px;
+}
+
+div.block-style4-box-inside div.attribute-header
+{
+    /* background-image: url(../images/main-story-2/header-bg.png);*/
+    background-position:left top;
+    padding: 0 0 1px 10px;
+}
+
+div.block-style4-box-inside div.attribute-header a
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+div.block-style4-box-inside div.attribute-short p
+{
+    margin-bottom: 0;
+}
+
+/* BLOCK MAIN STORY 2: END */
+/* BLOCK BOX 2: END */
+
+/* BLOCK 2 ITEMS: START */
+
+div.block-type-2items div.class-article
+{
+    padding: 0 4px 0 4px;
+}
+div.block-type-2items>div.attribute-header>h2{
+     border-bottom:2px solid white;
+}
+div.block-type-2items div.attribute-header h2{
+    background:white;
+    padding:0.5em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-bottom: 1.25em;
+    font-size: 1em;
+
+}
+
+div.block-type-2items div.attribute-short{
+    float:left;
+    text-align:justify;
+}
+div.block-type-2items img{
+    float:left;
+    margin-right:0.5em;}
+div.block-type-2items span.small_subtitle{
+    font-weight:bold;
+}
+
+div.block-type-2items div.attribute-header h2 a
+{
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+div.block-type-2items div.attribute-header h2 a:hover{
+    color:black;
+}
+div.block-type-2items div.attribute-image
+{
+    float: left;
+    margin-right: 0.5em;
+    margin-left: 0;
+}
+
+div.block-view-2_items2 div.class-article
+{
+
+    padding-bottom: 25px;
+    margin-bottom: 1em;
+}
+
+
+
+/* BLOCK 2 ITEMS: END */
+
+/* BLOCK 3 ITEMS: START */
+
+div.block-type-3items{overflow:hidden;
+float:left;
+margin-top:1.5em;}
+
+
+div.block-type-3items div.attribute-header-block h2{
+    font-size:1.4em;
+    border-bottom:2px solid gray;
+    margin-bottom:1.5em;
+}
+
+div.block-type-3items div.attribute-header h2
+{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    margin-bottom: 1.25em;
+
+}
+
+
+div.block-type-3items>div.attribute-header>h2{
+     border-bottom:2px solid white;
+}
+div.block-type-3items div.class-article
+{
+    }
+
+div.block-type-3items div.class-article div.attribute-header h2
+{
+    font-size: 1em;
+    background:white;
+    text-transform: none;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+div.block-type-3items div.class-file div.attribute-header h2
+{
+    font-size: 1em;
+    background:#f4f6ff;
+    text-transform: none;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+div.block-type-3items  div.attribute-header h2 a:hover{color:black;}
+div.block-type-3items div.class-article div.attribute-header h2 a
+{
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+div.block-type-3items div.class-article div.attribute-header h2 a:hover{
+    color:black;
+}
+div.block-type-3items div.attribute-image
+{
+    float: left;
+    margin-right: 0.5em;
+    margin-left: 0;
+}
+
+div.block-type-3items div.separator
+{
+    height: 1px;
+    margin: 0.25em 0;
+}
+
+div.block-view-3_items2 div.class-article
+{
+    background-position: left top;
+    background-repeat: repeat-x;
+    padding: 8px 12px 8px 12px;
+    position: relative;
+}
+
+div.block-view-3_items2 div.class-article div.attribute-header h2
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    background-image: none;
+    text-transform: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+
+div.block-view-3_items2 div.attribute-image
+{
+    margin-top: 0.25em;
+}
+
+div.block-view-3_items3 div.class-article
+{
+    padding: 0;
+    background-image: none;
+    padding: 4px;
+}
+
+div.block-view-3_items3 div.class-article div.attribute-header h2
+{
+    background-image: none;
+    text-transform: none;
+    padding: 0;
+    margin-bottom: 0.75em;
+}
+
+div.block-view-3_items3 div.attribute-image
+{
+    margin-top: 0;
+    float: none;
+}
+
+div.block-type-video h3
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1em;
+    color: #000000;
+    background-image: none;
+    text-transform: none;
+    padding: 3px 0px 0px 16px;
+    margin-bottom: 0;
+
+}
+
+
+/* BLOCK 3 ITEMS: END */
+
+/* BLOCK 4 ITEMS: START */
+
+div.block-type-4items h2
+{
+    margin-top: 0;
+    color: #2e81a1;
+    font-size: 1em;
+}
+
+div.block-type-4items h2 a
+{
+    color: #2e81a1;
+    text-decoration: none;
+}
+
+div.block-style2-box-inside div.separator
+{
+    background-repeat: repeat-x;
+    height: 20px;
+}
+
+div.block-type-4items div.class-article
+{
+    padding: 0 4px 0 4px;
+}
+
+div.block-type-4items div.attribute-image
+{
+    float: left;
+    margin-right: 0.5em;
+    margin-left: 0;
+}
+
+/* BLOCK 4 ITEMS: START */
+
+/* BLOCK 5 ITEMS: START */
+
+div.block-type-5items div
+{
+  float:left;
+  clear:both;
+  width:100%;
+}
+
+div.block-type-5items div.two-columns{
+    width:100%;
+    float:left;
+}
+div.block-type-5items div.two-columns div.col-1{
+    width:48%;
+    float:left;
+    margin-left:1%;
+    clear:none;
+}
+div.block-type-5items div.two-columns div.col-2{
+    width:48%;
+    float:left;
+    margin-left:1%;
+    padding-left:1%;
+    clear:none;
+}
+
+
+
+
+
+div.block-type-5items  h2
+{
+    background:white;
+    padding:0.2em;
+    font-size:1em;
+    font-weight:bold;
+}
+
+div.block-type-5items div.attribute-header{
+    float:left;
+    clear:both;}
+
+div.block-type-5items div.attribute-short{
+    float:left;
+    clear:both;}
+div.block-type-5items div.attribute-image
+{
+    float: left;
+    margin: 0.25em 0.5em 0 0;
+}
+/* BLOCK 5 ITEMS: END */
+
+/* BLOCK TYPE ITEM LIST: START */
+
+.block-type-itemlist
+{
+
+}
+
+.block-type-itemlist .attribute-header
+{
+
+}
+
+.block-type-itemlist .attribute-header h2 {
+    font-size: 1.1em;
+    font-weight: normal;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: gray;
+    margin: 0;
+    padding: 0 0 2px 0.5em;
+}
+
+.block-type-itemlist .block-content
+{
+
+    padding-bottom: 0.25em;
+    }
+
+.block-type-itemlist .block-content a
+{
+    color: gray;
+    text-decoration: none;
+}
+.block-type-itemlist .block-content a:hover{
+    color:black;
+}
+
+.block-type-itemlist .block-content ul
+{
+    margin-top: 0.5em;
+    margin-left: 0;
+    padding-left: 0.75em;
+}
+
+.block-type-itemlist .block-content ul li
+{
+    list-style: none;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 1em;
+    margin-left: 0;
+    margin-bottom: 0.25em;
+    border-bottom:2px solid gray;
+    margin-right:1em;
+}
+
+/* BLOCK TYPE ITEM LIST: END */
+
+/* BLOCK TYPE TAG CLOUD: START */
+
+div.block-type-tagcloud
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+div.block-type-tagcloud a
+{
+    color: #949494;
+    padding: 5px;
+    text-decoration: none;
+}
+
+div.block-type-tagcloud div.attribute-header h2
+{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #c70000;
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    font-size: 0.85em;
+    padding: 5px 0 6px 5px;
+    margin-bottom: 1.25em;
+}
+
+/* BLOCK TYPE TAG CLOUD: END */
+
+/* BLOCK TYPE GALLERY: START */
+
+div.block-type-gallery div.border-box-style1 div.border-content
+{
+
+}
+
+div.block-type-gallery div.left h2
+{
+    margin: 0.25em 0 0.5em 0.75em;
+    color: #000000;
+}
+
+div.block-type-gallery div.right
+{
+    padding: 0.25em 0.5em 0.5em 0;
+}
+
+div.block-type-gallery div.attribute-caption p
+{
+    margin: 0.25em 0 0 0;
+    color: #004276;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.75em;
+}
+
+div.block-type-gallery div.attribute-image
+{
+    float: none;
+    margin: 0;
+}
+
+/* BLOCK TYPE GALLERY: END */
+
+/* BLOCK TYPE VIDEO: START */
+
+div.block-type-video div.attribute-header h2
+{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #c70000;
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    font-size: 0.85em;
+    padding: 5px 0 6px 5px;
+}
+
+/* BLOCK TYPE VIDO: END */
+
+/* BLOCK TYPE POLL: START */
+
+div.block-type-poll div.class-poll
+{
+    padding: 0 4px 4px 4px;
+}
+
+div.block-type-poll h2
+{
+    margin-top: 0;
+    color: #2e81a1;
+    font-weight: normal;
+}
+
+div.block-type-poll h3
+{
+    margin-top: 0;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+div.block-type-poll label
+{
+    font-weight: normal;
+}
+
+/* BLOCK TYPE POLL: END */
+
+/* BLOCK: START */
+div.block div.left
+{
+    float: left;
+    clear: left;
+    width: 48%;
+}
+
+div.block div.right
+{
+    float: right;
+    clear: right;
+    width: 48%;
+    text-align: right;
+}
+
+div.break
+{
+    clear: both;
+}
+/* BLOCK: END */

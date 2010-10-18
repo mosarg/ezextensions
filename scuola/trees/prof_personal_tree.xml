@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<nodo nome="Inizio sito" descrizione="sito" classe="folder">
+   <nodo nome="Diario didattico" classe="blog"></nodo>
+   <nodo nome="Dispense" classe="folder"></nodo>
+   <nodo nome="Prenotazione Colloquio" classe="event_calendar" sezione="17" state="6"></nodo>
+</nodo>

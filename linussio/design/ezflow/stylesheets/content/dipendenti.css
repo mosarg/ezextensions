@@ -1,0 +1,23 @@
+/* 
+    Document   : dipendenti
+    Created on : Aug 6, 2009, 9:12:31 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+div.content-view-line  div.class-dipendenti{
+   
+    background:#e3e1d7;
+
+}
+div.content-view-line  div.class-dipendenti div.logo img{
+    position:relative;
+    bottom:0.5em;
+    float:none;
+}

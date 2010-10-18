@@ -1,0 +1,150 @@
+/* 
+    Document   : contentstructure
+    Created on : Jul 20, 2009, 9:44:06 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+div.content-view-full{margin-top:1em;}
+
+div#sidemenu div.contentstructure ul li a
+{
+    border: none;
+}
+
+div#sidemenu div.contentstructure ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+div#sidemenu div.contentstructure ul ul
+{
+    margin: 0.25em 0 0 0.5em;
+}
+
+div#sidemenu div.contentstructure ul ul ul
+{
+    margin: 0 0 0 1em;
+}
+
+div#sidemenu div.contentstructure li
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/left-line.gif);
+    background-repeat: repeat-y;
+    background-position: left;
+}
+
+div#sidemenu div.contentstructure ul ul div
+{
+    color: #000000;
+    text-decoration: none;
+    padding: 2px 0 2px 0;
+}
+
+div#sidemenu div.contentstructure li div a
+{
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #000;
+    padding: 0 2px 0 4px;
+}
+
+div#sidemenu div.contentstructure li.topchapter, div#sidemenu div.contentstructure li.topchapter-selected
+{
+    font-weight: bold;
+    margin: 0.5em 0 0.5em 0;
+    padding-left: 10px;
+    background-image: url(../images/linklist-bullet.gif);
+    background-repeat: no-repeat;
+    background-position: 0 0.4em;
+}
+
+div#sidemenu div.contentstructure li.topchapter-selected a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+div#sidemenu div.contentstructure li.currentnode a:hover
+{
+
+}
+
+div#sidemenu div.contentstructure li.topchapter-selected li a
+{
+    font-weight: bold;
+    color: #328F00;
+    text-decoration: none;
+}
+
+div#sidemenu div.contentstructure li.topchapter-selected li a:hover
+{
+
+}
+
+div#sidemenu div.contentstructure li.topchapter-selected li li a
+{
+    color: #0090FF;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+div#sidemenu div.contentstructure li.topchapter-selected a:hover
+{
+
+}
+
+div#sidemenu div.contentstructure li
+{
+    font-weight: normal;
+}
+
+div#sidemenu div.contentstructure li ul div
+{
+    background-image: url(../images/left-item.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-left: 8px;
+}
+
+div#sidemenu div.contentstructure li div.first
+{
+    background-image: url(../images/left-corner-top.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+div#sidemenu div.contentstructure li.last
+{
+    background-image: url(../images/left-corner-end.gif);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+div#sidemenu div.contentstructure li.currentnode a, div#sidemenu div.contentstructure li.topchapter-selected li.currentnode a
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+div#sidemenu div.contentstructure li.topchapter-selected li.currentnode ul a
+{
+    font-weight: normal;
+    text-decoration: none;
+}
+
+div#sidemenu div.contentstructure li div a:hover, div#sidemenu div.contentstructure li.topchapter-selected li.currentnode ul a:hover
+{
+
+}
