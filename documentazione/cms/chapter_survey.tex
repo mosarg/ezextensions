@@ -1,0 +1,106 @@
+\chapter[Sondaggi]{Gestione dei sondaggi}
+
+Tramite il CMS è possibile creare dei sondaggi, da sottoporre agli utenti registrati e non. L'editore con i permessi per la creazione di un sondaggio procede alla stregue di qualsiasi altro contenuto. Dalla barra degli strumenti sceglie la classe sondaggio e tramite il pulsante di creazione istanzia un oggetto di tipo sondaggio. I sondaggi dovrebbero essere contenuti all'interno di un oggetto di classe Folder. L'editore dovrà inserire il nome del sondaggio, un'immagine che verrà visualizzata durante le viste compatte e tanti elementi di tipo domanda quanti ne seranno richiesti. Le domande possibili sono:
+\begin{description}
+ \item[Section Header/Intestazione sezione] Inserite una stringa di testo per separare sezioni semanticamente distinte del questionario (attenzione questa tipo di domanda non ammette risposte)
+\item[Paragraph/paragrafo]Inserite un paragrafo per illustrare il significato delle domande.
+\item[Scelta singola/multipla]Domanda a scelta multipla standard, è possibile inserire un campo per permettere all'utente una risposta personalizzata
+\item[Text entri/Inserimento testo]Domanda aperta
+\item[Number entry]Domanda la cui risposta sarà un numero intero o razionale
+\item[Related object/Oggetto correlato] Un oggetto con un campo xml, può essere usato per illustrare delle domande con immagini, testo formattato etc.
+\item[Form Receiver/Ricevente]Inserite l'email dell'utente che riceverà \textbf{tutti} i risultati delle votazioni. Per ogni votazione verrà quindi inviata un'email a tale utente.
+\item[Group password/Password di gruppo]Password per l'inserimento pubblico. Quando viene creato un questionario con una domanda di questo tipo gli utenti dovranno inserire la password creata dall'editore il quale può stabilire il numero massimo di volte per cui è possibile votare.
+\end{description}
+
+\section{Creazione del sondaggio}
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/survey/survey_immagine.png}
+ % survey_immagine.png: 1241x542 pixel, 72dpi, 43.78x19.12 cm, bb=
+ \caption{Durante la creazione di un sondaggio è possibile caricare un'immagine che verrà mostrata anche nelle viste compatte}
+ \label{fig:survey_imm}
+\end{figure}
+ Inserire un'immagine come mostrate in figura.\ref{fig:survey_imm} può essere molto utile per aumentare la visibilità del sondaggio nelle viste compatte ad esempio nella pagina principale del sito.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth,bb=0 0 1256 227]{./immagini/survey/surver_descr.png}
+ % surver_descr.png: 1256x227 pixel, 72dpi, 44.31x8.01 cm, bb=0 0 1256 227
+ \caption{Campo di testo per la descrizione del sondaggio}
+ \label{fig:survey_descr}
+\end{figure}
+Dovreste scrivere una breve descrizione per ogni sondaggio per spiegare all'utente le modalità di votazione e il sistema con cui verranno elaborati i dati.
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/survey/survey_prop.png}
+ % survey_prop.png: 1237x289 pixel, 72dpi, 43.64x10.20 cm, bb=
+ \caption{Opzioni generali del sondaggio}
+ \label{fig:survey_opzioni}
+\end{figure}
+
+Durante la creazione del sondaggio è possibile specificare alcuni importanti parametri come si può vedere in figura.\ref{fig:survey_opzioni} analiziamoli insieme:
+\begin{description}
+ \item[Abilitato] È possibili disabilitare manualmente un sondaggio, gli utenti non potranno quindi più votare fino a che l'editore non avrà riabilitato il sondaggio
+\item[Pui dare solo un'unica risposta] L'utente potrà dara un'unica risposta che non potrà più essere modificata il questionario sarà unicamente disponibile unicamente per gli utenti registrati.
+\item[Inserimento dell'utente persistente]L'utente potrà modificare in un secondo momento  la sua votazione, attenzione non selezionate questa opzione insieme alla precedente in quanto la votazione unica avrà la precedenza.
+\item[Attivo da]Il questionario sarà utilizzabile dagli utenti dalla data indicata
+\item[Attivo fino a] alla data indicata
+\end{description}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/survey/survey_multiop.png}
+ % survey_multiop.png: 1237x361 pixel, 72dpi, 43.64x12.74 cm, bb=
+ \caption{Domanda a scelta multipla}
+ \label{fig:survey_multiop}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/survey/survey_password.png}
+ % survey_password.png: 1249x258 pixel, 72dpi, 44.06x9.10 cm, bb=
+ \caption{Survey pubblica con password di gruppo}
+ \label{fig:survey_pwd}
+\end{figure}
+
+Tramite l'utilizzo di una password di gruppo sarà possibile creare questionari totalmente anonimi rivolti a gruppi di utenti figura.\ref{fig:survey_pwd}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/survey/survey_view.png}
+ % survey_view.png: 1065x567 pixel, 72dpi, 37.57x20.00 cm, bb=
+ \caption{Vista pubblica del sondaggio}
+ \label{fig:survey_view}
+\end{figure}
+
+
+\section{Analisi dei risultati}
+
+Gli editori e tutti gli utenti con accesso al backend del sito potranno accedere al pannello per l'analisi dei dati disponibile dal menu \textbf{Survey} nella barra principale. Qui compariranno tutti i questionari presenti nel sito figura.\ref{fig:survey_list}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/survey/elenco_questionari.png}
+ % elenco_questionari.png: 908x136 pixel, 72dpi, 32.03x4.80 cm, bb=
+ \caption{Elenco dei questionari presenti nel sito}
+ \label{fig:survey_list}
+\end{figure}
+
+Cliccando sul pulsante con l'istogramma accederete alla statista delle votazioni  figura.\ref{survey_votes}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/survey/sondaggio_risultati.png}
+ % sondaggio_risultati.png: 904x305 pixel, 72dpi, 31.89x10.76 cm, bb=
+ \caption{La statistica delle votazioni del sondaggio}
+ \label{fig:survey_votes}
+\end{figure}
+
+per effettuare ulteriori elaborazioni sui dati raccolti il sistema mette a disposizione dell'utente una comoda esportazione in formato CSV dei dati.
+
+
+
+
+
