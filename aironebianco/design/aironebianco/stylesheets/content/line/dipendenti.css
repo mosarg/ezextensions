@@ -1,0 +1,17 @@
+/* 
+    Document   : dipendenti
+    Created on : Nov 28, 2009, 6:17:14 PM
+    Author     : mosa
+    Description:
+       dipendenti line view css
+*/
+
+
+div.content-view-line  div.class-dipendenti{
+    background:#e3e1d7;
+}
+div.content-view-line  div.class-dipendenti div.logo img{
+    position:relative;
+    bottom:0.5em;
+    float:none;
+}

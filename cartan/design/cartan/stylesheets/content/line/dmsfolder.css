@@ -1,0 +1,33 @@
+/* 
+    Document   : dmsfolder
+    Created on : Nov 28, 2009, 6:22:08 PM
+    Author     : mosa
+    Description:
+    dmsfolder line view css
+*/
+div.content-view-line div.class-dmsfolder h2{
+    min-height:200px;
+    
+}
+div.content-view-line div.class-dmsfolder  a{
+    display:block;
+    height:100%;
+    text-align:center;
+   }
+
+div.content-view-full div.content-view-line div.class-dmsfolder{
+    float:left;
+    padding:1em;
+    min-height:200px;
+    width:128px;
+    background: #EAEAEA;
+    margin:1em;
+ }
+
+ div.content-view-full div.content-view-line div.class-dmsfolder div.attribute-short{
+     font-size:0.9em;
+     }
+
+     div.content-view-full div.content-view-line div.class-dmsfolder div.attribute-short p{
+         text-align:center;
+}

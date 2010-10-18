@@ -1,0 +1,36 @@
+div.corso-block div.attribute-header{
+    
+    border-bottom:2px solid #575757;
+    padding-bottom:0;
+   
+}
+
+div.block-type-2items div.corso-block div.attribute-header h2{
+    font-size:1em;
+    overflow: hidden;
+}
+
+div.block-type-2items div.corso-block div.attribute-header h2 a{
+    font-weight:bold;
+   
+    color:#575757;
+    
+
+}
+
+div#extrainfo div.block-type-2items div.corso-block div.attribute-header h2 a{
+    top:0.5em;
+}
+
+div.block-type-2items {
+   
+}
+
+div.corso-block a.goon {
+    color:gray;
+}
+
+div.block-type-2items div.border-content{
+    -moz-border-radius:30px;
+   -webkit-border-radius:30px;
+}

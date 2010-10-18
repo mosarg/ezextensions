@@ -1,0 +1,23 @@
+
+div.message-confirmation, div.message-feedback, div.message-warning, div.message-error, div.warning
+{
+    margin: 0.5em 0 1em 0;
+    padding: 0.5em 1em 0.5em 1em;
+    border: 6px solid #808080;
+    background-color: #f8f8f8;
+}
+
+div.message-feedback
+{
+    border-color: #40b040;
+}
+
+div.message-warning, div.warning
+{
+    border-color: #c0c040;
+}
+
+div.message-error
+{
+    border-color: #c04040;
+}

@@ -1,0 +1,58 @@
+/* 
+    Document   : rendertable
+    Created on : Dec 6, 2009, 8:48:08 PM
+    Author     : mosa
+    Description:
+    render table style
+*/
+table.renderedtable
+{
+    width: 100%;
+    margin: 1em 0 1em 0;
+    border: none;
+}
+table.renderedtable th, table.renderedtable td
+{
+    padding: 0.5em;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    vertical-align: top;
+}
+table.renderedtable th
+{
+    font-weight: bold;
+    color: #525345;
+    background-color: #DFDFDF;
+    white-space: nowrap;
+    text-align: left;
+    background-repeat: repeat-x;
+    background-position: top left;
+}
+table.renderedtable td
+{
+    font-weight: normal;
+}
+table.renderedtable th:first-child, table.renderedtable td:first-child
+{
+    border-left: 1px solid #ffffff;
+}
+table.renderedtable tr.bglight, div.bglight
+{
+    background-color: #F1F1ED;
+}
+table.renderedtable tr.bgdark, div.bgdark
+{
+    background-color: #EAE9E1;
+}
+table.renderedtable tr.bglight:hover, table.renderedtable tr.bgdark:hover
+{
+    background-color: #EAE9E1;
+}
+table.renderedtable tr.bglight:hover td, table.renderedtable tr.bgdark:hover td
+{
+    background-color: #F1F1ED;
+}
+table.renderedtable a
+{
+    border-bottom-color: #EAE9E1;
+}

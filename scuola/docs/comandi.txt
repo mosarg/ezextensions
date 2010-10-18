@@ -1,0 +1,17 @@
+Per tradurre le stringhe di una estensione:
+
+bin/linux/ezlupdate -e extension/myextension ita-IT
+
+Per generare le classi tramite copia
+Subito dopo aver creato le classi è necessario controllare se è stato generato un remote_id univoco per
+la nuova classe, se non farlo manualmente
+
+cronjob ezflow like
+./runcronjobs.php -s ita  m2000
+
+cronjob approve workflow
+php runcronjobs.php workflow
+
+pulisci collaborazione
+
+php update/common/scripts/cleanup.php workflow 

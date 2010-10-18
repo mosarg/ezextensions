@@ -1,0 +1,6 @@
+div#debug_one{
+    background: white;
+    color:black;
+    position: absolute;
+    display: none;
+}

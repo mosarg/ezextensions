@@ -1,0 +1,32 @@
+/* 
+    Document   : shadows
+    Created on : Dec 6, 2009, 8:54:55 PM
+    Author     : mosa
+    Description:
+    shadow styles
+
+*/
+
+.shadow{
+    -moz-box-shadow:3px 3px 8px rgba(196,196,196,0.8);
+    -webkit-box-shadow:3px 3px 8px rgba(196,196,196,0.8);
+    -o-box-shadow:3px 3px 8px rgba(196,196,196,0.8);
+    -khtml-box-shadow:3px 3px 8px rgba(196,196,196,0.8);
+    box-shadow:3px 3px 8px rgba(196,196,196,0.8);
+}
+.shadowmore{
+    -moz-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+    -webkit-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+    -o-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+    -khtml-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+    box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+}
+
+
+.shadowdark{
+    -moz-box-shadow:3px 3px 8px rgba(58,58,58,0.9);
+    -webkit-box-shadow:3px 3px 8px rgba(58,58,58,0.9);
+    -o-box-shadow:3px 3px 8px rgba(58,58,58,0.9);
+    -khtml-box-shadow:3px 3px 8px rgba(58,58,58,0.9);
+    box-shadow:3px 3px 8px rgba(58,58,58,0.9);
+}

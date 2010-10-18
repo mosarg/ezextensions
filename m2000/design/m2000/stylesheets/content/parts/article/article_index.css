@@ -1,0 +1,80 @@
+/* 
+    Document   : article
+    Created on : Nov 28, 2009, 5:43:14 PM
+    Author     : mosa
+    Description:
+        article index for multipage article
+*/
+
+div.attribute-article-index-frontpage{
+    overflow:hidden;
+    width:100%;
+
+}
+div.attribute-article-index-frontpage ol li{
+    background:#bfcdff;
+    border:2px solid gray;
+}
+div.attribute-article-index-frontpage ol li a{
+    font-weight:bold;
+    color:#767676;
+    text-decoration:none;
+}
+div.attribute-article-index-frontpage ol li a:hover{
+    color:white;
+}
+div.attribute-article-index-blocchi-line li {
+    height:50px;
+    width:250px;
+    float:left;
+    color:white;
+    font-weight:bold;
+    font-size:1.2em;
+    margin-right:0.5em;
+    background:#a9a9a9;
+    padding-bottom:0.5em;
+}
+
+div.attribute-article-index-blocchi{
+    width:80%;
+    overflow:hidden;
+    margin-bottom:2em;
+
+}
+div.attribute-article-index-blocchi ol li{
+    float:left;
+    display:block;
+    height:100px;
+    width:100px;
+    color:white;
+    font-weight:bold;
+    font-size:1.2em;
+    margin-right:0.5em;
+    background:#a9a9a9;
+}
+div.attribute-article-index-blocchi ol li.current,div.attribute-article-index-blocchi-line ol li.current{
+    background:#bfcdff;
+    border:2px solid gray;
+    color:gray;
+}
+div.attribute-article-index-blocchi ol li span,div.attribute-article-index-blocchi-line ol li span{
+    display:block;
+    margin-top:1em;
+    margin-right:0.5em;
+    color:white;
+}
+div.attribute-article-index-blocchi ol li a,div.attribute-article-index-blocchi-line ol li a{
+    display:block;
+    margin-top:1em;
+    margin-right:0.5em;
+    text-decoration:none;
+    color:white;}
+div.attribute-article-index-blocchi ol li a:hover{
+    color:#d0d9ff;
+}
+div.attribute-article-index
+{
+    float: right;
+    clear: right;
+    width: 14em
+}

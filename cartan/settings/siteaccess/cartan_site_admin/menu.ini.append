@@ -1,0 +1,49 @@
+<?php
+/* 
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+
+
+
+[Topmenu_shop]
+NavigationPartIdentifier=ezshopnavigationpart
+#Name=Webshop
+#Tooltip=Manage customers, orders, discounts and VAT types; view sales statistics.
+URL[]
+URL[default]=shop/orderlist
+Enabled[]
+Enabled[default]=false
+Enabled[browse]=false
+Enabled[edit]=false
+Shown[]
+Shown[navigation]=false
+Shown[default]=false
+Shown[browse]=false
+
+
+
+
+
+
+[Topmenu_survey]
+Name=Survey
+Tooltip=Add your own survey.
+URL[]
+URL[default]=survey/list
+URL[browse]=survey/list
+NavigationPartIdentifier=ezsurveynavigationpart
+
+Enabled[]
+Enabled[default]=false
+Enabled[browse]=false
+Enabled[edit]=false
+Shown[]
+Shown[default]=false
+Shown[navigation]=false
+Shown[browse]=false
+
+
+
+ */
+
+?>

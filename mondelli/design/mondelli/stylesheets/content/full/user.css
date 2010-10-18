@@ -1,0 +1,24 @@
+div.content-view-full div.class-user{
+    margin:1em;
+    padding:1em;
+}
+
+div.content-view-full div.class-user div.left-column{
+    width:40%;
+    float:left;
+}
+
+div.content-view-full div.class-user div.right-column{
+    width:50%;
+    float:left;
+}
+
+div.content-view-full div.class-user img{
+    margin-left:auto;
+    margin-right: auto;
+    display:block;
+}
+div.content-view-full div.class-user form{
+    clear:both;
+}
+

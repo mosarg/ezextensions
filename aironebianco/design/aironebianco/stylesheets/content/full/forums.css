@@ -1,0 +1,55 @@
+/* 
+    Document   : forums
+    Created on : Nov 28, 2009, 8:17:13 PM
+    Author     : mosa
+    Description:
+    forums full  view
+*/
+
+div.content-view-full div.class-forums table.forum
+{
+    background-position: bottom left;
+    padding-bottom: 5px;
+}
+div.content-view-full div.class-forums table.forum td ul
+{
+    margin-left: 1.25em;
+    padding: 0;
+}
+div.content-view-full div.class-forums table.forum td ul li
+{
+    margin: 0;
+    padding: 0;
+}
+div.content-view-full div.class-forums table.forum td ul li a
+{
+    font-size: 0.7em;
+    font-weight: normal;
+}
+div.content-view-full div.class-forums table.forum th
+{
+    background-position: top left;
+    background-color: #E0E0D4;
+}
+div.content-view-full div.class-forums table.forum td.last-reply a
+{
+    background-position: left center;
+    padding-left: 20px;
+}
+div.content-view-full div.class-forums table.forum td.forum a
+{
+    background-position: left center;
+    padding-left: 20px;
+}
+div.content-view-full div.class-forums table.forum td.forum div.attribute-short
+{
+    margin-left: 20px;
+}
+div.content-view-full div.class-forums table.forum td.last-reply p.date
+{
+    margin-left: 20px;
+}
+div.content-view-full div.class-forums table.forum td
+{
+    background-color: #F2F1ED;
+}

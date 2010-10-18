@@ -1,0 +1,224 @@
+div#topmenu-position div#menu-logo{
+    float:left;
+}
+
+div#topmenu-position{
+    overflow:visible;
+    height:74px;
+    margin-bottom:70px;
+}
+
+div#topmenu-position li.movedown{
+    position:relative;
+    top:4em;
+}
+.menu {
+    margin: 0;
+    padding-bottom: 1em;
+    float:left;
+    width: 100%;
+    list-style: none;
+    font-size: 1.1em;
+    background:  #575757;
+    margin-top:10px;
+}
+
+.menu li {
+    float: left;
+    margin: 0; padding: 0;
+    position: relative; /*--Important--*/
+}
+
+.menu li a {
+    float: left;
+    padding:7px 10px 10px;
+    /*font-family: Love;*/
+    font-size:1.5em;
+    }
+
+.menu li:hover a,.menu li a:hover {
+    padding-right:24px;
+    border-left:2px solid white;
+    border-right:2px solid white;
+    background-color:#ffa800;
+    
+} /*--Hover State--*/
+.menu li:hover .sub li a, .menu li a:hover .sub a {
+    background-position: left bottom;
+    background: none;
+    border-left:0;
+} /*--Hover State--*/
+
+.menu .sub {
+    margin:0;
+    position: absolute; /*--Important--*/
+    background:#ffa800;
+    top: 34px;
+    left: 0;
+    float: left;
+    display: none; /*--Hidden for those with js turned off--*/
+    z-index: 1000;
+    padding:1em;
+    min-width:350px;
+    border:2px solid white;
+
+}
+
+.menu .sub li.root_icon{
+    margin-bottom:1em;
+    padding:0.5em 0.5em 1em;
+    width:100%;
+    /*background: #85c226;*/
+    width:97%;
+    margin:5px;
+}
+
+.menu .sub li.root_icon img{
+    margin-right:0.5em;
+    float:left;
+
+}
+.menu .sub li.root_icon span{
+    color:white;
+    float:left;
+    text-align:justify;
+    font-size:1em;
+    font-weight:bold;
+}
+
+
+.menu>ul>li{
+
+}
+
+.menu>ul>li>img{
+    position:absolute;
+    left:15px;
+    top:25px;
+}
+.menu>ul>li>a{
+    float:left;
+    padding-right:24px;
+    border-left:2px solid transparent;
+    border-right:2px solid transparent;
+    position:relative;
+    top:2px;
+    z-index: 100000;
+    color:white;
+}
+
+.menu .sub li a{
+    width:100%;
+    background: none;
+    padding:0;
+    text-shadow:none;
+    font-size:1em;
+    color:white;
+}
+
+.menu li .sub ul{
+    list-style: none;
+    margin: 0; padding: 0;
+    float: left;
+}
+
+.menu .sub ul li {
+    width: 100%; /*--Override parent list item--*/
+}
+
+.menu .sub ul li a {
+    float: none;
+    height: auto; /*--Override height from parent list item--*/
+    background: url(navlist_arrow.png) no-repeat 5px 12px;
+    padding: 7px 5px 7px 15px;
+    display: block;
+    text-decoration: none;
+    font-size:0.9em;
+}
+.menu .sub ul li a:hover {
+    background-position: 5px 12px ;/*--Override background position--*/
+    color:gray;
+}
+
+/*second level*/
+
+.menu ul.sub li.second-level{
+    width:44%;
+    padding:0.5em;
+}
+
+.menu ul.sub li.second-level>a {
+    width:92%;
+    text-align:left;
+    border:0;
+    padding-bottom:0.2em;
+    border-bottom:2px solid gray;
+    text-shadow:1px 1px 1px black;
+
+}
+
+.menu ul.sub li.second-level>a:hover {
+    text-shadow:1px 1px 1px #ffa800;
+}
+.menu ul.sub li.second-level a img{
+    vertical-align:middle;
+    border:2px solid black;
+}
+
+
+/*third level*/
+
+
+.menu li .sub ul.sub1{
+    list-style: none;
+    margin: 0;
+    width: 150px;
+    float: left;
+    padding:0 0 0.5em;
+    text-align:left;
+}
+
+.menu .sub ul.sub1  li {
+    width: 100%; /*--Override parent list item--*/
+}
+.menu .sub ul.sub1  li h2 {
+    /*--Sub nav heading style--*/
+    padding: 0;  margin: 0;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+.menu .sub ul.sub1  li a {
+    padding: 0;
+    font-size:0.8em;
+    border:0;
+}
+.menu .sub ul.sub1  li a:hover {
+
+    background-position: 5px 12px ;/*--Override background position--*/
+}
+
+/*fourth level*/
+
+.menu .sub ul.sub1 ul.sub2 li{
+    margin-left:4px;
+   
+    height: 14px;
+}
+
+.menu .sub ul.sub1 ul.sub2  li a {
+    padding: 0;
+    font-size:0.7em;
+    border:0;
+}
+
+.menu .sub ul.sub1 ul.sub2  li a:hover {
+    padding: 0;
+    font-size:0.7em;
+
+}
+
+
+
+
+
+

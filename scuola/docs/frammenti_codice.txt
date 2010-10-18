@@ -1,0 +1,33 @@
+
+codice per caricare la lista degli utenti
+<h1>Professori</h1>
+	
+	
+
+	{$node.contentobject_id}
+	
+
+	{def $users=fetch( 'content', 'list',
+        	hash( 'parent_node_id', 144,
+              'depth', 1 ) )}
+
+
+
+index.php
+per far funzionare lastaccessesURI è necessario modificare il file index.php
+
+// Update last accessed view page
+    if ( $currentURI != $lastAccessedViewURI and
+         !in_array( $module->uiContextName(), array('edit',  'administration', 'browse', 'authentication' ) ) )
+    {
+        eZDebug::writeNotice( "Sto settando la variabile LastAccessesUri=currentURI"  );
+        if (strlen($currentURI)>0){
+        $http->setSessionVariable( "LastAccessesURI", $currentURI );
+        }
+
+    }
+
+
+e far aggiornare LastAccessesURI solo so la lunghezza di $currentURI è maggiore a 0 la cosa
+succede unicamente quando è abilitato il viewcaching
+OKKOK

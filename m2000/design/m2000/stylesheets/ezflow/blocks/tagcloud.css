@@ -1,0 +1,29 @@
+/* 
+    Document   : tagcloud
+    Created on : Dec 7, 2009, 9:57:35 AM
+    Author     : mosa
+    Description:
+        block tag cloud style
+*/
+div.block-type-tagcloud
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+div.block-type-tagcloud a
+{
+    color: #949494;
+    padding: 5px;
+    text-decoration: none;
+}
+
+div.block-type-tagcloud div.attribute-header h2
+{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #c70000;
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    font-size: 0.85em;
+    padding: 5px 0 6px 5px;
+    margin-bottom: 1.25em;
+}

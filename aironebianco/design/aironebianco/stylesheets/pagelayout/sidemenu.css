@@ -1,0 +1,83 @@
+div#sidemenu-position
+{
+background-color:white;
+width: 14em;
+margin-left: -14em;
+float: left;
+display: inline; /* Fix for IE double margin bug */
+}
+
+div.nosidemenu div#sidemenu-position
+{
+display: none;
+}
+
+div#sidemenu ul
+{
+list-style-type: none;
+margin: 0.5em 0 0.5em 0;
+}
+
+div#sidemenu ul li
+{
+margin: 0.25em 0 0.25em 0;
+padding: 0;
+list-style-type: none;
+list-style-image: none;
+background-image: none;
+color:white;
+}
+
+div#sidemenu div.box div.box-content
+{
+padding-left: 0.75em;
+padding-right: 0;
+}
+
+div#sidemenu h4
+{
+margin: 0;
+}
+
+div#sidemenu h4 a
+{
+color: #525345;
+text-decoration: none;
+}
+
+div#sidemenu ul.menu-list a.selected
+{
+font-weight: bold;
+}
+
+div#sidemenu ul.submenu-list
+{
+list-style-type: none;
+margin-left: 1em;
+}
+
+div#sidemenu ul.submenu-list a.selected
+{
+font-weight: bold;
+}
+
+div#sidemenu ul.menu-list li a, div#sidemenu ul.submenu-list li a
+{
+background-image: url(../images/sidemenu_bullet.png);
+background-position: 0.2em 0.5em;
+background-repeat: no-repeat;
+padding-left: 18px;
+display: block;
+font-size: 0.85em;
+}
+
+div#sidemenu div.second_level_menu{
+    font-size:1.5em;
+    font-weight:bold;
+    padding-top:0.3em;
+    background:#ffebc5;
+
+}
+div#sidemenu div.second_level_menu a{
+       padding-bottom:0.3em;
+}

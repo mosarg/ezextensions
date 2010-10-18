@@ -1,0 +1,15 @@
+div.provincia-map div#graph{
+    height:500px;
+    width:350px;
+    float:left;
+    overflow:hidden;
+}
+div.provincia-map div#legend{
+    width:500px;
+    float:right;
+    overflow:hidden;
+}
+div.provincia-map  h1{
+    font-size:2em;
+    border-bottom:2px solid gray;
+}

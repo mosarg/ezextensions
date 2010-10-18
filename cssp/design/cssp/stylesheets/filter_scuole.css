@@ -1,0 +1,140 @@
+
+a.remove_facete{
+    font-size:2em;
+    font-weight:bold;
+    text-decoration: none;
+    color:white;
+    float:left;
+    display:block;
+    width:1em;
+    background:#4983b8;
+    text-align: center;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    cursor:pointer;
+}
+
+a.remove_facete:hover{
+    background: #bed3e5;
+    color:#4983b8;
+}
+
+div#inputs{
+    float:left;
+    clear:both;
+    width:100%;
+}
+div#filter_results{
+    float:left;
+     background: #ededed;
+     width:100%;
+     padding:1em;
+     margin-top:2em;
+}
+div#filter_results a.school_entry{
+    display:block;
+    float:left;
+    clear:both;
+    font-weight:bold;
+    color:#939393;
+    border-bottom:2px solid gray;
+    padding: 1em 5em 0.3em;
+    width:88%;
+
+    background: url(../images/icons/small_school.png) no-repeat left;
+    height:38px;
+}
+div#filter_results a.school_entry:hover{
+    text-decoration:none;
+    color:black;
+}
+
+div.button_cont{
+    float:left;
+    padding:0.5em;
+    width:11%;
+}
+
+
+
+/*div.button_cont a.facete_button{
+    background:url(../images/decorazioni/css3_button.png) repeat-x;
+    display: inline-block;
+    padding: 5px 10px 6px;
+    color: #396193;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+    border-bottom: 1px solid #222;
+    position: relative;
+    cursor: pointer;
+
+}*/
+
+
+div.button_cont a.facete_element{
+    color:#939393;
+    font-weight:bold;
+    padding:0.5em;
+    text-decoration:none;
+    padding:0.5em;
+    float:left;
+    clear:both;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-bottom:2px solid #bbd1e4;
+}
+
+div.button_cont a.facete_element:hover{
+    color:white;
+    background: black;
+          
+}
+
+
+div.button_cont input.filter_input{
+    background: #ededed;
+    border: 2px solid #cacaca;
+    float:left;
+    clear:both;
+    margin-left:5px;
+    width:100%;
+}
+
+div#denom_istituzione_block{
+    width:15%;
+}
+div#titolo_plesso_block{
+    width:14%;
+}
+div#meccanografico_scuola_block{
+    width:16%;
+}
+div#tipo_block{
+    width:12%;
+}
+div#titolo_studio_block{
+    width:12%;
+}
+
+div#comune_block{
+    width:10%;
+}
+div#cap_block{
+    width:5%;
+}
+
+div#polo_block{
+    width:5%;
+}
+
+div.button_cont a.current_facete{
+    background-color: #bed3e5;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    color:black;
+}

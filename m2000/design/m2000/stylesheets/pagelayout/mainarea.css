@@ -1,0 +1,40 @@
+/* 
+    Document   : mainarea
+    Created on : Jul 21, 2009, 8:56:37 AM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+/* MAIN AREA */
+div#main-position
+{
+width: 100%;
+float: left;
+}
+div#main
+{
+position: relative;
+}
+div.nosidemenu div#main-position
+{
+margin-left: 0;
+}
+div.noextrainfo div#main-position
+{
+margin-right: 0;
+}
+
+div.content-view-children{
+   margin-top:2em;
+   text-align:left;
+   overflow:hidden;
+}
+div.content-view-children h4{
+
+
+}

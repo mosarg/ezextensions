@@ -1,0 +1,14 @@
+div#side_toolbar{
+    width:100%;
+}
+
+div#toolbar{
+    position:relative;
+     overflow:hidden;
+    width:100%;
+}
+
+div#ezwt{
+    float:left;
+    width:100%;
+}

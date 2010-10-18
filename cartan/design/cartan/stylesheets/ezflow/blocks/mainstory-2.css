@@ -1,0 +1,31 @@
+/* 
+    Document   : mainstory-2
+    Created on : Dec 7, 2009, 9:47:55 AM
+    Author     : mosa
+    Description:
+        Mainstory-2 block style
+*/
+div.mainstory2{
+      background: url(../images/sfondi/dropdown_back_hover2.png);
+      padding:1em;
+    }
+
+div.block-type-mainstory div.attribute-header h2{
+    text-shadow:1px 1px 1px black;
+    font-size:2em;
+    padding:0;
+    text-align:center;
+}
+
+div.block-type-mainstory div.class-article div.attribute-image{
+    width:100%;
+}
+div.block-type-mainstory div.class-article div.attribute-short{
+    padding:0 1em;
+}
+div.mainstory2 div.attribute-image img
+{
+    display: block;
+     margin-left:auto;
+    margin-right:auto;
+}

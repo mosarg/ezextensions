@@ -1,0 +1,34 @@
+/* 
+    Document   : links
+    Created on : Jul 21, 2009, 9:36:23 AM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+        Links style
+*/
+
+
+/* LINKS */
+
+a
+{
+    color: #767676;
+    text-decoration: none;
+    font-weight:bold;
+    }
+
+a:hover
+{
+    color: #ae71ed;
+    text-decoration:none;
+}
+
+a img
+{
+    border: none; /* Some browsers may display a border around a linked image without this attribute set to _none_. */
+}
+
+a.external:after{
+    content:url(../images/icons/external_link_small.png);
+    margin-left:0.1em;
+ }

@@ -1,0 +1,219 @@
+/* COMMENT LIST */
+div.ezcom-view-list
+{
+
+}
+
+div.ezcom-comment-title
+{
+
+}
+
+div.ezcom-comment-body
+{
+    clear: both;
+    padding-bottom: 5px;
+}
+
+div.ezcom-comment-body p, div.ezcom-comment-title span, div.ezcom-comment-index span
+{
+   
+    overflow: hidden;
+    padding: 4px;
+}
+
+div.ezcom-comment-author
+{
+    float: left;
+}
+
+div.ezcom-comment-time
+{
+    float: right;
+}
+
+div.ezcom-comment-tool
+{
+    clear: both;
+    text-align: right;
+    padding: 2px;
+}
+/* ----COMMENT LIST----- */
+
+/* ----FORM FIELD---- */
+.ezcom-field-website input
+{
+}
+
+.ezcom-field-title input
+{
+
+}
+
+.ezcom-field-email input
+{
+}
+
+span.ezcom-field-emailmessage
+{
+    font-size: 0.8em;
+}
+
+.ezcom-field-name input
+{
+}
+
+.ezcom-field-content textarea
+{
+    height: 100px;
+}
+.ezcom-field-mandatory
+{
+
+    font-style: italic;
+}
+
+/*----FORM FIELD----*/
+
+
+/* ----COMMENT LIST IN CONTENT VIEW----- */
+div.attribute-comment
+{
+    padding-top: 20px;
+}
+
+div.ezcom-view-all p
+{
+    padding: 2px;
+    text-align: right;
+    font-style: italic;
+}
+
+div.ezcom-view-comment
+{
+}
+
+/* ----COMMENT LIST IN CONTENT VIEW----- */
+
+/* ----COMMENT LIST - FULL VIEW----- */
+div.ezcom-full{
+    
+}
+
+
+div.ezcom-full div.ezcom-comment-title
+{
+}
+
+/* ----COMMENT LIST - FULL VIEW----- */
+
+/* ----COMMENT FUNCTION----- */
+div.ezcom-function-title
+{
+}
+
+/* ----COMMENT FUNCTION----- */
+
+/* ----ADDING COMMENT------- */
+div.ezcom-add,div.ezcom-edit
+{
+
+}
+
+div.ezcom-add input,div.ezcom-add textarea{
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    -o-border-radius:10px;
+    border-radius:10px;
+    border:3px solid #4C6D4B;
+    background:#D2EDB2;
+    padding:0.2em;
+}
+
+div.ezcom-field
+{
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 10px;
+}
+
+div.ezcom-field label
+{
+}
+/* ----ADDING COMMENT------- */
+
+/*---- PAGING ----*/
+div.ezcom-page
+{
+    padding: 5px;
+    text-align: right;
+
+}
+
+
+div.ezcom-page a
+{
+    padding: 1px;
+
+    border: 1px solid #cccccc;
+}
+
+div.ezcom-page a:hover
+{
+    background-color: #eeeeee;
+}
+/*---- PAGING ----*/
+
+/*---- ERROR MESSGE ----*/
+div.ezcom-delete .message-confirmation, div.ezcom-add-result .message-error
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+/*---- ERROR MESSGE ----*/
+
+/*-----SETTING------*/
+div.ezcom-setting-select
+{
+    float: left;
+    width: 130px;
+    display: inline;
+}
+
+div.ezcom-setting-count
+{
+    float: right;
+    width: 20%;
+    display: inline
+}
+
+div.ezcom-setting-content
+{
+    display: inline;
+}
+
+div.ezcom-setting-head
+{
+    
+    padding: 5px;
+}
+
+div.ezcom-setting-row
+{
+    clear: both;
+    padding: 6px;
+    border-bottom: 1px solid #cccccc;
+}
+
+div.ezcom-setting
+{
+   
+}
+
+div.ezcom-setting-mail
+{
+    font-size: 1.25em;
+    padding: 1px;
+}
+
+/*-----SETTING------*/

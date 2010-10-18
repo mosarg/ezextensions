@@ -1,0 +1,79 @@
+/* 
+    Document   : login
+    Created on : Sep 12, 2009, 8:48:18 AM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body{background-color:white;}
+
+div#topmenu-design{
+    background:none;
+}
+
+div#path-design{background:none;}
+
+input.button{
+    background-color:gray;
+    background-image:none;
+    border-color:#b5b1b1;
+    border:2px solid;
+    color:white;
+    padding:0.5em;
+    font-size:1.2em;
+    font-weight:bold;
+        
+}
+
+div#header{
+    background:none;
+}
+div#header-design{
+    height:180px;
+    background:url(../images/sigurd_small.png) repeat-x;
+}
+
+.roundedmore{
+        -moz-border-radius:12px;
+        -webkit-border-radius:12px;
+        -o-border-radius:12px;
+        border-radius:12px;
+    }
+.shadowmore{
+        -moz-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+        -webkit-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+        -o-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+         -khtml-box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+        box-shadow:3px 3px 8px rgba(154,154,154,0.9);
+    }
+
+.roundedtop{
+        -moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	-khtml-border-radius-topleft: 10px;
+	-khtml-border-radius-topright: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+    }
+
+h1.context-title{
+    background:gray;
+}
+
+
+div.context-block{width:350px;
+margin-left:auto;
+margin-right:auto;}
+
+div.context-attributes{padding:1em;}
+
+div.controlbar{padding:1em;}

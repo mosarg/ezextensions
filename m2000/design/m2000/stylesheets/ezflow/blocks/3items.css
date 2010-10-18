@@ -1,0 +1,76 @@
+/*
+    Document   : 3items
+    Created on : Dec 7, 2009, 9:50:38 AM
+    Author     : mosa
+    Description:
+        3items block style
+*/
+
+div.block-type-3items{
+    overflow:hidden;
+    float:left;
+    margin-top:1.5em;
+    width:100%;
+}
+div.block-type-3items div.attribute-header-block h2
+{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    margin-bottom: 1.25em;
+
+}
+div.block-type-3items>div.attribute-header-block>h2{
+    border-bottom:2px solid white;
+}
+
+div.block-type-3items div.class-article
+{
+    padding-bottom: 25px;
+    margin-bottom: 1em;
+}
+
+div.block-type-3items div.attribute-header h2{
+    font-size: 1em;
+    text-transform: none;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+div.block-type-3items  div.class-article div.attribute-header h2
+{
+    background:white;
+
+}
+
+div.block-type-3items  div.progetto-class div.attribute-header h2{
+    background:#ececec;
+}
+
+div.block-type-3items div.class-file div.attribute-header h2
+{
+    background:#f4f6ff;
+}
+div.block-type-3items  div.attribute-header h2 a:hover{
+    color:black;
+}
+div.block-type-3items div.class-article div.attribute-header h2 a
+{
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+div.block-type-3items div.class-article div.attribute-header h2 a:hover{
+    color:black;
+}
+div.block-type-3items div.attribute-image
+{
+    float: left;
+    margin-right: 0.5em;
+    margin-left: 0;
+}
+
+div.block-type-3items div.separator
+{
+    height: 1px;
+    margin: 0.75em 0 0.75em 0;
+}

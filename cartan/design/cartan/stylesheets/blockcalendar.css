@@ -1,0 +1,104 @@
+div.calendar-ajax-block{
+     height:310px;
+     overflow:visible;
+ }
+div.calendar-ajax-block td:hover{
+    background:gray;
+    text-decoration:none;
+    
+}
+div.calendar-ajax-block div.cal-toolbar{
+    padding:0 1.5em;
+    position:relative;
+    top:-0.25em;
+}
+div.calendar-ajax-block div.cal-header{
+    position:relative;
+    top:2em;
+    text-align: center;
+}
+div.calendar-ajax-block table.block_calendar{
+    width:100%;
+    height:220px;
+}
+table.block_calendar th{
+    color:gray;
+    }
+div.calendar-ajax-block div.monthName{
+    font-size:1.8em;
+    color:gray;
+   }
+div.calendar-ajax-block div.cal-toolbar a{
+    font-size:2.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color:#ffa800;
+}
+div.calendar-ajax-block div.cal-toolbar a:hover{
+    color:#661e1e;
+}
+div.calendar-ajax-block a.prev{
+    float:left;
+    font-family:Arial;
+}
+div.calendar-ajax-block a.next{
+    float:right;
+    font-family:Arial;
+}
+table.block_calendar td {
+    text-decoration:none;
+    font-weight:bold;
+    color:white;
+    text-align: center;
+    background: #ffa800;
+    }
+table.block_calendar td.pad{
+    background: none;
+}
+
+div.calendar-ajax-block  div.legend{
+    margin-top:0.5em;
+    padding-left:0.25em;
+
+}
+div.calendar-ajax-block div.legend a{
+    }
+div.calendar-ajax-block div.legend a:hover{
+  }
+div.calendar-ajax-block  div.legend div.calendar_entry{
+    float:left;
+    margin-right:0.5em;
+}
+ .small_square{
+    float:left;
+    height:15px;
+    width:15px;
+    margin-right:0.5em;
+    display:block;
+    font-weight: bold;
+    font-size:1.4em;
+  }
+
+table.block_calendar td.dayWevents{
+    color:white;
+    background:#5eb750;
+    text-decoration:none;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    -khtml-border-radius:5px;
+    -o-border-radius:5px;
+
+}
+table.block_calendar ul.popup{
+    background:rgba(65,147,48,0.5);
+    display:block;
+    position:absolute;
+    padding:1em;
+    border:2px solid rgba(255,255,255,0.7);
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+  }
+table.block_calendar ul.popup li{
+    color:white;
+    font-weight:bold;
+}

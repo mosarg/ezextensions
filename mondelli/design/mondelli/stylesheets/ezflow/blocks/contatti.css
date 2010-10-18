@@ -1,0 +1,36 @@
+/* 
+    Document   : contatti
+    Created on : Dec 7, 2009, 9:44:45 AM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+        contatti block style
+*/
+
+div.class-contatti-item{
+    font-size:0.85em;
+}
+
+div.class-contatti-item h3.small{
+    float:left;
+    margin-right:1em;
+    display:block;
+    height:0.4em;
+    width:4em;
+    padding:0.3em;
+    color:white;
+    font-size:0.95em;
+}
+
+div.class-contatti-item tr{
+    background:#7a9a8c;
+}
+div.class-contatti-item .empty{
+    background:none;
+    height:0.3em;
+}
+div.class-contatti-item a{
+    margin:0;
+    padding:0;
+    color:white;
+}

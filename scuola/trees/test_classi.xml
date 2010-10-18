@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<nodo nome="Inizio sito" descrizione="sito" classe="folder">
+   <nodo nome="Ipsaa" descrizione="scuola" classe="school_front" state="6">
+      <nodo nome="Classi" classe="classgroup" sezione="7">
+         <classe nome="5AO" indirizzo="aziendale" lettsezione="ao" classe="classe" state="6" articolata="1">
+            <nodo nome="Compiti" classe="folder"></nodo>
+            <nodo nome="Diario di classe" classe="blog" sezione="10"></nodo>
+            <nodo nome="Elaborati" classe="folder" sezione="10"></nodo>
+            <nodo nome="Calendario" classe="event_calendar"></nodo>
+            <nodo nome="Libri" classe="folder">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6"></nodo>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6"></nodo>
+            </nodo>
+         </classe>
+         <classe nome="5BT" indirizzo="turistico" lettsezione="bt" classe="classe" state="6" articolata="1">
+            <nodo nome="Compiti" classe="folder"></nodo>
+            <nodo nome="Diario di classe" classe="blog" sezione="10"></nodo>
+            <nodo nome="Elaborati" classe="folder" sezione="10"></nodo>
+            <nodo nome="Calendario" classe="event_calendar"></nodo>
+            <nodo nome="Libri" classe="folder">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6"></nodo>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6"></nodo>
+            </nodo>
+         </classe>
+         <classe nome="4AO" indirizzo="azienzale" lettsezione="ao" classe="classe" state="6">
+            <nodo nome="Compiti" classe="folder"></nodo>
+            <nodo nome="Diario di classe" classe="blog" sezione="10"></nodo>
+            <nodo nome="Elaborati" classe="folder" sezione="10"></nodo>
+            <nodo nome="Calendario" classe="event_calendar"></nodo>
+            <nodo nome="Libri" classe="folder">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6"></nodo>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6"></nodo>
+            </nodo>
+         </classe>
+      </nodo>
+   </nodo>
+</nodo>

@@ -1,0 +1,15 @@
+div.content-edit-frontpage div.leftcol-position{
+    width:20%;
+    display:block;
+    margin:0;
+    padding:0;
+    background:white;
+}
+
+div.content-edit-frontpage div.maincol-position{
+    width:80%;
+}
+
+div.content-edit-frontpage div.content-columns{
+    background:white;
+}

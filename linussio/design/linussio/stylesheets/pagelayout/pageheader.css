@@ -1,0 +1,175 @@
+/* 
+    Document   : pageheader
+    Created on : Jul 21, 2009, 8:54:59 AM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+
+
+div#page {
+width: 97%;
+margin-left:1.5%;
+margin-right:1.5%;
+text-align: left;
+background:white;
+}
+
+div#page-width1, div#page-width2, div#page-width3
+{
+position: relative;
+}
+div#page-width1, div#page-width2, div#page-width3, div#page-width4, div#page-width5,div#page-width7
+{
+margin: 0 auto;
+text-align: left;
+width: 100%;
+}
+
+div#header
+{
+background:url(../images/decorazioni/upper_bar.png) repeat;
+height:22em;
+padding-bottom:3.1em;
+margin-bottom:-3em;
+}
+div#header ul
+{
+margin: 0;
+padding: 0.25em 0 0.25em 0;
+}
+div#header ul li
+{
+list-style-type: none;
+list-style-image: none;
+padding: 0;
+display: inline;
+margin-left: 1em;
+background-image: none;
+}
+
+div#logo
+{
+float: left;
+clear:both;
+color:#42456c;
+font-size:4em;
+font-weight:bold;
+width:250px;
+height:219px;
+background:url(../images/logo/mela_verde.png);
+position:absolute;
+top:1em;
+}
+
+
+div#logo2{
+    margin-left:280px;
+    position:absolute;
+    top:4.5em;
+}
+
+div#logo2 p{
+    float:left;
+    font-size:1.2em;
+    font-weight:bold;
+    position:relative;
+    top:30px;
+    font-style:italic;
+}
+div#logo2 img{
+  float:left;
+}
+
+div#logo2 span{
+    display:block;
+    float:left;
+    position:relative;
+    top:2em;
+}
+div#user_links{
+    width:100%;
+    float:left;
+    height:2em;
+    clear:both;
+}
+
+div#user_links div#links a:hover{
+    color:#ffe346;
+}
+
+div#links{
+    text-align: center;
+    font-size: 0.85em;
+    font-weight: bold;
+    background:url(../images/decorazioni/dropdown_background.png);
+    }
+
+
+
+
+div#user_links div#links ul.flat_menu li {
+background-position: 0 0.5em;
+text-align:left;
+}
+div#links a{
+color: white;
+text-decoration: none;
+}
+div#searchbox
+{
+/*width: 40em;*/ /* Needs to be sufficient width to fit both text input and submit button to avoid Konqueror breaking the line between them */
+margin-right: 1em;
+height:3em;
+text-align: right;
+float: left;
+width:100%;
+background:url(../images/decorazioni/back_search.png);
+}
+
+div#searchbox form#search-input{
+    padding:1em;
+    float:left;
+}
+div#searchbox img
+{
+display: block;
+float: left;
+margin-top: 6px;
+margin-right: 6px;
+}
+
+
+div#searchbox span{
+    float:left;
+    margin-top:1em;
+    font-weight:bold;
+    font-size:0.9em;
+}
+input#searchtext
+{
+border: 1px solid #c3c7c5;
+background-image: url(../images/search-input-bg.png);
+background-position: left bottom;
+background-repeat: repeat-x;
+font-size: 0.85em;
+height: 15px;
+padding: 0;
+width: 222px;
+float: left;
+margin-right: 5px;
+}
+input#searchbutton
+{
+margin-top: 0;
+margin-bottom: -0.5em;
+display: block;
+float: left;
+}

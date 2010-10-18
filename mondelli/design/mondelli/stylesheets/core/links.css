@@ -1,0 +1,16 @@
+a
+{
+    color: #ffd8aa;
+    text-decoration: none;
+    font-weight:600;
+}
+
+a:hover
+{
+    color: white;
+}
+
+a img
+{
+    border: none; /* Some browsers may display a border around a linked image without this attribute set to _none_. */
+}

@@ -1,0 +1,25 @@
+/* 
+    Document   : survey
+    Created on : Dec 6, 2009, 8:59:40 PM
+    Author     : mosa
+    Description:
+       Purpose of the stylesheet follows.
+       Survey line view
+*/
+
+div.content-view-line div.class-survey{
+    float:left;
+    width:100%;
+    clear:both;}
+
+div.content-view-line div.class-survey h2{
+    padding:0.4em;
+}
+div.content-view-line div.class-survey h2 a{
+    color:white;
+}
+div.content-view-line div.class-survey div.attribute-short img{
+    float:left;
+    margin:0.5em;
+}
+

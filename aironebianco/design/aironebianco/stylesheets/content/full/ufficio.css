@@ -1,0 +1,45 @@
+/* 
+    Document   : ufficio
+    Created on : Dec 6, 2009, 6:09:39 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+        ufficio full view
+*/
+div.class-ufficio div.uffici_correlati{
+    background:#e0ece5;
+    padding:1em;
+}
+div.class-ufficio div.contatti{
+    margin-top:1em;
+    background:#cadfd3;
+    padding:1em;
+}
+div.class-ufficio div.resp_ufficio{
+    background:#94bac8;
+    padding:1em;
+}
+div.class-ufficio div.resp_ufficio h2{
+    color:white;
+    margin:0;
+}
+div.class-ufficio div.resp_ufficio span{
+    font-weight:bold;
+}
+table.minimal_list tr.empty{
+    height:3em;
+}
+div.class-ufficio table.minimal_list h3{
+    clear:both;
+    display:inline;
+}
+div.class-ufficio div.content-view-full{
+    float:left;
+    text-align:justify;
+    width:70%;
+}
+div.class-ufficio div.ufficio_extra-info{
+    float:left;
+    width:20%;
+    margin-left:1%;
+}

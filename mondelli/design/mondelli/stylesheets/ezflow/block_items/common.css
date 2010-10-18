@@ -1,0 +1,4 @@
+div.block-item>div.attribute-header>h2{
+    text-shadow:1px 1px 1px black;
+    padding-bottom:0;
+}

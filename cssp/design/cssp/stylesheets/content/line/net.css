@@ -1,0 +1,8 @@
+div.content-view-full div.content-view-line div.attribute-header h1{
+    background:url(../images/icons/net_small.jpg) no-repeat center left;
+    padding-left:70px;
+    height:70px;
+}
+div.content-view-full div.content-view-line div.attribute-header h1 a{
+    padding-top:30px;
+}

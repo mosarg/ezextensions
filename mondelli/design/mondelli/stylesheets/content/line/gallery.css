@@ -1,0 +1,42 @@
+/* 
+    Document   : gallery
+    Created on : Dec 7, 2009, 9:14:33 AM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+        gallery line view style
+*/
+
+
+div.content-view-children div.content-view-line div.class-gallery{
+    overflow:hidden;
+    height:170px;
+}
+
+div.content-view-children div.content-view-line div.class-gallery div.gallery-icon{
+    float:left;
+    }
+div.content-view-children div.content-view-line div.class-gallery h2{
+    background:rgba(0,0,0,0.5);
+    position:absolute;
+    margin-bottom:10px;
+    padding-left:10px;
+    padding-bottom:10px;
+    width:170px;
+    height:18px;
+    margin-top:-38px;
+}
+
+div.content-view-children div.content-view-line div.class-gallery h3{
+    margin-left:0.7em;
+}
+div.content-view-children div.content-view-line div.class-gallery div.attribute-short{
+    float:left;
+    width:70%;
+}
+div.content-view-children div.content-view-line div.class-gallery div.attribute-short p{
+    float:left;
+    clear:both;
+    margin-left:1em;
+    margin-top:0;
+}

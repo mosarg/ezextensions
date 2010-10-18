@@ -1,0 +1,114 @@
+/* 
+    Document   : forms.css
+    Created on : Jul 21, 2009, 9:38:27 AM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+        general forms style
+*/
+
+/* FORM ELEMENTS */
+
+form
+{
+    margin: 0;
+    padding: 0;
+}
+
+label
+{
+    font-weight: bold;
+    padding-right: 0.5em;
+    display: block;
+    white-space: nowrap;
+}
+
+input, select
+{
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+input.box, input.halfbox
+{
+    font-size: 1em;
+}
+
+textarea
+{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 1em; 
+}
+optgroup
+{
+    font-weight: bold;
+    font-style: normal;
+}
+
+input.button, input.defaultbutton
+{
+    background-image: url(../images/button-bg.png);
+    background-repeat: repeat-x;
+    background-position: left top;
+    border: 1px solid #b9b7b7;
+    font-size: 1em;
+    font-weight:bold;
+    color: #787979;
+    vertical-align: middle;
+    margin: 0.25em 0 0.25em 0;
+}
+
+input.box, textarea.box
+{
+    width: 100%;
+    border: 1px solid #A5ACB2;
+    font-size: 1em;
+}
+
+input.halfbox, textarea.halfbox
+{
+    width: 48%;
+}
+
+div.input, div.textarea
+{
+    margin: 0.5em 0 0.5em 0;
+    padding: 0 0.25em 0 0.25em;
+    border: 1px solid;
+    border-color: #808080 #e0e0e0 #e0e0e0 #808080;
+}
+
+div.textarea
+{
+    padding-right: 0;
+}
+
+div.input input, div.textarea textarea
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+fieldset
+{
+    border: 1px solid #ccccc3;
+    padding: 0.5em;
+}
+
+legend
+{
+    font-weight: bold;
+    color: #000000;
+    padding: 0 0.25em 0 0.25em;
+}
+
+fieldset label
+{
+    color: #000000;
+}
+
+fieldset input.button
+{
+    margin-top: 0.5em;
+}

@@ -1,0 +1,32 @@
+/* 
+    Document   : article_mainpage
+    Created on : Nov 28, 2009, 5:45:47 PM
+    Author     : mosa
+    Description:
+        article_mainpage css class
+*/
+
+div.content-view-full div.class-article-mainpage div.attribute-short
+{
+    font-weight: bold;
+}
+div.content-view-full div.class-article-mainpage div.attribute-header h1
+{
+    background: none;
+    padding-bottom: 0;
+    margin-bottom: 0.25em;
+}
+div.content-view-full div.class-article-mainpage div.attribute-byline
+{
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    margin-bottom: -0.25em;
+    display: block;
+}
+div.content-view-full div.class-article-mainpage div.pagenavigator
+{
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    padding-bottom: 56px;
+}

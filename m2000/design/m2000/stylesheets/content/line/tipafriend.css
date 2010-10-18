@@ -1,0 +1,33 @@
+/* 
+    Document   : tipafriend
+    Created on : Dec 6, 2009, 8:15:20 PM
+    Author     : mosa
+    Description:
+    tipafriend line view
+*/
+.attribute-tipafriend a, .attribute-pdf a, .attribute-print a, .attribute-rss a
+{
+    padding-left: 22px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+.attribute-tipafriend a
+{
+    background-image: url('../images/icons/tip_icon.gif');
+}
+div.attribute-tipafriend
+{
+    background-image: url(../images/attribute_header_bg_medium.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-top: 2em;
+}
+div.attribute-tipafriend p
+{
+    padding-top: 2em;
+}
+div.attribute-tipafriend a
+{
+    padding-left: 26px;
+    background-position: left center;
+}

@@ -1,0 +1,31 @@
+/* 
+    Document   : progetto
+    Created on : Dec 6, 2009, 5:56:24 PM
+    Author     : mosa
+    Description:
+        Purpose of the stylesheet follows.
+        progetto line view
+*/
+
+
+div.content-view-children div.progetto_line a{
+    vertical-align:top;
+    float:left;
+}
+div.content-view-children div.progetto_line a img{
+    margin-right:0.5em;
+    margin-bottom:0.5em;}
+div.content-view-children div.progetto_line{
+    float:left;
+    clear:right;
+    margin-bottom:2em;
+    width:100%;
+}
+div.content-view-children div.progetto_line span.small_subtitle{
+    font-weight:bold;
+    float:left;
+}
+div.content-view-children div.progetto_line  div.attribute-short{
+    clear:right;
+    overflow:hidden;
+}

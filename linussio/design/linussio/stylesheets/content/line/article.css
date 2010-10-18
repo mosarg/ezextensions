@@ -1,0 +1,22 @@
+div.content-view-line div.class-article{
+   padding-bottom:1em;
+   padding-top:1em;
+   float:left;
+   clear:both;
+   overflow:hidden;
+   width:100%;
+   }
+
+div.content-view-line div.class-article a{
+    color:#ffa800;
+    text-decoration:none;
+}
+div.content-view-line div.class-article a:hover{
+    color:gray;
+}
+
+div.content-view-line div.class-article div.attribute-image{
+    padding-right:1em;
+    padding-bottom:1em;
+    float:left;
+}

@@ -1,0 +1,21 @@
+div#main-position{
+width: 100%;
+float: left;
+
+}
+
+div#main
+{
+position: relative;
+padding-top:2em;
+}
+
+div.nosidemenu div#main-position
+{
+margin-left: 0;
+}
+
+div.noextrainfo div#main-position
+{
+margin-right: 0;
+}

@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodo nome="Inizio sito" descrizione="sito" classe="folder">
+   <nodo nome="Liceo" descrizione="scuola" classe="school_front" state="6" nodeID="1408">
+      <nodo nome="Docenti" descrizione="docenti" classe="profgroup" sezione="8" nodeID="1409">
+         <nodo nome="Adempimenti" classe="folder" nodeID="1410"/>
+         <nodo nome="Novità" classe="folder" nodeID="1411"/>
+      </nodo>
+      <nodo nome="Classi" classe="classgroup" sezione="7" nodeID="1412">
+         <classe nome="1AL" indirizzo="pni" lettsezione="al" classe="classe" state="6" nodeID="1413">
+            <nodo nome="Compiti" classe="folder" state="6" nodeID="1414"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" state="6" nodeID="1415"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" state="6" nodeID="1416"/>
+            <nodo nome="Calendario" classe="event_calendar" state="6" nodeID="1417"/>
+            <nodo nome="Libri" classe="folder" state="6" nodeID="1418">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1419"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1420"/>
+            </nodo>
+         </classe>
+         <classe nome="1BL" indirizzo="pni" lettsezione="bl" classe="classe" state="6" nodeID="1421">
+            <nodo nome="Compiti" classe="folder" state="6" nodeID="1422"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" state="6" nodeID="1423"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" state="6" nodeID="1424"/>
+            <nodo nome="Calendario" classe="event_calendar" state="6" nodeID="1425"/>
+            <nodo nome="Libri" classe="folder" state="6" nodeID="1426">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1427"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1428"/>
+            </nodo>
+         </classe>
+         <classe nome="1CL" indirizzo="pni" lettsezione="cl" classe="classe" state="6" nodeID="1429">
+            <nodo nome="Compiti" classe="folder" state="6" nodeID="1430"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" state="6" nodeID="1431"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" state="6" nodeID="1432"/>
+            <nodo nome="Calendario" classe="event_calendar" state="6" nodeID="1433"/>
+            <nodo nome="Libri" classe="folder" state="6" nodeID="1434">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1435"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1436"/>
+            </nodo>
+         </classe>
+         <classe nome="2AL" indirizzo="pni" lettsezione="al" classe="classe" state="6" nodeID="1437">
+            <nodo nome="Compiti" classe="folder" state="6" nodeID="1438"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" state="6" nodeID="1439"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" state="6" nodeID="1440"/>
+            <nodo nome="Calendario" classe="event_calendar" state="6" nodeID="1441"/>
+            <nodo nome="Libri" classe="folder" state="6" nodeID="1442">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1443"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1444"/>
+            </nodo>
+         </classe>
+         <classe nome="2BL" indirizzo="pni" lettsezione="bl" classe="classe" state="6" nodeID="1445">
+            <nodo nome="Compiti" classe="folder" state="6" nodeID="1446"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" state="6" nodeID="1447"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" state="6" nodeID="1448"/>
+            <nodo nome="Calendario" classe="event_calendar" state="6" nodeID="1449"/>
+            <nodo nome="Libri" classe="folder" state="6" nodeID="1450">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1451"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1452"/>
+            </nodo>
+         </classe>
+         <classe nome="3AL" indirizzo="pni" lettsezione="al" classe="classe" state="6" nodeID="1453">
+            <nodo nome="Compiti" classe="folder" state="6" nodeID="1454"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" state="6" nodeID="1455"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" state="6" nodeID="1456"/>
+            <nodo nome="Calendario" classe="event_calendar" state="6" nodeID="1457"/>
+            <nodo nome="Libri" classe="folder" state="6" nodeID="1458">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1459"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1460"/>
+            </nodo>
+         </classe>
+         <classe nome="3BL" indirizzo="pni" lettsezione="bl" classe="classe" state="6" nodeID="1461">
+            <nodo nome="Compiti" classe="folder" state="6" nodeID="1462"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" state="6" nodeID="1463"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" state="6" nodeID="1464"/>
+            <nodo nome="Calendario" classe="event_calendar" state="6" nodeID="1465"/>
+            <nodo nome="Libri" classe="folder" state="6" nodeID="1466">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1467"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1468"/>
+            </nodo>
+         </classe>
+         <classe nome="4AL" indirizzo="pni" lettsezione="al" classe="classe" state="6" nodeID="1469">
+            <nodo nome="Compiti" classe="folder" state="6" nodeID="1470"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" state="6" nodeID="1471"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" state="6" nodeID="1472"/>
+            <nodo nome="Calendario" classe="event_calendar" state="6" nodeID="1473"/>
+            <nodo nome="Libri" classe="folder" state="6" nodeID="1474">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1475"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1476"/>
+            </nodo>
+         </classe>
+         <classe nome="4BL" indirizzo="pni" lettsezione="bl" classe="classe" state="6" nodeID="1477">
+            <nodo nome="Compiti" classe="folder" state="6" nodeID="1478"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" state="6" nodeID="1479"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" state="6" nodeID="1480"/>
+            <nodo nome="Calendario" classe="event_calendar" state="6" nodeID="1481"/>
+            <nodo nome="Libri" classe="folder" state="6" nodeID="1482">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1483"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1484"/>
+            </nodo>
+         </classe>
+         <classe nome="5AL" indirizzo="pni" lettsezione="al" classe="classe" state="6" nodeID="1485">
+            <nodo nome="Compiti" classe="folder" state="6" nodeID="1486"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" state="6" nodeID="1487"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" state="6" nodeID="1488"/>
+            <nodo nome="Calendario" classe="event_calendar" state="6" nodeID="1489"/>
+            <nodo nome="Libri" classe="folder" state="6" nodeID="1490">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1491"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1492"/>
+            </nodo>
+         </classe>
+         <classe nome="5BL" indirizzo="pni" lettsezione="bl" classe="classe" state="6" nodeID="1493">
+            <nodo nome="Compiti" classe="folder" state="6" nodeID="1494"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" state="6" nodeID="1495"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" state="6" nodeID="1496"/>
+            <nodo nome="Calendario" classe="event_calendar" state="6" nodeID="1497"/>
+            <nodo nome="Libri" classe="folder" state="6" nodeID="1498">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1499"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1500"/>
+            </nodo>
+         </classe>
+      </nodo>
+      <nodo nome="Didattica" classe="folder" sezione="8" nodeID="1501">
+         <nodo nome="Dipartimenti" classe="folder" nodeID="1502"/>
+         <nodo nome="Piani di studio" classe="article_mainpage" nodeID="1503"/>
+         <nodo nome="Progetti" classe="folder" nodeID="1504"/>
+         <nodo nome="Libri di testo" classe="folder" nodeID="1505"/>
+         <nodo nome="Libri consigliati" classe="folder" nodeID="1506"/>
+      </nodo>
+      <nodo nome="Circolari" descrizione="circolari" classe="dir_circolari" sezione="9" nodeID="1507">
+         <nodo nome="Ata" descrizione="ata" classe="folder_circolari" nodeID="1508"/>
+         <nodo nome="Studenti" descrizione="rer" classe="folder_circolari" nodeID="1509"/>
+         <nodo nome="Docenti" classe="folder_circolari" nodeID="1510"/>
+      </nodo>
+      <nodo nome="Uffici" descrizione="Uffici" classe="m2000_front" sezione="9" state="6" nodeID="1511">
+         <nodo nome="Ufficio periferico" classe="ufficio" nodeID="1512"/>
+      </nodo>
+      <nodo nome="Contatti" classe="contatti" sezione="9" nodeID="1513"/>
+      <nodo nome="Orientamento" classe="folder" sezione="8" nodeID="1514">
+         <nodo nome="In entrata" classe="folder" nodeID="1515"/>
+         <nodo nome="In uscita" classe="folder" nodeID="1516"/>
+      </nodo>
+      <nodo nome="Informazioni e notizie" classe="folder" sezione="8" nodeID="1517">
+         <nodo nome="Logistica" classe="folder" nodeID="1518">
+            <nodo nome="Mensa" classe="article_mainpage" nodeID="1519"/>
+            <nodo nome="Trasporti" classe="article_mainpage" nodeID="1520"/>
+         </nodo>
+         <nodo nome="Annunci" classe="folder" nodeID="1521"/>
+         <nodo nome="Calendario" classe="event_calendar" nodeID="1522"/>
+         <nodo nome="Diario" classe="blog" nodeID="1523"/>
+         <nodo nome="Urgenti" classe="folder" nodeID="1524"/>
+      </nodo>
+      <nodo nome="Laboratori" classe="folder" sezione="8" state="6" nodeID="1525"/>
+   </nodo>
+   <nodo nome="Ipsaa" descrizione="scuola" classe="school_front" state="6" nodeID="1526">
+      <nodo nome="Docenti" descrizione="docenti" classe="profgroup" sezione="8" nodeID="1527">
+         <nodo nome="Adempimenti" classe="folder" nodeID="1528"/>
+         <nodo nome="Novità" classe="folder" nodeID="1529"/>
+      </nodo>
+      <nodo nome="Classi" classe="classgroup" sezione="7" nodeID="1530">
+         <classe nome="1AA" indirizzo="agrotecnico" lettsezione="aa" classe="classe" state="6" nodeID="1531">
+            <nodo nome="Compiti" classe="folder" nodeID="1532"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1533"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1534"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1535"/>
+            <nodo nome="Libri" classe="folder" nodeID="1536">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1537"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1538"/>
+            </nodo>
+         </classe>
+         <classe nome="1BA" indirizzo="agrotecnico" lettsezione="ba" classe="classe" state="6" nodeID="1539">
+            <nodo nome="Compiti" classe="folder" nodeID="1540"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1541"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1542"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1543"/>
+            <nodo nome="Libri" classe="folder" nodeID="1544">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1545"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1546"/>
+            </nodo>
+         </classe>
+         <classe nome="2AA" indirizzo="agrotecnico" lettsezione="aa" classe="classe" state="6" nodeID="1547">
+            <nodo nome="Compiti" classe="folder" nodeID="1548"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1549"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1550"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1551"/>
+            <nodo nome="Libri" classe="folder" nodeID="1552">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1553"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1554"/>
+            </nodo>
+         </classe>
+         <classe nome="2BA" indirizzo="agrotecnico" lettsezione="ba" classe="classe" state="6" nodeID="1555">
+            <nodo nome="Compiti" classe="folder" nodeID="1556"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1557"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1558"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1559"/>
+            <nodo nome="Libri" classe="folder" nodeID="1560">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1561"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1562"/>
+            </nodo>
+         </classe>
+         <classe nome="3AA" indirizzo="agrotecnico" lettsezione="aa" classe="classe" state="6" nodeID="1563">
+            <nodo nome="Compiti" classe="folder" nodeID="1564"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1565"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1566"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1567"/>
+            <nodo nome="Libri" classe="folder" nodeID="1568">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1569"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1570"/>
+            </nodo>
+         </classe>
+         <classe nome="3BA" indirizzo="agrotecnico" lettsezione="aa" classe="classe" state="6" nodeID="1571">
+            <nodo nome="Compiti" classe="folder" nodeID="1572"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1573"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1574"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1575"/>
+            <nodo nome="Libri" classe="folder" nodeID="1576">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1577"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1578"/>
+            </nodo>
+         </classe>
+         <classe nome="4AA" indirizzo="agrotecnico" lettsezione="aa" classe="classe" state="6" nodeID="1579">
+            <nodo nome="Compiti" classe="folder" nodeID="1580"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1581"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1582"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1583"/>
+            <nodo nome="Libri" classe="folder" nodeID="1584">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1585"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1586"/>
+            </nodo>
+         </classe>
+         <classe nome="4BA" indirizzo="agrotecnico" lettsezione="ba" classe="classe" state="6" nodeID="1587">
+            <nodo nome="Compiti" classe="folder" nodeID="1588"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1589"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1590"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1591"/>
+            <nodo nome="Libri" classe="folder" nodeID="1592">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1593"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1594"/>
+            </nodo>
+         </classe>
+         <classe nome="5AA" indirizzo="agrotecnico" lettsezione="aa" classe="classe" state="6" nodeID="1595">
+            <nodo nome="Compiti" classe="folder" nodeID="1596"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1597"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1598"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1599"/>
+            <nodo nome="Libri" classe="folder" nodeID="1600">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1601"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1602"/>
+            </nodo>
+         </classe>
+         <classe nome="5BA" indirizzo="agrotecnico" lettsezione="ba" classe="classe" state="6" nodeID="1603">
+            <nodo nome="Compiti" classe="folder" nodeID="1604"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1605"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1606"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1607"/>
+            <nodo nome="Libri" classe="folder" nodeID="1608">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1609"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1610"/>
+            </nodo>
+         </classe>
+      </nodo>
+      <nodo nome="Didattica" classe="folder" sezione="8" nodeID="1611">
+         <nodo nome="Dipartimenti" classe="folder" nodeID="1612"/>
+         <nodo nome="Piani di studio" classe="article_mainpage" nodeID="1613"/>
+         <nodo nome="Progetti" classe="folder" nodeID="1614"/>
+         <nodo nome="Libri di testo" classe="folder" nodeID="1615"/>
+         <nodo nome="Libri consigliati" classe="folder" nodeID="1616"/>
+      </nodo>
+      <nodo nome="Circolari" descrizione="circolari" classe="dir_circolari" sezione="9" nodeID="1617">
+         <nodo nome="Ata" descrizione="ata" classe="folder_circolari" nodeID="1618"/>
+         <nodo nome="Studenti" descrizione="rer" classe="folder_circolari" nodeID="1619"/>
+         <nodo nome="Docenti" classe="folder_circolari" nodeID="1620"/>
+         <nodo nome="Educatori" classe="folder_circolari" nodeID="1621"/>
+      </nodo>
+      <nodo nome="Uffici" descrizione="Uffici" classe="m2000_front" sezione="9" nodeID="1622">
+         <nodo nome="Ufficio periferico" classe="ufficio" nodeID="1623"/>
+      </nodo>
+      <nodo nome="Contatti" classe="contatti" sezione="9" nodeID="1624"/>
+      <nodo nome="Orientamento" classe="folder" sezione="8" nodeID="1625">
+         <nodo nome="In entrata" classe="folder" nodeID="1626"/>
+         <nodo nome="In uscita" classe="folder" nodeID="1627"/>
+      </nodo>
+      <nodo nome="Informazioni e notizie" classe="folder" sezione="8" nodeID="1628">
+         <nodo nome="Logistica" classe="folder" nodeID="1629">
+            <nodo nome="Mensa" classe="article_mainpage" nodeID="1630"/>
+            <nodo nome="Trasporti" classe="article_mainpage" nodeID="1631"/>
+         </nodo>
+         <nodo nome="Annunci" classe="folder" nodeID="1632"/>
+         <nodo nome="Calendario" classe="event_calendar" nodeID="1633"/>
+         <nodo nome="Diario" classe="blog" nodeID="1634"/>
+         <nodo nome="Urgenti" classe="folder" nodeID="1635"/>
+      </nodo>
+      <nodo nome="Azienda" classe="m2000_front" sezione="12" state="6" nodeID="1636">
+         <nodo nome="Serra didattica" classe="folder" nodeID="1637"/>
+         <nodo nome="Apicoltura" classe="folder" nodeID="1638"/>
+         <nodo nome="Coltivazioni" classe="folder" nodeID="1639"/>
+         <nodo nome="Prodotti" classe="folder" nodeID="1640"/>
+      </nodo>
+      <nodo nome="Laboratori" classe="folder" sezione="8" state="6" nodeID="1641"/>
+      <nodo nome="Convitto" classe="m2000_front" sezione="13" state="6" nodeID="1642"/>
+   </nodo>
+   <nodo nome="Ipsia" descrizione="scuola" classe="school_front" state="6" nodeID="1643">
+      <nodo nome="Docenti" descrizione="docenti" classe="profgroup" sezione="8" nodeID="1644">
+         <nodo nome="Adempimenti" classe="folder" nodeID="1645"/>
+         <nodo nome="Novità" classe="folder" nodeID="1646"/>
+      </nodo>
+      <nodo nome="Classi" classe="classgroup" sezione="7" nodeID="1647">
+         <classe nome="1AC" indirizzo="ceconi" lettsezione="ac" classe="classe" state="6" nodeID="1648">
+            <nodo nome="Compiti" classe="folder" nodeID="1649"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1650"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1651"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1652"/>
+            <nodo nome="Libri" classe="folder" nodeID="1653">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1654"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1655"/>
+            </nodo>
+         </classe>
+         <classe nome="2AC" indirizzo="ceconi" lettsezione="ac" classe="classe" state="6" nodeID="1656">
+            <nodo nome="Compiti" classe="folder" nodeID="1657"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1658"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1659"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1660"/>
+            <nodo nome="Libri" classe="folder" nodeID="1661">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1662"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1663"/>
+            </nodo>
+         </classe>
+         <classe nome="3AC" indirizzo="ceconi" lettsezione="ac" classe="classe" state="6" nodeID="1664">
+            <nodo nome="Compiti" classe="folder" nodeID="1665"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1666"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1667"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1668"/>
+            <nodo nome="Libri" classe="folder" nodeID="1669">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1670"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1671"/>
+            </nodo>
+         </classe>
+         <classe nome="4AC" indirizzo="ceconi" lettsezione="ac" classe="classe" state="6" nodeID="1672">
+            <nodo nome="Compiti" classe="folder" nodeID="1673"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1674"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1675"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1676"/>
+            <nodo nome="Libri" classe="folder" nodeID="1677">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1678"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1679"/>
+            </nodo>
+         </classe>
+         <classe nome="5AC" indirizzo="ceconi" lettsezione="ac" classe="classe" state="6" nodeID="1680">
+            <nodo nome="Compiti" classe="folder" nodeID="1681"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1682"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1683"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1684"/>
+            <nodo nome="Libri" classe="folder" nodeID="1685">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1686"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1687"/>
+            </nodo>
+         </classe>
+      </nodo>
+      <nodo nome="Didattica" classe="folder" sezione="8" nodeID="1688">
+         <nodo nome="Dipartimenti" classe="folder" nodeID="1689"/>
+         <nodo nome="Piani di studio" classe="article_mainpage" nodeID="1690"/>
+         <nodo nome="Progetti" classe="folder" nodeID="1691"/>
+         <nodo nome="Libri di testo" classe="folder" nodeID="1692"/>
+         <nodo nome="Libri consigliati" classe="folder" nodeID="1693"/>
+      </nodo>
+      <nodo nome="Circolari" descrizione="circolari" classe="dir_circolari" sezione="9" nodeID="1694">
+         <nodo nome="Ata" descrizione="ata" classe="folder_circolari" nodeID="1695"/>
+         <nodo nome="Studenti" descrizione="rer" classe="folder_circolari" nodeID="1696"/>
+         <nodo nome="Docenti" classe="folder_circolari" nodeID="1697"/>
+      </nodo>
+      <nodo nome="Uffici" descrizione="Uffici" classe="m2000_front" sezione="9" state="6" nodeID="1698">
+         <nodo nome="Ufficio periferico" classe="ufficio" nodeID="1699"/>
+      </nodo>
+      <nodo nome="Contatti" classe="contatti" sezione="9" nodeID="1700"/>
+      <nodo nome="Orientamento" classe="folder" sezione="8" nodeID="1701">
+         <nodo nome="In entrata" classe="folder" nodeID="1702"/>
+         <nodo nome="In uscita" classe="folder" nodeID="1703"/>
+      </nodo>
+      <nodo nome="Informazioni e notizie" classe="folder" sezione="8" nodeID="1704">
+         <nodo nome="Logistica" classe="folder" nodeID="1705">
+            <nodo nome="Mensa" classe="article_mainpage" nodeID="1706"/>
+            <nodo nome="Trasporti" classe="article_mainpage" nodeID="1707"/>
+         </nodo>
+         <nodo nome="Annunci" classe="folder" nodeID="1708"/>
+         <nodo nome="Calendario" classe="event_calendar" nodeID="1709"/>
+         <nodo nome="Diario" classe="blog" nodeID="1710"/>
+         <nodo nome="Urgenti" classe="folder" nodeID="1711"/>
+      </nodo>
+      <nodo nome="Laboratori" classe="folder" sezione="8" state="6" nodeID="1712"/>
+   </nodo>
+   <nodo nome="Ipsc" descrizione="scuola" classe="school_front" state="6" nodeID="1713">
+      <nodo nome="Docenti" descrizione="docenti" classe="profgroup" sezione="8" nodeID="1714">
+         <nodo nome="Adempimenti" classe="folder" nodeID="1715"/>
+         <nodo nome="Novità" classe="folder" nodeID="1716"/>
+      </nodo>
+      <nodo nome="Classi" classe="classgroup" sezione="7" nodeID="1717">
+         <classe nome="1AP" indirizzo="biennio" lettsezione="ap" classe="classe" state="6" nodeID="1718">
+            <nodo nome="Compiti" classe="folder" nodeID="1719"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1720"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1721"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1722"/>
+            <nodo nome="Libri" classe="folder" nodeID="1723">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1724"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1725"/>
+            </nodo>
+         </classe>
+         <classe nome="1BP" indirizzo="biennio" lettsezione="bp" classe="classe" state="6" nodeID="1726">
+            <nodo nome="Compiti" classe="folder" nodeID="1727"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1728"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1729"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1730"/>
+            <nodo nome="Libri" classe="folder" nodeID="1731">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1732"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1733"/>
+            </nodo>
+         </classe>
+         <classe nome="2AP" indirizzo="biennio" lettsezione="ap" classe="classe" state="6" nodeID="1734">
+            <nodo nome="Compiti" classe="folder" nodeID="1735"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1736"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1737"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1738"/>
+            <nodo nome="Libri" classe="folder" nodeID="1739">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1740"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1741"/>
+            </nodo>
+         </classe>
+         <classe nome="2BP" indirizzo="biennio" lettsezione="bp" classe="classe" state="6" nodeID="1742">
+            <nodo nome="Compiti" classe="folder" nodeID="1743"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1744"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1745"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1746"/>
+            <nodo nome="Libri" classe="folder" nodeID="1747">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1748"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1749"/>
+            </nodo>
+         </classe>
+         <classe nome="3AO" indirizzo="aziendale" lettsezione="ao" classe="classe" state="6" nodeID="1750">
+            <nodo nome="Compiti" classe="folder" nodeID="1751"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1752"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1753"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1754"/>
+            <nodo nome="Libri" classe="folder" nodeID="1755">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1756"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1757"/>
+            </nodo>
+         </classe>
+         <classe nome="3BT" indirizzo="turistico" lettsezione="bt" classe="classe" state="6" nodeID="1758">
+            <nodo nome="Compiti" classe="folder" nodeID="1759"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1760"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1761"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1762"/>
+            <nodo nome="Libri" classe="folder" nodeID="1763">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1764"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1765"/>
+            </nodo>
+         </classe>
+         <classe nome="4AO" indirizzo="aziendale" lettsezione="ao" classe="classe" state="6" nodeID="1766">
+            <nodo nome="Compiti" classe="folder" nodeID="1767"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1768"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1769"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1770"/>
+            <nodo nome="Libri" classe="folder" nodeID="1771">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1772"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1773"/>
+            </nodo>
+         </classe>
+         <classe nome="4BT" indirizzo="turistico" lettsezione="bt" classe="classe" state="6" nodeID="1774">
+            <nodo nome="Compiti" classe="folder" nodeID="1775"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1776"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1777"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1778"/>
+            <nodo nome="Libri" classe="folder" nodeID="1779">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1780"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1781"/>
+            </nodo>
+         </classe>
+         <classe nome="5BT" indirizzo="turistico" lettsezione="bt" classe="classe" state="6" articolata="1" nodeID="1782">
+            <nodo nome="Compiti" classe="folder" nodeID="1783"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1784"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1785"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1786"/>
+            <nodo nome="Libri" classe="folder" nodeID="1787">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1788"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1789"/>
+            </nodo>
+         </classe>
+         <classe nome="5AO" indirizzo="turistico" lettsezione="ao" classe="classe" state="6" articolata="1" nodeID="1790">
+            <nodo nome="Compiti" classe="folder" nodeID="1791"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1792"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1793"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1794"/>
+            <nodo nome="Libri" classe="folder" nodeID="1795">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1796"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1797"/>
+            </nodo>
+         </classe>
+      </nodo>
+      <nodo nome="Didattica" classe="folder" sezione="8" nodeID="1798">
+         <nodo nome="Dipartimenti" classe="folder" nodeID="1799"/>
+         <nodo nome="Piani di studio" classe="article_mainpage" nodeID="1800"/>
+         <nodo nome="Progetti" classe="folder" nodeID="1801"/>
+         <nodo nome="Libri di testo" classe="folder" nodeID="1802"/>
+         <nodo nome="Libri consigliati" classe="folder" nodeID="1803"/>
+      </nodo>
+      <nodo nome="Circolari" descrizione="circolari" classe="dir_circolari" sezione="9" nodeID="1804">
+         <nodo nome="Ata" descrizione="ata" classe="folder_circolari" nodeID="1805"/>
+         <nodo nome="Studenti" descrizione="rer" classe="folder_circolari" nodeID="1806"/>
+         <nodo nome="Docenti" classe="folder_circolari" nodeID="1807"/>
+      </nodo>
+      <nodo nome="Uffici" descrizione="Uffici" classe="m2000_front" sezione="9" state="6" nodeID="1808">
+         <nodo nome="Ufficio periferico" classe="ufficio" nodeID="1809"/>
+      </nodo>
+      <nodo nome="Contatti" classe="contatti" sezione="9" nodeID="1810"/>
+      <nodo nome="Orientamento" classe="folder" sezione="8" nodeID="1811">
+         <nodo nome="In entrata" classe="folder" nodeID="1812"/>
+         <nodo nome="In uscita" classe="folder" nodeID="1813"/>
+      </nodo>
+      <nodo nome="Informazioni e notizie" classe="folder" sezione="8" nodeID="1814">
+         <nodo nome="Logistica" classe="folder" nodeID="1815">
+            <nodo nome="Mensa" classe="article_mainpage" nodeID="1816"/>
+            <nodo nome="Trasporti" classe="article_mainpage" nodeID="1817"/>
+         </nodo>
+         <nodo nome="Annunci" classe="folder" nodeID="1818"/>
+         <nodo nome="Calendario" classe="event_calendar" nodeID="1819"/>
+         <nodo nome="Diario" classe="blog" nodeID="1820"/>
+         <nodo nome="Urgenti" classe="folder" nodeID="1821"/>
+      </nodo>
+      <nodo nome="Laboratori" classe="folder" sezione="8" state="6" nodeID="1822"/>
+   </nodo>
+   <nodo nome="Itc" descrizione="scuola" classe="school_front" state="6" nodeID="1823">
+      <nodo nome="Docenti" descrizione="docenti" classe="profgroup" sezione="8" nodeID="1824">
+         <nodo nome="Adempimenti" classe="folder" nodeID="1825"/>
+         <nodo nome="Novità" classe="folder" nodeID="1826"/>
+      </nodo>
+      <nodo nome="Classi" classe="classgroup" sezione="7" nodeID="1827">
+         <classe nome="1AIGEA" indirizzo="igea" lettsezione="aigea" classe="classe" state="6" nodeID="1828">
+            <nodo nome="Compiti" classe="folder" nodeID="1829"/>
+            <nodo nome="Diario di classe" classe="blog" sezione="10" nodeID="1830"/>
+            <nodo nome="Elaborati" classe="folder" sezione="10" nodeID="1831"/>
+            <nodo nome="Calendario" classe="event_calendar" nodeID="1832"/>
+            <nodo nome="Libri" classe="folder" nodeID="1833">
+               <nodo nome="Libri di testo" classe="article_mainpage" state="6" nodeID="1834"/>
+               <nodo nome="Recensioni" classe="folder" sezione="10" state="6" nodeID="1835"/>
+            </nodo>
+         </classe>
+      </nodo>
+      <nodo nome="Didattica" classe="folder" sezione="8" nodeID="1836">
+         <nodo nome="Dipartimenti" classe="folder" nodeID="1837"/>
+         <nodo nome="Piani di studio" classe="article_mainpage" nodeID="1838"/>
+         <nodo nome="Progetti" classe="folder" nodeID="1839"/>
+         <nodo nome="Libri di testo" classe="folder" nodeID="1840"/>
+         <nodo nome="Libri consigliati" classe="folder" nodeID="1841"/>
+      </nodo>
+      <nodo nome="Circolari" descrizione="circolari" classe="dir_circolari" sezione="9" nodeID="1842">
+         <nodo nome="Ata" descrizione="ata" classe="folder_circolari" nodeID="1843"/>
+         <nodo nome="Studenti" descrizione="rer" classe="folder_circolari" nodeID="1844"/>
+         <nodo nome="Docenti" classe="folder_circolari" nodeID="1845"/>
+      </nodo>
+      <nodo nome="Uffici" descrizione="Uffici" classe="m2000_front" sezione="9" state="6" nodeID="1846">
+         <nodo nome="Ufficio periferico" classe="ufficio" nodeID="1847"/>
+      </nodo>
+      <nodo nome="Contatti" classe="contatti" sezione="9" nodeID="1848"/>
+      <nodo nome="Orientamento" classe="folder" sezione="8" nodeID="1849">
+         <nodo nome="In entrata" classe="folder" nodeID="1850"/>
+         <nodo nome="In uscita" classe="folder" nodeID="1851"/>
+      </nodo>
+      <nodo nome="Informazioni e notizie" classe="folder" sezione="8" nodeID="1852">
+         <nodo nome="Logistica" classe="folder" nodeID="1853">
+            <nodo nome="Mensa" classe="article_mainpage" nodeID="1854"/>
+            <nodo nome="Trasporti" classe="article_mainpage" nodeID="1855"/>
+         </nodo>
+         <nodo nome="Annunci" classe="folder" nodeID="1856"/>
+         <nodo nome="Calendario" classe="event_calendar" nodeID="1857"/>
+         <nodo nome="Diario" classe="blog" nodeID="1858"/>
+         <nodo nome="Urgenti" classe="folder" nodeID="1859"/>
+      </nodo>
+      <nodo nome="Laboratori" classe="folder" sezione="8" state="6" nodeID="1860"/>
+   </nodo>
+   <nodo nome="Istituto" classe="m2000_front" nodeID="1861">
+      <nodo nome="Organigramma" classe="article_mainpage" sezione="9" state="6" nodeID="1862"/>
+      <nodo nome="Circolari" classe="dir_circolari" sezione="9" nodeID="1863">
+         <nodo nome="Ata" classe="folder_circolari" nodeID="1864"/>
+         <nodo nome="Docenti" classe="folder_circolari" nodeID="1865"/>
+         <nodo nome="Studenti" classe="folder_circolari" nodeID="1866"/>
+         <nodo nome="Educatori" classe="folder_circolari" nodeID="1867"/>
+      </nodo>
+      <nodo nome="Notizie" classe="folder" sezione="9" nodeID="1868">
+         <nodo nome="Diario" classe="blog" nodeID="1869"/>
+         <nodo nome="Urgenti" classe="folder" nodeID="1870"/>
+         <nodo nome="Annunci" classe="folder" nodeID="1871">
+            <nodo nome="2009/2010" classe="folder" nodeID="1872"/>
+         </nodo>
+      </nodo>
+      <nodo nome="Bandi e concorsi" classe="folder" sezione="9" nodeID="1873"/>
+      <nodo nome="Pof" classe="article_mainpage" sezione="8" nodeID="1874"/>
+   </nodo>
+   <nodo nome="Personale" classe="m2000_front" sezione="9" nodeID="1875">
+      <nodo nome="Dirigente scolastico" classe="dipendenti" nodeID="1876"/>
+      <nodo nome="Dsga" classe="dipendenti" state="6" nodeID="1877"/>
+      <nodo nome="Docenti" classe="dipendenti" nodeID="1878">
+         <nodo nome="Graduatorie" classe="folder" nodeID="1879"/>
+      </nodo>
+      <nodo nome="Educatori" classe="dipendenti" nodeID="1880">
+         <nodo nome="Graduatorie" classe="folder" nodeID="1881"/>
+      </nodo>
+      <nodo nome="Ata" classe="folder" nodeID="1882">
+         <nodo nome="Assistenti amministrativi" classe="dipendenti" nodeID="1883"/>
+         <nodo nome="Assistenti tecnici" classe="dipendenti" nodeID="1884"/>
+         <nodo nome="Collaboratori scolastici" classe="dipendenti" nodeID="1885"/>
+         <nodo nome="Cuochi" classe="dipendenti" nodeID="1886"/>
+         <nodo nome="Guardarobieri" classe="dipendenti" nodeID="1887"/>
+         <nodo nome="Graduatoria" classe="folder" nodeID="1888"/>
+      </nodo>
+   </nodo>
+   <nodo nome="Segreteria" classe="m2000_front" sezione="9" nodeID="1889">
+      <nodo nome="Ufficio alunni" classe="ufficio" nodeID="1890">
+         <nodo nome="Bacheca" classe="blog" nodeID="1891"/>
+      </nodo>
+      <nodo nome="Ufficio personale" classe="ufficio" nodeID="1892">
+         <nodo nome="Bacheca" classe="blog" nodeID="1893"/>
+      </nodo>
+      <nodo nome="Ufficio contabilità" classe="ufficio" nodeID="1894">
+         <nodo nome="Bacheca" classe="blog" nodeID="1895"/>
+      </nodo>
+      <nodo nome="Ufficio protocollo" classe="ufficio" nodeID="1896">
+         <nodo nome="Bacheca" classe="blog" nodeID="1897"/>
+      </nodo>
+      <nodo nome="Ufficio presidenza" classe="ufficio" nodeID="1898">
+         <nodo nome="Bacheca" classe="blog" nodeID="1899"/>
+      </nodo>
+      <nodo nome="Ufficio dsga" classe="ufficio" nodeID="1900">
+         <nodo nome="Bacheca" classe="blog" nodeID="1901"/>
+      </nodo>
+   </nodo>
+   <nodo nome="Didattica" classe="m2000_front" sezione="8" nodeID="1902">
+      <nodo nome="Progetti" classe="folder" nodeID="1903"/>
+      <nodo nome="Corsi" classe="folder" nodeID="1904"/>
+      <nodo nome="Scuola aperta" classe="folder" nodeID="1905"/>
+   </nodo>
+   <nodo nome="Contatti" classe="contatti" sezione="9" nodeID="1906"/>
+</nodo>

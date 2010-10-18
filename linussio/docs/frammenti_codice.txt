@@ -1,0 +1,13 @@
+
+codice per caricare la lista degli utenti
+<h1>Professori</h1>
+	
+	
+
+	{$node.contentobject_id}
+	
+
+	{def $users=fetch( 'content', 'list',
+        	hash( 'parent_node_id', 144,
+              'depth', 1 ) )}
+	

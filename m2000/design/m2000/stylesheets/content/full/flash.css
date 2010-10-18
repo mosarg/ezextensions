@@ -1,0 +1,16 @@
+/* 
+    Document   : flash
+    Created on : Nov 28, 2009, 8:07:30 PM
+    Author     : mosa
+    Description:
+    flash content full view
+*/
+
+div.content-view-full div.class-flash div.attribute-short{
+    float:left;
+    width:50%;
+}
+div.content-view-full div.class-flash div.content-media{
+    float:left;
+    margin-right:2em;
+}

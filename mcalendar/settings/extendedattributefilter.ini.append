@@ -1,0 +1,15 @@
+<?php
+/* 
+ 
+
+[McalendarCalendar]
+ExtensionName=mcalendar
+ClassName=calendarExtendedFilter
+MethodName=createSqlParts
+FileName=classes/calendarextendedfilter.php
+
+
+
+ *  */
+
+?>

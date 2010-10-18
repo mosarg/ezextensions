@@ -1,0 +1,15 @@
+/* 
+    Document   : dynamic3items
+    Created on : Dec 7, 2009, 9:59:43 AM
+    Author     : mosa
+    Description:
+       dynamic 3 items style
+*/
+
+
+div.block-type-dynamic3items a{
+    color:gray;
+}
+div.block-type-dynamic3items a:hover{
+    color:black;
+}

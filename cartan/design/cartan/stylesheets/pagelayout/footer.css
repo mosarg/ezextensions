@@ -1,0 +1,14 @@
+div#footer{
+    clear: both; /* Ensures that the footer is pushed properly below the columns */
+    text-align: center;
+    width:900px;
+    height:193px;
+}
+
+div#footer div.border-content{
+    padding: 1.25em;
+    text-align: center;
+    font-size: 0.8em;
+    color: #7f7f7f;
+ }
+

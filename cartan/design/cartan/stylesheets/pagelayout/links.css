@@ -1,0 +1,38 @@
+div#user_links{
+    width:100%;
+    float:left;
+
+}
+
+div#links{
+    float:right;
+    text-align: right;
+    font-size:1.1em;
+    font-weight: normal;
+     padding-right:2em;
+     position: relative;
+     top:-60px;
+     right:-28px;
+   
+}
+div#links ul li
+{
+   background-position: 0 0.5em;
+   display:block;
+   text-align:left;
+   float:left;
+   margin:0;
+   padding:0;
+  }
+
+div#links a
+{
+    color: gray;
+    text-decoration: none;
+    padding:1em;
+}
+
+div#links a:hover{
+    color:white;
+    background:#ffa800;
+}

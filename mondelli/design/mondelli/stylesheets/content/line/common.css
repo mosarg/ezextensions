@@ -1,0 +1,30 @@
+/* 
+    Document   : common
+    Created on : Dec 6, 2009, 8:53:06 PM
+    Author     : mosa
+    Description:
+    common line styles
+*/
+
+.square-icon{
+    clear:none;
+    float:left;
+    height:12em;
+    width:12em;
+    overflow:hidden;
+    text-align:center;
+    margin-right:1.5em;
+    margin-top:1em;
+}
+
+.square-icon h2 a{
+    color:white;
+}
+.square-icon h2 a:hover{
+    color:black;
+}
+div.content-view-line h2{
+    padding-top:0.8em;
+    padding-bottom:0.8em;
+    font-size:1.1em;
+   }

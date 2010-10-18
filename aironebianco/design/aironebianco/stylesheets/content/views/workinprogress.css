@@ -1,0 +1,27 @@
+/* 
+    Document   : workinprogress
+    Created on : Dec 6, 2009, 8:56:53 PM
+    Author     : mosa
+    Description:
+    work in progress styles
+*/
+
+div.wip{
+    position:relative;
+    background:red;
+    padding:0.3em;
+    width:40em;
+    margin-bottom:2em;
+}
+div.wip p{font-size:1.25em;
+          color:white;
+          font-weight:bold;
+          text-align:center;}
+
+h4.mandatory {font-family:serif;
+              font-style:italic;}
+
+h4.mandatory:before{
+    content:'* ';
+    color:red;
+}

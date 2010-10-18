@@ -1,0 +1,15 @@
+
+div.message-confirmation, div.message-feedback, div.message-warning, div.message-error, div.warning
+{
+    -moz-border-image:url(../images/sfondi/fancy_border.png) 7 7 7 7 stretch stretch;
+    -webkit-border-image:url(../images/sfondi/fancy_border.png) 7 7 7 7 stretch stretch;
+    border-image:url(../images/sfondi/fancy_border.png) 7 7 7 7 stretch stretch;
+    border-width:10px;
+    margin: 0.5em 0 1em 0;
+    padding: 0.5em 1em 0.5em 1em;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    background: url(../images/sfondi/dropdown_back_hover.png);
+}
+
