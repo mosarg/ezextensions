@@ -1,0 +1,360 @@
+\chapter[Pagina principale]{Modifica e creazione delle \textsl{prime pagine} (frontpage)}
+
+Le \textsl{prime pagine} rappresentano dei contenitori per l'aggregazione dei contenuti pubblicati al loro interno. I nodi figli di una frontpage non dovrebbero essere elementi affini agli articoli ma solo nodi referenzianti oggetti di tipo contenitore (folder, dir, proffolder etc):
+ \begin{figure}[h]
+ \centering
+ \includegraphics[width=0.6\textwidth]{./immagini/organigrammi/inserimento_dati1.png}
+ % inserimento_dati1.png: 1176x714 pixel, 72dpi, 41.49x25.19 cm, bb=0 0 1176 714
+ \caption{Le frontpage non dovrebbero contenere articoli ma solo nodi contenitore}
+ \label{fig:child_frontpage}
+\end{figure}
+
+Se per errore un articolo viene inserito come primo figlio di una frontpage questo non sarà immediatamente visibile tramite il frontend del sito ma dovrà essere inserito all'interno di un blocco della frontpage. Per essere modificato o eliminato dovremo utilizzare il backend amministrativo. Solo gli amministratori o utenti con pari diritti possono inserire articoli all'interno di una frontpage.
+Per modificare la frontpage clicchiamo sull'icona matita nella toolbar principale. Verrà caricata l'interfaccia per la modifica dell'oggetto. L'interfaccia di modifica dipenderà dal tipo di frontpage su cui stiamo lavorando: per una frontpage generica figura[\ref{fig:frontpage_generica}], per la frontpage di una scuola figura[\ref{fig:frontpage_scuola}] etc.
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/frontpage/frontpage1.png}
+ % frontpage1.png: 1245x614 pixel, 96dpi, 32.94x16.24 cm, bb=
+ \label{fig:frontpage_generica}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./immagini/school_front/frontpage1.png}
+ % frontpage1.png: 1012x744 pixel, 96dpi, 26.77x19.68 cm, bb=
+ \label{fig:frontpage_scuola}
+\end{figure}
+
+
+Una frontpage consiste di elementi di testo, descrizioni e di un elemento layout figura [\ref{fig:frontpage_layout}] tramite il quale possiamo decidere la struttura della frontpage stessa:
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.4\textwidth]{./immagini/frontpage/layout.png}
+ % layout.png: 285x186 pixel, 96dpi, 7.54x4.92 cm, bb=
+ \caption{Elementi di layout per una frontpage. È possibile definire layout arbitrari tramite i template}
+ \label{fig:frontpage_layout}
+\end{figure}
+All'interno di ogni zona definita dal layout è possibile inserire uno o più blocchi figura [\ref{fig:frontpage_blocks}]. I blocchi sono delle strutture che ci permettono di formattare contenuti inseriti in altre parti del sito nella maniera più appropriata. Possiamo, ad esempio, creare un blocco evidenziare un articolo, per selezionare gli articoli più recenti, per estrarre casualmente dei contenuti dal sito, per visualizzare un calendario etc.
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.9\textwidth]{./immagini/frontpage/blocks.png}
+ % blocks.png: 1009x473 pixel, 96dpi, 26.69x12.51 cm, bb=
+ \caption{Blocchi definiti all'interno di una frontpage}
+ \label{fig:frontpage_blocks}
+\end{figure}
+Dopo aver creato  il blocco possiamo inserire dei contenuti al suo interno utilizzando o il tasto aggiungi elemento oppure il menù di ricerca presenta in alto a sinistra nella pagina figura [\ref{fig:frontpage_search}].
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.3\textwidth]{./immagini/frontpage/search.png}
+ % search.png: 228x333 pixel, 90dpi, 6.44x9.40 cm, bb=
+ \caption{Menu per la ricerca e l'aggiunta rapida dei contenuti ai blocchi definiti nella frontpage}
+ \label{fig:frontpage_search}
+\end{figure}
+Dopo aver inserito il contenuto dobbiamo scegliere il momento della sua pubblicazione cliccando sull'icona con l'orologio figura[\ref{fig:frontpage_calendar}] alla destra dell'elemento appena inserito. Ci verrà presentata l'interfaccia per la scelta della data di pubblicazione \begin{figure}
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/frontpage/calendario.png}
+ % calendario.png: 1010x462 pixel, 96dpi, 26.72x12.22 cm, bb=
+ \label{fig:frontpage_calendar}
+\end{figure}
+
+\section{Pagina principale scuole}
+
+
+La pagina principale di ogni scuola è un tipo particolare di frontpage che dispone di ulteriori campi rispetto alle pagine principali generiche. È possibile inserire una descrizione della scuola tramite il campo descrizione:
+
+  \begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/frontpage/descrizione.png}
+\includegraphics[width=0.8\textwidth]{./immagini/frontpage/titolo.png}
+ % descrizione.png: 1003x513 pixel, 72dpi, 35.38x18.10 cm, bb=
+ \caption{Pagina principale scuole, campo descrizione e campo titolo}
+ \label{fig:scuole_descrizione}
+\end{figure}
+
+Tramite il campo Coordinatore di sede è possibile selezionare un docente, tra quelli registrati nel sito e facenti parte del gruppo relativo alla scuola in esame, e far si che questo compaia nella visualizzazione della pagina. Per selezionare un docente è sufficiente utilizzare il menu a tendina presente nell'interfaccia di modifica. Tramite il campo codice meccanografico potete inserire il codice meccanografico dell'istituto.
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/frontpage/coordinatore_sede.png}
+ % coordinatore_sede.png: 1004x103 pixel, 72dpi, 35.42x3.63 cm, bb=
+ \caption{Campo per la scelta del coordinatore di sede e campo per l'inserimento del codice meccanografico della scuola}
+ \label{fig:scuole_coordinatore}
+\end{figure}
+
+Il campo  foto scuolo permette l'inserimento di un'immagine del plesso scolastico da visualizzare in alto a sinistra nella pagina principale della scuola.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/frontpage/foto.png}
+ % foto.png: 1004x347 pixel, 72dpi, 35.42x12.24 cm, bb=
+ \caption{Foto della scuola nella vista completa del nodo}
+ \label{fig:scuole_foto}
+\end{figure}
+Il campo logo permette l'inserimento del logo della scuola nell'apposito spazio presente all'interno del menu per la scelta del plesso scolastico.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/frontpage/logo.png}
+ % logo.png: 1008x437 pixel, 72dpi, 35.56x15.42 cm, bb=
+ \caption{Logo che verrà visualizzato nel menu di scelta delle scuole}
+ \label{fig:scuole_logo}
+\end{figure}
+
+
+
+Il campo layout è analogo a quello delle altre frontpage e permette all'utente di selezionare la disposizione dei blocchi all'interno della pagina.
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth,keepaspectratio=true]{./immagini/frontpage/layout_scuole.png}
+ % layout_scuole.png: 1018x429 pixel, 72dpi, 35.91x15.13 cm, bb=
+ \caption{Layout dei blocchi nella pagina principale della scuola}
+ \label{fig:scuole_layout}
+\end{figure}
+
+
+L'ultimo campo in cui è possibile inserire dei contenuti è Piè di pagina, utile, ad esempio, per numeri di telefono o e-mail secondarie.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/frontpage/piede_pagine.png}
+ % piede_pagine.png: 1017x262 pixel, 72dpi, 35.88x9.24 cm, bb=
+ \caption{Note a piè di pagina}
+ \label{fig:scuole_piedepagine}
+\end{figure}
+
+
+
+\section{Macroaree}
+
+Gli oggetti appartenenti alla classe macroaree devono essere utilizzati per la gestione dei contenuti afferenti alla macroaree. 
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/frontpage/macroaree-schema.png}
+ % macroaree-schema.png: 987x566 pixel, 72dpi, 34.82x19.97 cm, bb=
+ \caption{Struttura della sezione macroaree}
+ \label{fig:macroaree_schema}
+\end{figure}
+
+Come si evince dalla figura.\ref{fig:macroaree_schema} il primo elemento della sezione Macroaree è un oggetto di classe macroarea contenente a sua volta degli altri elementi di classe macroarea. All'interno delle frontpage di classe macroarea devono essere inseriti i contenuti ad esse afferenti.
+Analiziamo l'interfaccia di modifica di una macroarea:
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/frontpage/macroarea_incipit.png}
+ % macroarea_incipit.png: 1008x302 pixel, 72dpi, 35.56x10.65 cm, bb=
+ \caption{Spazio xml per l'inserimento della descrizione della macroarea}
+ \label{fig:macroarea_incipit}
+\end{figure}
+
+il primo campo che ci viene richiesto di compilare è uno spazio Xml all'interno del quale possiamo andare ad inserire una descrizione dei contenuti della pagina.
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/frontpage/macroarea_blocchi.png}
+ % macroarea_blocchi.png: 1015x386 pixel, 72dpi, 35.81x13.62 cm, bb=
+ \caption{Blocchi per l'inserimento di contenuti all'interno della frontpage della macroarea}
+ \label{fig:macroaree_blocchi}
+\end{figure}
+
+Il secondo campo ci chiede di inserire  zero o più blocchi con cui visualizzare informazioni riguardanti la macroarea in fase di modifica.
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth,bb=0 0 1006 515]{./immagini/frontpage/macroarea_logo_referente.png}
+ % macroarea_logo_referente.png: 1006x515 pixel, 72dpi, 35.49x18.17 cm, bb=0 0 1006 515
+ \caption{Il logo con cui visualizzare la macroarea nella vista compatta ed il referente della macroarea}
+ \label{fig:macroaree_logo}
+\end{figure}
+
+I campi riportati in figura.\ref{fig:macroaree_logo} devono essere utilizzati per inserire un'immagine da usare come incona nella visualizzazione minimale dell'oggetto ed il referente della macroarea da scegliersi tra gli utenti del sito.
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/frontpage/macroarea_figli.png}
+ % macroarea_figli.png: 1016x131 pixel, 72dpi, 35.84x4.62 cm, bb=
+ \caption{Campi per la visualizzazione degli elementi figli e del menu di sinistra}
+ \label{fig:macroaree_figli}
+\end{figure}
+
+Le ultime informazioni che ci viene richiesto di inserire figura.\ref{fig:macroaree_figli}, sono:
+\begin{description}
+ \item[Mostra menu]: da spuntare per visualizzare il menu sulla sinistra 
+\item[Mostra figli]: da spuntare per visualizzare gli elementi figli. Nell'oggetto macroarea presente nel livello principale del sito (home/Macroaree) la voce \textbf{Mostra figli} deve essere spuntata al fine di poter visualizzare in una tabella tutte le macroaree tematiche presenti all'interno del sito.
+\end{description}
+
+\subsection{Attivazione macroaree}
+Ricordiamo che prima che la macroarea sia visibile pubblicamente il suo stato dovrà essere impostato a pronto come spiegato nel capitolo sulla modifica dei contenuti
+
+\section{Blocchi}
+
+\subsection{Calendario}
+
+Definizione del blocco:
+
+\begin{verbatim}
+[LeftCalendar]
+Name=Calendario
+NumberOfValidItems=3
+NumberOfArchivedItems=4
+ManualAddingOfItems=enabled
+ViewList[]=calendar
+ViewList[]=programma
+ViewName[calendar]=Il calendario
+ViewName[programma]=Programma eventi
+\end{verbatim}
+
+
+\subsection{Notizia principale}
+
+Definizione del blocco:
+\begin{verbatim}
+[MainStory]
+Name=Notizia principale
+NumberOfValidItems=1
+NumberOfArchivedItems=5
+ManualAddingOfItems=enabled
+ViewList[]=main_story1
+ViewList[]=main_story2
+ViewList[]=main_story3
+ViewName[main_story1]=Notizia principale (1)
+ViewName[main_story2]=Notizia principale (2)
+ViewName[main_story3]=Notizia principale (3)
+\end{verbatim}
+
+
+
+\subsection{2 Elementi Manuale}
+
+
+Definizione del blocco:
+
+\begin{verbatim}
+[Manual2Items]
+Name=2 Elementi Manuale
+NumberOfValidItems=2
+NumberOfArchivedItems=5
+ManualAddingOfItems=enabled
+ViewList[]=2_items1
+ViewList[]=2_items2
+ViewName[2_items1]=2 Elementi (1)
+ViewName[2_items2]=2 Elementi (2) 
+\end{verbatim}
+\subsection{3 Elementi Manuale}
+Definizione del blocco:
+\begin{verbatim}
+[Manual3Items]
+Name=3 Elementi Manuale
+NumberOfValidItems=3
+NumberOfArchivedItems=5
+ManualAddingOfItems=enabled
+ViewList[]=3_items1
+ViewList[]=3_items2
+ViewList[]=3_risalto
+ViewName[3_items1]=3 Elementi (1)
+ViewName[3_items2]=3 Elementi (2)
+ViewName[3_risalto]=3 Risalto
+\end{verbatim}
+
+\subsection{4 Elementi Manuale}
+
+Definizione del blocco:
+\begin{verbatim}
+[Manual4Items]
+Name=4 Elementi Manuale
+NumberOfValidItems=4
+NumberOfArchivedItems=5
+ManualAddingOfItems=enabled
+ViewList[]=4_items1
+ViewList[]=4_items2
+ViewList[]=4_items3
+ViewName[4_items1]=4 Elementi (1)
+ViewName[4_items2]=4 Elementi (2)
+ViewName[4_items3]=4 Elementi Risalto
+\end{verbatim}
+\subsection{5 Elementi Manuale}
+
+Definizione del blocco:
+\begin{verbatim}
+[Manual5Items]
+Name=5 Elementi Manuale
+NumberOfValidItems=5
+NumberOfArchivedItems=5
+ManualAddingOfItems=enabled
+ViewList[]=5_items1
+ViewList[]=5_items2
+ViewName[5_items1]=5 Elementi (1)
+ViewName[5_items2]=5 Elementi (2)
+\end{verbatim}
+\subsection{Galleria multimediale manuale}
+Definizione del blocco:
+\begin{verbatim}
+[Gallery]
+Name=Galleria multimediale Manuale
+NumberOfValidItems=4
+NumberOfArchivedItems=5
+ManualAddingOfItems=enabled
+ViewList[]=gallery_standard
+ViewList[]=gallery_2colonne
+ViewName[gallery_standard]=Galleria 1 colonna
+ViewName[gallery_2colonne]=Galleria 2 colonne
+\end{verbatim}
+\subsection{Lista elementi}
+
+Definizione del blocco:
+\begin{verbatim}
+[ItemList]
+Name=Lista elementi
+NumberOfValidItems=12
+NumberOfArchivedItems=5
+ManualAddingOfItems=enabled
+ViewList[]=itemlist1
+ViewList[]=itemlist2
+ViewList[]=itemlist3
+ViewName[itemlist1]=Lista 1 colonna
+ViewName[itemlist2]=Lista 2 colonne
+ViewName[itemlist3]=Lista 3 colonne 
+\end{verbatim}
+\subsection{Nuvola etichette}
+Definizione del blocco:
+\begin{verbatim}
+[TagCloud]
+Name=Nuvola etichette
+ManualAddingOfItems=disabled
+CustomAttributes[]=subtree_node_id
+UseBrowseMode[subtree_node_id]=true
+ViewList[]=tag_cloud
+ViewName[tag_cloud]=Nuvola etichette
+\end{verbatim}
+
+\subsection{Sondaggio}
+
+Definizione del blocco:
+\begin{verbatim}
+[Poll]
+Name=Sondaggio
+ManualAddingOfItems=disabled
+CustomAttributes[]=poll_node_id
+UseBrowseMode[poll_node_id]=true
+ViewList[]=poll
+ViewName[poll]=Sondaggio
+\end{verbatim}
+\subsection{3 Notizie automatiche}
+Definizione del blocco:
+\begin{verbatim}
+[3Notizie]
+Name=3 Notizie automatiche
+NumberOfValidItems=3
+NumberOfArchivedItems=5
+ManualAddingOfItems=disabled
+FetchClass=csspLatestNews
+FetchFixedParameters[]
+FetchFixedParameters[Class]=article
+FetchParameters[]
+FetchParameters[Source]=nodeID
+# Single / Multiple
+FetchParametersSelectionType[Source]=single
+FetchParametersIsRequired[]
+# True / False
+FetchParametersIsRequired[Source]=true
+ViewList[]=3notizie
+ViewName[3notizie]=3 Notizie raccolte automaticamente
+\end{verbatim}

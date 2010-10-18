@@ -1,0 +1,213 @@
+\chapter[Interfaccia modifica]{Interfaccia per la modifica dei contenuti}
+
+
+Il cms scolastico basato su EzPublish permette di modificare agevolmente i contenuti creati e di mantenere una storia delle modifiche effettuate. Nell'attuale implementazione vengono conservate, per motivi di spazio, unicamente due copie di un oggetto presente nell'albero dei contenuti.
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.7\textwidth]{./immagini/edit/revisioni.png}
+ % revisioni.png: 1042x621 pixel, 200dpi, 13.23x7.88 cm, bb=
+ \caption{Per ogni oggetto è presente lo stato (n-1)-esimo lo stato ennesimo e la bozza creata al momento della modifica}
+ \label{fig:revisioni}
+\end{figure}
+
+Quando l'utente inizia a modificare un oggetto viene automaticamente creata una bozza dello stesso sulla quale si andrà ad operare lasciando intatta la versione precedente del contenuto. L'utente può in qualsiasi momento decidere di scartare la bozza e tornare alla versione precedente del documento, di salvare la bozza senza pubblicarla oppure di pubblicarla eliminando la versiona (n-1)esima 
+\section{Gestione delle revisioni}
+Tramite il backend amministrativo è possibile gestire le versioni di un oggetto. Il link per la modifica delle revisioni è disponibile in modalità modifica tramite il pulsante \includegraphics[bb=0 0 261 36]{./immagini/edit/tasto_versioni.png}.
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth,bb=0 0 1237 528]{./immagini/edit/gestione_revisioni.png}
+ % gestione_revisioni.png: 1237x528 pixel, 72dpi, 43.64x18.63 cm, bb=0 0 1237 528
+ \caption{Interfaccia per la modifica delle revisioni}
+ \label{fig:gestione_revisioni}
+\end{figure}
+
+
+\section{Barre degli strumenti}
+
+Gli utenti con sufficienti permessi dopo aver effettuato il login sono in grado di accedere alla barra di modifica/aggiunta contenuti fig.\ref{fig:edit_ext}. È possibile creare, modificare o eliminare gli oggetti presenti nell'albero dei contenuti. In funzione del gruppo cui appartiene l'utente i contenuti modificati/creati saranno immediatamente visibili oppure soggetti ad approvazione da parte di utenti con privilegi maggiori.
+
+\subsection{Barra degli strumenti principale}
+
+La barra degli strumenti principale è visibile su ogni pagina del sito dopo aver effettuato il login e permette agli utenti di interagire con i contenuti. L'insieme di azioni permesse sarà determinato dalle autorizzazioni di cui ogni utente gode.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/edit/barra_edit_esterna.png}
+ % barra_edit_esterna.png: 571x32 pixel, 72dpi, 20.14x1.13 cm, bb=
+ \caption{Barra per la modifica dei contenuti: vista contenuto}
+ \label{fig:edit_ext}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\begin{tabular}{m{0.1\textwidth}l}
+\includegraphics[bb=0 0 25 32]{./immagini/edit/tasto_add.png}& Tasto aggiungi oggetto\\
+\includegraphics[bb=0 0 261 36]{./immagini/edit/tasto_modifica.png}& Tasto modifica oggetto\\
+\includegraphics[bb=0 0 26 32]{./immagini/edit/tasto_sposta.png}& Tasto sposta nodo\\
+\includegraphics[bb=0 0 26 32]{./immagini/edit/tasto_canc.png}& Tasto cancella oggetto\\
+\includegraphics[bb=0 0 26 32]{./immagini/edit/tasto_ordina.png}& Tasto cambia ordinamento elementi\\
+\includegraphics[bb=0 0 26 32]{./immagini/edit/tasto_stato.png}& Tasto cambia stato dell'oggetto\\
+\includegraphics[bb=0 0 26 32]{./immagini/edit/tasto_coll.png}& Tasto aggiungi collocazioni per l'oggetto\\
+\includegraphics[bb=0 0 26 32]{./immagini/edit/tasto_cache.png}& Tasto cancella la cache dell'oggetto
+\end{tabular}
+\caption{I pulsanti presenti nella barra per l'interazione con i contenuti)}
+\end{center}
+\end{figure}
+
+
+\subsection{Barre degli strumenti secondaria}
+
+Dopo essere entrati in modalità modifica oggetto la barra degli strumenti cambia per permetterci di gestire le proprietà interne dell'oggetto fig.\ref{fig:edit_intern}:
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/edit/barra_edit_interna.png}
+ % barra_edit_interna.png: 274x35 pixel, 72dpi, 9.67x1.23 cm, bb=
+ \caption{Barra modifica: vista modifica oggetto}
+ \label{fig:edit_intern}
+\end{figure}
+
+\begin{center}
+\begin{tabular}{m{0.1\textwidth}l}
+\includegraphics[bb=0 0 25 32]{./immagini/edit/tasto_pubblica.png}& Salva l'oggetto modificato e pubblicalo immediatamente\\
+\includegraphics[bb=0 0 261 36]{./immagini/edit/tasto_versioni.png}& Gestisci le versioni dell'oggetto\\
+\includegraphics[bb=0 0 26 32]{./immagini/edit/tasto_esci.png}& Salve ed esci\\
+\includegraphics[bb=0 0 26 32]{./immagini/edit/tasto_anteprima.png}& Mostra un'anteprima delle modifiche correnti\\
+\includegraphics[bb=0 0 26 32]{./immagini/edit/tasto_traduci.png}& Traduci il testo in una delle lingue disponibili
+\end{tabular}
+\end{center}
+
+
+
+\section{Editor Xml}
+
+Ezpublish ci mette a disposizione un  editor di testo basato su TinyMce per l'inserimento di articoli all'interno del database. Quando copiamo del testo all'interno dell'area attiva questo viene trasformato in Xml e quindi reso disponibile all'utente per ulteriori modifiche. L'editor dispone di tutte le caratteristiche standard di un Editor di testi. Quando andrete a modificare i contenuti dovreste rispettare queste regole:
+\begin{itemize}
+\item Cercate di formattare il testo in accordo al tema generale del sito
+\item Non utilizzate un eccesso di formattazione (sfondi, maiuscole, colori etc.)
+\item Non fate copia e in colla dal vostro editor di testo preferito di documenti eccessivamente complessi. L'editor di testo presente all'interno del sito non è stato creato per gestire libri o documenti di grandi dimensioni.
+\end{itemize}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/edit/barra_ezoe.png}
+ % barra_ezoe.png: 988x27 pixel, 72dpi, 34.85x0.95 cm, bb=
+ \caption{Barra degli strumenti dell'editor di testo xml}
+ \label{fig:ezoe_barra}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/edit/ezoe.png}
+ % ezoe.png: 992x170 pixel, 72dpi, 35.00x6.00 cm, bb=
+ \caption{Interfaccia dell'editor di testo XML}
+ \label{fig:ezoe_finestra}
+\end{figure}
+
+\Ovalbox{%
+\begin{minipage}{0.8\textwidth}
+\bf Trascinando l'angolo in basso a destra della cornice dell'editor di testo è possibile ingrandire l'area di modifica del testo
+\end{minipage}}
+
+
+
+\section[Embedding contenuti]{Inserimento di elementi contenuto all'interno del testo}
+
+Uno dei grandi pregi del cms utilizzato è rappresentato dalla possibilità di utilizzare qualsiasi elemento già pubblicato all'interno di un campo xml, ovvero all'interno della finestra dell'editor di testo. Potete inserire, foto, articoli, file etc. Oltre all'inserimento di materiali già caricati è possibile, direttamente dall'interfaccia di modifica, inserire nuovi contenuti come file e immagini. Durante il caricamento di materiali da associare agli articoli è importante scegliere la collocazione più appropriata tra quelle suggerite figura.\ref{fig:edit_scelta_collocazione}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.6\textwidth]{./immagini/edit/scelta_collocazione.png}
+ % scelta_collocazione.png: 513x429 pixel, 90dpi, 14.48x12.11 cm, bb=
+ \caption{Scelta delle collocazione per l'immagine da caricare}
+ \label{fig:edit_scelta_collocazione}
+\end{figure}
+
+in questo modo potremo poi riutilizzare i materiali caricati per altri articoli/contenuti. Se l'utente ha a disposizione uno spazio personale questo sarà automaticamente elencato tra le possibili collocazioni dei contenuti.
+I passaggi per caricare un file/immagine all'interno del sito sono quindi:
+\begin{itemize}
+ \item Cliccare sul link appropriato nella barra degli strumenti dell'editor di testo
+\item Compare la finestra di dialogo figura.\ref{fig:load_image}
+\item Inseriamo i dati richiesti figura.\ref{fig:caricamento_immagine}
+  \begin{itemize}
+  \item il nome dell'immagine
+   \item il file da caricare
+  \item la collocazione del file
+  \item il testo alternativo da visualizzare in browser testuali
+  \item La discalia dell'immagine
+  \end{itemize}
+\end{itemize}
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.6\textwidth]{./immagini/edit/carica_immagine.png}
+ % carica_immagine.png: 510x428 pixel, 72dpi, 17.99x15.10 cm, bb=
+ \caption{Interfaccia per il caricamento di un'immagine locale}
+ \label{fig:load_image}
+\end{figure}
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.6\textwidth]{./immagini/edit/caricamento_immagine.png}
+ % caricamento_immagine.png: 476x198 pixel, 72dpi, 16.79x6.99 cm, bb=
+ \caption{Dati da inserire durante il caricamento di una immagine}
+ \label{fig:caricamento_immagine}
+\end{figure}
+
+Oltre a caricare nuove immagini possiamo utilizzare elementi precedentemente caricati carcandoli all'iterno dell'albero dei contenuti figura.\ref{fig:cerca_immagine}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.6\textwidth]{./immagini/edit/cerca_immagine.png}
+ % cerca_immagine.png: 511x427 pixel, 72dpi, 18.03x15.06 cm, bb=
+ \caption{Interfaccia per la ricerca di un'immagine precedentemente inserita}
+ \label{fig:cerca_immagine}
+\end{figure}
+
+l'inserimento di file è del tutto analogo a quanto ora sposto circa le immagini. L'inserimento di un oggetto di contenuto generico all'interno del testo è analogo a quanto fatto per  un'immagine già caricata figura.\ref{fig:embed_ogg}
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/edit/embed_oggetto.png}
+ % embed_oggetto.png: 508x488 pixel, 72dpi, 17.92x17.22 cm, bb=
+ \caption{Nello stesso modo in cui possiamo inserire delle immagine all'interno del testo è possible inserire un qualsiasi elemento del sito}
+ \label{fig:embed_ogg}
+\end{figure}
+
+\section{Modifica degli elementi del testo}
+
+L'editor di test ci permette di modificare agevolmente ogni elemento presente all'interno della finestra di modifica. È sufficiente cliccare con il mouse sull'elemento che vogliamo modificare, nella barra inferiore della finestra dell'editor comparirà il nome della classe dell'elemento e la sua relazione di parentela figura.\ref{fig:ezoe_mod}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.6\textwidth]{./immagini/edit/ezoe_modifica_embed.png}
+ % ezoe_modifica_embed.png: 220x24 pixel, 72dpi, 7.76x0.85 cm, bb=
+ \caption{Quando selezioniamo un elemento all'interno del test, sulla barra di stato dell'editor compare la classe dell'elemento selezionato}
+ \label{fig:ezoe_mod}
+\end{figure}
+
+Se clicchiamo sul nome della classe dell'elemento possiamo accedere all'interfaccia di modifica delle proprietà del tag se ad esempio clicchiamo su un oggetto inserito (embedded) comparirà una finestra come quella di figura.\ref{fig:edit_image}
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/edit/modifica_immagine.png}
+ % modifica_immagine.png: 506x486 pixel, 72dpi, 17.85x17.15 cm, bb=
+ \caption{Modifica proprietà immagine}
+ \label{fig:edit_image}
+\end{figure}
+
+
+se clicchiamo su una tabella figura.\ref{fig:edit_tabella}
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.6\textwidth]{./immagini/edit/edit_tabella.png}
+ % edit_tabella.png: 441x199 pixel, 72dpi, 15.56x7.02 cm, bb=
+ \caption{Modifica di una tabella}
+ \label{fig:edit_tabella}
+\end{figure}

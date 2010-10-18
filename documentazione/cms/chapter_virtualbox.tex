@@ -1,0 +1,155 @@
+\chapter[VirtualBox]{Utilizzo di Virtualbox per il test del sito}
+
+In questo capitolo verrà spiegato come impostare una copia locale del sito per esercitazioni e test.
+
+
+\section{Installazione di VirtualBox}
+\begin{figure}[H]
+ \includegraphics[width=0.2\textwidth]{./immagini/virtualbox/vbox_logo2_gradient.png}
+ % vbox_logo2_gradient.png: 140x180 pixel, 72dpi, 4.94x6.35 cm, bb=
+\end{figure}
+
+Prima di effettuare le operazioni che andremo ad illustrare è necessario installare VirtualBox che potete scaricare all'indirizzo \url{http://www.virtualbox.org/wiki/Downloads}. Questo ambiente per la virtualizzazione è disponibile per:
+\begin{itemize}
+\item Windows
+\item Mac (solo modelli con cpu Intel)
+\item Gnu/Linux
+\item Solari e OpenSolaris
+\end{itemize}
+
+
+
+durante l'installazione seguite le indicazioni a video e fate attenzione durante la fase di installazione dei driver (unicamente se utilizzerete VirtualBox da Windows). Una volta installato il virtualizzatore potrete iniziare ad importare la macchina virtuale che ospita il sito della scuola.
+
+\section{Importazione dell'immagine del  disco del server}
+Come prima cosa dovremo importare l'immagine del disco del server e la descrizione dell'hardware assegnatoli in fase di creazione. Avrete a disposizione due file:
+\begin{itemize}
+\item \texttt{<nomesito>.ovf} Il file Xml contenente la descrizione dell'hardware della macchina virtuale
+\item \texttt{<nome immagine>.vmdk} Il disco della macchina virtuale che dovrà essere importata
+\end{itemize}
+
+Per iniziare il processo di importazione andare su \texttt{File->Importa Applicazione}:
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/virtualbox/virtualbox1.png}
+ % virtualbox1.png: 577x527 pixel, 72dpi, 20.35x18.59 cm, bb=
+ \caption{Fase iniziale dell'importazione della macchina virtuale}
+ \label{fig:virtualbox-startimport}
+\end{figure}
+
+selezionate il file .ovf che vi è stato fornito:
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/virtualbox/virtualbox2.png}
+ % virtualbox2.png: 576x529 pixel, 72dpi, 20.32x18.66 cm, bb=
+ \caption{L'utente ha scelto il file .ovf da importare}
+ \label{fig:virtualbox_scelta}
+\end{figure}
+
+se tutto è andato per il meglio vi verrà presentata una finestra con la configurazione hardware della macchina virtuale che state importando. Fate attenzione all'ultima voce: \textbf{Immagine disco virtuale} figura.\ref{fig:virtualbox_setup1}. Se avete sufficiente spazio libero sul disco principale potete lasciare il path che vi viene suggerito dal sistema altrime tramite un doppio click potete modificare la destizione del disco del server virtuale (avrete bisogno di ~8 Gb di spazio).
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/virtualbox/virtualbox3.png}
+ % virtualbox3.png: 811x525 pixel, 72dpi, 28.61x18.52 cm, bb=0 0 811 525
+\caption{Impostazioni della macchina virtuale importate, doppio clik per modificarle}
+\label{fig:virtualbox_setup1}
+\end{figure}
+se è stata specificata una licenza viene richiesta l'approvazione da parte dell'utente prima delle decompressione del disco virtuale figura.\ref{fig:virtualbox_licenza}
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/virtualbox/virtualbox4.png}
+ % virtualbox4.png: 720x527 pixel, 72dpi, 25.40x18.59 cm, bb=
+ \caption{Accettazione della licenza}
+ \label{fig:virtualbox_licenza}
+\end{figure}
+Dopo alcuni minuti la macchina virtuale è pronto all'uso. Prima del primo avvio del vostro nuovo server virtuale dovrete controllare che le impostazioni di rete siano corrette. Per far questo cliccate sulla voce rete nella schermata principale della macchina virtuale in esame. Comparirà la finestra di dialogo:
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/virtualbox/virtualbox7.png}
+ % virtualbox7.png: 633x463 pixel, 72dpi, 22.33x16.33 cm, bb=
+ \caption{Interfaccia per la modifica delle impostazioni di rete}
+ \label{fig:virtualbox_net1}
+\end{figure}
+
+L'interfaccia di rete è impostata in Bridge con l'interfaccia di rete principale del computer. L'ip del server virtuale è: \texttt{192.168.0.179} al fine di permettere la corretta identificazione della scheda di rete virtuale al server (virtuale) dovrete impostare il macaddress della scheda di rete virtuale a \texttt{080027076A2C} figura.\ref{fig:virtualbox_net2}:
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/virtualbox/virtualbox8.png}
+ % virtualbox8.png: 632x459 pixel, 72dpi, 22.29x16.19 cm, bb=
+ \caption{Modifica del mac address della scheda di rete virtuale}
+ \label{fig:virtualbox_net2}
+\end{figure}
+
+La macchina virtuale è ora pronta e può essere avviata tramite il pannello di controllo di VirtualBox. L'ultimo passaggio da effettuarsi prima di poter utilizzare il server virtuale consiste nella modifica del file \texttt{hosts} di Windows per effettuare una associazione tra ip ed indirizzo. In Windows Xp il file hosts si trova in \texttt{<drive letter>:/Windows/system32/drivers/etc}. Dovrete inserire delle righe del tipo:
+\begin{verbatim}
+192.168.0.179 nome.dominio.it
+192.168.0.179 admin.dominio.it
+192.168.0.179 webdav.dominio.it
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/virtualbox/virtualbox5.png}
+ % virtualbox5.png: 795x594 pixel, 72dpi, 28.04x20.95 cm, bb=
+ \caption{Ricerca del file hosts di Windows}
+ \label{fig:virtualbox_hosts1}
+\end{figure}
+
+chiaramente è preferibile utilizzare nomi non già registrati dato che la risoluzione tramite il file host ha precedenza rispetto alla risoluzione tramite DNS figura.\ref{fig:virtualbox_hosts2}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/virtualbox/virtualbox6.png}
+ % virtualbox6.png: 956x723 pixel, 72dpi, 33.72x25.50 cm, bb=
+ \caption{Host statici locali per l'utilizzo del sito presente all'interno della macchina virtuale}
+ \label{fig:virtualbox_host2}
+\end{figure}
+\section{Alias ip}
+
+Se la vostra rete locale non è la \texttt{192.168.0.0} dovrete inserire un alias di interfaccia. Per effettuare questa operazione in Windows dovete:
+\begin{itemize}
+ \item Accedere alle proprietà della scheda di rete posta in bridge precedentemente: \texttt{Scheda di rete->Proprietà->Protocollo internet TCP/IP->Avanzate->Indirizzi IP}
+\item Impostate un indirizzo Ip della sottorete 192.168.0.0 diverso da 192.168.0.179
+\end{itemize}
+
+\section{Network Host Only}
+Se volete che la macchina virtuale non comunichi con l'esterno è possibile configurare un'interfaccia \textsl{Solo Host}. Per far questo apriamo Virtualbox e dal menu file scegliamo \textsl{Impostazioni}. Verrà visualizzata una schermata che ci permetterà di modificare la configurazione della rete \textsl{Solo Host} di Virtualbox figura.\ref{fig:virt_imp}
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/virtualbox/virtualbox_configurazione_rete.png}
+ % virtualbox_configurazione_rete.png: 570x464 pixel, 72dpi, 20.11x16.37 cm, bb=
+ \caption{Impostazione delle rete Solo Host di Virtualbox}
+ \label{fig:virt_imp}
+\end{figure}
+Cliccando su rete accediamo ad una finestra all'interno della quale dovremo inserire l'indirizzo host per Virtualbox. Siccome la macchina virtuale ha un indirizzo preimpostato a 192.168.0.179 sceglieremo qualcosa del tipo 192.168.0.35 figura.\ref{fig:virt_net}
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/virtualbox/virtualbox_ip_solo_host.png}
+ % virtualbox_ip_solo_host.png: 554x278 pixel, 72dpi, 19.54x9.81 cm, bb=
+ \caption{Scelta dell'indirizzo dell'interfaccia virtuale}
+ \label{fig:virt_net}
+\end{figure}
+
+Dopo aver completato la configurazione di Virtualbox dobbiamo ricordarci di modificare le impostazioni di rete della nostra macchina virtuale, selezioniamola e dal menu contestuale accessibile tramite il tasto destro del mouse scegliamo \textsl{Impostazioni} e poi \textsl{Rete}
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/virtualbox/virtualbox_scelta_net1.png}
+ % virtualbox_scelta_net1.png: 673x468 pixel, 72dpi, 23.74x16.51 cm, bb=
+ \caption{La scheda di rete è inizialmente configurate in bridge con la scheda fisica del computer host}
+ \label{fig:virt_rete_bridge}
+\end{figure}
+
+inizialmente la scheda virtuale è in bridge con la scheda fisica della macchina host, dobbiamo cliccare sul menu a tendina e scegliare la voce \textsl{Scheda solo host}:
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/virtualbox/virtualbox_scelta_net2.png}
+ % virtualbox_scelta_net2.png: 674x466 pixel, 72dpi, 23.78x16.44 cm, bb=
+ \caption{Scelta del tipo di scheda virtuale}
+ \label{fig:virt_rete_2}
+\end{figure}
+diamo Ok e la macchina virtuale dovrebbe ora essere accessibile all'indirizzo 192.168.0.179 all'interno di una rete virtuale tra la macchina fisica e Virtualbox

@@ -1,0 +1,208 @@
+\chapter{Webdav}
+
+\section{Client supportati}
+
+  Poiché il client webdav integrato in windows soffre di molti bug è necessario scaricare un
+client gratuito alternativo che potete trovare all'indirizzo:
+
+\subsection{Windows::Bitkinex}
+
+http://www.bitkinex.com/download.php
+il programma si installa senza particolari complicazioni. 
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.5\textwidth]{./immagini/webdav/webdav1.png}
+ % webdav1.png: 588x444 pixel, 96dpi, 15.56x11.75 cm, bb=0 0 441 333
+\caption{Installazione Bitkinex}\label{fig:BitKinex}
+\end{figure}
+
+
+    Alla fine dell'installazione il programma viene eseguito automaticamente e ci compare la
+prima finestra di dialogo, se per connettervi ad internet utilizzate un proxy dovrete
+specificarlo qui:
+
+  \begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/webdav/webdav2.png}
+ % webdav2.png: 893x558 pixel, 96dpi, 23.62x14.76 cm, bb=
+ \caption{Configurazione di BitKinex passo 1}
+ \label{fig:bitkinex_1}
+\end{figure}
+
+
+ Ci viene poi chiesto se vogliamo configurare una sorgente di dati, assecondiamo il
+programma:
+ 
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/webdav/webdav3.png}
+ % webdav3.png: 896x632 pixel, 96dpi, 23.70x16.72 cm, bb=
+ \caption{Configurazione di BitKinex passo 2}
+ \label{fig:bitkinex2}
+\end{figure}
+
+
+Ora dovremo inserire i dati della nostra connessione, siccome ci vogliamo collegare via
+WebDav utilizzeremo il protocollo http:
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/webdav/webdav4.png}
+ % webdav4.png: 591x380 pixel, 96dpi, 15.63x10.05 cm, bb=
+ \caption{Configurazione di BitKinex passo 3}
+ \label{fig:bitkinex4}
+\end{figure}
+
+
+
+ il server in questo caso è cdav.azazelo.org (quando configurerete bitkinex sul vostro sistema dovrete inserire i parametri di configurazione fornitivi dalla scuola) notate come il protocollo scelto sia HTTP.
+
+La configurazione è terminata, chiaramente vi verranno chieste password e username
+prima della connessione.
+Se tutto è andato a buon fine potete iniziare a navigare l'albero dei contenuti del sito.
+Prima di effettuare il caricamento di file è necessario deselezionare un'opzione di verifica
+trasferimento dati (a causa della rinomina automatica dei file contenenti spazi). Per questo
+dal menu Data Source selezionate Properties.
+Vi si aprirà la seguenti finestra di dialogo:
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/webdav/webdav5.png}
+ % webdav5.png: 902x646 pixel, 96dpi, 23.86x17.09 cm, bb=
+ \caption{Configurazione di BitKinex passo 4}
+ \label{fig:bitkinex5}
+\end{figure}
+
+
+
+Dovete selezionare la voce Transfers come nell'immagine sopra. Togliete la spunta da
+Inherit properties from the parent node (Http/WebDav) e cliccate sul menù a tendina Post
+transfer data integrity checks:
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/webdav/webdav6.png}
+ % webdav6.png: 585x384 pixel, 96dpi, 15.48x10.16 cm, bb=
+ \caption{Configurazione di BitKinex passo 5}
+ \label{fig:bitkinex}
+\end{figure}
+
+
+
+  Togliete ora la spunta da Upload:destination file exists. Ora siete pronti ad utilizzare il
+backend Webdav del sito
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/webdav/webdav7.png}
+ % webdav7.png: 594x379 pixel, 96dpi, 15.71x10.03 cm, bb=
+ \caption{Configurazione di BitKinex passo 6}
+ \label{fig:bitkinex6}
+\end{figure}
+
+
+\subsection{Windows::WebDrive}
+
+
+WebDrive è un client WebDav in grado di mappare una risorsa WebDav Remota su un device di rete accessibile tramite il pannello di controllo di Windows. Potete scaricare il programma all'indirizzo http://www.webdrive.com. L'installazione è molto semplice, è sufficiente fare doppio click sull'installatore appena scaricato e seguire le indicazioni a video.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.75\textwidth]{./immagini/webdav/webdrive1.png}
+ % webdrive1.png: 503x382 pixel, 72dpi, 17.74x13.48 cm, bb=
+ \caption{Installazione di Webdrive}
+ \label{fig:webdrive1}
+\end{figure}
+
+Dopo aver eseguito l'installazione del programma eseguitelo per iniziare la configurazione della connessione al server webdav scolastico:
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.75\textwidth]{./immagini/webdav/webdrive2.png}
+ % webdrive2.png: 629x430 pixel, 72dpi, 22.19x15.17 cm, bb=
+ \caption{Configurazione di WebDrive. Fare click su \textsl{New Site} per iniziare}
+ \label{fig:webdrive2}
+\end{figure}
+
+Dopo aver cliccato su \textsl{New Site} appare una procedura guidata per la configurazione della connessione. Come prima cosa ci viene chiesto un nome da dare alla connessione ed una lettera di unità da assegnarle. Attenzione: scegliete una lettera libera ovvero non utilizzata da nessun altro device (chiavette, hdd esterni etc.).
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.75\textwidth]{./immagini/webdav/webdrive3.png}
+ % webdrive3.png: 439x385 pixel, 72dpi, 15.49x13.58 cm, bb=
+ \caption{Configurazione di Webdrive: scelta del nome e della lettera di unità}
+ \label{fig:webdrive3}
+\end{figure}
+La procedura guidata procede con la scelta del protocollo che nel nostro caso sarà chiaramente webdav:
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.65\textwidth]{./immagini/webdav/webdrive4.png}
+ % webdrive3.png: 439x385 pixel, 72dpi, 15.49x13.58 cm, bb=
+ \caption{Configurazione di Webdrive:scelta del protocollo}
+ \label{fig:webdrive4}
+\end{figure}
+
+
+ci viene poi chiesto di inserire l'indirizzo del server webdav. In questo campo inserirete l'url del server fornitavi dalla scuola:
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.65\textwidth]{./immagini/webdav/webdrive5.png}
+ % webdrive3.png: 439x385 pixel, 72dpi, 15.49x13.58 cm, bb=
+ \caption{Configurazione di Webdrive: scelta del server}
+ \label{fig:webdrive5}
+\end{figure}
+
+Per non dover inserire ad ogni utilizzo username e password WebDrive è in grado di memorizzare i dati di autenticazione:
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.65\textwidth]{./immagini/webdav/webdrive6.png}
+ % webdrive3.png: 439x385 pixel, 72dpi, 15.49x13.58 cm, bb=
+ \caption{Configurazione di Webdrive: inserimento username e password}
+ \label{fig:webdrive6}
+\end{figure}
+
+Se la nostra macchina è costantemente collegata ad internet possiamo scegliere la connessione automatica dell'unita all'avvio di Windows:
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.65\textwidth]{./immagini/webdav/webdrive7.png}
+ % webdrive3.png: 439x385 pixel, 72dpi, 15.49x13.58 cm, bb=
+ \caption{Configurazione di Webdrive: connessione automatica}
+ \label{fig:webdrive7}
+\end{figure}
+
+
+
+\subsection{KDE::Konqueror 4}
+Per utilizzare il servizio WebDav in Kde4 è sufficiente aprire konqueror e nella barra degli indirizzi digitare l'url del sito:
+\begin{verbatim}
+ webdav://webdav.miosito.net
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth]{./immagini/webdav/konqueror.png}
+ % konqueror.png: 1030x621 pixel, 72dpi, 36.34x21.91 cm, bb=
+ \caption{Utilizzo di webdav tramite konqueror}
+ \label{fig:konqueror1}
+\end{figure}
+
+
+\subsection{Unix Like::Cadaver}
+
+Cadaver è un client  testuale disponibile sulla quasi totalità dei sistemi Unix Like e supporta pienamente tutte le funzionalità del sito.
+
+\begin{verbatim}
+user@amrael:~$ cadaver webdav.miosito.net
+\end{verbatim}
+
+
+\subsection{Linux::FuseDav}
+
+Usando i moduli fuse disponibili per il kernel Linux è possibile montare un server webdav come un device a blocchi. 
+\begin{verbatim}
+user@amrael:~$ fusedav http://webdav.miosito.net/ /tmp/test
+\end{verbatim}
+\section{Utilizzo del sito via WebDav}

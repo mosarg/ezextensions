@@ -1,0 +1,185 @@
+\chapter{Gestione newsletter}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/newsletter/schema_newsletter.png}
+ % schema_newsletter.png: 1291x614 pixel, 72dpi, 45.54x21.66 cm, bb=
+ \caption{Procedura per la creazione di una newsletter}
+ \label{fig:newsletter_schema}
+\end{figure}
+
+
+
+\section{Liste di sottoscrizione}
+
+Per gestire le newsletter è necessario collegarsi al backend amministrativo del sito e cliccare sul menu \textsl{NewsLetter}. Il sistema genera automaticamente una lista di sottoscrizione per ogni gruppo utenti definito. Per accedere alle liste di sottoscrizione clicchiamo sulla voce \textsl{Gestione liste} del menu sulla sinistra fig.\ref{fig:newsletter_primapagina}:
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/newsletter/newsletter_prima_pagina.png}
+ % newsletter_prima_pagina.png: 1095x342 pixel, 72dpi, 38.63x12.06 cm, bb=
+ \caption{Sezione per la gestione della newsletter}
+ \label{fig:newsletter_primapagina}
+\end{figure}
+
+in questo modo potremo accedere alla liste predefinite nel sistema fig.\ref{fig:newsletter_lista_sotto} oppure crearne di nuove. È sconsigliabile modificare manualmente le liste automatiche in quanto le modifiche apportate verrebbero cancellate al successivo aggiornamento della lista.
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/newsletter/newsletter_lista_sottoscrizoni.png}
+ % newsletter_lista_sottoscrizoni.png: 933x426 pixel, 72dpi, 32.91x15.03 cm, bb=
+ \caption{Lista sottoscrizioni dei gruppi utente. Queste liste sono create automaticamente e gli utenti vi sono aggiunti dopo la registrazione}
+ \label{fig:newsletter_lista_sotto}
+\end{figure}
+
+cliccando su una lista di sottoscrizione possiamo visualizzare le impostazioni dettagliate e l'elenco degli utenti che vi appartengono. È possibile inserire manualmente degli utenti o tramite file CSV\footnote{Comma Separeted Values file di testo generabile con un foglio elettronico (OO.org Calc)}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/newsletter/newsletter_lista_sotto_dettaglio.png}
+ % newsletter_lista_sotto_dettaglio.png: 925x305 pixel, 72dpi, 32.63x10.76 cm, bb=
+\caption{Dettaglio di una lista di sottoscrizione}
+ \label{fig:newsletter_sott1}
+\end{figure}
+
+cliccando su modifica possiamo accedere alla impostazioni di una lista fig.\ref{fig:newsletter_modifica}. Questa interfaccia ci permette di impostare l'url da assegnare alla lista qualora volessimo permettere agli utenti l'auto iscrizione alla lista di sottoscrizione e le modalità con cui questa iscrizione può avvenire. Si consiglia di creare una lista personalizzata in caso fosse necessario definire liste di invio diverse da quelle automatiche. 
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/newsletter/newsletter_modifica.png}
+ % newsletter_modifica.png: 928x631 pixel, 72dpi, 32.74x22.26 cm, bb=
+ \caption{Modifica di una lista di sottoscrizione}
+ \label{fig:newsletter_modifica}
+\end{figure}
+
+
+
+\section{Tipi di newsletter}
+
+
+
+Prima di poter inviare una newsletter ai nostri utenti dobbiamo definire un modello standard per ogni classe di newsletter che intendiamo inviare. Ad esempio un modello di newsletter per i docenti, uno per i docenti del liceo un altro per gli ata etc.
+
+Per poter definire un modello di newsletter clicchiamo su \textsl{Tipi di newsletter} nel menu a sinistra nella pagina di amministrazione principale delle newsletter, indi premiamo il tasto \textsl{Nuovo tipo di newsletter} fig.\ref{fig:newsletter_type_crea}
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/newsletter/newsletter_typecreation.png}
+ % newsletter_typecreation.png: 934x217 pixel, 72dpi, 32.95x7.66 cm, bb=
+ \caption{Interfaccia per la creazione di nuovo tipo di newsletter}
+ \label{fig:newsletter_type_crea}
+\end{figure}
+
+Il sistema ci presenterà una pagina per la creazione della newsletter. Inziamo ad analizzarne i campi:
+\begin{description}
+ \item[Nome] Il nome da assegnare al tipo di newsletter
+\item[Descrizione] Una breve descrizione per permettere all'amministratore di individuare rapidamente il tipo di newsletter
+\item[Indirizzo inviante] l'indirizzo dell'inviante come verrà ricevuto dai destinatari della newsletter
+\item[Modificatore data d'invio] dopo quanto tempo, rispetto al valore indicato in ogni edizione della newsletter, spedire i messaggi
+\end{description}
+
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/newsletter/newsletter_tipo_newsletter.png}
+ % newsletter_tipo_newsletter.png: 929x328 pixel,1 72dpi, 32.77x11.57 cm, bb=
+\caption{Inizio creazione nuovo tipo di newsletter}
+ \label{fig:newsletter_type1}
+\end{figure}
+
+\begin{description}
+ \item[Intestazione predefinita]Un'intestazione da inserire in ogni numero della newsletter ad esempio l'intestazione della scuola
+\item[Postfazione predefinita]La postafazione standard da inserire in ogni uscita della newsletter
+\end{description}
+
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/newsletter/newsletter_tipo_newsletter2.png}
+ % newsletter_tipo_newsletter2.png: 929x436 pixel, 72dpi, 32.77x15.38 cm, bb=
+ \label{fig:newsletter_type2}
+\end{figure}
+
+
+
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/newsletter/newsletter_tipo_newsletter4.png}
+ % newsletter_tipo_newsletter2.png: 929x436 pixel, 72dpi, 32.77x15.38 cm, bb=
+ \label{fig:newsletter_type3}
+\end{figure}
+
+\begin{description}
+\item[Classi di contenuto valide] Le classi di contenuto con cui creare la newsletter. Per ora l'unica classe permessa è \textbf{Uscita newsletter}
+\item[Formati di output permessi] È possibile inviare newsletter in formato Html o testo semplice
+\item[Temi grafici permessi]I temi grafici con cui formattare la newsletter
+\end{description}
+
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/newsletter/newsletter_tipo_newsletter3.png}
+ % newsletter_tipo_newsletter2.png: 929x436 pixel, 72dpi, 32.77x15.38 cm, bb=
+ \label{fig:newsletter_type4}
+\end{figure}
+
+\begin{description}
+ \item [Casella in entrata suggerimenti newsletter]
+\item[Posizionamento newsletter]La collocazione per le uscite della newsletter
+\end{description}
+
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/newsletter/newsletter_tipo_newsletter5.png}
+ % newsletter_tipo_newsletter2.png: 929x436 pixel, 72dpi, 32.77x15.38 cm, bb=
+\caption{Modello di newsletter pronto all'uso}
+\label{fig:newsletter_type5}
+\end{figure}
+
+
+Una volta pronto il modello di newsletter apparirà come in fig.\ref{fig:newsletter_type5}. L'amministratore delle newsletter è ora in grado di creare degli articoli da inviare, si consiglia di salvare gli elementi da inviare all'interno del folder \textsl{Newsletter}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[height=0.4\textheight]{./immagini/newsletter/newsletter_letterbox.png}
+ % newsletter_letterbox.png: 170x382 pixel, 72dpi, 6.00x13.48 cm, bb=
+ \label{fig:newsletter_letterbox}
+\end{figure}
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/newsletter/newsletter_invio.png}
+ % newsletter_invio.png: 933x136 pixel, 72dpi, 32.91x4.80 cm, bb=
+ \caption{Stato della newsletter durante l'invio agli utenti}
+ \label{fig:newsletter_invio}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/newsletter/newsletter_inviata.png}
+ % newsletter_inviata.png: 929x125 pixel, 72dpi, 32.77x4.41 cm, bb=
+ \caption{Stato della newsletter dopo l'invio agli utenti}
+ \label{fig:newsletter_inviata}
+\end{figure}
+
+\section{Generazione automatica delle liste di invio}
+ La generazione automatica delle liste di invio è deputata ad uno script attivato ad intervalli regolari di tempo dal servizion \textbf{cron} del server in cui risiede il sito web. Il comanda per l'esecuzione manuale dello script per l'aggiornamento delle liste di invio è:
+
+\begin{verbatim}
+ www-data@webserver:/var/www/site php runcronjobs.php newslettertousergroup
+\end{verbatim}
+
+
+
+
+

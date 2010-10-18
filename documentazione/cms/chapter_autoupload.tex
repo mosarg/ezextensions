@@ -1,0 +1,77 @@
+\chapter[Auto Upload]{Upload Automatico dei file}
+
+È disponibile uno script per il caricamento automatico delle circolari all'interno del sito. È necessario disporre di una versione aggiornata di OpenOffice (>3.1) per poter usufruire della conversione automatica in pdf dei file di testo.
+Il funzionamento delo script è molto semplice: un utente definisce una directory all'interno della quale salvare le circolari (in .odt, .doc, .rtf, .pdf etc) e una directory all'interno della quale salvare i file convertiti, nel momento in cui un file viene salvato all'interno della directory monitorata questo viene convertito in pdf e caricato sul sito nell'opportuna posizione.
+\section{Il file di configurazione}
+
+Analiziamo ora il file di configurazione dello script:
+\begin{verbatim}
+ ---
+javapath: java
+log_file: C:\Programmi\autopdfconverter\log_upload.log
+log_proc: c:\tmp\pdf\Circolari\processed.log
+monitor_dir: c:\tmp\Circolari
+monitor_sub_dirs: 1
+path: c:\tmp\Circolari
+pdfconverter: c:/Programmi/autopdfconverter/lib/jodconverter.jar
+processed_files: c:/tmp/pdf
+timeout_value: 2
+users_folders: Pubbliche|Generali
+webdav_password: sambackett
+webdav_realm: eZ Components WebDAV
+webdav_upload_base: Circolari
+webdav_url: http://ezdav.hell.pit/ita/Contenuti/
+webdav_user: admin
+remote_upload: 1
+monitor_password: daosdjahsdk
+monitor_username: utente
+monitor_access_url: c:\tmp
+upload_share: \\amrael\mosa\tmp\upload
+upload_share_password: rwrwerwerwerwe
+upload_share_username: utente
+files_db: file_status.csv
+localnet_upload: 0
+\end{verbatim}
+\begin{description}
+ \item [javapath] Il path standard di Java nella quasi totalità dei casi non è necessario cambiare questo valore
+\item[log\_file] Il nome del file con path assoluto in cui salvare il log dei processi di conversione
+\item[log\_proc] Attualmente non utilizzato
+\item[monitor\_dir] Il path assoluto della directory all'interno della quale verranno copiate le circolari, può anche essere un UNC
+\item[path] Nella versione attuale del codice path e monitor\_dir devono avere lo stesso valore
+\item[pdfconverter] Il path assoluto del bridge con OpenOffice
+\item[processed\_files] Dove salvare i file pdf prodotti, la struttura delle directory deve essere la stessa presente in monitor\_dir
+\item[timeout\_value] Il numero di secondi tra due lavori di gestione consecutivi sui file
+\item[users\_folders]Il nome delle directory all'interno della directory monitorata, la stessa gerarchia deve essere presente anche all'interno del sito
+\item[webdav\_password] La password dell'utente utilizzato per il caricamenteo delle circolari
+\item[webdav\_realm] La stringa identificativa del server webdav remoto NON modificare
+\item[webdav\_upload\_base]La directory principale all'interno della quale caricare le circolari
+\item[webdav\_url] L'indirizzo del server webdav
+\item[webdav\_user] L'utente con i permessi di inserimento dati nella zona circolari
+\item[remote\_upload] 1: carica in rete i file convertiti, 0: Ignora questa procedura.
+\item[monitor\_password] Password per accedere alla directory monitorata (nel caso in cui questa non si trovi sul file system locale)
+\item[monitor\_username] Username per accedere alla directory monitorata (nel caso in cui questa non si trovi nel file system locale)
+\item[monitor\_access\_url] Un path qualsiasi all'interno del file system in cui si trova la directory monitorata
+\item[upload\_share] L'unc di uno share smb remoto sui cui caricare una copia dei file pdf prodotti
+\item[upload\_share\_password]La password dello share smb sulla rete locale
+\item[upload\_share\_username] Il nome utente per accedere allo share smb sulla rete locale
+\item[files\_db] Nome (senza path) del file in cui salvera la lista dei file caricati
+\item[localnet\_upload] 0: non caricare i file su uno share locale,1: carica i file su uno share locale
+\end{description}
+
+Procedura per l'installazione dello script:
+
+\begin{enumerate}
+\item Installate l'ultima versione di OpenOffice
+\item Copiate la directory autopdfconverter in \%programfiles\%  (solitamente c:\backslash Programmi)
+\item Copiate la directory utils in  \%programfiles\%  (solitamente c:\backslash Programmi)
+\item Eseguite lo script openoffice_service.bat, viene creato un servizio per l'esecuzione di OpenOffice in background
+\item Copiate il file processed\_files nella directory impostata alla voce processed\_files all'interno del file di configurazione
+\item Eseguite lo script pdf_converter.bat, viene creato un servizio per il monitoraggio in background di una directory da voi scelta
+\item Andate su Pannello di controllo - Strumenti di Amministrazione - Servizi, cliccate con il tasto destro sul servizio pdfConverter e visualizzatene le proprietà. Accedete alla tab Connessione della finestra che si è appena aperta  e configurate un utente del sistema con sufficienti permessi in lettura e scrittura nelle directory da voi impostate per le circolari.
+\item Riavviate il servizio
+
+\end{enumerate}
+
+
+
+
