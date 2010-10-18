@@ -1,0 +1,52 @@
+\chapter{Gestione utenti}
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/utenti_backend/utenti_flow.png}
+ % utenti_flow.png: 1212x611 pixel, 72dpi, 42.76x21.55 cm, bb=
+ \caption{Flusso di attivazione degli utenti}
+ \label{fig:utenti_flow}
+\end{figure}
+
+
+Il sistema permette agli amministratori di gestire agevolmente gli utenti registrati. Accedendo all'interfaccia del backend è possibile visualizzare una lista degli utenti suddivisi per gruppo e cliccando su ogni utente è possibile modificarne le proprietà (solo per gli utenti amministratori)
+
+
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/users/lista_utenti.png}
+ % lista_utenti.png: 1093x587 pixel, 72dpi, 38.56x20.71 cm, bb=
+ \caption{Vista degli utenti suddivisi per gruppo}
+ \label{fig:users_list}
+\end{figure}
+
+Dopo aver selezionato un gruppo di utenti questi sono visibili come lista in fondo al corpo  principale della pagina. Cliccando sull'utente è possibile vederne il profilo e se abilitati modificarne alcune proprietà. Ad esempio, se un utente dovesse smarrire la password e tutti i dati per l'autenticazione, l'amministratore del sistema potrà agevolmente recuperare le informazioni e fornirle a questi.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/users/vista_utente.png}
+ % vista_utente.png: 946x232 pixel, 72dpi, 33.37x8.18 cm, bb=
+ \caption{Vista di un utente}
+ \label{fig:one_user}
+\end{figure}
+L'amministratore, dopo aver ricevuto un'email circa la registrazione di un nuovo utente deve controllare tramite il link Utenti da attivare$->$attiva utenti nella colonna di sinistra:
+\begin{figure}[H]
+ \centering
+ \includegraphics[height=0.4\textheight]{./immagini/utenti_backend/attiva_utenti.png}
+ % attiva_utenti.png: 165x592 pixel, 72dpi, 5.82x20.88 cm, bb=
+ \caption{Link per l'attivazione degli utenti}
+ \label{fig:attiva_utenti}
+\end{figure}
+Se gli utenti registrati hanno confermato il proprio indirizzo email allora l'amministratore sarà in grado di attivarli. A seguito di una corretta attivazione un'email di notifica viene inviata all'utente interessato.
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/users/attivazione_utente.png}
+ % attivazione_utente.png: 1099x160 pixel, 72dpi, 38.77x5.64 cm, bb=
+ \caption{Attivazione utente}
+ \label{fig:user_activation}
+\end{figure}
+
+

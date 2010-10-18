@@ -1,0 +1,219 @@
+\chapter{Ruoli e Polize}
+
+EzPublish permette agli amministratori di sistema di creare dei ruoli da assegnare agli utenti e/o ai gruppi al fine di limitare le azioni disponibili all'interno del cms.  Il sistema delle autorizzazioni si basa sui seguenti elementi:
+\begin{itemize}
+ \item Utenti
+\item Gruppi
+\item Ruoli
+\item Polize
+\end{itemize}
+ 
+tali elementi interagiscono secondo lo schema di figura.\ref{fig:perm_schema}:
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/permessi/schema_permessi.png}
+ % schema_permessi.png: 882x545 pixel, 72dpi, 31.11x19.23 cm, bb=
+ \caption{Schema delle relazioni funzionali tra gi elementi del sistema di autorizzazione}
+ \label{fig:perm_schema}
+\end{figure}
+
+
+Un utente definisce un account utente valido nel sistema. Un gruppo di utenti si compone di utenti e altri
+gruppi di utenti. Una poliza è una norma che concede l'accesso a qualsiasi tipo di contenuto o una certa
+funzione di sistema. Per esempio, una poliza può concedere l'accesso in lettura a una raccolta di nodi. Un
+ruolo è una raccolta nominata di polize. Un ruolo può essere assegnato a utenti e gruppi di utenti.
+
+\section{Utilizzo}
+
+In particolare, vi sono due cose che l'etichetta "Account utente" vi permette di fare. Prima di tutto,
+permette di gestire utenti e gruppi di utenti utilizzando la struttura ad albero. In secondo luogo, essa
+permette di gestire i vostri ruoli e le polize assegnandole agli utenti e ai gruppi.
+
+% \section{Gestione account utenti e gruppi utenti}
+% 
+% Come sottolineato in precedenza, gli utenti e i gruppi sono gestiti tramite nodi. Ciò significa che è possibile
+% creare, modificare, cancellare, spostare, ecc i vostri utenti e nodi nello stesso modo come si farebbe quando
+% si tratta con articoli, cartelle, ecc. Il built-in della classe "Utente" fa uso del datatype “Account Utente”. Si
+% tratta di uno speciale datatype che si inserisce più profondamente nel sistema. Tutti gli oggetti che stanno
+% usando questo datatype renderanno automaticamente validi gli utenti del sistema. Il datatype “Account
+% Utente” rende possibile memorizzare una combinazione username / password e un indirizzo e-mail. La
+% seguente schermata mostra l'interfaccia per modificare questo dato.
+
+
+
+\section{Gestione dei Ruoli e delle Polize}
+
+
+Dalla sezione \textsl{Account autenti} è possibile accedere al menu per la gestine delle polize e dei ruoli tramite il link presente nella colonna di sinistra di tale sezione:
+\begin{figure}[H]
+ \centering
+ \includegraphics[height=0.4\textheight]{./immagini/permessi/ruoli_polize_link.png}
+ % ruoli_polize_link.png: 168x668 pixel, 72dpi, 5.93x23.57 cm, bb=
+ \caption{Link per accedere alla gestione dei ruoli e delle polize}
+ \label{fig:perm_link}
+\end{figure}
+
+Quando si accede al link, il sistema visualizzerà una finestra che mostra tutti i ruoli che sono
+stati definiti figura.\ref{fig:perm_tutti_ruoli}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/permessi/ruoli.png}
+ % ruoli.png: 926x418 pixel, 72dpi, 32.67x14.75 cm, bb=
+ \caption{I ruoli attualmente definiti all'interno del sistema}
+ \label{fig:perm_tutti_ruoli}
+\end{figure}
+
+La finestra "Ruoli" vi permette di effettuare le seguenti operazioni:
+\begin{itemize}
+  \item Creare un nuovo ruolo
+  \item Visualizzare un ruolo 
+  \item Modifica di un ruolo 
+  \item Creare una copia di un ruolo esistente 
+  \item  Rimuovere un ruolo 
+  \item Assegnare un ruolo di account utente e / o gruppi di utenti 
+\end{itemize}
+
+Cliccando sul nome di un ruolo, il sistema visualizza due finestre contenenti dettagliate
+informazioni circa il ruolo cui si è fatto accesso figura.\ref{fig:perm_ruolo_open} e figura.\ref{fig:perm_rulo_assegnazione}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/permessi/ruolo_dettaglio.png}
+ % ruolo_dettaglio.png: 926x769 pixel, 72dpi, 32.67x27.13 cm, bb=
+ \caption{Detteglio del ruolo editor professore}
+ \label{fig:perm_ruolo_open}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/permessi/ruolo_assegnazione.png}
+ % ruolo_assegnazione.png: 938x204 pixel, 72dpi, 33.09x7.20 cm, bb=
+ \caption{Utenti e gruppi a cui è stato assegnato il ruolo editor professore}
+ \label{fig:perm_assegnazione}
+\end{figure}
+
+
+%\subsection{Descrizione di un ruolo}
+
+
+\section{Creazione di un ruolo}
+
+Cerchiamo ora con un esempio pratico di creare un ruolo per la gestione delle macroaree. Ricordiamo che le macroaree sono delle frontpage per la gestione tematica delle informazioni.
+Supponiamo di voler permettere ai docenti di modificare le macroaree esistenti e di inserire dei contenuti all'interno di queste.
+Inziamo cliccando su \textsl{Nuovo ruolo} nella schermata in cui sono elencati i ruoli, comparirà una nuovo schermata all'interno della quale dovremo inserire il nome del nuovo ruolo: \emph{Editor Macroaree} figura.\ref{fig:perm_macro}
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/permessi/nuovo_ruolo.png}
+ % nuovo_ruolo.png: 931x266 pixel, 72dpi, 32.84x9.38 cm, bb=
+ \caption{Creazione di un nuovo ruolo: scelta del nome}
+ \label{fig:perm_macro}
+\end{figure}
+ 
+Dopo aver inserito il nome più appropriato per il ruolo salviamolo cliccando su OK. Il sistema memorizzerà il nuovo ruolo e ci mostrerà la pagina di modifica del ruolo stesso figura.\ref{fig:perm_mod_ruolo}
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/permessi/nuovo_ruolo_creato.png}
+ % nuovo_ruolo_creato.png: 934x414 pixel, 72dpi, 32.95x14.60 cm, bb=
+ \caption{Il nuovo ruolo è stato creato ed è in attesa di essere modificato}
+ \label{fig:perm_mod_ruolo}
+\end{figure}
+Dato che un ruolo vuoto è inutile ci dovremo ora premurare di inserire delle polize al suo interno. Clicchiamo quindi su modifica e prepariamoci ad inserire le regole che permetteranno agli insegnanti di modificare le macroaree:
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/permessi/modifica_nuovo_ruolo.png}
+ % modifica_nuovo_ruolo.png: 930x263 pixel, 72dpi, 32.81x9.28 cm, bb=
+ \caption{Modifica del nuovo ruolo per l'inserimento di alcune polize}
+ \label{fig:perm_ins_pol}
+\end{figure}
+
+
+Per inserire una nuova Poliza clicchiamo su \textsl{Nuova Policy}. Andremo ad inserire una regola per permettere la creazione di un oggetto di classe \emph{macroarea} all'interno della sezione docenti. Il modulo di EzPublish che si occupa del contenuto si chiama \textsl{content} e la funzione che crea il contenuto \textsl{create}. La nuova poliza andrà quindi ad influenzare la vista \textsl{content::create}.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/permessi/creazione_poliza_1.png}
+ % creazione_poliza_1.png: 929x394 pixel, 72dpi, 32.77x13.90 cm, bb=
+ \caption{Creazione di una nuova poliza: selezione del modulo cui la poliza si riferisce}
+ \label{fig:perm_pol1}
+\end{figure}
+
+Come possiamo vedere in figura.\ref{fig:perm_pol1} come prima cosa ci viene richiesto il modulo cui applicare la poliza, nel nostro caso sceglieremo il modulo \textsl{content}. Siccome gli insegnanti in genere non devono essere in grado di utilizzare il modulo \textsl{content} senza alcuna limitazione clicchiamo su \textsl{Dai accesso ad una funzione} il sistema ci mostrerà la schermata di figura.\ref{fig:perm_pol2}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/permessi/creazione_poliza2.png}
+ % creazione_poliza2.png: 930x565 pixel, 72dpi, 32.81x19.93 cm, bb=
+ \caption{Creazione di una policy: scelta della funzione da limitare}
+ \label{fig:perm_pol2}
+\end{figure}
+
+Siccome vogliamo permettere ai docenti di creare macroaree sceglieremo la funzione \textsl{create}. Chiaramente i docenti non potranno creare qualsiasi tipo di contenuto per cui dovremo limitare il campo di azione della funzione create, per far questo clicchiamo su \textsl{Dai accesso limitato}, il sistema ci mostrerà la schermata di figura.\ref{fig:perm_pol3}
+
+\begin{figure}
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/permessi/creazione_poliza_3.png}
+ % creazione_poliza_3.png: 929x668 pixel, 72dpi, 32.77x23.57 cm, bb=
+ \caption{Creazione di una policy: limitazione di una funzione}
+ \label{fig:perm_pol3}
+\end{figure}
+
+Come si vede dalla figura.\ref{fig:perm_pol3} la funzione \textsl{create} è stata limitata in modo da permettere la creazione di oggetti di classe macroaree unicamente come figli un un oggetto macroarea all'interno della sezione \textsl{docenti}. La creazione della nuova poliza è ora completa cliccando su OK salveremo i nostri sforzi:
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/permessi/creazione_poliza_4.png}
+ % creazione_poliza_4.png: 929x298 pixel, 72dpi, 32.77x10.51 cm, bb=
+ \caption{La nuova poliza è stata creata}
+ \label{fig:perm_pol4}
+\end{figure}
+
+
+Ovviamente è possibile inserire altre polize all'interno del nostro ruolo. Il ruolo \textsl{Editor macroaree} completo di tutte le sue polize risulta essere:
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/permessi/creazione_poliza_5.png}
+ % creazione_poliza_5.png: 925x312 pixel, 72dpi, 32.63x11.01 cm, bb=
+ \caption{Il ruolo Editor macroaree completo di tutte le policy necessarie}
+ \label{fig:perm_pol5}
+\end{figure}
+
+
+\section{Assegnazione di un ruolo}
+
+La creazione di un Ruolo non è sufficiente per permettere agli utenti di compiere della azioni non standard, dobbiamo infatti assegnare il ruolo prima che questo diventi attivo. Utilizzeremo sempre il caso precedente, ovvero proveremo ad assegnare il ruolo \textsl{Editor Macroaree} ad un insegnante limitatamente una un sottoalbero del sito.
+Per far questo dalla pagina con l'elenco dei ruoli scegliamo quello appena creato e dal menu \emph{Utenti e gruppi che usano il ruolo} clicchiamo su \textsl{Assegna con limitazione}. Immediatamente il sistema ci mostrerà una schermata per la selezione del sottoalbero sul quale il ruolo sarà attivo:
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/permessi/macroaree.png}
+ % macroaree.png: 928x400 pixel, 72dpi, 32.74x14.11 cm, bb=
+ \caption{Selezione del sottoalbero cui applicare il ruolo}
+ \label{fig:perm_macro_select}
+\end{figure}
+
+dopo aver selezionato il corretto sottoalbero il sistema ci chiede a quale utente o gruppo il ruolo limitato deve essere assegnato:
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/permessi/utenti.png}
+ % utenti.png: 931x409 pixel, 72dpi, 32.84x14.43 cm, bb=
+ \caption{Assegnazione del ruolo limitato ad utenti o gruppi}
+ \label{fig:perm_utente_ass}
+\end{figure}
+
+
+dopo l'assegnazione del ruolo limitato la pagina dei dettagli risulterà come in figura.\ref{fig:perm_lim}
+\begin{figure}[H]Xu
+ \centering
+ \includegraphics[width=\textwidth]{./immagini/permessi/ruolo_limitato.png}
+ % ruolo_limitato.png: 927x172 pixel, 72dpi, 32.70x6.07 cm, bb=
+ \caption{Pagina del  dettaglio del ruolo dopo una assegnazione limitata}
+ \label{fig:perm_lim}
+\end{figure}
+
+
+
+
+

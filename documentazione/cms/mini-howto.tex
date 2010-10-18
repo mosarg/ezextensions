@@ -1,0 +1,76 @@
+\documentclass[a4paper,10pt]{scrbook}
+\usepackage[italian]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amscd}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{array}
+\usepackage{rotating}
+\usepackage{caption}
+\usepackage{lscape}
+\usepackage{fancybox}
+
+\renewcommand{\fboxsep}{0.5cm}
+\usepackage{hyperref}
+
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={Sigurd  Cms},    % title
+    pdfauthor={Matteo Mosangini},     % author
+    pdfsubject={Gestione Cms scolastico},   % subject of the document
+    pdfcreator={Matteo Mosangini},   % creator of the document
+    pdfproducer={Matteo Mosangini}, % producer of the document
+    pdfkeywords={cms ezpublish sigurd scuola alunni}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=false,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=cyan           % color of external links
+}
+
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.95}
+\renewcommand{\floatpagefraction}{0.35}
+\setcounter{totalnumber}{5}
+\restylefloat{figure}
+\newlength{\drop}
+
+
+\newcommand{\titleBWF}{\begingroup% Beowulf
+\drop = 0.1\textheight
+\parindent=0pt
+\vspace{\drop}
+{\Huge\bfseries Cms Scolastico - mini guida}\\[\baselineskip]
+{\Large {\itshape Guida} {\scshape per i docenti}}\par
+\vspace{5cm}
+\begin{center}
+\includegraphics[width=0.4\textwidth]{./immagini/logo/sigurd2.png}
+\end{center}
+\centering
+{\Huge\bfseries S.I.G.U.R.D}\footnote{Sistema integrato gestione unificata risorse didattiche}
+
+{\Large\itshape }
+\vspace*{\drop}
+\endgroup}
+
+
+\begin{document}
+
+
+\include{title}
+\tableofcontents
+\include{chapter_registration}
+\include{chapter_proffolder}
+\include{chapter_edit}
+\include{chapter_approval}
+\end{document}

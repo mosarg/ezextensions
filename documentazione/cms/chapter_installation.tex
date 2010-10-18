@@ -1,0 +1,70 @@
+\chapter[Installazione]{Installazione e deployment}
+
+\section{Installazione}
+Per effettuare l'installazione creiamo una directory all'interno di \textsl{/var/www} entro cui copieremo il codice del nostro sito.
+
+\begin{verbatim}
+cd /var/www
+mkdir <siteroot>
+\end{verbatim}
+
+ovviamente al posto di \textsl{siteroot} userete il nome da voi scelto. Dobbiamo ora decomprimere all'interno di questa directory i file sorgente di base del sito che si trovano all'interno del file compresso \textbf{sigurdbase.tar.bz2}.
+
+\begin{verbatim}
+cd <siteroot>
+tar jxvf /tmp/sigurdbase.tar.bz2
+\end{verbatim}
+
+\subsection{Configurazione di Apache}
+
+Dobbiamo ora configurare un Virtual host per Apache al fine di rendere accessibile il nostro sito al mondo esterno. Il file di configurazione base è:
+\begin{verbatim}
+NameVirtualHost 192.168.0.5:80
+<VirtualHost 192.168.0.5:80>
+ServerAdmin administrator@ilmiosito.it
+ServerName www.ilmiosito.it
+AcceptPathInfo On
+DocumentRoot /var/www/<siteroot>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^webdav\..*
+RewriteRule ^(.*) /webdav.php [L]
+Rewriterule ^/design/[^/]+/(stylesheets|images|javascript)/.* - [L]
+AddOutputFilterByType DEFLATE text/html text/plain text/xml
+ServerAlias webdav.ilmiosito.it
+ServerAlias webadmin.ilmiosito.it
+ServerAlias eng.ilmiosito.it
+<Directory /var/www/<siteroot> >
+Options Indexes FollowSymLinks MultiViews
+AllowOverride All
+Order allow,deny
+allow from all
+</Directory>
+DirectoryIndex index.php
+Rewriterule ^/var/storage/.* - [L]
+RewriteRule ezjscore/call/ /index_ajax.php [L]
+Rewriterule ^/var/[^/]+/storage/.* - [L]
+RewriteRule ^/var/cache/texttoimage/.* - [L]
+RewriteRule ^/var/[^/]+/cache/texttoimage/.* - [L]
+Rewriterule ^/design/[^/]+/(stylesheets|images|javascript)/.* - [L]
+Rewriterule ^/share/icons/.* - [L]
+Rewriterule ^/extension/[^/]+/design/[^/]+/ \
+	(lib|stylesheets|images|javascripts?)/.*  - [L]
+Rewriterule  ^/packages/styles/.+/\ 
+	(stylesheets|images|javascript)/[^/]+/.* - [L]
+RewriteRule ^/packages/styles/.+/thumbnail/.* - [L]
+RewriteRule ^/favicon\.ico - [L]
+RewriteRule ^/robots\.txt - [L]
+RewriteRule ^/var/[^/]+/cache/public/.* - [L]
+RewriteRule .* /index.php
+ErrorLog /var/log/apache2/ilmiositoerror.log LogLevel warn
+CustomLog /var/log/apache2/ilmiositocustomlog.log combined
+ServerSignature On
+</VirtualHost>
+\end{verbatim}
+
+
+
+
+
+
+
