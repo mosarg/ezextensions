@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<nodo nome="Inizio sito" descrizione="sito" classe="folder">
-   <nodo nome="Ipsaa" descrizione="scuola" classe="school_front" state="6" nodeID="1439"/>
-</nodo>

@@ -1,2 +1,0 @@
-Comment to enable ie dissuasive allert
-<!--[if lte IE 8]> <script type="text/javascript" src={'javascript/iesucks.js'|ezdesign} ></script><![endif]-->

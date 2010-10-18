@@ -1,1 +1,0 @@
-la versione del file javascript ez_core DEVE essere la stessa si per ezflow che per ezoe

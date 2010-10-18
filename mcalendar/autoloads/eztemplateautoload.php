@@ -1,4 +1,0 @@
-<?php
-
-$eZTemplateOperatorArray = calendarOperators::operators();
-?>

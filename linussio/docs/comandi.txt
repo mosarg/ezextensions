@@ -1,7 +1,0 @@
-Per tradurre le stringhe di una estensione:
-
-bin/linux/ezlupdate -e extension/myextension ita-IT
-
-Per generare la classi tramite copia
-Subito dopo aver creato le classi è necessario controllare se è stato generato un remote_id univoco per
-la nuova classe, se non farlo manualmente

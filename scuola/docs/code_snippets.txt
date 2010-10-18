@@ -1,3 +1,0 @@
-{if or( $node.object.can_edit, $node.object.can_remove )}
-    <a class="clear_cache_button" href="/utils/clear/{$node.node_id}">Svuota Cache</a>
-{/if}

@@ -1,2 +1,0 @@
-[TreeMenu]
-ShowClasses[]=ticketsystem
