@@ -1,0 +1,14 @@
+To install simply...
+
+1. copy the sfnewslettersync directory to your "extension"
+directory
+
+2. apply the .sql script found in sql/ directory to your database.
+
+3. Add sfnewslettersync to ActiveExtensions-Array in your site.ini.
+
+4. Apply changes to the sfnewslettersync.ini if necessary.
+
+5. Enable the Cronjob part sfnewslettertousergroup to run whenever you want it to
+
+6. Clear ini cache.
