@@ -19,6 +19,10 @@ MatchFile=full/course.tpl
 Subdir=templates
 Match[class_identifier]=course
 
+
+
+
+
 [edit_form]
 Source=content/edit.tpl
 MatchFile=edit/edit_form.tpl
@@ -161,6 +165,7 @@ Source=node/view/full.tpl
 MatchFile=full/contatti.tpl
 Subdir=templates
 Match[class_identifier]=contatti
+
 
 [full_dir_circolari]
 Source=node/view/full.tpl

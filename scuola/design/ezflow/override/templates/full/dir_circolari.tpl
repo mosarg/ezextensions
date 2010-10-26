@@ -5,6 +5,8 @@
 {else}
     {scuolapagedata_set( 'extra_menu', false() )}
 {/if}
+
+
 <div class="border-box">
 <div class="content-view-full">
     <div class="class-dir_circolari">
@@ -12,20 +14,12 @@
         <div class="attribute-header">
             <h1>{$node.name|wash}</h1>
         </div>
-        
-        {if eq( ezini( 'folder', 'SummaryInFullView', 'content.ini' ), 'enabled' )}
+             
             {if $node.object.data_map.short_description.has_content}
                 <div class="attribute-short">
                     {attribute_view_gui attribute=$node.data_map.short_description}
                 </div>
             {/if}
-        {/if}
-
-        {if $node.object.data_map.description.has_content}
-            <div class="attribute-long">
-                {attribute_view_gui attribute=$node.data_map.description}
-            </div>
-        {/if}
 
     
             {def $classes =array('folder_circolari')
@@ -46,6 +40,25 @@
                 {/foreach}
             </div>
             {/if}
+
+            <a href="{concat($node.url_alias|ezurl(no),'/(show_list)/',true())}">Mostra tutte le circolari</a>
+            
+            {if is_set($view_parameters.show_list)}
+                {def $circolari = fetch( 'content', 'list',
+                                         hash('parent_node_id', $node.node_id,
+                                              'sort_by', array('name',false()),
+                                              'depth',2,
+                                              'limit',50,
+                                              'class_filter_type','include',
+                                              'class_filter_array',array('file')))}
+                {foreach $circolari as $circolare}
+                    {node_view_gui view=line content_node=$circolare}
+                {/foreach}
+            {undef $circolari}
+            {/if}
+            
+
+
     </div>
 </div>
 </div>
