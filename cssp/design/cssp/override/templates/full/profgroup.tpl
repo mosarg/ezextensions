@@ -70,5 +70,5 @@
 </div>
 
 </div></div></div>
-<div class="border-bl"><div class="border-br"><div class="border-bc"></div></div></div>
+
 </div>
