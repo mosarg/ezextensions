@@ -24,7 +24,7 @@
     
             {def $classes =array('folder_circolari')
                  $children = array()
-                }
+                 $page_limit = 10}
                 
              {set $children=fetch_alias( 'children', hash( 'parent_node_id', $node.node_id,
                                                           'offset', $view_parameters.offset,
@@ -48,12 +48,24 @@
                                          hash('parent_node_id', $node.node_id,
                                               'sort_by', array('name',false()),
                                               'depth',2,
-                                              'limit',50,
+                                              'limit',$page_limit,
                                               'class_filter_type','include',
-                                              'class_filter_array',array('file')))}
+                                              'class_filter_array',array('file')))
+                     $circolari_count=fetch_alias( 'children_count', hash( 'parent_node_id', $node.node_id,
+                                                                      'class_filter_type', 'include',
+                                                                      'depth',2,
+                                                                      'class_filter_array',array('file')) )}
                 {foreach $circolari as $circolare}
                     {node_view_gui view=line content_node=$circolare}
                 {/foreach}
+                {if $circolari_count|gt($page_limit)}
+                {include name=navigator
+                     uri='design:navigator/google.tpl'
+                     page_uri=$node.url_alias
+                     item_count=$circolari_count
+                     view_parameters=$view_parameters
+                     item_limit=$page_limit}
+                {/if}
             {undef $circolari}
             {/if}
             
