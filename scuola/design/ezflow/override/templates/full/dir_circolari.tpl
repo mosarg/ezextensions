@@ -47,6 +47,7 @@
                 {def $circolari = fetch( 'content', 'list',
                                          hash('parent_node_id', $node.node_id,
                                               'sort_by', array('name',false()),
+                                              'offset', $view_parameters.offset,
                                               'depth',2,
                                               'limit',$page_limit,
                                               'class_filter_type','include',
@@ -54,6 +55,7 @@
                      $circolari_count=fetch_alias( 'children_count', hash( 'parent_node_id', $node.node_id,
                                                                       'class_filter_type', 'include',
                                                                       'depth',2,
+                                                                      'sort_by', array('name',false()),
                                                                       'class_filter_array',array('file')) )}
                 {foreach $circolari as $circolare}
                     {node_view_gui view=line content_node=$circolare}
