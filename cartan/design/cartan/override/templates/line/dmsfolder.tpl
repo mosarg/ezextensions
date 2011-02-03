@@ -3,7 +3,7 @@
 <div class="content-view-line">
     <div class="class-dmsfolder">
         <a href={$node.url_alias|ezurl}>
-        <img alt="folder" src={'icons/folder_pelle_smaller.png'|ezimage()}/>
+        <!--<img alt="folder" src={'icons/folder_pelle_smaller.png'|ezimage()}/>-->
         {$node.name|wash()}
         </a>
      

@@ -49,8 +49,10 @@ NumberOfArchivedItems=5
 ManualAddingOfItems=enabled
 ViewList[]
 ViewList[]=3_items1
+ViewList[]=3_items2
 ViewName[]
 ViewName[3_items1]=Tema predefinito
+ViewName[3_items2]=Tema compatto
 
 [OnlineUsers]
 Name=Utenti On Line

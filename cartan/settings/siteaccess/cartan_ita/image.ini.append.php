@@ -7,6 +7,7 @@ AliasList[]=medium
 AliasList[]=listitem
 AliasList[]=articleimage
 AliasList[]=articlethumbnail
+AliasList[]=articlethumbnailsmall
 AliasList[]=gallerythumbnail
 AliasList[]=galleryline
 AliasList[]=imagelarge
@@ -68,6 +69,11 @@ Reference=
 Filters[]
 Filters[]=geometry/scalewidth=200
 
+
+[articlethumbnailsmall]
+Reference=
+Filters[]
+Filters[]=geometry/scalewidth=100
 
 [folderthumbnail]
 Reference=

@@ -81,7 +81,7 @@ Subdir=templates
 Match[type]=Manual3Items
 Match[view]=3_items1
 
-[block_3_items2]
+[block_3items2]
 Source=block/view/view.tpl
 MatchFile=block/3_items2.tpl
 Subdir=templates

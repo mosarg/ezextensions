@@ -89,14 +89,21 @@ table.block_calendar td.dayWevents{
     -o-border-radius:5px;
 
 }
+
+table.block_calendar div.popup{
+    overflow: visible;
+    position:absolute;
+}
+
 table.block_calendar ul.popup{
     background:rgba(65,147,48,0.5);
     display:block;
     position:absolute;
     padding:1em;
     border:2px solid rgba(255,255,255,0.7);
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
+    overflow: visible;
+    /*-moz-border-radius:10px;
+    -webkit-border-radius:10px;*/
   }
 table.block_calendar ul.popup li{
     color:white;
