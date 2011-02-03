@@ -5,6 +5,7 @@ var blockcalendar={
         this._setupEventDelegation();
         this._fetchEvents();
         this.options.content_end=parseInt($page.offset().left)+parseInt($page.css('width'));
+        this.options.calendar_width=this.element.width();
         
     },
     getHead: function(opts) {
@@ -151,24 +152,25 @@ var blockcalendar={
         var options=self.options;
         var $popup,$list,$ul;
         var events=$target.data('events');
-  
         $popup=$('<div class="popup"></div>').appendTo($target);
-        var popup_width=$popup.width();
-        var day_offset=$target.offset().left;
-       
-        if (day_offset+popup_width>options.content_end) {
-             $popup.offset({left:0});
-             $popup.offset({left:parseInt(day_offset-popup_width+$target.width())});//set twice for webkit misterious bug
-         }
-
-
-         //alert(parseInt(day_offset)-parseInt(popup_width));
-        //alert(parseInt(day_offset-popup_width+$target.innerWidth()));
         $list=$('<ul class="popup"></ul>').appendTo($popup);
+        
+        var popup_width=options.calendar_width*0.5;
+        var day_offset= $target.offset().left;
+        var cell_width=$target.width();
+        
         for (var i in events){
             $('<li><span class="small_square" style="background:'+events[i].color+'"></span>'+events[i].title+'</li>').appendTo($list);
         }
-   
+ 
+        if (day_offset+popup_width>options.content_end) {
+             $popup.offset({left:0});
+             $popup.width(popup_width);
+             $popup.offset({left:parseInt(day_offset-popup_width+cell_width)});//set twice for webkit misterious bug
+             //alert(day_offset+popup_width);
+         }
+        
+        
     },
     _removeEventsPopup:function($target){
         $target.find('.popup').remove();
