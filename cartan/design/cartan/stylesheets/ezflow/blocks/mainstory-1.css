@@ -1,22 +1,28 @@
 
+div.mainstory1{
+    background:#ffa800;
+}
+
 div.block-type-mainstory div.trans-background
 {
     padding: 0;
-    background-color: #000000;
+    background-color: #ffa800;
     color: #FFFFFF;
     opacity: 0.5;
     -moz-opacity: .50;
     filter: alpha(opacity=50);
     position: absolute;
-    width: 321px;
+    width: 560px;
     height: 57px;
     margin-top: -67px;
     z-index: 0;
+    
+   
 }
 
 div.block-type-mainstory div.attribute-link
 {
-    width: 301px;
+    width: 560px;
     padding: 10px;
     height: 37px;
     visibility: visible;
@@ -24,11 +30,12 @@ div.block-type-mainstory div.attribute-link
     margin-top: -67px;
     position: absolute;
     z-index: 1;
+    text-shadow:1px 1px 1px black;
+    font-size:1.1em;
 }
 
 div.block-type-mainstory div.attribute-link a
 {
-    font-family: Conei;
     color: #FFFFFF;
     text-decoration: none;
     display: block;
@@ -46,5 +53,7 @@ div.block-type-mainstory div.attribute-image
 div.block-type-mainstory div.attribute-image img
 {
     display: block;
+    margin-left:auto;
+    margin-right: auto;
 
 }

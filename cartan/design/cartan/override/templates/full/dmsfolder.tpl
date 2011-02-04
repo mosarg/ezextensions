@@ -39,9 +39,7 @@
 
 
 
-            {set $children=fetch_alias( 'children', hash( 'parent_node_id', $node.node_id,
-                                                          'offset', $view_parameters.offset,
-                                                          'sort_by', $node.sort_array,
+            {set $children=fetch_alias( 'children', hash( 'parent_node_id', $node.node_id,                                                                                                               'sort_by', $node.sort_array,
                                                           'class_filter_type', 'include',
                                                           'class_filter_array', $classes) )
                  $children_count=fetch_alias( 'children_count', hash( 'parent_node_id', $node.node_id,
@@ -51,6 +49,7 @@
 
            {if or(gt($children_count,0),gt($files_count,0))}
 
+           
            <div class="content-view-children">
               {foreach $children as $child }
                   {node_view_gui view=line content_node=$child}

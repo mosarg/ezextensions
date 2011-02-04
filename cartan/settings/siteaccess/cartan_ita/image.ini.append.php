@@ -22,6 +22,15 @@ AliasList[]=galleryfull
 AliasList[]=folderthumbnail
 AliasList[]=megadropsmall
 AliasList[]=megadropsmaller
+AliasList[]=mainstory4
+
+
+[mainstory4]
+Reference=
+Filters[]
+Filters[]=geometry/scalewidth=560
+Filters[]=geometry/crop=560;396;0;0
+
 
 
 [menublock]

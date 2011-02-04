@@ -7,7 +7,7 @@
             $cont_children = array()
             $cont_count = ''
             $style=''
-            $page_limit = 10
+            $page_limit = 3
             $classes = ezini( 'MenuContentSettings', 'ExtraIdentifierList', 'menu.ini' )
             $children = array()
             $main_elements = array()
@@ -16,7 +16,6 @@
             $main_elements_count=''}
 
 {set $cont_children=fetch_alias( 'children', hash( 'parent_node_id', $node.node_id,
-                                                          'offset', $view_parameters.offset,
                                                           'sort_by', $node.sort_array,
                                                           'class_filter_type', 'include',
                                                           'class_filter_array', $cont_classes_fetch) )

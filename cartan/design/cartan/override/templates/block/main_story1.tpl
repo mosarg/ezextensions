@@ -5,9 +5,9 @@
 <div class="block-type-mainstory mainstory1">
     <div class="attribute-image">
      {if $valid_node.object.class_identifier|eq('article')}
-        {attribute_view_gui href=$valid_node.url_alias|ezurl() attribute=$valid_node.data_map.image image_css_class=shadow image_class='mainstory1'}
+        {attribute_view_gui href=$valid_node.url_alias|ezurl() attribute=$valid_node.data_map.image  image_class='mainstory4'}
      {else}
-        {attribute_view_gui href=$valid_node.url_alias|ezurl() attribute=$valid_node.data_map.icon image_css_class=shadow image_class='mainstory1'}
+        {attribute_view_gui href=$valid_node.url_alias|ezurl() attribute=$valid_node.data_map.icon   image_class='mainstory4'}
      {/if}
     </div>
 

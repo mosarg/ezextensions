@@ -54,7 +54,6 @@
 
          <div class="float-break"></div>
            {if gt($children_count,0)}
-
            <div class="content-view-children">
                 {foreach $children as $child }
                   {node_view_gui view=line content_node=$child}
@@ -63,7 +62,7 @@
              {include name=navigator
                      uri='design:navigator/google.tpl'
                      page_uri=$node.url_alias
-                     item_count=sum($children_count,$main_elements_count)
+                     item_count=sum($children_count)
                      view_parameters=$view_parameters
                      item_limit=$page_limit}
         {/if}

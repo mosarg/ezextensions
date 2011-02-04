@@ -6,22 +6,27 @@
     dmsfolder line view css
 */
 div.content-view-line div.class-dmsfolder h2{
-    min-height:200px;
+    min-height:15px;
     
 }
 div.content-view-line div.class-dmsfolder  a{
     display:block;
     height:100%;
     text-align:center;
+    color:white;
    }
-
+   div.content-view-line div.class-dmsfolder  a:hover{
+       color:gray;
+   }
+   
 div.content-view-full div.content-view-line div.class-dmsfolder{
     float:left;
     padding:1em;
-    min-height:200px;
-    width:128px;
-    background: #EAEAEA;
-    margin:1em;
+    min-height:15px;
+    background: #ffa800;
+    border-left:4px solid gray;
+    margin-right:0.4em;
+    
  }
 
  div.content-view-full div.content-view-line div.class-dmsfolder div.attribute-short{
