@@ -47,7 +47,7 @@
                  </tr>
                  
                  <tr>
-                     <td class="title">File: </td>
+                     <td class="title">Download: </td>
                      <td><a href={concat("content/download/",$node.data_map.file.contentobject_id,"/",$node.data_map.file.id,"/file/",$node.data_map.file.content.original_filename)|ezurl}>{$node.name}</a></td>
                  </tr>
                  

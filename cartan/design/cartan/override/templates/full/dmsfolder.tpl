@@ -15,6 +15,7 @@
         <div class="attribute-header">
             <h1>{$node.name|wash}</h1>
         </div>
+        <div class="infotools"></div>
         {if $node.data_map.short_description.has_content}
                 <div class="attribute-short">
                     {attribute_view_gui attribute=$node.data_map.short_description}
@@ -56,6 +57,8 @@
                 {/foreach}
             </div>
 
+           <div class="separator"></div>
+           
            <div class="content-view-children">
                 {foreach $files as $file }
                   {node_view_gui view=line content_node=$file}

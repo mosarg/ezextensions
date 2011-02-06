@@ -75,6 +75,7 @@
     </div>
     {if gt($cont_count,0)}
     <div class="extracol">
+        <h2>Approfondimento</h2>
         <div class="content-view-children">
              {foreach $cont_children as $child }
                {if $cont_classes|contains($child.class_identifier)}
@@ -84,7 +85,7 @@
         </div>
         <div class="content-view-children">
                 {foreach $children as $child }
-                  {node_view_gui view=line content_node=$child}
+                  {node_view_gui view=line size='compact' content_node=$child}
                 {/foreach}
         </div>
     </div>

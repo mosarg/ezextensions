@@ -7,7 +7,7 @@
 
     {if $node.data_map.image.has_content}
         <div class="attribute-image">
-            <img class="shadow" alt="immarticolo" src={$node.data_map.image.content[large].url|ezroot}/>
+            <img  alt="immarticolo" src={$node.data_map.image.content[large].url|ezroot}/>
         </div>
     {/if}
 
@@ -16,6 +16,7 @@
         {attribute_view_gui attribute=$node.data_map.intro}
     </div>
     {/if}
-    <a href={$node.url_alias|ezurl}>Continua...</a>
+    <a class="go_on"href={$node.url_alias|ezurl}>Continua...</a>
     </div>
 </div>
+<div class="filled_separator"></div>

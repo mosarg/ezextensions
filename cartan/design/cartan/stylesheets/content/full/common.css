@@ -28,18 +28,21 @@ div.extrainfo-column-position
     float: left;
 }
 
+div.content-view-full  div.infotools{
+    border-bottom: 3px solid #EAEAEA;
+    width:80%;
+    margin-bottom:1em;
+    overflow:hidden;
+}
+
+
 /*Attribute short*/
 
 div.content-view-full div.attribute-short{
     font-size:1.3em;
 }
 
-
-
 /*Attribute byline*/
-
-
-
 
 div.content-view-full div.attribute-byline p.author
 {
@@ -78,8 +81,6 @@ div.attribute-header h1
 {
     font-size: 3em;
     font-weight: normal;
-    background-position: bottom center;
-    background-repeat: no-repeat;
     padding-bottom: 5px;
     margin-bottom: 0;
 }
@@ -162,8 +163,6 @@ div.break
 
 div.separator
 {
-    background-image: url(../images/separator.jpg);
-    background-repeat: no-repeat;
     height: 20px;
     clear: both;
 }

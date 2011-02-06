@@ -53,6 +53,7 @@
          {/if}
 
          <div class="float-break"></div>
+          <div class="separator"></div>
            {if gt($children_count,0)}
            <div class="content-view-children">
                 {foreach $children as $child }

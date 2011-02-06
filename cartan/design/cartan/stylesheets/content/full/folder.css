@@ -10,12 +10,7 @@ div.class-folder div.content-view-children div.content-view-line{
     clear:none;
 }
 
-div.content-view-full div.class-folder div.infotools{
-    border-bottom: 3px solid #EAEAEA;
-    width:80%;
-    margin-bottom:1em;
-    overflow:hidden;
-}
+
 
 div.content-view-full div.class-folder div.infotools div.calendar{
     height:84px;
@@ -41,7 +36,8 @@ div.content-view-full div.folder-layout1 div.maincol{
 }
 div.content-view-full div.folder-layout1 div.extracol{
     float:right;
-    width:25%;
-    background:#EAEAEA;
-    padding-bottom:1em;
+    width:23%;
+    border-left:2px solid #eaeaea;
+    padding-left:2%;
+    
 }
