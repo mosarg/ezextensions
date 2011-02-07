@@ -18,7 +18,8 @@ div.class-article div.attribute-short p a{
 }
 div.content-view-full div.class-article div.attribute-image{
     padding-right:1em;
-    padding-bottom:1em;
+    margin:0;
+    position:relative;
     float:left;
 }
 
@@ -30,8 +31,9 @@ div.content-view-full div.class-article div.attribute-byline
 }
 div.content-view-full div.class-article div.attribute-long
 {
-    background-image: none;
-    padding-bottom: 56px;
+    overflow: hidden;
+    
+    border-bottom: 3px solid #eaeaea;
 }
 
 div.content-view-full div.class-article div.attribute-header h1
@@ -39,13 +41,12 @@ div.content-view-full div.class-article div.attribute-header h1
     background: none;
     padding-bottom: 0;
     margin-bottom: 0.25em;
+    line-height: 0.9em;
+    float:right;
+    width:83%;
 }
 
 div.content-view-full div.class-article div.attribute-byline
 {
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    padding-bottom: 30px;
-    margin-bottom: -0.25em;
-    display: block;
+   
 }

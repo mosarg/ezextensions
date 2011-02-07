@@ -8,7 +8,7 @@
              $gallery_image=fetch(content,object,hash(object_id,
              $gallery_relation.contentobject_id,object_version,$gallery_relation.contentobject_version))}
         <img alt="gallery_image" class="shadow" src={$gallery_image.data_map.image.content[folderthumbnail].url|ezroot} />
-        <h2><a href={$node.url_alias|ezurl}>{$node.data_map.short_name.content|wash()}</a></h2>
+        
    </div>
    {/if}
     <div class="attribute-short">

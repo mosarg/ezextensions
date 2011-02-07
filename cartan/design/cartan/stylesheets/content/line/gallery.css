@@ -16,15 +16,8 @@ div.content-view-children div.content-view-line div.class-gallery{
 div.content-view-children div.content-view-line div.class-gallery div.gallery-icon{
     float:left;
     }
-div.content-view-children div.content-view-line div.class-gallery h2{
-    background:rgba(0,0,0,0.5);
-    position:absolute;
-    margin-bottom:10px;
-    padding-left:10px;
-    padding-bottom:10px;
-    width:170px;
-    height:18px;
-    margin-top:-38px;
+div.content-view-children div.content-view-line div.class-gallery h3 a{
+    font-size: 1.2em;
 }
 
 div.content-view-children div.content-view-line div.class-gallery h3{

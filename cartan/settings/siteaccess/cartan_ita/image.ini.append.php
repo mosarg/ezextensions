@@ -8,6 +8,7 @@ AliasList[]=listitem
 AliasList[]=articleimage
 AliasList[]=articlethumbnail
 AliasList[]=articlethumbnailsmall
+AliasList[]=articlethumbnailwide
 AliasList[]=gallerythumbnail
 AliasList[]=galleryline
 AliasList[]=imagelarge
@@ -23,6 +24,14 @@ AliasList[]=folderthumbnail
 AliasList[]=megadropsmall
 AliasList[]=megadropsmaller
 AliasList[]=mainstory4
+
+
+
+[articlethumbnailwide]
+Reference=
+Filters[]
+Filters[]=geometry/scalewidth=269
+Filters[]=geometry/crop=269;80;0;0
 
 
 [mainstory4]

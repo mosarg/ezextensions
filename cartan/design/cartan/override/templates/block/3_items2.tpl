@@ -6,10 +6,10 @@
 
 {foreach $valid_nodes as $valid_node}
 
-{node_view_gui view='block_item' image_class='articlethumbnailsmall' content_node=$valid_node}
+{node_view_gui view='block_item' image_class='articlethumbnailwide' style='compact' content_node=$valid_node}
 
 {delimiter}
-<div class="separator"></div>
+<div class="infotools"></div>
     {/delimiter}
 
 {/foreach}

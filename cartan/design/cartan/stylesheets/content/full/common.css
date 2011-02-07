@@ -6,10 +6,19 @@
        Content common styles
 */
 
+/*lists*/
+
+
+div.content-view-full ul {
+    list-style: disc;
+}
+
 div.content-view-full{
     margin-top:1em;
-  }
+    }
 
+div.content-view-full p{  font-size:1.2em;}    
+    
 div.main-column-position
 {
     width: 100%;
@@ -39,8 +48,7 @@ div.content-view-full  div.infotools{
 /*Attribute short*/
 
 div.content-view-full div.attribute-short{
-    font-size:1.3em;
-}
+    }
 
 /*Attribute byline*/
 
@@ -77,6 +85,12 @@ div.content-view-full div.content-view-line div.attribute-byline p
 }
 
 /*Headers*/
+
+div.attribute-header{
+    overflow: hidden;
+    padding:3px;
+}
+
 div.attribute-header h1
 {
     font-size: 3em;
@@ -179,10 +193,3 @@ div.block div.original
     border: 1px dashed #bfbeb6;
 }
 
-/*general list styles*/
-
-ul li
-{
-    padding-left: 14px;
-    list-style-type: none;
-}

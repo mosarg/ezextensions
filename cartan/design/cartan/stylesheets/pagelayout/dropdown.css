@@ -27,6 +27,7 @@ div#topmenu-position li.movedown{
     float: left;
     margin: 0; padding: 0;
     position: relative; /*--Important--*/
+    list-style: none;
 }
 
 .menu li a {

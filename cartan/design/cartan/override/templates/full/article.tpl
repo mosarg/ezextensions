@@ -5,10 +5,7 @@
 <div class="border-box">
     <div class="content-view-full">
         <div class="class-article">
-        <div class="attribute-header">
-            <h1>{$node.data_map.title.content|wash()}</h1>
-        </div>
-        <div class="attribute-byline">
+       <div class="attribute-byline">
         {if $node.data_map.author.content.is_empty|not()}
         <p class="author">
              {attribute_view_gui attribute=$node.data_map.author}
@@ -17,31 +14,34 @@
         <p class="date">
              {$node.object.published|l10n(shortdatetime)}
         </p>
-        </div>
-
-        {if eq( ezini( 'article', 'ImageInFullView', 'content.ini' ), 'enabled' )}
-            {if $node.data_map.image.has_content}
+        </div>     
+            
+        <div class="attribute-header">
+             {if $node.data_map.image.has_content}
                 <div class="attribute-image">
-                    
-                    <div class="shadow" >{attribute_view_gui attribute=$node.data_map.image image_class=medium}</div>
-
-                    {if $node.data_map.caption.has_content}
-                    <div class="caption" style="width: {$node.data_map.image.content.medium.width}px">
-                        {attribute_view_gui attribute=$node.data_map.caption}
-                    </div>
-                    {/if}
+                 
+                    <div class="shadow" >{attribute_view_gui attribute=$node.data_map.image link_class=ezimage_zoom href=$node.data_map.image.content[original].url|ezroot image_class=gallerythumbnailsquare}</div>
+                 
                 </div>
             {/if}
-        {/if}
+            <h1>{$node.data_map.title.content|wash()}</h1>
+        </div>
+        
+            <div class="infotools"></div>
+            
+            <div class="separator"></div>
 
-        {if eq( ezini( 'article', 'SummaryInFullView', 'content.ini' ), 'enabled' )}
+       
             {if $node.data_map.intro.content.is_empty|not}
                 <div class="attribute-short">
                     {attribute_view_gui attribute=$node.data_map.intro}
                 </div>
             {/if}
-        {/if}
+        
 
+        
+        
+        
         {if $node.data_map.body.content.is_empty|not}
             <div class="attribute-long">
                 {attribute_view_gui attribute=$node.data_map.body}
