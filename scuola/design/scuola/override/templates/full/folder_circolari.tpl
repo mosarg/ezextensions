@@ -1,7 +1,7 @@
 {* folder circolari - Full view *}
-{scuolapagedata_set( 'left_menu', true() )}
-{scuolapagedata_set( 'left_nav_menu', true() )}
-{scuolapagedata_set( 'extra_menu', false() )}
+
+{include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true() extra_menu=false()}
+
 <div class="class-folder_circolari extrainfo">
     <div class="columns-folder_circolari float-break">
         <div class="main-column-position">

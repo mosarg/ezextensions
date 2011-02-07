@@ -1,7 +1,8 @@
 {* Spazio personale prof - full view*}
 
-{scuolapagedata_set( 'extra_menu', false() )}
-{scuolapagedata_set( 'left_menu', true() )}
+{include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true() extra_menu=false()}
+
+
 
 <div class="border-box" >
     <div class="class-folder_professore">

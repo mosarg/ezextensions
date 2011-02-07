@@ -1,7 +1,7 @@
 {* Image - Full view *}
-{scuolapagedata_set( 'left_menu', true() )}
-{scuolapagedata_set( 'left_nav_menu', true() )}
-{scuolapagedata_set( 'extra_menu', false() )}
+
+{include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true() extra_menu=false()}
+
 
 
 {def $sort_order=$node.parent.sort_array[0][1]

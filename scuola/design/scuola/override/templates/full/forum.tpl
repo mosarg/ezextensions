@@ -1,5 +1,5 @@
-{scuolapagedata_set( 'left_menu', false() )}
-{scuolapagedata_set( 'extra_menu', false() )}
+{include uri='design:parts/global_variables.tpl' left_menu=false()) left_nav_menu=false() extra_menu=false()}
+
 
 {def $page_limit = 20
      $topic_list = fetch( 'content', 'list', hash( 'parent_node_id', $node.node_id,

@@ -1,12 +1,12 @@
 {* Frontpage m2000 - Full view *}
 
+
+
 {if $node.object.data_map.show_menu.data_int}
-    {scuolapagedata_set( 'extra_menu', false() )}
-    {scuolapagedata_set( 'left_menu', true() )}
-    {scuolapagedata_set( 'left_nav_menu', true() )}
+    {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
+    
 {else}
-    {scuolapagedata_set( 'extra_menu', false() )}
-    {scuolapagedata_set( 'left_menu', false() )}
+    {include uri='design:parts/global_variables.tpl' left_menu=false() left_nav_menu=false()}
 {/if}
 
 

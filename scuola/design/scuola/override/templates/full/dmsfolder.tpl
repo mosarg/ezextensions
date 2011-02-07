@@ -1,12 +1,8 @@
 {* Folder - Full view *}
 
-{scuolapagedata_set( 'left_menu', true() )}
-{scuolapagedata_set( 'left_nav_menu', true() )}
-{if $node.data_map.show_extrainfo.data_int}
-   {scuolapagedata_set( 'extra_menu', true() )}
-{else}
-    {scuolapagedata_set( 'extra_menu', false() )}
-{/if}
+
+{include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
+
 <div class="border-box">
 
     

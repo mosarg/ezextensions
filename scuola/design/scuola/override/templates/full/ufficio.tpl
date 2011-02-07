@@ -1,7 +1,7 @@
 {* ufficio - Full view *}
-{scuolapagedata_set( 'extra_menu', false() )}
-{scuolapagedata_set( 'left_menu', true() )}
-{scuolapagedata_set( 'left_nav_menu', true() )}
+
+{include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true() extra_menu=false()}
+
 
 <div class="class-ufficio">
 

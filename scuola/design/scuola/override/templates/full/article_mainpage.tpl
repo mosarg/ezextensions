@@ -1,13 +1,8 @@
 {* Article (main-page) - Full view *}
-{scuolapagedata_set( 'left_nav_menu', true() )}
-{def $global_layout_class=fetch('content','list_count',hash(parent_node_id,$node.node_id,
-                                    class_filter_type, "include",
-                                    class_filter_array, array('infobox','global_layout')))}
-{if gt($global_layout_class,0)}
-    {scuolapagedata_set( 'extra_menu', true() )}
-{else}
-    {scuolapagedata_set( 'extra_menu', false() )}
-{/if}
+
+{include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
+
+
 <div class="border-box">
 <div class="content-view-full">
     <div class="class-article-mainpage">

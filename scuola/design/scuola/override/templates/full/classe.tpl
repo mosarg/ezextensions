@@ -1,12 +1,10 @@
 {* classe - Full view *}
-{scuolapagedata_set( 'left_menu', true() )}
+
+{include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
 
 
 {def $students=fetch('scuola','fetch_students_lite',
         hash('parent_node_id',840,'class',$node.name|downcase))}
-
-
-{scuolapagedata_set( 'extra_menu', false() )}
 
 <div class="border-box">
     <div class="content-view-full">

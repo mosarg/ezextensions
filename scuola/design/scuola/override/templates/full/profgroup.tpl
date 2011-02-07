@@ -1,7 +1,7 @@
 {* Selezione insegnanti - Full view *}
 
-{scuolapagedata_set( 'extra_menu', false() )}
-{scuolapagedata_set( 'no_prof_menu', false() )}
+{include uri='design:parts/global_variables.tpl' left_menu=false() left_nav_menu=false() extra_menu=false()}
+
 
 {def $profHelperClasses=ezini( 'ClassIds', 'infoprof', 'scuola.ini' )
      $equivalentSchools=ezini( 'EquivalentSchools','School','scuola.ini')

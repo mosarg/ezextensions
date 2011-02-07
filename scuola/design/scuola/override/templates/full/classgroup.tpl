@@ -1,16 +1,14 @@
 {* Contenitore classi - Full view *}
-{scuolapagedata_set( 'no_class_menu', false() )}
+
+{include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true(),no_class_menu=false()}
+
 
 {def $calendarForum=fetch('content','list',hash( 'parent_node_id', $node.node_id,
                                                           'sort_by','class_identifier',
                                                           'offset', $view_parameters.offset,
                                                           'class_filter_type', 'include',
                                                           'class_filter_array',array('event_calendar','forums','forum','multicalendar') ) )}
-{if $node.object.data_map.show_extrainfo.data_int}
-   {scuolapagedata_set( 'extra_menu', true() )}
-{else}
-    {scuolapagedata_set( 'extra_menu', false() )}
-{/if}
+
 <div class="content-view-full">
     <div class="class-classgroup">
         <div class="attribute-header">

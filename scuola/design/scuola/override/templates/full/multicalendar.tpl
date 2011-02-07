@@ -1,9 +1,9 @@
 
 {set-block scope=root variable=cache_ttl}900{/set-block}
 {* Multicalendar - Full view *}
-{scuolapagedata_set( 'left_menu', false() )}
-{scuolapagedata_set( 'extra_menu', false() )}
-{scuolapagedata_set( 'no_class_menu', true() )}
+
+{include uri='design:parts/global_variables.tpl' left_menu=false() left_nav_menu=false() no_class_menu=true() extra_menu=false()}
+
 
 {def $curr_ts = currentdate()
      $curr_today = $curr_ts|datetime( custom, '%j')

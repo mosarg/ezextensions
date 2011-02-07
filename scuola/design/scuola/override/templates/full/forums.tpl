@@ -1,7 +1,7 @@
 {* Forums - Full view *}
 
-{scuolapagedata_set( 'left_menu', false() )}
-{scuolapagedata_set( 'extra_menu', false() )}
+include uri='design:parts/global_variables.tpl' left_menu=false() left_nav_menu=false() extra_menu=false()}
+
 
 <div class="border-box">
 
