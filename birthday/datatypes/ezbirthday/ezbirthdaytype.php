@@ -172,7 +172,7 @@ class eZBirthdayType extends eZDataType
     function objectAttributeContent( $contentObjectAttribute )
     {
         $dateStr = $contentObjectAttribute->attribute( 'data_text' );
-        if ( ereg( "([0-9]{4})-([0-9]{2})-([0-9]{2})", $dateStr, $valueArray ) )
+        if (  preg_match( "/([0-9]{4})-([0-9]{2})-([0-9]{2})/", $dateStr, $valueArray ))
         {
             $year = $valueArray[1];
             $month =  $valueArray[2];
@@ -250,6 +250,21 @@ class eZBirthdayType extends eZDataType
         return ( strlen( $contentObjectAttribute->attribute( "data_text" ) ) > 0 );
     }
 
+    /*!
+     \return string representation of an contentobjectattribute data for simplified export
+     */
+    function toString( $contentObjectAttribute )
+    {
+        return $contentObjectAttribute->attribute( 'data_text' );
+    }
+
+    function fromString( $contentObjectAttribute, $string )
+    {
+        return $contentObjectAttribute->setAttribute( 'data_text', $string );
+    }
+
+    
+    
     /*!
      \reimp
     */
