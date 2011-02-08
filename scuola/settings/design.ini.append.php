@@ -8,7 +8,9 @@ DesignExtensions[]=scuola
 goleft=12
 
 [JavaScriptSettings]
-JavaScriptList[]=ezjsc::jquery
-JavaScriptList[]=include.js
-
+FrontendJavaScriptList[]=ezjsc::jquery
+FrontendJavaScriptList[]=ezjsc::jqueryio
+FrontendJavaScriptList[]=majaxinterface::jqueryrun
+FrontendJavaScriptList[]=classes/jquery-ui-min.js
+FrontendJavaScriptList[]=classes/jquery.mousewheel.min.js
 */ ?>

@@ -70,5 +70,6 @@
                {include uri='design:parts/circolari/extra_info.tpl' used_node=$node}
            </div>
         </div>
+        {include uri='design:parts/object_informations.tpl' style='full'}
     </div>
 </div>

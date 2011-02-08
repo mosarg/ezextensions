@@ -119,5 +119,5 @@
         {attribute_view_gui attribute=$node.data_map.description}
     </div>
     </div>
-
+{include uri='design:parts/object_informations.tpl' style='full'}
 </div>

@@ -29,6 +29,15 @@ div.highlighted_object h2 a
     color: #525345;
 }
 
+
+div.content-view-embed div.class-image div.attribute-image{
+    width:100%;
+}
+
+div.content-view-embed div.class-image div.image-controls{
+    position:absolute;
+}
+
 /* EMBED - ITEMIZED SUB ITEMS */
 
 div.itemized_sub_items

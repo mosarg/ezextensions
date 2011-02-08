@@ -4,9 +4,10 @@
 
 {if $node.object.data_map.show_menu.data_int}
     {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
-    
+    {def $classes=array('ufficio','dipendenti')}
 {else}
     {include uri='design:parts/global_variables.tpl' left_menu=false() left_nav_menu=false()}
+     {def $classes=array('ufficio','folder','dipendenti')}
 {/if}
 
 
@@ -37,7 +38,7 @@
 
      {if $node.data_map.show_children.data_int}
 
-     {def $children=array() $classes=array('ufficio','article','folder','dipendenti')}
+     {def $children=array()}
 
       {set $children=fetch_alias( 'children', hash( 'parent_node_id', $node.node_id,
                                                           'sort_by', $node.sort_array,

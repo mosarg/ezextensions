@@ -30,7 +30,7 @@
  {attribute_view_gui attribute=$node.data_map.classe}
 </div>
 
-
+{include uri='design:parts/object_informations.tpl' style='full'}
 
 
 

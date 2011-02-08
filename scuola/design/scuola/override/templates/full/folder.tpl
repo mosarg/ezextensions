@@ -130,7 +130,7 @@
             </div>
    </div>
    {/if}
-
+{include uri='design:parts/object_informations.tpl' style='full'}
 
 </div>
 <script type="text/javascript" src={'javascript/tinysort.js'|ezdesign} ></script>

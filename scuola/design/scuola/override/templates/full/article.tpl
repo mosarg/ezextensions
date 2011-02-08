@@ -2,7 +2,10 @@
 
 {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
 
- 
+
+
+
+
 <div class="border-box">
     <div class="content-view-full">
         <div class="class-article">
@@ -16,18 +19,7 @@
             <h1>{$node.data_map.title.content|wash()}</h1>
         </div>
 
-        <div class="attribute-byline">
-        {if $node.data_map.author.content.is_empty|not()}
-        <p class="author">
-        {attribute_view_gui attribute=$node.data_map.author}
-        </p>
-        {/if}
-        <p class="date">
-             {'Pubblicato il: '|i18n('scuola/dates')}{$node.object.published|l10n(shortdatetime)}
-             {'Ultima modifica: '|i18n('scuola/dates')}{$node.object.modified|l10n(shortdatetime)}
-             {'Versione Corrente: '|i18n('scuola/dates')}{$node.object.current_version}
-        </p>
-        </div>
+        
 
         {if eq( ezini( 'article', 'ImageInFullView', 'content.ini' ), 'enabled' )}
             {if $node.data_map.image.has_content}
@@ -94,5 +86,6 @@
         {/if}
 
         </div>
+       {include uri='design:parts/object_informations.tpl' style='full'}
     </div>
 </div>

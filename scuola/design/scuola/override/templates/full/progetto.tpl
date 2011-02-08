@@ -15,25 +15,7 @@
             <h3>{$node.data_map.codice_progetto.content|wash()}</h3>
         </div>
 
-        <div class="attribute-byline">
-        {if $node.data_map.author.has_content}
-        <p class="author">
-             {attribute_view_gui attribute=$node.data_map.author}
-        </p>
-        {/if}
-        <p class="date">
-             {'Pubblicato il: '|i18n('scuola/dates')}{$node.object.published|l10n(shortdatetime)}
-             {'Ultima modifica: '|i18n('scuola/dates')}{$node.object.modified|l10n(shortdatetime)}
-             {'Versione Corrente: '|i18n('scuola/dates')}{$node.object.current_version}
-        </p>
-        {if $node.data_map.responsabili.has_content}
-        <h4> {'Docenti responsabili: '|i18n('scuola/teach')}</h4>
-        <p class="responsabili">
-            {attribute_view_gui attribute=$node.data_map.responsabili}
-        </p>
-        {/if}
-
-        </div>
+        
         
             {if $node.data_map.logo.has_content}
                 <div class="attribute-image">
@@ -110,6 +92,7 @@
         
 
         </div>
+        {include uri='design:parts/object_informations.tpl' style='full'}
     </div>
 
 

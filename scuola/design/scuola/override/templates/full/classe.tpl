@@ -82,6 +82,8 @@
              </div>
 
         </div>
+  
+    {include uri='design:parts/object_informations.tpl' style='full'}
     </div>
 
 

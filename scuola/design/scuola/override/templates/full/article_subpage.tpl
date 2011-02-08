@@ -14,18 +14,7 @@
             <h1>{$node.data_map.title.content|wash()}</h1>
         </div>
 
-        <div class="attribute-byline">
-        {if $node.parent.data_map.author.content.is_empty|not()}
-        <p class="author">
-             {attribute_view_gui attribute=$node.parent.data_map.author}
-        </p>
-        {/if}
-        <p class="date">
-            {'Pubblicato il: '|i18n('scuola/dates')}{$node.object.published|l10n(shortdatetime)}
-            {'Ultima modifica: '|i18n('scuola/dates')}{$node.object.modified|l10n(shortdatetime)}
-            {'Versione Corrente: '|i18n('scuola/dates')}{$node.object.current_version}
-        </p>
-        </div>
+       
          {include uri=concat("design:parts/article/article_index_",
             $node.parent.data_map.index_style.class_content.options[$node.parent.data_map.index_style.value[0]].name|downcase(), ".tpl")
                 used_node=$node.parent}

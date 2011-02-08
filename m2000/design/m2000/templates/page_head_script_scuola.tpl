@@ -1,3 +1,4 @@
-<!--Start load javascript-->
-{ezscript_load( ezini( 'JavaScriptSettings', 'JavaScriptList', 'design.ini' ) )}
-<!--End load javascript-->
+{* Load JavaScript dependencys + JavaScriptList *}
+{ezscript_load( array( ezini( 'JavaScriptSettings', 'JavaScriptList', 'design.ini' ), ezini( 'JavaScriptSettings', 'FrontendJavaScriptList', 'design.ini' ) ) )}
+{* load google api loader *}
+

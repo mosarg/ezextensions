@@ -40,13 +40,9 @@ div.content-view-full div.class-article div.attribute-header h1
 {
     background: none;
     padding-bottom: 0;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.5em;
     line-height: 0.9em;
-    float:right;
-    width:83%;
+    float:left;
+     max-width:83%;
 }
 
-div.content-view-full div.class-article div.attribute-byline
-{
-   
-}

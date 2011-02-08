@@ -28,6 +28,26 @@ AliasList[]=blockmenu
 AliasList[]=blockmenubig
 AliasList[]=colorblock
 AliasList[]=scuola
+AliasList[]=galleryfull
+AliasList[]=gallerythumbnailsquare
+
+
+
+
+
+
+[gallerythumbnailsquare]
+Reference=
+Filters[]
+Filters[]=geometry/scaleheight=100
+Filters[]=geometry/crop=75;75;0;0
+
+[galleryfull]
+Reference=
+Filters[]
+Filters[]=geometry/scalewidth=550
+
+
 
 [small]
 Reference=

@@ -39,6 +39,7 @@
   </h2>
 {attribute_view_gui attribute=$userAccount.teachwhere sort='school' context='embed'}
 </div>
+    {include uri='design:parts/object_informations.tpl' style='full'}
 </div>
 
 {undef}

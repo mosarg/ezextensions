@@ -6,7 +6,7 @@ LoadFromCDN=disable
 
 PreferredLibrary=jquery
 
-LocaleScripts[jquery]=jquery-1.3.2.min.js
+LocaleScripts[jquery]=jquery-1.4.2.min.js
 
 
 
