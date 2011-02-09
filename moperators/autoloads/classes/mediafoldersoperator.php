@@ -9,7 +9,7 @@
  *
  * @author mosa
  */
-class mediafoldersOperator extends ScuolaOperator {
+class mediafoldersOperator extends mOperator {
     function __construct() {
         parent::__construct('mediafolders','user');
     }

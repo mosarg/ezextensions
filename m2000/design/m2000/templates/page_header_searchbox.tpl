@@ -14,7 +14,13 @@
     {/if}
   </form>
     </div>
+       
 
+        {if $pagedesign.data_map.header_text.has_content}
+            <span>
+                {$pagedesign.data_map.header_text.content}
+            </span>
+            {/if}
   {include uri='design:page_header_languages.tpl'}
 
   </div>

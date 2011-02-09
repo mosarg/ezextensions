@@ -10,30 +10,22 @@
     <div class="content-view-full">
         <div class="class-article">
        {if $node.object.state_id_array|contains('6')}
-         <div class="wip rounded shadowmore">
+         <div class="wip  shadowmore">
                 <p>{"Contenuto in preparazione non ancora visibile pubblicamente"|i18n('scuola/state')}</p>
          </div>
         {/if}
 
         <div class="attribute-header">
-            <h1>{$node.data_map.title.content|wash()}</h1>
-        </div>
-
-        
-
-        {if eq( ezini( 'article', 'ImageInFullView', 'content.ini' ), 'enabled' )}
             {if $node.data_map.image.has_content}
                 <div class="attribute-image">
-                    {attribute_view_gui attribute=$node.data_map.image image_class=medium}
-
-                    {if $node.data_map.caption.has_content}
-                    <div class="caption">
-                        {attribute_view_gui attribute=$node.data_map.caption}
-                    </div>
-                    {/if}
+                 
+                    <div class="shadow" >{attribute_view_gui attribute=$node.data_map.image link_class=ezimage_zoom href=$node.data_map.image.content[original].url|ezroot image_class=gallerythumbnailsquare}</div>
+                 
                 </div>
             {/if}
-        {/if}
+            <h1>{$node.data_map.title.content|wash()}</h1>
+        </div>
+      
 
         {if eq( ezini( 'article', 'SummaryInFullView', 'content.ini' ), 'enabled' )}
             {if $node.data_map.intro.content.is_empty|not}

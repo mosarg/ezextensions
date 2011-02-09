@@ -105,28 +105,25 @@ div#languages li.current_siteaccess a
 }
 
 
-div#user_links{
-    width:100%;
-    clear:both;
-}
+
 div#links{
-    text-align: center;
-    font-size: 0.85em;
-    font-weight: bold;
-
+    float:right;
+    width:20%;
 }
 
 
-div#user_links div#links ul.flat_menu li {
-    background-position: 0 0.5em;
-    text-align:left;
+div#links ul.flat_menu li {
+    display:block;
+    float:left;
+    line-height: 0.7em;
 }
 div#links a{
     color: white;
     text-decoration: none;
+    font-size:0.9em;
 }
 div#links a:hover{
-    color: #bebdef;
+    color: white;
 }
 div#searchbox
 {
@@ -146,13 +143,7 @@ div#searchbox div#search-form{
 div#searchbox form#search-input{
     padding:1em;
 }
-div#searchbox img
-{
-    display: block;
-    float: left;
-    margin-top: 6px;
-    margin-right: 6px;
-}
+
 input#searchtext
 {
     border: 1px solid #c3c7c5;
@@ -170,5 +161,10 @@ input#searchbutton
     margin-top: 0;
     margin-bottom: -0.5em;
     display: block;
-    float: left;
+    background: none;
+    border:0;
+    color:white;
+}
+input#searchbutton:hover{
+    color:#ff6c1e;
 }

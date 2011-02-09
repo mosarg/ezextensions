@@ -32,7 +32,7 @@ class mOperators
         $eZTemplateOperatorArray = array();
         foreach ( $operators as $operatorName => $operatorClass )
         {
-            $eZTemplateOperatorArray[$operatorName] = array( 'script' => "extension/mOperators/autoloads/classes/$operatorClass.php",
+            $eZTemplateOperatorArray[$operatorName] = array( 'script' => "extension/moperators/autoloads/classes/$operatorClass.php",
                                                              'class' => $operatorClass,
                                                              'operator_names' => array( $operatorName ) );
         }
