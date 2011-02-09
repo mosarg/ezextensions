@@ -1,5 +1,7 @@
 {* contatti - block item *}
-
+{if is_set($style)|not()}
+    {def $style='compact'}
+{/if}
 <div class="class-contatti-item">
       {def $esterni=$node.data_map.contatti_esterni.content
            $interni=$node.data_map.contatti_interni.content.relation_browse
@@ -32,4 +34,6 @@
       {/foreach}
       
       </table>
+{include uri='design:parts/object_informations.tpl' style=$style}
+
 </div>

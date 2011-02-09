@@ -1,7 +1,5 @@
 <!--START: CAL NAV BLOG -->
-<script type="text/javascript">
-    $.include({"stylesheets/embed/agenda.css"|ezdesign});
-</script>
+
 {def
 
 $blog_node    = $used_node

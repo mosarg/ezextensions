@@ -20,5 +20,6 @@
     </div>
   
    </div>
+    {include uri='design:parts/object_informations.tpl' style='compact'}
 </div>
 

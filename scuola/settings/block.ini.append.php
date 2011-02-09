@@ -116,15 +116,19 @@ UseBrowseMode[poll_node_id]=true
 ViewList[]=poll
 ViewName[poll]=Sondaggio
 
+
 [LeftCalendar]
 Name=Calendario
-NumberOfValidItems=3
-NumberOfArchivedItems=4
+NumberOfValidItems=5
+NumberOfArchivedItems=2
 ManualAddingOfItems=enabled
-ViewList[]=calendar
-ViewList[]=programma
-ViewName[calendar]=Il calendario
-ViewName[programma]=Programma eventi
+ViewList[]
+ViewList[]=calendar_ajax
+ViewName[]
+ViewName[calendar_ajax]=Calendario Ajax
+
+
+
 
 [3Notizie]
 Name=3 Notizie automatiche

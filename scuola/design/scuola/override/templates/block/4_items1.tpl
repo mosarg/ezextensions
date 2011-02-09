@@ -1,48 +1,32 @@
 {def $valid_nodes = $block.valid_nodes}
 
-<!-- BLOCK: START -->
+
 <div class="block-type-4items">
+    <div class="border-content">
+        <div class="two-columns">
+            <div class="col-1">
+                <div class="col-content">
 
-<div class="border-box block-style2-box-outside">
+                    <div class="content-view-inblock">
 
+                        {node_view_gui view='block_item' image_class='articlethumbnailsmall' style='ultracompact' content_node=$valid_nodes[0]}
 
-<div class="border-content">
+                     </div>
 
-<!-- BLOCK BORDER INSIDE: START -->
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col-content">
 
-<div class="border-box block-style2-box-inside">
+                    <div class="content-view-inblock">
 
+                            {node_view_gui view='block_item' image_class='articlethumbnailsmall' style='ultracompact' content_node=$valid_nodes[1]}
 
-<div class="border-content">
+                    </div>
 
-<!-- BLOCK CONTENT: START -->
-
-<!-- COLUMNS TWO: START -->
-
-<div class="two-columns">
-<div class="col-1">
-<div class="col-content">
-
-<div class="content-view-inblock">
-
-{node_view_gui view='block_item' image_class='articlethumbnail' content_node=$valid_nodes[0]}
-
-</div>
-
-</div>
-</div>
-<div class="col-2">
-<div class="col-content">
-
-<div class="content-view-inblock">
-
-{node_view_gui view='block_item' image_class='articlethumbnail' content_node=$valid_nodes[1]}
-
-</div>
-
-</div>
-</div>
-</div>
+                </div>
+               </div>
+            </div>
 
 <!-- COLUMNS TWO: END -->
 
@@ -56,7 +40,7 @@
 
 <div class="content-view-inblock">
 
-{node_view_gui view='block_item' image_class='articlethumbnail' content_node=$valid_nodes[2]}
+{node_view_gui view='block_item' image_class='articlethumbnailsmall' style='ultracompact' content_node=$valid_nodes[2]}
 
 </div>
 
@@ -67,7 +51,7 @@
 
 <div class="content-view-inblock">
 
-{node_view_gui view='block_item' image_class='articlethumbnail' content_node=$valid_nodes[3]}
+{node_view_gui view='block_item' image_class='articlethumbnailsmall' style='ultracompact' content_node=$valid_nodes[3]}
 
 </div>
 
@@ -80,8 +64,6 @@
 <!-- BLOCK CONTENT: END -->
 
 </div>
-</div></div></div>
-
 </div>
 
 <!-- BLOCK BORDER INSIDE: END -->

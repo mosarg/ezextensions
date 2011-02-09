@@ -227,10 +227,10 @@ Match[attribute_identifier]=contatti
 
 [block_calendar_tabella]
 Source=block/view/view.tpl
-MatchFile=block/calendar.tpl
+MatchFile=block/calendar_ajax.tpl
 Subdir=templates
 Match[type]=LeftCalendar
-Match[view]=calendar
+Match[view]=calendar_ajax
 
 [block_calendar_programma]
 Source=block/view/view.tpl

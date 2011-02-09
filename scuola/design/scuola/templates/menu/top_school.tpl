@@ -64,9 +64,9 @@
      {foreach $top_menu_items as $key => $item}
           {set $item_class=''}
           {if eq( $item.class_identifier, 'macroarea')}
-             <li  id="node_id_{$item.node_id}"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a class="macro_button squareshadow" href={$item.url_alias|ezurl}><img src= {$item.data_map.logo.content[blockmenu].url|ezroot}   alt="logo"/><br/></a><span class="sch_name">{$item.name|wash()}</span></li>
+             <li  id="node_id_{$item.node_id}"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a class="macro_button" href={$item.url_alias|ezurl}>{$item.name|wash()}</a></li>
             {else}
-             <li  id="node_id_{$item.node_id}"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a class="sch_button squareshadow" href={$item.url_alias|ezurl}><img src= {$item.data_map.logo.content[blockmenu].url|ezroot}   alt="logo"/><br/></a><span class="sch_name">{$item.name|wash()}</span></li>
+             <li  id="node_id_{$item.node_id}"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a class="sch_button" href={$item.url_alias|ezurl}>{$item.name|wash()}</a></li>
              {/if}
           {/foreach}
               </ul>

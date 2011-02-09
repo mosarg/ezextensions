@@ -7,6 +7,8 @@ AliasList[]=medium
 AliasList[]=listitem
 AliasList[]=articleimage
 AliasList[]=articlethumbnail
+AliasList[]=articlethumbnailsmall
+AliasList[]=articlethumbnailwide
 AliasList[]=gallerythumbnail
 AliasList[]=galleryline
 AliasList[]=imagelarge
@@ -32,7 +34,18 @@ AliasList[]=galleryfull
 AliasList[]=gallerythumbnailsquare
 
 
+[articlethumbnailsmall]
+Reference=
+Filters[]
+Filters[]=geometry/scalewidth=100
+Filters[]=geometry/crop=100;80;0;0 
 
+[articlethumbnailwide]
+Reference=
+Filters[]
+Filters[]=geometry/scalewidth=269
+Filters[]=geometry/crop=269;80;0;0 
+ 
 
 
 
@@ -87,7 +100,8 @@ Filters[]=geometry/scaledownonly=170;350
 [articlethumbnail]
 Reference=
 Filters[]
-Filters[]=geometry/scaledownonly=70;150
+Filters[]=geometry/scalewidth=200
+Filters[]=geometry/crop=200;190;0;0
 
 [gallerythumbnail]
 Reference=
@@ -163,7 +177,7 @@ Filters[]=geometry/scalewidth=130
 [block2items2]
 Reference=
 Filters[]
-Filters[]=geometry/scalewidth=195
+Filters[]=geometry/scalewidth=200
 Filters[]=geometry/crop=195;98;0;0
 
 [block3items3]

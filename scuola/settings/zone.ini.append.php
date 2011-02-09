@@ -1,11 +1,27 @@
 <?php /*
 [General]
 AllowedTypes[]
+AllowedTypes[]=GlobalZoneLayout
 AllowedTypes[]=4Zone
 AllowedTypes[]=2Zone
 AllowedTypes[]=3Zone
 AllowedTypes[]=1ZonaH
 AllowedTypes[]=1ZonaV
+
+
+[GlobalZoneLayout]
+ZoneTypeName=Global zone layout
+
+Zones[]=main
+
+ZoneName[main]=Global zone
+
+ZoneThumbnail=globalzone_layout.gif
+
+Template=globalzonelayout.tpl
+
+AvailableForClasses[]=global_layout
+
 
 [1ZonaV]
 ZoneTypeName=1 zona verticale

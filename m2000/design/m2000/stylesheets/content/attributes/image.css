@@ -13,13 +13,11 @@ div.attribute-image
 }
 div.content-view-full div.attribute-image
 {
-    float: right;
     margin-left: 0.5em;
     margin-right: 0;
 }
 div.content-view-full div.attribute-image div.caption
 {
-    background-color: #EAE9E1;
     font-size: 0.8em;
     text-align: center;
     margin: 2px 0 0 0;

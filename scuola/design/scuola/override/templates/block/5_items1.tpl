@@ -10,7 +10,7 @@
 
 <!-- BLOCK CONTENT: START -->
 
-{node_view_gui view='block_item' image_class='articlethumbnail' content_node=$valid_nodes[0]}
+{node_view_gui view='block_item' image_class='articlethumbnailsmall'  style='ultracompact' content_node=$valid_nodes[0]}
 
 <!-- BLOCK CONTENT: END -->
 
@@ -27,7 +27,7 @@
 
 <!-- BLOCK CONTENT: START -->
 
-{node_view_gui view='block_item' image_class='articlethumbnail' content_node=$valid_nodes[1]}
+{node_view_gui view='block_item' image_class='articlethumbnailsmall' style='ultracompact' content_node=$valid_nodes[1]}
 
 <!-- BLOCK CONTENT: END -->
 
@@ -40,7 +40,7 @@
 
 {foreach $valid_nodes as $valid_node offset 2}
 
-    {node_view_gui view='block_item' image_class='articlethumbnail' content_node=$valid_node}
+    {node_view_gui view='block_item' image_class='articlethumbnailsmall' style='ultracompact' content_node=$valid_node}
 
 {/foreach}
 

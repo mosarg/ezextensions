@@ -8,9 +8,10 @@
 
 div.block-type-5items div
 {
-  float:left;
-  clear:both;
   width:100%;
+}
+div.block-type-5items p{
+    text-transform: lowercase;
 }
 
 div.block-type-5items div.two-columns{
@@ -31,31 +32,26 @@ div.block-type-5items div.two-columns div.col-2{
     clear:none;
 }
 
-div.attribute-page div.two-columns div.block-type-5items div.attribute-image{
-    width:auto;
-    padding-right:0.5em;
+div.block-type-5items div.attribute-image>img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
-div.block-type-5items  h2
+div.block-type-5items h2
 {
-    background:#a9a9a9;
+    margin-top: 0;
+    font-size: 1em;
     padding:0.2em;
-    font-size:1em;
-    font-weight:bold;
-}
-div.block-type-5items  h2 a{
-    color:white;
 }
 
-div.block-type-5items div.attribute-header{
-    float:left;
-    clear:both;}
-
-div.block-type-5items div.attribute-short{
-    float:left;
-    clear:both;
-}
-div.block-type-5items div.attribute-image
+div.block-type-5items div.attribute-header>h2 a
 {
-    float: left;
-    margin: 0.25em 0.5em 0 0;
+    color:#273236;
+    text-decoration: none;
 }
+
+div.block-type-5items div.attribute-header>h2:first-letter{
+    color:#a10101;
+    font-size: 1.3em;
+}
+

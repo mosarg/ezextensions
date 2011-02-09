@@ -20,7 +20,7 @@ preg_match('/pendinglist|draft|notification\/settings|user2\/edit|collaboration/
      $child_check_third=''}
 {def $top_cat=2
 $used_node=2}
-<div class="menu shadowmore">
+<div class="menu">
     <ul> {def $base=fetch( 'content', 'node', hash( 'node_id', 2 ) )}
         <li>
             <a href="/">Home</a>

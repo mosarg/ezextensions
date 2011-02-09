@@ -1,20 +1,25 @@
 {* progetto block view *}
-
+{if is_set($style)|not()}
+    {def $style='compact'}
+{/if}
 <div class="progetto-class">
     <div class="attribute-header">
-            <h2 class="rounded"><a href={$node.url_alias|ezurl}>
+            <h2><a href={$node.url_alias|ezurl}>
              {$node.data_map.title.content|wash}</a></h2>
     </div>
-    
-    {if $node.data_map.intro.has_content}
-        <div class="attribute-short">
-            {if $node.data_map.logo.has_content}
+    <div class="attribute-image">
+         {if $node.data_map.logo.has_content}
             <img alt="logo_progetto" src={$node.data_map.logo.content[$image_class].url|ezroot} />
             {/if}
-            {attribute_view_gui attribute=$node.data_map.intro}
+    </div>
+    {if $node.data_map.intro.has_content}
+        <div class="attribute-short">
+           {$node.data_map.intro.content.output.output_text|smartshort(180,'...')}
+            
         </div>
      {/if}
     <span class="small_subtitle">{"Codice progetto: "|i18n("design/m2000/full/progetto")}{$node.data_map.codice_progetto.content|wash}</span>
 
+    {include uri='design:parts/object_informations.tpl' style=$style}
 </div>
 {undef}

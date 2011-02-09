@@ -1,7 +1,5 @@
 <!--START: CAL NAV CIRCOLARI-->
-<script type="text/javascript">
-    $.include({"stylesheets/embed/agenda.css"|ezdesign});
-</script>
+
 {def
 
 $circolare_node    = $used_node

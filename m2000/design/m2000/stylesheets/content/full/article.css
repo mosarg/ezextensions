@@ -10,17 +10,12 @@
 
 div.class-article div.attribute-short p a{
     color:gray;
-    text-decoration:underline;
-}
+    }
 div.content-view-full div.class-article div.attribute-image{
     padding-right:1em;
     padding-bottom:1em;
-    float:left;
 }
-div.content-view-full div.class-article div.attribute-short
-{
-    font-weight: bold;
-}
+
 div.content-view-full div.class-article div.attribute-byline
 {
     background-image: none;
@@ -40,12 +35,3 @@ div.content-view-full div.class-article div.attribute-header h1
     margin-bottom: 0.25em;
 }
 
-div.content-view-full div.class-article div.attribute-byline
-{
-    background-image: url(../images/attribute_header_bg_medium.png);
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    padding-bottom: 30px;
-    margin-bottom: -0.25em;
-    display: block;
-}

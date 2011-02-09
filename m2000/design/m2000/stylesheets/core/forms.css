@@ -46,9 +46,6 @@ optgroup
 
 input.button, input.defaultbutton
 {
-    background-image: url(../images/button-bg.png);
-    background-repeat: repeat-x;
-    background-position: left top;
     border: 1px solid #b9b7b7;
     font-size: 1em;
     font-weight:bold;

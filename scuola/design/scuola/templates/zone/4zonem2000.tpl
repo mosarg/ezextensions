@@ -30,7 +30,7 @@
 <!-- COLUMNS TWO: START -->
 
 <div class="two-columns">
- <div class="col-1 rounded">
+ <div class="col-1">
 
 <!-- ZONE CONTENT: START -->
         {if and( is_set( $zones[2].blocks ), $zones[2].blocks|count() )}
@@ -52,7 +52,7 @@
 <!-- ZONE CONTENT: END -->
 </div>
 
-<div class="col-2 rounded">
+<div class="col-2">
 
 <!-- ZONE CONTENT: START -->
 
@@ -85,7 +85,7 @@
 
 </div>
 
-<div class="maincol-position roundedmore">
+<div class="maincol-position">
 <div class="right-subzone ">
 
 <!-- ZONE CONTENT: START -->
