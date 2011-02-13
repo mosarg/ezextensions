@@ -1,25 +1,15 @@
-/* 
-    Document   : links
-    Created on : Jul 21, 2009, 9:36:23 AM
-    Author     : mosa
-    Description:
-        Purpose of the stylesheet follows.
-        Links style
-*/
-
-
 /* LINKS */
 
 a
 {
-    color: #767676;
+    color: #cf3154;
     text-decoration: none;
     font-weight:bold;
     }
 
 a:hover
 {
-    color: #ae71ed;
+    color: #273236;
     text-decoration:none;
 }
 

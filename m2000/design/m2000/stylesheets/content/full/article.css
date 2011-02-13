@@ -10,7 +10,12 @@
 
 div.class-article div.attribute-short p a{
     color:gray;
-    }
+}
+
+div.content-view-full div.class-article div.attribute-header>div.attribute-image{
+    float:left;
+}
+
 div.content-view-full div.class-article div.attribute-image{
     padding-right:1em;
     padding-bottom:1em;
@@ -31,7 +36,10 @@ div.content-view-full div.class-article div.attribute-long
 div.content-view-full div.class-article div.attribute-header h1
 {
     background: none;
+    float:left;
     padding-bottom: 0;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.5em;
+    line-height: 0.9em;
+    max-width:83%;
 }
 
