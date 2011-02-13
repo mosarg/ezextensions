@@ -9,7 +9,7 @@
  *
  * @author mosa
  */
-class flvpreviewOperator extends ScuolaOperator {
+class flvpreviewOperator extends mOperator {
 //put your code here
     function __construct() {
         parent::__construct('flvpreview','height','width','frame');
