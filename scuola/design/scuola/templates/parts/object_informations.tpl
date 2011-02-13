@@ -15,16 +15,16 @@
 <div class="object_informations {$color_code}">
 <div class="attribute-byline">
         {if is_set($node.data_map.author)}
-        <p class="author">
-        {attribute_view_gui attribute=$node.data_map.author}
+        <span class="author">
+        Di {attribute_view_gui attribute=$node.data_map.author}
         </p>
         {/if}
-        <p >
+        <span >
              {$node.class_name}
-             {'Pubblicato il: '|i18n('scuola/dates')}{$node.object.published|l10n(shortdatetime)}
-             {'Ultima modifica: '|i18n('scuola/dates')}{$node.object.modified|l10n(shortdatetime)}
-             {'Versione Corrente: '|i18n('scuola/dates')}{$node.object.current_version}
-        </p>
+             {'Pubblicato il:'|i18n('scuola/dates')} {$node.object.published|l10n(shortdate)}
+             {'Ultima modifica:'|i18n('scuola/dates')} {$node.object.modified|l10n(shortdate)}
+             {'Versione Corrente:'|i18n('scuola/dates')} {$node.object.current_version}
+        </span>
 </div>
 </div>
 {/case}

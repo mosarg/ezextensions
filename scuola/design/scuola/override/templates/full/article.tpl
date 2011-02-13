@@ -2,10 +2,6 @@
 
 {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
 
-
-
-
-
 <div class="border-box">
     <div class="content-view-full">
         <div class="class-article">
@@ -15,6 +11,7 @@
          </div>
         {/if}
 
+        {include uri='design:parts/object_informations.tpl' style='full'}
         <div class="attribute-header">
             {if $node.data_map.image.has_content}
                 <div class="attribute-image">
@@ -25,15 +22,16 @@
             {/if}
             <h1>{$node.data_map.title.content|wash()}</h1>
         </div>
-      
-
-        {if eq( ezini( 'article', 'SummaryInFullView', 'content.ini' ), 'enabled' )}
-            {if $node.data_map.intro.content.is_empty|not}
+        
+        <div class="title-separator"></div>
+        <div class="separator"></div>
+        
+        {if $node.data_map.intro.content.is_empty|not}
                 <div class="attribute-short">
                     {attribute_view_gui attribute=$node.data_map.intro}
                 </div>
-            {/if}
         {/if}
+       
 
         {if $node.data_map.body.content.is_empty|not}
             <div class="attribute-long">
@@ -72,6 +70,6 @@
         
 
         </div>
-       {include uri='design:parts/object_informations.tpl' style='full'}
+
     </div>
 </div>
