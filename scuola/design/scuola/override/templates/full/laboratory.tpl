@@ -2,10 +2,6 @@
 
 
 {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
-
-
-<div class="border-box">
-
     <div class="content-view-full">
         <div class="class-laboratory">
 
@@ -104,4 +100,3 @@
     </div>
 
 
-</div>

@@ -7,12 +7,7 @@
         Common embed styles
 */
 
-div.content-view-line h2{
-    padding-top:0.8em;
-    padding-bottom:0.2em;
-    font-size:1.1em;
-    background:url(../images/decorazioni/dropdown_back2.png);
-}
+
 div.highlighted_object
 {
     background-image: url(../images/highlighted_object_bg.png);

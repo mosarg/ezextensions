@@ -6,18 +6,3 @@
         article line view css
 */
 
-div.content-view-line div.class-article h2,div.content-view-line div.class-article-mainpage h2{
-    padding:0.5em;
-}
-div.content-view-line div.class-article a,div.content-view-line div.class-article-mainpage a{
-    color:white;
-    text-decoration:none;
-}
-div.content-view-line div.class-article a:hover,div.content-view-line div.class-article-mainpage a:hover{
-    color:gray;
-}
-
-div.content-view-line div.class-article div.attribute-short
-{
-    font-weight: normal;
-}

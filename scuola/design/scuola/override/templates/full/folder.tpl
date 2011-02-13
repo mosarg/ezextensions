@@ -29,7 +29,8 @@
 {if $node.data_map.show_children.data_int}
 
         {def     $page_limit = 10
-                 $classes = ezini( 'MenuContentSettings', 'ExtraIdentifierList', 'menu.ini' )
+                 $static_elements_classes =array('file','image')
+                 $semantic_elements_classes=array('course','laboratory','feedback_form','progetto','article','article_mainpage')
                  $semantic_elements = array()
                  $static_elements = array()
                  $static_count = ''
@@ -40,21 +41,21 @@
                                                           'offset', $view_parameters.offset,
                                                           'sort_by', $node.sort_array,
                                                           'class_filter_type', 'include',
-                                                          'class_filter_array', array('progetto','article','article_mainpage'),
+                                                          'class_filter_array',$semantic_elements_classes,
                                                           'limit', $page_limit ) )
                $semantic_count=fetch_alias( 'children_count', hash( 'parent_node_id', $node.node_id,
                                                                       'class_filter_type', 'include',
-                                                                      'class_filter_array',array('progetto','article','article_mainpage') ) )}
+                                                                      'class_filter_array',$semantic_elements_classes ) )}
                   
 
          {set $static_elements=fetch_alias( 'children', hash( 'parent_node_id', $node.node_id,
                                                              'sort_by', $node.sort_array,
-                                                             'class_filter_type', 'exclude',
-                                                             'class_filter_array', $classes,
+                                                             'class_filter_type', 'include',
+                                                             'class_filter_array', $static_elements_classes,
                                                              'limit', $page_limit ) )
               $static_count=fetch_alias( 'children_count', hash( 'parent_node_id', $node.node_id,
-                                                                      'class_filter_type', 'exclude',
-                                                                      'class_filter_array',$classes) )}
+                                                                      'class_filter_type', 'include',
+                                                                      'class_filter_array',$static_elements_classes) )}
   {/if}                                                                    
                       
                  

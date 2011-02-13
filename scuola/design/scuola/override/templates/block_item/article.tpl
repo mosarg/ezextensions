@@ -1,3 +1,5 @@
+{* Article - block item view *}
+
 {if is_set($style)|not()}
     {def $style='compact'}
 {/if}

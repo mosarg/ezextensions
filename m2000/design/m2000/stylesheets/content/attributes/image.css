@@ -27,12 +27,7 @@ div.content-view-full div.attribute-image div.caption p
     padding: 3px;
     margin: 0;
 }
-div.content-view-line div.attribute-image
-{
-    float: left;
-    margin-right: 0.5em;
-    margin-left: 0;
-}
+
 div.content-view-embed div.attribute-image
 {
     float: left;

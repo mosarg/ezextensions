@@ -4,7 +4,7 @@
                                                               class_filter_array, array( 'article_subpage' ),
                                                               sort_by, $used_node.sort_array ) )}
 {if $article_subpages|count}
-        <div class="attribute-article-index-blocchi-line">
+        <div class="article-index-blocchi-lineview">
            
              <ol>
                           

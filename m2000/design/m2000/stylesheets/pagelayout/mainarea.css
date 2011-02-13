@@ -13,25 +13,23 @@
 /* MAIN AREA */
 div#main-position
 {
-width: 100%;
-float: left;
+    width: 100%;
+    float: left;
 }
 div#main
 {
-position: relative;
+    position: relative;
 }
 div.nosidemenu div#main-position
 {
-margin-left: 0;
+    margin-left: 0;
 }
 div.noextrainfo div#main-position
 {
-margin-right: 0;
+    margin-right: 0;
 }
 
 div.content-view-children{
-   margin-top:2em;
-   text-align:left;
    overflow:hidden;
 }
 div.content-view-children h4{

@@ -23,3 +23,27 @@
 .square-icon h2 a:hover{
     color:black;
 }
+
+div.content-view-line{
+    clear:both;
+    margin-bottom:1.3em;
+}
+
+div.content-view-line .line-header-common{
+    
+}
+
+div.content-view-line h2.line-header-common{
+     margin: 0 0 0.1em;
+    }
+
+div.content-view-line h2.line-header-common:first-letter{
+    color:#a10101;
+    font-size: 1.3em;
+}
+
+div.content-view-line div.attribute-image
+{
+    margin-right: 0.5em;
+    margin-left: 0;
+}

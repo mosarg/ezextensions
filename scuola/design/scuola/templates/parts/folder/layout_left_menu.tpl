@@ -1,4 +1,5 @@
-     <div class="class-folder">
+ <div class="content-view-full">     
+<div class="class-folder">
         {* contenuto in preparazione *}
         {if $node.object.state_id_array|contains('6')}
         <div class="wip rounded shadowmore">
@@ -42,7 +43,7 @@
 
             <div class="content-view-children">
                 {foreach $semantic_elements as $semantic_element }
-                  {node_view_gui view=line content_node=$semantic_element}
+                  {node_view_gui view=line content_node=$semantic_element imagesize='articlethumbnail'}
                 {/foreach}
             </div>
            {include name=navigator
@@ -56,7 +57,7 @@
        {if gt($static_count,0)}
        <div class="static-elements-box">
            <div class="content-view-children">
-                <h4>{"Elementi correlati"|i18n('scuola/folder/line')}</h4>
+                <h4>{"Contenuti scaricabili"|i18n('scuola/folder/line')}</h4>
                  <div class="sortbuttons" >
                     <h4>Ordine:</h4>
                     <a id="sortbuttonup"  class="rounded">Alfabetico ascendente</a>
@@ -73,7 +74,7 @@
     {/if}
     </div>
 
-
+ </div>
 
 {include uri='design:parts/object_informations.tpl' style='full'}
 <script type="text/javascript" src={'javascript/tinysort.js'|ezdesign} ></script>

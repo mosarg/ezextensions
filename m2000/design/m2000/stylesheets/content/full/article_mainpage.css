@@ -24,12 +24,7 @@ div.content-view-full div.class-article-mainpage div.attribute-header h1
     line-height: 0.9em;
     max-width:83%;
 }
-div.content-view-full div.class-article-mainpage div.attribute-byline
-{
-    padding-bottom: 30px;
-    margin-bottom: -0.25em;
-    display: block;
-}
+
 div.content-view-full div.class-article-mainpage div.pagenavigator
 {
      padding-bottom: 56px;
