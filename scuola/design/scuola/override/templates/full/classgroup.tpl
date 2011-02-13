@@ -1,6 +1,6 @@
 {* Contenitore classi - Full view *}
 
-{include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true(),no_class_menu=false()}
+{include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true() no_class_menu=false()}
 
 
 {def $calendarForum=fetch('content','list',hash( 'parent_node_id', $node.node_id,

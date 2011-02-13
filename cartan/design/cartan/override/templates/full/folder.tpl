@@ -11,7 +11,7 @@
             $classes = ezini( 'MenuContentSettings', 'ExtraIdentifierList', 'menu.ini' )
             $children = array()
             $main_elements = array()
-            $main_elements_classes=array('progetto','article','article_mainpage','article_subpage')
+            $main_elements_classes=array('progetto','article','article_mainpage')
             $children_count = ''
             $main_elements_count=''}
 

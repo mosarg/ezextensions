@@ -1,0 +1,2 @@
+febbraio 2011
+rinominare show_extrainfo in mostra menu all'interno della classe folder

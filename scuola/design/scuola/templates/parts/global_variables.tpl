@@ -12,8 +12,10 @@
                                     class_filter_array, array('infobox','global_layout')))}
     {if gt($global_layout_class,0)}
         {scuolapagedata_set( 'extra_menu', true() )}
+        {def $extra_menu=true()}
     {else}
         {scuolapagedata_set( 'extra_menu', false() )}
+        {def $extra_menu=false()}
     {/if}
 {else}
     {scuolapagedata_set( 'extra_menu', $extra_menu)}
