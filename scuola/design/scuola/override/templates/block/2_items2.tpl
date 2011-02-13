@@ -4,7 +4,7 @@
 
 {foreach $valid_nodes as $valid_node}
 
-{node_view_gui view='block_item' image_class='block2items2' content_node=$valid_node}
+{node_view_gui view='block_item' image_class='block2items2' content_node=$valid_node style='ultracompact'}
 
 {/foreach}
 

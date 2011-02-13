@@ -6,27 +6,31 @@
         article_mainpage css class
 */
 
-div.content-view-full div.class-article-mainpage div.attribute-short
-{
-    font-weight: bold;
+
+div.content-view-full div.class-article-mainpage div.attribute-header>div.attribute-image{
+    float:left;
 }
+
+div.content-view-full div.class-article-mainpage div.attribute-image{
+    padding-right:1em;
+    padding-bottom:1em;
+}
+
 div.content-view-full div.class-article-mainpage div.attribute-header h1
 {
-    background: none;
+    float:left;
     padding-bottom: 0;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.5em;
+    line-height: 0.9em;
+    max-width:83%;
 }
 div.content-view-full div.class-article-mainpage div.attribute-byline
 {
-    background-position: bottom center;
-    background-repeat: no-repeat;
     padding-bottom: 30px;
     margin-bottom: -0.25em;
     display: block;
 }
 div.content-view-full div.class-article-mainpage div.pagenavigator
 {
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    padding-bottom: 56px;
+     padding-bottom: 56px;
 }

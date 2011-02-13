@@ -1,4 +1,8 @@
 {* Article (main-page) - Line view *}
+
+{if is_set($imagesize)|not()}
+    {def $imagesize='large'}
+{/if}
 <div class="content-view-line">
     <div class="class-article-mainpage">
 
@@ -10,7 +14,7 @@
 
     {if $node.data_map.image.has_content}
         <div class="attribute-image">
-            {attribute_view_gui image_class=articlethumbnail href=$node.url_alias|ezurl attribute=$node.data_map.image}
+            {attribute_view_gui image_class=$imagesize href=$node.url_alias|ezurl attribute=$node.data_map.image}
         </div>
     {/if}
 
@@ -19,6 +23,6 @@
         {attribute_view_gui attribute=$node.data_map.intro}
     </div>
     {/if}
-    {include uri=concat("design:parts/article/article_index_blocchi_line.tpl") used_node=$node}
+    {include uri=concat("design:parts/article/article_index_blocchi_lineview.tpl") used_node=$node}
     </div>
 </div>

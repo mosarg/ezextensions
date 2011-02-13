@@ -8,7 +8,7 @@
             <div class="border-box">
             <ol>
             {foreach $article_subpages as $article_subpage}
-                  <li class="rounded shadow">
+                  <li >
                     <a href={$article_subpage.url_alias|ezurl}>
                         {if $article_subpage.data_map.index_title.has_content}
                             {attribute_view_gui attribute=$article_subpage.data_map.index_title}

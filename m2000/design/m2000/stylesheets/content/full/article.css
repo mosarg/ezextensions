@@ -8,10 +8,6 @@
 
 
 
-div.class-article div.attribute-short p a{
-    color:gray;
-}
-
 div.content-view-full div.class-article div.attribute-header>div.attribute-image{
     float:left;
 }
@@ -23,19 +19,16 @@ div.content-view-full div.class-article div.attribute-image{
 
 div.content-view-full div.class-article div.attribute-byline
 {
-    background-image: none;
     padding-bottom: 0;
     margin-bottom: 1em;
 }
 div.content-view-full div.class-article div.attribute-long
 {
-    background-image: none;
     padding-bottom: 56px;
 }
 
 div.content-view-full div.class-article div.attribute-header h1
 {
-    background: none;
     float:left;
     padding-bottom: 0;
     margin-bottom: 0.5em;

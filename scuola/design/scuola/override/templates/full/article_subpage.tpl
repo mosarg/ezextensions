@@ -11,8 +11,18 @@
         {/if}
 
         <div class="attribute-header">
+            {if $node.parent.data_map.image.has_content}
+                <div class="attribute-image">
+                 
+                    <div class="shadow" >{attribute_view_gui attribute=$node.parent.data_map.image link_class=ezimage_zoom href=$node.parent.data_map.image.content[original].url|ezroot image_class=gallerythumbnailsquare}</div>
+                 
+                </div>
+            {/if}
             <h1>{$node.data_map.title.content|wash()}</h1>
         </div>
+        
+     <div class="title-separator"></div>
+        <div class="separator"></div>
 
        
          {include uri=concat("design:parts/article/article_index_",
@@ -27,17 +37,8 @@
         {/if}
 
         {include uri='design:parts/article/page_navigator.tpl' used_node=$node.parent}
-
-        {include uri='design:parts/article/comments.tpl' used_node=$node.parent}
-
-        {def $tipafriend_access=fetch( 'user', 'has_access_to', hash( 'module', 'content',
-                                                                      'function', 'tipafriend' ) )}
-        {if and( ezmodule( 'content/tipafriend' ), $tipafriend_access )}
-        <div class="attribute-tipafriend">
-            <p><a href={concat( "/content/tipafriend/", $node.parent.node_id )|ezurl} title="{'Tip a friend'|i18n( 'design/ezwebin/full/article_subpage' )}">{'Tip a friend'|i18n( 'design/ezwebin/full/article_subpage' )}</a></p>
-        </div>
-        {/if}
-
+      
+      
     </div>
 </div>
 

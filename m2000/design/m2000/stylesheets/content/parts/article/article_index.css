@@ -12,22 +12,20 @@ div.attribute-article-index-frontpage{
 
 }
 div.attribute-article-index-frontpage ol li{
-    background:#bfcdff;
-    border:2px solid gray;
+   border:2px solid gray;
 }
 div.attribute-article-index-frontpage ol li a{
     font-weight:bold;
-    color:#767676;
     text-decoration:none;
 }
 div.attribute-article-index-frontpage ol li a:hover{
-    color:white;
+   
 }
 div.attribute-article-index-blocchi-line li {
     height:50px;
     width:250px;
     float:left;
-    color:white;
+    
     font-weight:bold;
     font-size:1.2em;
     margin-right:0.5em;
@@ -46,31 +44,31 @@ div.attribute-article-index-blocchi ol li{
     display:block;
     height:100px;
     width:100px;
-    color:white;
+   
     font-weight:bold;
     font-size:1.2em;
     margin-right:0.5em;
-    background:#a9a9a9;
+   
 }
 div.attribute-article-index-blocchi ol li.current,div.attribute-article-index-blocchi-line ol li.current{
-    background:#bfcdff;
-    border:2px solid gray;
-    color:gray;
+   
+    border:2px solid #a70304;
+    
 }
 div.attribute-article-index-blocchi ol li span,div.attribute-article-index-blocchi-line ol li span{
     display:block;
     margin-top:1em;
     margin-right:0.5em;
-    color:white;
+    
 }
 div.attribute-article-index-blocchi ol li a,div.attribute-article-index-blocchi-line ol li a{
     display:block;
     margin-top:1em;
     margin-right:0.5em;
     text-decoration:none;
-    color:white;}
+    }
 div.attribute-article-index-blocchi ol li a:hover{
-    color:#d0d9ff;
+   
 }
 div.attribute-article-index
 {

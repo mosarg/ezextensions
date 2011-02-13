@@ -1,16 +1,24 @@
 {* Article - Line view *}
+
+{if is_set($imagesize)|not()}
+    {def $imagesize='large'}
+{/if}
 <div class="content-view-line">
 <div class="class-article">
-    <h2 class="rounded line-header-common"><a href={$node.url_alias|ezurl}>{$node.data_map.title.content|wash}</a></h2>
+    <h2 class="line-header-common"><a href={$node.url_alias|ezurl}>{$node.data_map.title.content|wash}</a></h2>
     
     {include uri='design:parts/line/common_line_header.tpl'}
 
-    {if $node.data_map.image.has_content}
+   
+    
+     {if $node.data_map.image.has_content}
         <div class="attribute-image">
-            <img alt="immarticolo" src={$node.data_map.image.content[large].url|ezroot}/>
+            {attribute_view_gui image_class=$imagesize href=$node.url_alias|ezurl attribute=$node.data_map.image}
         </div>
     {/if}
-
+   
+    
+   
     {if $node.data_map.intro.content.is_empty|not}
     <div class="attribute-short">
         {attribute_view_gui attribute=$node.data_map.intro}

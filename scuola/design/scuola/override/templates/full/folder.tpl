@@ -30,9 +30,24 @@
             <p>{"Contenuto in preparazione non ancora visibile pubblicamente"|i18n('scuola/state')}</p>
         </div>
         {/if}
+        
         <div class="attribute-header">
-            <h1>{$node.name|wash}</h1>
+            {if $node.data_map.icon.has_content}
+                <div class="attribute-image">
+                 
+                    <div class="shadow" >{attribute_view_gui attribute=$node.data_map.icon link_class=ezimage_zoom href=$node.data_map.icon.content[original].url|ezroot image_class=gallerythumbnailsquare}</div>
+                 
+                </div>
+            {/if}
+            <h1>{$node.data_map.name.content|wash()}</h1>
         </div>
+        
+        <div class="title-separator"></div>
+        <div class="separator"></div>
+        
+       
+        
+        
         {if $node.data_map.short_description.has_content}
                 <div class="attribute-short">
                     {attribute_view_gui attribute=$node.data_map.short_description}
@@ -130,8 +145,9 @@
             </div>
    </div>
    {/if}
-{include uri='design:parts/object_informations.tpl' style='full'}
+
 
 </div>
+{include uri='design:parts/object_informations.tpl' style='full'}
 <script type="text/javascript" src={'javascript/tinysort.js'|ezdesign} ></script>
 <script type="text/javascript" src={'javascript/listsort.js'|ezdesign} ></script>
