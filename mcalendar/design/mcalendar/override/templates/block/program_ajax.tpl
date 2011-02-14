@@ -8,6 +8,9 @@
 {def $calendar_list=array()}
 <div class="content-view-block">
     <div class="program-ajax-block" id="{$block.name}">
+        <div class="attribute-header">
+            <h1>{$block.name}</h1>
+        </div>
         <div class="program-list">
            <!-- <div class="position"></div>-->
             <div class="upper-commands commands"><div class="loading"></div><div class="upper-button arrow"></div></div>

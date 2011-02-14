@@ -13,10 +13,14 @@ var blockprogram={
     _updateDimensions:function(){
         var self=this;
 
-        var event_height=self.options.event_height;
-        var events_number=self.element.find('ul.events li').css({
-            "height":event_height+"px"
-        }).length;
+        //var event_height=self.options.event_height;
+        
+        var event_height=self.element.find('ul.events li').innerHeight();
+        var events_number=self.element.find('ul.events li').length;
+        
+        //var events_number=self.element.find('ul.events li').css({
+        //    "height":event_height+"px"
+        //}).length;
         self.options.window_height=self.element.find('div.visible-window').height();
         self.options.ev_container_height=events_number*event_height;
         self.element.find('ul.events').css({
@@ -104,11 +108,12 @@ var blockprogram={
         var options=this.options;
         var short_months=options.short_months;
         var temp_date=new Date();
+        //short_months[temp_date.getMonth()]
         for (var i in events){
             temp_date.setTime(events[i].start*1000);
             $('<li><span class="date_block" style="background:'+options[events[i].parentNodeId]+'"></span> \n\
-                   <span class="day_month">'+temp_date.getDate()+' '+short_months[temp_date.getMonth()]+'</span>\n\
-                   '+events[i].title+'</li>').appendTo($container).data('event',events[i]);
+                  <span class="title">'+events[i].title+'</span>\n\
+                  <span class="day_month">'+temp_date.getDate()+'</span></li>').appendTo($container).data('event',events[i]);
         }
         
     },
@@ -166,5 +171,6 @@ $.ui.blockprogram.defaults ={
     showYear: false,
     prevArrow: '&laquo;',
     nextArrow: '&raquo;',
-    event_height:40
+    event_height:40,
+    event_padding:1
 }
