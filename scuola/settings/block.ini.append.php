@@ -124,8 +124,10 @@ NumberOfArchivedItems=2
 ManualAddingOfItems=enabled
 ViewList[]
 ViewList[]=calendar_ajax
+ViewList[]=program_ajax
 ViewName[]
 ViewName[calendar_ajax]=Calendario Ajax
+ViewName[program_ajax]=Programma
 
 
 

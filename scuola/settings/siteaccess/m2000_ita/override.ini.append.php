@@ -234,10 +234,10 @@ Match[view]=calendar_ajax
 
 [block_calendar_programma]
 Source=block/view/view.tpl
-MatchFile=block/programma.tpl
+MatchFile=block/program_ajax.tpl
 Subdir=templates
 Match[type]=LeftCalendar
-Match[view]=programma
+Match[view]=program_ajax
 
 
 
