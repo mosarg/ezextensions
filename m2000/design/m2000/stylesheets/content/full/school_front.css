@@ -5,32 +5,30 @@
     Description:
     school_front frontpage full view
 */
-div.class-frontpage_scuola div.responsabile{
-    margin-top:2em;
-    clear:both;
-    padding:0.5em;
-    background:url(../images/decorazioni/highlight.png);
-}
-div.responsabile a{
-    font-weight:bold;
-    color:white;
 
-}
-div.responsabile h3{
-    font-size:1.2em;
 
-}
 div.class-frontpage_scuola h2.section_header{
     font-size:2em;
-    background-color:#b6d0c5;
+   
 }
-div.class-frontpage_scuola div.foto{
+
+div.class-frontpage_scuola div.responsabile{
     float:left;
-    padding:0 1em 0 0;
+    width:48%;
 }
-div.class-frontpage_scuola div.frontpage_header{
-    overflow:hidden;
+
+div.class-frontpage_scuola div.meccanografico{
+    float:right;
+    width:48%;
 }
-div.class-frontpage_scuola div.frontpage_header div{
-    text-align:justify;
+
+
+div.class-frontpage_scuola div.attribute-header>h1
+{
+    color:#273236;
+    font-weight: bold;
+}
+div.class-frontpage_scuola div.attribute-header>h1:first-letter{
+    color:#a10101;
+    font-size: 1.3em;
 }

@@ -1,8 +1,6 @@
 {* Frontpage m2000 - Full view *}
 
-
-
-{if $node.object.data_map.show_menu.data_int}
+{if $node.data_map.show_menu.data_int}
     {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
     {def $classes=array('ufficio','dipendenti')}
 {else}
@@ -19,14 +17,14 @@
             <p>{"Contenuto in preparazione non ancora visibile pubblicamente"|i18n('scuola/state')}</p>
         </div>
         {/if}
-     <div class="frontpage_header">
-      
-         {if is_set($node.data_map.logo)}
-         <img class="shadowdark" src= {$node.object.data_map.logo.content[mainstory3].url|ezroot} alt="logo"/>
-         {/if}
-        <h1 class="section_header">{$node.data_map.name.content}</h1>
+     
+     <div class="attribute-header">
+         <h1 class="section_header">{$node.data_map.name.content}</h1>
      </div>
-     <div class="m2000_front_description">
+     {if is_set($node.data_map.logo)}
+         <img src= {$node.object.data_map.logo.content[mainstory3].url|ezroot} alt="logo"/>
+     {/if}
+     <div class="attribute-short">
         {attribute_view_gui attribute=$node.data_map.descrizione}
      </div>
 

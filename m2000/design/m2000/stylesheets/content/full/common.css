@@ -177,3 +177,29 @@ div.object_informations{
     font-weight: bold;
     
 }
+
+/*informations*/
+
+div.informations{
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+
+div.responsabile{
+    background: #ff6c1e;
+    padding:0.5em;
+}
+div.responsabile a{
+    
+}
+div.responsabile h3{
+    color:white;
+    font-weight:bold;
+}
+
+div.meccanografico{
+    padding:0.5em;
+    background: #85868b;
+    color:white;
+    font-weight: bold;
+}

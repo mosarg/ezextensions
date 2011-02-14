@@ -30,7 +30,7 @@
 
         {def     $page_limit = 10
                  $static_elements_classes =array('file','image')
-                 $semantic_elements_classes=array('course','laboratory','feedback_form','progetto','article','article_mainpage')
+                 $semantic_elements_classes=array('gallery','course','laboratory','feedback_form','progetto','article','article_mainpage')
                  $semantic_elements = array()
                  $static_elements = array()
                  $static_count = ''
