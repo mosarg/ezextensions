@@ -7,17 +7,13 @@
 */
 
 
-div.class-m2000_front img{
-    float:left;
+
+div.class-m2000_front div.attribute-header>h1
+{
+    color:#273236;
+    font-weight: bold;
 }
-div.class-m2000_front div.frontpage_header{
-    background:#e8f5ec;
-    padding:2em 0 2em 2em;
-    overflow:hidden;
-}
-div.class-m2000_front h1.section_header{
-    float:left;
-    font-size:3em;
-    width:3em;
-    padding-left:1em;
+div.class-m2000_front div.attribute-header>h1:first-letter{
+    color:#a10101;
+    font-size: 1.3em;
 }

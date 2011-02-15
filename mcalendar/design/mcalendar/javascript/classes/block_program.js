@@ -50,13 +50,13 @@ var blockprogram={
         var old_date=new Date(),temp_date=new Date();
         var step=self.options.event_height,top_position=$events.position().top;
 
+    
         //self.element.find('div.position').text(parseInt($events.position().top)+parseInt(ev_container_height));
         
 
         if (parseInt($events.position().top)+parseInt(ev_container_height)<self.options.window_height+self.options.event_height) {
             $button.hide();
             $button.siblings('div.loading').show();
-            alert(self.element.find('ul.events li').length );
             event=self.element.find('ul.events li').last().data('event');
             old_date.setTime(event.end*1000);
             temp_date.setFullYear(old_date.getFullYear(),old_date.getMonth()+1,1);

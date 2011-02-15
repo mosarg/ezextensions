@@ -5,18 +5,25 @@
 
 {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true() extra_menu=false()}
 
-<div class="border-box">
+
 <div class="content-view-full">
     <div class="class-dipendenti">
+        
+        
         <div class="attribute-header">
-            <h1>{$node.name|wash}</h1>
+            {if $node.data_map.logo.has_content}
+                <div class="attribute-image">
+                 
+                    <div class="shadow" >{attribute_view_gui attribute=$node.data_map.logo link_class=ezimage_zoom href=$node.data_map.logo.content[original].url|ezroot image_class=gallerythumbnailsquare}</div>
+                 
+                </div>
+            {/if}
+            <h1>{$node.name|wash()}</h1>
         </div>
-   
-       {if $node.data_map.logo.has_content}
-            <div class="logo">
-                <img alt="logo" src={$node.data_map.logo.content[medium].url|ezurl}/>
-            </div>
-        {/if}
+        
+        <div class="title-separator"></div>
+        <div class="separator"></div>
+        
         {if $node.data_map.description.has_content}
             <div class="attribute-long">
                 {attribute_view_gui attribute=$node.data_map.description}
@@ -27,10 +34,8 @@
                  $classes = ezini( 'MenuContentSettings', 'ContainerExcludeList', 'menu.ini' )
                  $children = array()
                  $children_count = ''}
-               
-            {if le( $node.depth, '1')}
-                {set $classes = $classes|append('folder')}
-            {/if}
+             
+           
             {set $children=fetch_alias( 'children', hash( 'parent_node_id', $node.node_id,
                                                           'offset', $view_parameters.offset,
                                                           'sort_by', $node.sort_array,
@@ -60,5 +65,4 @@
         {/if}
     </div>
     {include uri='design:parts/object_informations.tpl' style='full'}
-</div>
 </div>

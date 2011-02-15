@@ -7,7 +7,202 @@
         side menu style
 */
 
-div#sidemenu div.contentstructure ul li a
+div#sidemenu-position
+{
+    width: 16em;
+    margin-left: -16em;
+    float: left;
+    display: inline; /* Fix for IE double margin bug */
+}
+div.nosidemenu div#sidemenu-position
+{
+    display: none;
+}
+
+div#sidemenu form{
+    background:#e7e7e7;
+    padding-bottom:1em;
+    padding-left:0.2em;
+}
+
+
+/*main style*/
+
+div#sidemenu
+{
+    padding:1em;
+    margin:1em;
+    min-height:40em;
+}
+
+div#sidemenu h2.header{
+    text-align:left;
+    font-weight:bold;
+    font-size:2em;
+}
+
+div#sidemenu h2.header:first-letter{
+    color:#a60402;
+}
+
+
+div#sidemenu h4
+{
+    font-size:1em;
+    margin: 0;
+    width:100%;
+    height:2.5em;
+    padding-top:0.2em;
+}
+div#sidemenu  div.border-box
+{
+    padding:0;
+    overflow:hidden;
+}
+
+
+div#sidemenu span{
+    float:right;
+    font-family:arial;
+    font-weight:bold;
+    font-size:1.2em;
+}
+
+div#sidemenu ul
+{
+    list-style-type: none;
+    margin: 0;
+}
+div#sidemenu ul li
+{
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+    border-bottom:2px solid #a60402;
+}
+
+div#sidemenu a{
+    font-weight: bold;
+    color:#273236;
+}
+
+div#sidemenu a:hover{
+    color:#a60402;
+}
+
+div#sidemenu h4 a{
+    text-decoration: none;
+}
+
+div#sidemenu  li a, div#sidemenu  li a
+{
+    display: block;
+}
+
+/*first level menu*/
+
+
+div#sidemenu div.first_level_menu{
+    height:2.5em;
+}
+
+
+
+div#sidemenu ul.menu-list li a.parent-menu{
+    padding-left:0.5em;
+    background: #a60304;
+    color:white;
+    font-size:1.4em;
+}
+
+
+
+div#sidemenu ul.menu-list li a{
+    height:100%;
+    line-height:2em;
+    vertical-align:middle;
+    text-decoration:none;
+}
+
+div#sidemenu ul.menu-list li div.first_level_menu a.selected,div#sidemenu ul.menu-list li div.first_level_menu a.current
+{
+    border-bottom:2px solid #273236;
+    background: #85868b;
+    color:white;
+}
+
+
+div#sidemenu li div.first_level_menu a:hover{
+
+}
+div#sidemenu li div.first_level_menu a{
+    font-size:1.1em;
+    padding-left:0.5em;
+   
+}
+div#sidemenu li a.selected:before{
+    margin-right:0.25em;
+}
+
+/*submenus*/
+
+div#sidemenu ul.submenu-list{
+    
+}
+
+div#sidemenu ul.submenu-list li{
+    border:0;
+}
+div#sidemenu ul.submenu-list a.selected,div#sidemenu ul.submenu-list a.current
+{
+    font-weight:bold;
+    background: #ff6c1e;
+    color:white;
+}
+
+/*secondo level menu*/
+
+div#sidemenu  ul li div.second_level_menu a{
+    font-size:0.9em;
+    padding-left:1em;
+   }
+
+div#sidemenu li div.second_level_menu a:hover{
+    
+}
+
+/*terzo livello*/
+div#sidemenu li div.third_level_menu a:hover{
+    
+}
+div#sidemenu  li div.third_level_menu a{
+    font-size:0.8em;
+    padding-left:2em;
+  
+}
+div#sidemenu  li div.third_level_menu a:hover{
+    
+}
+
+/*quarto livello*/
+div#sidemenu  li div.fourth_level_menu:hover{
+    
+}
+div#sidemenu  li div.fourth_level_menu a{
+    font-size:0.7em;
+    padding-left:3em;
+}
+
+
+
+div#sidemenu select.select_prof{
+    width:11em;
+    margin-top:1em;
+
+}
+
+/*div#sidemenu div.contentstructure ul li a
 {
     border: none;
 }
@@ -29,7 +224,7 @@ div#sidemenu div.contentstructure li
     list-style-type: none;
     margin: 0;
     padding: 0;
- }
+}
 div#sidemenu div.contentstructure ul ul div
 {
     color: #000000;
@@ -48,7 +243,7 @@ div#sidemenu div.contentstructure li.topchapter, div#sidemenu div.contentstructu
     font-weight: bold;
     margin: 0.5em 0 0.5em 0;
     padding-left: 10px;
- }
+}
 div#sidemenu div.contentstructure li.topchapter-selected a
 {
     color: #000;
@@ -72,7 +267,7 @@ div#sidemenu div.contentstructure li
 }
 div#sidemenu div.contentstructure li ul div
 {
- padding-left: 8px;
+    padding-left: 8px;
 }
 div#sidemenu div.contentstructure li.currentnode a, div#sidemenu div.contentstructure li.topchapter-selected li.currentnode a
 {
@@ -83,4 +278,4 @@ div#sidemenu div.contentstructure li.topchapter-selected li.currentnode ul a
 {
     font-weight: normal;
     text-decoration: none;
-}
+}*/

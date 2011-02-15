@@ -2,10 +2,10 @@
 
 {if $node.data_map.show_menu.data_int}
     {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
-    {def $classes=array('ufficio','dipendenti')}
+    {def $classes=array('ufficio')}
 {else}
     {include uri='design:parts/global_variables.tpl' left_menu=false() left_nav_menu=false()}
-     {def $classes=array('ufficio','folder','dipendenti')}
+     {def $classes=array('ufficio','folder')}
 {/if}
 
 
@@ -22,7 +22,9 @@
          <h1 class="section_header">{$node.data_map.name.content}</h1>
      </div>
      {if is_set($node.data_map.logo)}
-         <img src= {$node.object.data_map.logo.content[mainstory3].url|ezroot} alt="logo"/>
+     <div class="attribute-image">
+         <img src= {$node.object.data_map.logo.content[mainstory1].url|ezroot} alt="logo"/>
+     </div>
      {/if}
      <div class="attribute-short">
         {attribute_view_gui attribute=$node.data_map.descrizione}

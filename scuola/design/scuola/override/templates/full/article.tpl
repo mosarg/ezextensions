@@ -11,7 +11,7 @@
          </div>
         {/if}
 
-        {include uri='design:parts/object_informations.tpl' style='full'}
+     
         <div class="attribute-header">
             {if $node.data_map.image.has_content}
                 <div class="attribute-image">
@@ -70,5 +70,5 @@
         
 
         </div>
-
+           {include uri='design:parts/object_informations.tpl' style='full'}
     </div>

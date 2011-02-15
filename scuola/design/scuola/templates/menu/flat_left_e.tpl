@@ -1,4 +1,4 @@
-<div class="border-box shadowmore">
+<div class="border-box">
 {def $left_menu_depth = $pagedata.current_menu|eq('LeftOnly')|choose( 1, 0 )}
     {def $menu_node=array()
      $menu_levels=hash('0','first','1','second','2','third','3','fourth','4','fifth')
@@ -9,13 +9,11 @@
 
 {if ge($menu_elements|count,1)}
     {cache-block keys=array($menu_elements)}
-    <h4>{"Contenuti"|i18n('scuola/professori')}</h4>
-
     {def $depth=1 $last=0 $lastlevel=0}
     <ul class="menu-list">
         <li>
              <a class="parent-menu"
-              href={$pagedata.path_array[$left_menu_depth].url_alias|ezurl}>{$pagedata.path_array[$left_menu_depth].text} ^
+              href={$pagedata.path_array[$left_menu_depth].url_alias|ezurl}>{$pagedata.path_array[$left_menu_depth].text} 
             </a>
         </li>
         {foreach $menu_elements as $menu}
@@ -43,9 +41,9 @@
                      {/if}
                    
                      {if eq( $menu.class_name, 'Link')}
-                        <a {$menu_style} href={$menu.data_map.location.content}>{$menu.text|shorten(18)}<span>E ></span></a>
+                        <a {$menu_style} href={$menu.data_map.location.content}>{$menu.text|shorten(18)}<span></span></a>
                      {else}
-                        <a {$menu_style} href={$menu.url_alias|ezurl}>{$menu.text|shorten(18)}<span>></span></a>
+                        <a {$menu_style} href={$menu.url_alias|ezurl}>{$menu.text|shorten(18)}<span></span></a>
                      {/if}
                </div><!--first concat end-->
             </li>

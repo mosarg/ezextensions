@@ -33,6 +33,7 @@ ExtraIdentifierList[]=folder
 ExtraIdentifierList[]=blog
 ContainerExcludeList[]
 ContainerExcludeList[]=frontpage
+ContainerExcludeList[]=folder
 
 [NavigationPart]
 Part[userlists]=List users
