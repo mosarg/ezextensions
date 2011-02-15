@@ -25,6 +25,10 @@ div#columns-position{
  max-width: 1000px;
  padding-left:1.5em;
  padding-right:1.5em;
+ border-color:#83868b;
+ border-left:5px solid;
+ border-right: 5px solid;
+ 
 }
 div.nosidemenu div#columns
 {
