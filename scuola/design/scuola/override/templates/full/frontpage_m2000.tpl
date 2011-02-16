@@ -2,10 +2,10 @@
 
 {if $node.data_map.show_menu.data_int}
     {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
-    {def $classes=array('ufficio')}
+    {def $classes=array('file')}
 {else}
     {include uri='design:parts/global_variables.tpl' left_menu=false() left_nav_menu=false()}
-     {def $classes=array('ufficio','folder')}
+     {def $classes=array('ufficio','folder','file')}
 {/if}
 
 

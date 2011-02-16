@@ -2,7 +2,7 @@
 
 <!-- BLOCK: START -->
 <div class="block-type-mainstory">
-<div class="border-box block-style4-box-outside">
+
 <!-- BLOCK BORDER INSIDE: START -->
 <div class="border-content">
 <!-- BLOCK CONTENT: START -->
@@ -29,6 +29,6 @@
 <!-- BLOCK BORDER INSIDE: END -->
 </div>
     {include uri='design:parts/object_informations.tpl'}
-</div>
+
 <!-- BLOCK: END -->
 {undef $node}

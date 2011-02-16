@@ -1,3 +1,9 @@
+{if is_set($style)|not()}
+    {def $style='compact'}
+{/if}
+
+
+
 {switch match=$node.class_identifier}
     {case match='article'}
         {def $color_code='article_code'}
@@ -27,6 +33,8 @@
         </span>
 </div>
 </div>
+{/case}
+{case match='empty'}
 {/case}
 {case match='ultracompact'}
  <div class="object_informations {$color_code}">

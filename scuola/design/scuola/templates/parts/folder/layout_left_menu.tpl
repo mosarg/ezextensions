@@ -11,7 +11,7 @@
             {if $node.data_map.icon.has_content}
                 <div class="attribute-image">
                  
-                    <div class="shadow" >{attribute_view_gui attribute=$node.data_map.icon link_class=ezimage_zoom href=$node.data_map.icon.content[original].url|ezroot image_class=gallerythumbnailsquare}</div>
+                    {attribute_view_gui attribute=$node.data_map.icon image_css_class='shadow' link_class=ezimage_zoom href=$node.data_map.icon.content[original].url|ezroot image_class=gallerythumbnailsquare}
                  
                 </div>
             {/if}

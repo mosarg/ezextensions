@@ -731,6 +731,13 @@ MatchFile=full/poll.tpl
 Subdir=templates
 Match[class_identifier]=poll
 
+[line_macroarea]
+Source=node/view/line.tpl
+MatchFile=line/macroarea.tpl
+Subdir=templates
+Match[class_identifier]=macroarea
+
+
 
 [line_laboratory]
 Source=node/view/line.tpl

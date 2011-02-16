@@ -1,5 +1,10 @@
 {* contatti - Full view *}
 
+{if is_set($style)|not()}
+    {def $style='full'}
+{/if}
+    
+
 {include uri='design:parts/global_variables.tpl' left_menu=false() left_nav_menu=false() extra_menu=false()}
 
 <div class="content-view-full ">
@@ -32,9 +37,9 @@
     {foreach $subcontatti as $subcontatto}
     {if ne($subcontatto.node_id,$node.node_id)}
     <h2>{$subcontatto.url_alias|preg_replace('/\/.ontatti/','')}</h2>
-    {node_view_gui view=full content_node=$subcontatto}
+    {node_view_gui view=full content_node=$subcontatto style='empty'}
     {/if}
     {/foreach}
     {/if}
-{include uri='design:parts/object_informations.tpl' style='full'}
+{include uri='design:parts/object_informations.tpl' style=$style}
 </div>

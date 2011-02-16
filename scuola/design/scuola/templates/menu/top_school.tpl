@@ -2,6 +2,8 @@
     <!-- This menu is used to show school tabs -->
     <!-- School menu content: START -->
    
+    {def $macroarea=' '}
+    
     {if is_set($pagerootdepth)}
         {def $my_pagerootdepth=$pagerootdepth}
     {else}
@@ -51,12 +53,19 @@
             </li>
              
              {/if}
+             
         {foreach $top_menu_items as $key => $item}
             {set $item_class=array("micro_tabs")}
+            
             {if $top_menu_items_count|eq( $key|inc )}
                 {set $item_class = $item_class|append("lastli")}
             {/if}
-              <li  id="node_id_{$item.node_id}"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a class="button_small" href={$item.url_alias|ezurl}><span class="micro_name">{$item.name|wash()}</span></a></li>
+            {if eq( $item.class_identifier, 'macroarea')}
+              {set $macroarea=$item}
+            {else}
+            
+                <li  id="node_id_{$item.node_id}"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a class="button_small" href={$item.url_alias|ezurl}><span class="micro_name">{$item.name|wash()}</span></a></li>
+            {/if}
           {/foreach}
 </ul>
      {else}
@@ -64,15 +73,23 @@
      {foreach $top_menu_items as $key => $item}
           {set $item_class=''}
           {if eq( $item.class_identifier, 'macroarea')}
-             <li  id="node_id_{$item.node_id}"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a class="macro_button" href={$item.url_alias|ezurl}>{$item.name|wash()}</a></li>
-            {else}
+              {set $macroarea=$item}
+           {else}
              <li  id="node_id_{$item.node_id}"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a class="sch_button" href={$item.url_alias|ezurl}>{$item.name|wash()}</a></li>
              {/if}
           {/foreach}
-              </ul>
+      </ul>
 
+     
+   
+     
+     
      {/if}
     {/if}
-    {undef}
+   
     <!-- School menu content END -->
 </div>
+{if is_string($macroarea)|not()}
+<div  id="macro-slide"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a href={$macroarea.url_alias|ezurl}>{$macroarea.name|wash()}</a></div>
+ {/if}
+{undef}

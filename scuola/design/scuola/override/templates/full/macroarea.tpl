@@ -8,10 +8,38 @@
 {/if}
 
 <div class="content-view-full">
+   
     <div class="class-macroarea">
-
+      
+        
+      {if $node.data_map.show_children.data_int|not()}   
+    <div class="attribute-header">
+          <h1>{$node.data_map.name.content|wash()}</h1>
+   </div>   
+        
+    <div class="title-separator"></div>
+        <div class="separator"></div>     
+        
+   <div class="image-block">
+              {if $node.data_map.logo.has_content}
+                     <div class="attribute-image">
+                        {attribute_view_gui image_css_class='shadow' link_class=ezimage_zoom image_class='gallerythumbnailsquare' href=$node.data_map.logo.content[original].url|ezroot attribute=$node.data_map.logo}
+                     </div>
+               {/if}
+               {if $node.data_map.logo1.has_content}
+                    <div class="attribute-image">
+                        {attribute_view_gui image_css_class='shadow' link_class=ezimage_zoom image_class='gallerythumbnailsquare' href=$node.data_map.logo1.content[original].url|ezroot attribute=$node.data_map.logo1}
+                    </div>
+                {/if}
+                {if $node.data_map.logo2.has_content}
+                    <div class="attribute-image">
+                        {attribute_view_gui image_css_class='shadow' link_class=ezimage_zoom image_class='gallerythumbnailsquare' href=$node.data_map.logo2.content[original].url|ezroot attribute=$node.data_map.logo2}
+                    </div>
+                {/if} 
+   </div>     
+        {/if}
     {if is_set($node.object.data_map.descrizione)}
-        <div class="custom-content">
+        <div class="attribute-short">
             {attribute_view_gui attribute=$node.object.data_map.descrizione}
         </div>
     {/if}
@@ -42,42 +70,14 @@
 
 
    {if gt($children_count,0)}
-
-    {foreach $children as $child }
-    {set $counter=inc($counter)}
-    <div class="macro_block">
-                    <a href={$child.url_alias|ezurl}>
-                    <img class="shadowmacro" src={$child.data_map.logo.content[gallerythumbnail].url|ezroot}   alt="logo"/></a>
-        <h2>           <a href={$child.url_alias|ezurl}>
-                       {$child.name|shorten(40)}
-                    </a>
-        </h2>
-    </div>
-    {if eq(mod($counter,4),0)}
-    <br class="break"/>
-    {/if}
-    {/foreach}
-
-    {else}
-
-    {set $classes=array('article','article_mainpage','folder','file')}
-    {def $elements=fetch_alias( 'children', hash( 'parent_node_id', $node.node_id,
-                                                          'offset', $view_parameters.offset,
-                                                          'sort_by', $node.sort_array,
-                                                          'class_filter_type', 'include',
-                                                          'class_filter_array', $classes) )
-           $elements_count=$elements|count}
-                      {if ge($elements_count,1)}
-   <div class="content-view-children">
-                {foreach $elements as $element }
-                  {node_view_gui view=line content_node=$element}
-                {/foreach}
-            </div>
-    {/if}
-
-
-    {/if}
-{/if}
+     {foreach $children as $child }
+         <div class="content-view-children">
+             {node_view_gui view=line content_node=$child style='empty'}
+         </div>
+    
+     {/foreach}
+   {/if}
+   
 {include uri='design:parts/object_informations.tpl' style='full'}
     </div>
 </div>

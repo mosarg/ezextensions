@@ -6,7 +6,7 @@
 {/if}
 
 {foreach $valid_nodes as $valid_node}
-   {node_view_gui view='block_item' image_class='articlethumbnailwide' content_node=$valid_node}
+   {node_view_gui view='block_item' image_class='articlethumbnailwide' content_node=$valid_node style='ultracompact'}
 {delimiter}
 
 <div class="separator"></div>

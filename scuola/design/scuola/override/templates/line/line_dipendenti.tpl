@@ -1,7 +1,7 @@
 {* Dipendenti - Line view *}
 
 <div class="content-view-line">
-    <div class="class-dipendenti square-icon rounded">
+    <div class="class-dipendenti">
 
         <h2 class="rounded"><a href={$node.url_alias|ezurl}>{$node.name|wash()}</a></h2>
         {if $node.data_map.logo.has_content}
