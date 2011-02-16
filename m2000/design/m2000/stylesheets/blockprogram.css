@@ -4,8 +4,7 @@ div.visible-window{
     background:white;
    }
 div.program-list{
-    padding:1em;
-    overflow: hidden;
+     overflow: hidden;
    
 }
 ul.events {
@@ -50,11 +49,11 @@ div.arrow{
 }
 
 div.upper-button{
-    background: url(../images/ajax/up_arrow.png) no-repeat center;
+    /*background: url(../images/ajax/up_arrow.png) no-repeat center;*/
 }
 
 div.lower-button{
-    background: url(../images/ajax/down_arrow.png) no-repeat center;
+    /*background: url(../images/ajax/down_arrow.png) no-repeat center;*/
 }
 
 div.commands{
@@ -80,10 +79,10 @@ li.noevent{
     font-weight: bold;
     font-size:1.1em;
 }
-span.date_block{
+a.date_block{
     display:block;
-    height:2em;
-    width:0.5em;
+    height:30px;
+    width:30px;
     float:left;
 }
 span.day_month{

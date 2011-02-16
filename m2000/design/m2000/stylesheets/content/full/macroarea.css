@@ -7,19 +7,29 @@
 Macroarea full view style
 */
 
-.break{
-    clear:both;
-}
-div.macro_block{
+div.content-view-full div.class-macroarea div.attribute-header h1
+{
     float:left;
-    width:126px;
-    padding:1em;
+    padding-bottom: 0;
+    margin-bottom: 0.5em;
+    line-height: 0.9em;
+    max-width:83%;
 }
+
+div.content-view-full div.class-macroarea div.image-block{
+    overflow: hidden;
+}
+div.content-view-full div.class-macroarea div.attribute-header{
+    overflow: hidden;
+}
+
+div.content-view-full div.class-macroarea div.image-block div.attribute-image{
+    float:left;
+}
+
+
 div.class-macroarea{
     width:90%;
     margin-left:auto;
     margin-right:auto;
-}
-div.macro_block h2 {
-    text-align:center;
 }

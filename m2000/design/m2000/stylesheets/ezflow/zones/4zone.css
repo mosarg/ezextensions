@@ -9,7 +9,7 @@
 div.zone-layout-4zone  div.content-columns
 {
     float:left;
-    width:60%;
+    width:65%;
 }
 div.zone-layout-4zone div.left-subzone div.col-0{
     float:left;
@@ -36,6 +36,4 @@ div.zone-layout-4zone  div.maincol-position
     float:left;
     width:33%;
     margin-left:2%;
-    padding:2%;
-   
 }

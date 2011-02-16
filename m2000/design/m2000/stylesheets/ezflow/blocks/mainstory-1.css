@@ -51,3 +51,11 @@ div.block-type-mainstory div.attribute-image img
 {
 
 }
+div.block-type-mainstory div.attribute-header  a{
+    color:#273236;
+}
+
+div.block-type-mainstory div.attribute-header  h1:first-letter{
+    font-size:1.1em;
+     color:#a60304;
+}

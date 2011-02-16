@@ -33,13 +33,22 @@ div#prof_menu{
 div#header div#school_menu{
     margin-left:auto;
     margin-right:auto;
-    width:910px;
     height:120px;
     overflow: hidden;
 }
 
+div#header div.schoolmenu-design{
+    width:910px;
+    margin-left: auto;
+    margin-right:auto;
+    position:relative;
+    top:50px;
+    overflow: hidden;
+    height:60px;
+}
+
 div#header div#school_menu ul{
-      margin-top:50px;
+      
 }
 
 div #header div#school_menu li {
@@ -82,7 +91,28 @@ div#header div#school_menu a.sch_button:hover{
 div#header div#school_menu li.current a.sch_button{
     
 }
-div#header div#school_menu li.current a.macro_button{
+
+
+div#header div#school_menu div#macro-slide{
+    float:right;
+    height: 120px;
+    position: relative;
+    top:-60px;
+    background: #3c576a;
+    width:170px;
+    
+}
+div#header div#school_menu div#macro-slide a{
+    color:white;
+    font-size:2em;
+    display:block;
+    margin-top:40px;
+    padding-left:20px;
+    
+}
+
+div#header div#school_menu div#macro-slide a:hover{
+    text-decoration: underline;
 }
 
 /*compact*/
@@ -139,25 +169,13 @@ div#header div#school_menu li.micro_tabs a{
 
 
 div#header div#school_menu a.sch_button_big{
-    background:url(../images/decorazioni/sch_button_back_big.png) no-repeat;
     height:150px;
     width:150px;
     float:left;
 }
 
 
-div#header div#school_menu a.macro_button{
 
-}
-div#header div#school_menu a.macro_button:hover{
-
-}
-div#header div#school_menu a.macro_button_big{
-    background:url(../images/decorazioni/sch_button_macro_big.png) no-repeat;
-    height:148px;
-    width:150px;
-    float:left;
-}
 
 
 

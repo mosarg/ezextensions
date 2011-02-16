@@ -6,14 +6,3 @@
       ufficio line icon view
 */
 
-div.ufficio_icon{
-   width:161px;
-   height:171px;
-   padding:1em;
-   background:url(../images/decorazioni/sfondo_icona.png) no-repeat;
-   margin-top:1.5em;
-   float:left;
-}
-div.ufficio_icon a{
-    color:white;
-}
