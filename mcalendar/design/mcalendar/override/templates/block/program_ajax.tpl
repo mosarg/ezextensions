@@ -9,7 +9,7 @@
 <div class="content-view-block">
     <div class="program-ajax-block" id="{$block.name}">
         <div class="attribute-header">
-            <h1>{$block.name}</h1>
+            <h2>{$block.name}</h2>
         </div>
         <div class="program-list">
            <!-- <div class="position"></div>-->
@@ -20,17 +20,11 @@
             </div>
             <div class="lower-commands commands"><div class="lower-button arrow"></div></div>
         </div>
-
-
-        <div id="legend-{$block.name}">
+   
             {foreach $block.valid_nodes as $calendar}
-            <div class="calendar_entry">
-                <div class="small_square" style="background:{$calendar.data_map.color.content}"></div>
-                <span><a href={$calendar.url_alias|ezurl()}>{$calendar.name}</a></span>
-            </div>
-            {set $calendar_list=$calendar_list|append(hash('node_id',$calendar.node_id,'color',$calendar.data_map.color.content))}
+                     {set $calendar_list=$calendar_list|append(hash('node_id',$calendar.node_id,'color',$calendar.data_map.color.content,'url_alias',$calendar.url_alias|ezurl(no)))}
             {/foreach}
-        </div>
+   
         <div id="config-{$block.name}" style="visibility:hidden">
             <p title="calendars_list">{$calendar_list|json_encode}</p>
         </div>

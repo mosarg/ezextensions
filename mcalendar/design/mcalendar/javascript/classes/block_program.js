@@ -3,6 +3,10 @@ function daysInMonth(iMonth, iYear)
     return 32 - new Date(iYear, iMonth, 32).getDate();
 }
 
+function compareDates(a,b){
+    return a.start-b.start
+}
+
 var blockprogram={
     _init:function(){
         this._setupTimeInterval();
@@ -68,7 +72,7 @@ var blockprogram={
 
         $events.css({
             "top":parseInt(top_position)-2*parseInt(step)+"px"
-            });
+        });
     //        $events.animate({
     //            "top":parseInt(top_position)-parseInt(step)+"px"
     //        },50);
@@ -83,7 +87,7 @@ var blockprogram={
             var step=self.options.event_height,top_position=$events.position().top;
             self.element.find('ul.events').css({
                 "top":parseInt(top_position)+parseInt(step)+"px"
-                } );
+            } );
         }
     //        self.element.find('ul.events').animate({
     //            "top":parseInt(top_position)+parseInt(step)+"px"
@@ -113,7 +117,7 @@ var blockprogram={
         //short_months[temp_date.getMonth()]
         for (var i in events){
             temp_date.setTime(events[i].start*1000);
-            $('<li><span class="date_block" style="background:'+options[events[i].parentNodeId]+'"></span> \n\
+            $('<li><a class="date_block" href="'+options[events[i].parentNodeId][1]+'" style="background:'+options[events[i].parentNodeId][0]+'"></a> \n\
                   <span class="title">'+events[i].title+'</span>\n\
                   <span class="day_month">'+temp_date.getDate()+'</span></li>').appendTo($container).data('event',events[i]);
         }
@@ -138,23 +142,32 @@ var blockprogram={
     }
     ,
     _fetchEvents: function(){
+        
         var self=this;
         var options=self.options;
         var start=options.start;
         var end=options.end;
         var calendars=options.calendars_list;
-
+ 
+        var calendar_index=0;
+        self.element.data('events',[]);
         for (var i in calendars){
             var action= 'mcalendar::fetchEvents::'+calendars[i].node_id+'::'+Math.round(start.getTime()/1000)+'::'+Math.round(end.getTime()/1000)+'::ajaxweek';
-            options[calendars[i].node_id]=calendars[i].color;
+            options[calendars[i].node_id]=[calendars[i].color,calendars[i].url_alias];
             $.ez(action,{
                 postdata:'ready'
             },function(data) {
-                self._renderEvents(data.content);
-                self._updateDimensions();
-                self._showCommands();
+                self.element.data('events',self.element.data('events').concat(data.content));
+                self.element.data('calendar_index',calendar_index++)
+                               
+                if(calendar_index==calendars.length){
+                    self._renderEvents(self.element.data('events').sort(compareDates));
+                    self._updateDimensions();
+                    self._showCommands();
+                }
             });
         }
+      
     }
 
 
