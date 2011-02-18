@@ -1,4 +1,4 @@
-<div class="schoolmenu-design">
+
     <!-- This menu is used to show school tabs -->
     <!-- School menu content: START -->
    
@@ -27,33 +27,29 @@
     {if $top_menu_items_count}
 
     {if is_set($current_node_in_path)}
-       <ul class="top_school_big">
+      
         {def $current_item=$top_menu_items[$selected_key]}
         {set $top_menu_items=$top_menu_items|remove($selected_key)}
         {set $item_class=array("firstli","current")}
-            {if eq( $current_item.class_identifier, 'macroarea')}
+           {if eq( $current_item.class_identifier, 'macroarea')}
             
-            <li  id="node_id_{$current_item.node_id}"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a class="macro_button_big squareshadow"
-                     href={$current_item.url_alias|ezurl}>
-                     {if $current_item.data_map.logo.has_content}
-                        <img src={$current_item.data_map.logo.content[blockmenubig].url|ezroot}   alt="logo"/>
-                     {/if}
-                 </a>
-                <div class="subtree_title"><p>{$current_item.name|wash}</p></div>
-            </li>
+            <div  id="highlight_section" class="current">
+                <a href={$current_item.url_alias|ezurl}>{$current_item.name|wash}</a>
+            </div>
              
             {else}
-             <li  id="node_id_{$current_item.node_id}"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a class="sch_button_big squareshadow"
+            <div  id="highlight_section" {if $item_class} class="{$item_class|implode(" ")}"{/if}><a class=""
                        href={$current_item.url_alias|ezurl}>
                       {if $current_item.data_map.logo.has_content}
                         <img src= {$current_item.data_map.logo.content[blockmenubig].url|ezroot}   alt="logo"/>
                      {/if}
                  </a>
             <div class="subtree_title"><p>{$current_item.name|wash}</p></div>
-            </li>
+            </div>
              
              {/if}
-             
+<div class="schoolmenu-design">            
+ <ul class="top_school_big">             
         {foreach $top_menu_items as $key => $item}
             {set $item_class=array("micro_tabs")}
             
@@ -64,18 +60,19 @@
               {set $macroarea=$item}
             {else}
             
-                <li  id="node_id_{$item.node_id}"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a class="button_small" href={$item.url_alias|ezurl}><span class="micro_name">{$item.name|wash()}</span></a></li>
+                <li  id="node_id_{$item.node_id}"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a class="" href={$item.url_alias|ezurl}><span class="">{$item.name|wash()}</span></a></li>
             {/if}
           {/foreach}
 </ul>
      {else}
+     <div class="schoolmenu-design"> 
      <ul>
      {foreach $top_menu_items as $key => $item}
           {set $item_class=''}
           {if eq( $item.class_identifier, 'macroarea')}
               {set $macroarea=$item}
            {else}
-             <li  id="node_id_{$item.node_id}"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a class="sch_button" href={$item.url_alias|ezurl}>{$item.name|wash()}</a></li>
+             <li  id="node_id_{$item.node_id}"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a class="" href={$item.url_alias|ezurl}>{$item.name|wash()}</a></li>
              {/if}
           {/foreach}
       </ul>

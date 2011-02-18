@@ -117,6 +117,23 @@ div#header div#school_menu div#macro-slide a:hover{
 
 /*compact*/
 
+
+div#header div#school_menu div#highlight_section{
+    
+    height: 120px;
+    position: relative;
+    top:-60px;
+    background: #3c576a;
+    width:170px;
+    margin-left:20%;
+    text-align: center;
+}
+div#header div#school_menu div#highlight_section a{
+    color:white;
+    
+}
+
+
 div#header div#school_menu li.micro_tabs span{
     color:#737373;
     font-size:1em;
