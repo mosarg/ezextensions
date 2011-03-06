@@ -2,8 +2,7 @@
 /* FOOTER */
 div#footer
 {
-    margin-top: 3px;
-    clear: both; /* Ensures that the footer is pushed properly below the columns */
+     clear: both; /* Ensures that the footer is pushed properly below the columns */
     text-align: center;
     padding-top: 1em;
     min-height: 100px;

@@ -7,20 +7,47 @@
 */
 
 
+
+
 div.class-frontpage_scuola h2.section_header{
     font-size:2em;
    
 }
 
-div.class-frontpage_scuola div.responsabile{
+div.class-frontpage_scuola>div.attribute-image {
     float:left;
-    width:48%;
 }
 
-div.class-frontpage_scuola div.meccanografico{
-    float:right;
-    width:48%;
+div.class-frontpage_scuola>div.informations {
+    float:left;
+    padding-left:2em;
+    padding-top:1em;
+    min-width:40%;
+    
 }
+
+div.class-frontpage_scuola div.responsabile{
+    float:left;
+    width:95%;
+    margin-bottom:1em;
+    
+    }
+ div.class-frontpage_scuola div.responsabile>a{
+        color:white;
+        font-style: italic;
+    }
+ 
+ div.class-frontpage_scuola div.responsabile>a:hover{
+        color:#273236;
+        
+    }
+  
+    
+    
+div.class-frontpage_scuola div.meccanografico{
+    float:left;
+    width: 95%;
+    }
 
 
 div.class-frontpage_scuola div.attribute-header>h1

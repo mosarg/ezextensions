@@ -5,12 +5,14 @@ a
     color: #cf3154;
     text-decoration: none;
     font-weight:bold;
+    
     }
 
 a:hover
 {
     color: #273236;
     text-decoration:none;
+    cursor:pointer;
 }
 
 a img

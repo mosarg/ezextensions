@@ -6,51 +6,71 @@
         Purpose of the stylesheet follows.
         ufficio full view
 */
-div.class-ufficio{
+div.content-view-full div.class-ufficio{
     overflow:hidden;
 }
 
-div.class-ufficio div.ufficio_extra-info div.attribute-page{
-    background: #dbdbdb;
-    padding:1em;
-    margin-bottom:1em;
-}
-
-div.class-ufficio div.uffici_correlati{
-    background:#e0ece5;
-    padding:1em;
-}
-div.class-ufficio div.contatti{
-    margin-top:1em;
-    background:#cadfd3;
-    padding:1em;
-}
-div.class-ufficio div.resp_ufficio{
-    background:#94bac8;
-    padding:1em;
-}
-div.class-ufficio div.resp_ufficio h2{
-    color:white;
-    margin:0;
-}
-div.class-ufficio div.resp_ufficio span{
-    font-weight:bold;
-}
-table.minimal_list tr.empty{
-    height:3em;
-}
-div.class-ufficio table.minimal_list h3{
-    clear:both;
-    display:inline;
-}
-div.class-ufficio div.content-view-full{
+div.content-view-full div.class-ufficio {
     float:left;
     text-align:justify;
     width:70%;
 }
-div.class-ufficio div.ufficio_extra-info{
+
+div.content-view-full div.class-ufficio div.attribute-header>div.attribute-image{
+    float:left;
+}
+
+div.content-view-full div.class-ufficio div.attribute-header h1
+{
+    float:left;
+    padding-bottom: 0;
+    margin-bottom: 0.5em;
+    line-height: 0.9em;
+    max-width:83%;
+}
+
+div.content-view-full div.class-ufficio div.attribute-image{
+    padding-right:1em;
+    padding-bottom:1em;
+}
+
+div.content-view-full div.ufficio_extra-info{
     float:right;
     width:29%;
     margin-left:1%;
 }
+
+div.content-view-full  div.ufficio_extra-info div.attribute-page{
+    margin-bottom:1em;
+}
+
+div.content-view-full div.class-ufficio div.uffici_correlati{
+    background:#e0ece5;
+    padding:1em;
+}
+div.content-view-full div.ufficio_extra-info div.contatti{
+    margin-top:1em;
+    background:#ffc03d;
+    padding:1em;
+}
+div.content-view-full div.ufficio_extra-info div.resp_ufficio{
+    background:#273236;
+    padding:1em;
+}
+div.content-view-full div.ufficio_extra-info div.resp_ufficio h2{
+    color:white;
+    margin:0;
+}
+div.content-view-full div.ufficio_extra-info div.resp_ufficio span{
+    font-weight:bold;
+}
+div.content-view-full div.ufficio_extra-info table.minimal_list tr.empty{
+    height:3em;
+}
+div.content-view-full div.ufficio_extra-info table.minimal_list h3{
+    clear:both;
+    display:inline;
+}
+
+
 

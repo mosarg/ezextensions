@@ -38,7 +38,7 @@ div#header div#school_menu{
 }
 
 div#header div.schoolmenu-design{
-    width:910px;
+    max-width:910px;
     margin-left: auto;
     margin-right:auto;
     position:relative;
@@ -53,10 +53,12 @@ div#header div#school_menu ul{
 
 div #header div#school_menu li {
     float:left;
-    padding-right:0.25em;
+    padding-right:1.4em;
     padding-left:0.25em;
     margin-left:0;
     margin:0;
+    background: url(../images/decorazioni/separator_menu.png) no-repeat center right;
+    
 }
 
 
@@ -68,6 +70,12 @@ div#header div#school_menu li a {
     text-align:center;
     font-family: sans-serif;
     font-size:1.8em;    
+    color:#273236;
+}
+
+div#header div#school_menu li a:hover{
+    color:#a70206;
+    text-decoration: underline;
 }
 
 
@@ -76,21 +84,6 @@ div #header div#school_menu li.current{
 }
 
 
-div#header div#school_menu li a:link, div#school_menu li a:visited {
-    color: black;
-    display: block;
-}
-
-div#header div#school_menu a.sch_button{
-    color:#283339;
-}
-div#header div#school_menu a.sch_button:hover{
-    color:#a30506;
-    text-decoration:underline;
-}
-div#header div#school_menu li.current a.sch_button{
-    
-}
 
 
 div#header div#school_menu div#macro-slide{
@@ -98,16 +91,18 @@ div#header div#school_menu div#macro-slide{
     height: 120px;
     position: relative;
     top:-60px;
-    background: #3c576a;
+    background: url(../images/decorazioni/macro_indent.png) no-repeat center left #3c576a;
     width:170px;
     
 }
+
+
 div#header div#school_menu div#macro-slide a{
     color:white;
     font-size:2em;
     display:block;
     margin-top:40px;
-    padding-left:20px;
+    padding-left:30px;
     
 }
 
@@ -134,14 +129,32 @@ div#header div#school_menu div#highlight_section a{
 }
 
 
-div#header div#school_menu li.micro_tabs span{
-    color:#737373;
-    font-size:1em;
-    font-weight:bold;
-    margin-left:auto;
-    margin-right:auto;
-    text-align:left;
+div#header div#school_menu div#current-school {
+    float:left;
+    padding-right:2em;
+    margin-right:2em;
 }
+
+div#header div#school_menu div#current-school a{
+   float:left;
+   
+}
+
+div#header div#school_menu div#current-school span{
+    float:right;
+    font-weight: bold;
+    font-size:3em;
+    position:relative;
+    padding-left:1em;
+    top:1em;
+    color:#273236;
+   
+}
+
+div#header div#school_menu div#current-school span:first-letter{
+    color:#a60304;
+}
+
 div#header div#school_menu div.subtree_title{
     float:left;
     width:5em;
@@ -153,7 +166,7 @@ div#header div#school_menu div.subtree_title{
 
 div#header div#school_menu ul.top_school_big{
     float:left;
-    padding-bottom:4em;
+
 }
 
 div#header div#school_menu ul.top_school_big div.subtree_title{
@@ -164,24 +177,14 @@ div#header div#school_menu ul.top_school_big div.subtree_title{
 }
 
 div#header div#school_menu li.micro_tabs{
-    float:right;
-    margin:0;
-    padding:0.1em;
-    clear:right;
-    border-bottom:2px solid;
-    margin-bottom:0.4em;
-    position:relative;
-    left:7em;
-}
-
-div#header div#school_menu li.micro_tabs:hover span{
-    color:#b3b3b3;
+    background: none;
+    font-size:0.9em;
+    padding-right:0.5em;
 }
 
 
 div#header div#school_menu li.micro_tabs a{
-    width:105px;
-    height:auto;
+    color:#c6c6c6;
 }
 
 

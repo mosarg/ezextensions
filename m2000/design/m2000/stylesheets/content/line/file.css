@@ -17,16 +17,17 @@ div.content-view-line div.class-file a{
     font-weight:bold;
     color:gray;
     text-decoration:none;
+    margin-right: 1em;
 }
 div.content-view-line div.class-file a:hover{
     color:black;
 }
 div.content-view-line div.class-file p{
-    float:left;
+
 }
 div.content-view-line div.class-file img{
     position:relative;
-    top:0.6em;
+    top:0.3em;
 }
 div.content-view-line div.class-file div.attribute-description{
     float:left;
@@ -47,14 +48,11 @@ div.content-view-line div.class-file h2 a:hover{
 div.content-view-line div.class-file div.attribute-file
 {
     height:auto;
-    border-bottom:2px solid #cdcdcd;
+    border-bottom:1px solid #cdcdcd;
     overflow:visible;
     float:left;
     width:100%;
 }
 div.content-view-line div.class-file p.time{
-    float:left;
-    font-style:italic;
-    margin-left:0.6em;
-    margin-top:0.75em;
+  float:right;
 }
