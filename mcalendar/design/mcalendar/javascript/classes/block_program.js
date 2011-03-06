@@ -73,10 +73,7 @@ var blockprogram={
         $events.css({
             "top":parseInt(top_position)-2*parseInt(step)+"px"
         });
-    //        $events.animate({
-    //            "top":parseInt(top_position)-parseInt(step)+"px"
-    //        },50);
-        
+           
     },
     _slideDown:function(){
         var self=this;
