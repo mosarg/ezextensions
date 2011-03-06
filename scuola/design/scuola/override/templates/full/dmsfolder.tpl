@@ -1,11 +1,10 @@
 {* Folder - Full view *}
 
-
+{run-once}
+ {ezscript_require( array('classes/navigator.js','init_navigator.js'))}
+{/run-once}
 {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
 
-<div class="border-box">
-
-    
 
     <div class="content-view-full">
     <div class="class-dmsfolder">
@@ -54,13 +53,7 @@
 
 
            {if or(gt($children_count,0),gt($files_count,0))}
-            <div class="sortbuttons" >
-                    <h4>Ordine:</h4>
-                    <a id="sortbuttonup" class="rounded">Alfabetico ascendente</a>
-                    <a id="sortbuttondown" class="rounded">Alfabetico discendente</a>
-                    <a id="timesortup" class="rounded">Temporale crescente</a>
-                    <a id="timesortdown" class="rounded">Temporale decrescente</a>
-            </div>
+           
            <div class="content-view-children">
                 {foreach $files as $file }
                   {node_view_gui view=line content_node=$file}
@@ -77,13 +70,14 @@
                      uri='design:navigator/google.tpl'
                      page_uri=$node.url_alias
                      item_count=$files_count
+                     node_id=$node.node_id
                      view_parameters=$view_parameters
                      item_limit=$page_limit}
             {/if}
         {/if}
     </div>
-</div>
-    {include uri='design:parts/object_informations.tpl' style='full'}
-</div>
-<script type="text/javascript" src={'javascript/tinysort.js'|ezdesign} ></script>
-<script type="text/javascript" src={'javascript/listsort.js'|ezdesign} ></script>
+{include uri='design:parts/object_informations.tpl' style='full'}
+    </div>
+
+
+

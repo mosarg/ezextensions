@@ -1,5 +1,15 @@
 <?php /* #?ini charset="utf-8"?
 
+
+[albo]
+Source=node/view/full.tpl
+MatchFile=full/albo.tpl
+Subdir=templates
+Match[class_identifier]=folder
+Match[url_alias]=Albo
+
+
+
 [media_folder]
 Source=node/view/full.tpl
 MatchFile=full/media/folder.tpl
@@ -1013,6 +1023,13 @@ Source=content/view/embed.tpl
 MatchFile=embed/file.tpl
 Subdir=templates
 Match[class_identifier]=file
+
+[embed_dmsfolder]
+Source=node/view/embed.tpl
+MatchFile=embed/dmsfolder.tpl
+Subdir=templates
+Match[class_identifier]=dmsfolder
+
 
 [embed_flash]
 Source=content/view/embed.tpl

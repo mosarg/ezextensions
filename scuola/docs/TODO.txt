@@ -1,3 +1,4 @@
 febbraio 2011
 rinominare show_extrainfo in mostra menu all'interno della classe folder
 aggiungiere l'attributo nome completp->title  in frontpage_scuola
+cambiare l'ordine dei primi due attributi nella classe folder

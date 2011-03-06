@@ -11,7 +11,7 @@
     <div class="attribute-header">
         <h1><a href="{$node.url_alias|ezurl(no)}">{$node.name|wash()}</a></h1>
     </div>
-    <hr />
+  
     <div class="attribute-image">{attribute_view_gui attribute=$node.data_map.image image_class='mainstory2'}</div>
     
     <div class="attribute-short">

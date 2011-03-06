@@ -3,41 +3,27 @@
 {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true() extra_menu=false()}
 
 
-<div class="class-ufficio">
+
 
     <div class="content-view-full ">
-       <div class="attribute-header">
-            <h1>{attribute_view_gui attribute=$node.data_map.name}</h1>
-            {if $node.object.data_map.logo.has_content}
-                 {attribute_view_gui attribute=$node.data_map.logo}
-             {/if}
-       </div>
-
-
-        {if $node.object.data_map.description.has_content}
-            <div class="attribute-long">
-                {attribute_view_gui attribute=$node.data_map.description}
-            </div>
-        {/if}
-
         
-    </div>
-    <div class="ufficio_extra-info">
-        {if $node.object.data_map.evidenza.has_content}
-                <div class="attribute-page rounded">
-                    <h1>{"In evidenza:"|i18n("design/scuola/full/ufficio")}</h1>
-                    {attribute_view_gui attribute=$node.object.data_map.evidenza}
+        <div class="class-ufficio">
+        
+         <div class="attribute-header">
+            {if $node.data_map.logo.has_content}
+                <div class="attribute-image">
+                 
+                   {attribute_view_gui attribute=$node.data_map.logo image_css_class='shadow' link_class=ezimage_zoom href=$node.data_map.logo.content[original].url|ezroot image_class=gallerythumbnailsquare}
+                 
                 </div>
-	{/if}
+            {/if}
+            <h1>{$node.data_map.name.content|wash()}</h1>
+        </div>
+  
 
-        <div class="resp_ufficio rounded">
-             <h2>{"Responsabile ufficio:"|i18n("design/scuola/full/ufficio")}</h2>
-             <span>{attribute_view_gui attribute=$node.data_map.resp_uff}</span>
-        </div>
-         <div class="contatti rounded">
-                <h2>{"Contatti:"|i18n("design/scuola/full/ufficio")}</h2>
-                {attribute_view_gui attribute=$node.data_map.contatti}
-        </div>
+        <div class="title-separator"></div>
+        <div class="separator"></div>
+        
         {def $related_uffici=fetch( 'content', 'related_objects',
                      hash( 'object_id',$node.object.id,'all_relations',true()) )}
 
@@ -51,6 +37,34 @@
          {/foreach}
          </div>
          {/if}
+        
+        
+
+        {if $node.object.data_map.description.has_content}
+            <div class="attribute-long">
+                {attribute_view_gui attribute=$node.data_map.description}
+            </div>
+        {/if}
+
+        
+    </div>
+    <div class="ufficio_extra-info">
+        {if $node.object.data_map.evidenza.has_content}
+                <div class="attribute-page ">
+                    <h1>{"In evidenza:"|i18n("design/scuola/full/ufficio")}</h1>
+                    {attribute_view_gui attribute=$node.object.data_map.evidenza}
+                </div>
+	{/if}
+
+        <div class="resp_ufficio rounded">
+             <h2>{"Responsabile ufficio:"|i18n("design/scuola/full/ufficio")}</h2>
+             <span>{attribute_view_gui attribute=$node.data_map.resp_uff}</span>
+        </div>
+         <div class="contatti rounded">
+                <h2>{"Contatti:"|i18n("design/scuola/full/ufficio")}</h2>
+                {attribute_view_gui attribute=$node.data_map.contatti}
+        </div>
+        
     </div>
 
 

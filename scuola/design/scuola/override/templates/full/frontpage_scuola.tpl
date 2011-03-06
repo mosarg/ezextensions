@@ -14,7 +14,14 @@
         <div class="attribute-header">
             <h1>{$node.data_map.title.content|wash()}</h1>
         </div>
-        {/if}
+     {/if}
+        
+        
+        
+       <div class="attribute-image">
+        {attribute_view_gui attribute=$node.data_map.foto_scuola image_css_class=shadow link_class=ezimage_zoom href=$node.data_map.foto_scuola.content[original].url|ezroot image_class=large}
+       </div>
+
         <div class="informations">
         {if is_set($node.data_map.coordinatore)}
         <div class="responsabile">
@@ -29,13 +36,12 @@
             </div>
         {/if}
         </div>
-        
-         <div class="attribute-image">
-        <div class="shadow" >{attribute_view_gui attribute=$node.data_map.foto_scuola link_class=ezimage_zoom href=$node.data_map.foto_scuola.content[original].url|ezroot image_class=large}</div>
-         </div>
+     
+        <div class="separator"></div>
+
         <div class="attribute-short">
           <div>{attribute_view_gui attribute=$node.data_map.descrizione}</div>
-     </div>
+       </div>
         
    
 

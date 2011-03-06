@@ -30,7 +30,7 @@
       
         {def $current_item=$top_menu_items[$selected_key]}
         {set $top_menu_items=$top_menu_items|remove($selected_key)}
-        {set $item_class=array("firstli","current")}
+        {set $item_class=array("current","shadow")}
            {if eq( $current_item.class_identifier, 'macroarea')}
             
             <div  id="highlight_section" class="current">
@@ -38,13 +38,13 @@
             </div>
              
             {else}
-            <div  id="highlight_section" {if $item_class} class="{$item_class|implode(" ")}"{/if}><a class=""
-                       href={$current_item.url_alias|ezurl}>
+            <div  id="current-school" {if $item_class} class="{$item_class|implode(" ")}"{/if}>
+                 <a  href={$current_item.url_alias|ezurl}>
                       {if $current_item.data_map.logo.has_content}
                         <img src= {$current_item.data_map.logo.content[blockmenubig].url|ezroot}   alt="logo"/>
                      {/if}
                  </a>
-            <div class="subtree_title"><p>{$current_item.name|wash}</p></div>
+                  <span>{$current_item.name|wash}</span>
             </div>
              
              {/if}
@@ -60,7 +60,7 @@
               {set $macroarea=$item}
             {else}
             
-                <li  id="node_id_{$item.node_id}"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a class="" href={$item.url_alias|ezurl}><span class="">{$item.name|wash()}</span></a></li>
+                <li  id="node_id_{$item.node_id}"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a class="" href={$item.url_alias|ezurl}>{$item.name|wash()}</a></li>
             {/if}
           {/foreach}
 </ul>

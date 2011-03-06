@@ -1,6 +1,10 @@
 {* top menu drop drown *}
-{if $module_result.uri|downcase|
-preg_match('/pendinglist|draft|notification\/settings|user2\/edit|collaboration/')}
+
+
+{* if $module_result.uri|downcase|
+preg_match('/pendinglist|draft|notification\/settings|user2\/edit|collaboration/') *}
+
+{if and($current_node_id|eq(0),$current_user.login|eq('anonymous')|not)}
 <div class="menu">
     <ul>
         <li><a href="/">Home</a></li>
@@ -13,7 +17,7 @@ preg_match('/pendinglist|draft|notification\/settings|user2\/edit|collaboration/
     </ul>
 </div>
 {else}
-{def $goleft=ezini( 'TopDrop', 'goleft', 'design.ini')
+{def $goleft=15
      $child_check=''
      $child_check_first=''
      $child_check_second=''
