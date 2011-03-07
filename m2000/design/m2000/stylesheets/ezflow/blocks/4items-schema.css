@@ -1,0 +1,30 @@
+div.block-view-4_items3{
+    
+}
+
+div.block-view-4_items3 div.two-columns{
+    height:100px;
+    margin-top:1em;
+    
+}
+
+div.block-view-4_items3  div.two-columns  div.column-1,div.block-view-4_items3 div.two-columns div.column-2{
+    height:100%;
+    width:44%;
+    border:5px solid white;
+    float:left;
+    margin:1%;
+}
+div.block-view-4_items3 div.two-columns div.column-content{
+    }
+div.block-view-4_items3 div.two-columns a{
+    color:white;
+    display: table-cell;
+    height:100px;
+    text-align: center;
+    vertical-align: middle;
+    width:300px;
+}
+div.block-view-4_items3 div.two-columns a:hover{
+    
+}

@@ -1,0 +1,17 @@
+div.block-view-4_items2{
+    
+}
+div.block-view-4_items2 div.columns-two{
+    border-bottom:2px solid white;
+    box-shadow:0 -2px 0 #E8E8E8 inset;
+    -moz-box-shadow:0 -2px 0 #E8E8E8 inset;
+    -webkit-box-shadow:0 -2px 0 #E8E8E8 inset;
+    overflow: hidden;
+}
+
+div.block-view-4_items2 div.columns-two h2{
+    font-size:1.3em;
+}
+div.block-view-4_items2 div.columns-two div.image-wrapper img{
+    border:5px solid #e3e3e3;
+}

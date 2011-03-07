@@ -1,0 +1,48 @@
+div.block-view-3_risalto{
+    
+}
+
+div.block-view-3_risalto div.class-generic {
+    margin-bottom:1em;
+    border-bottom:2px solid white;
+    box-shadow:0 -2px 0 #E8E8E8 inset;
+    -moz-box-shadow:0 -2px 0 #E8E8E8 inset;
+    -webkit-box-shadow:0 -2px 0 #E8E8E8 inset;
+}
+
+
+div.block-view-3_risalto div.class-generic div.object_informations{
+        float:left;
+        height:40px;
+        width:40px;
+        display: table;
+}
+div.block-view-3_risalto div.class-generic div.object_informations span{
+    font-size:2em;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+   
+}
+
+div.block-view-3_risalto div.class-generic h2{
+    float:left;
+    width: 70%;
+    padding-left:2%;
+    display: table;
+    height:40px;
+    margin:0;
+}
+
+div.block-view-3_risalto div.class-generic h2 a{
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 500;
+}
+div.block-view-3_risalto  div.read-on{
+    float:right;
+    font-weight: bold;
+    height:40px;
+    font-size: 2em;
+}
