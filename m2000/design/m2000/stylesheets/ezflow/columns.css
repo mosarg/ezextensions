@@ -93,31 +93,19 @@ div.columns-two, div.columns-three, div.columns-four
     position: relative;
 }
 
-div.columns-two:after, div.columns-three:after, div.columns-four:after
-{
-    content: "-";
-    height: 0;
-    font-size: 0;
-    visibility: hidden;
-    display: block;
-    clear: both;
-}
+
 
 div.columns-two div.col-1, div.columns-two div.col-2, div.columns-three div.col-1, div.columns-three div.col-2, div.columns-four div.col-1, div.columns-four div.col-2, div.columns-four div.col-3, div.columns-four div.col-4
 {
     width: 100%;
 }
 
-div.columns-three div.col-1-2, div.columns-three div.col-3, div.columns-four div.col-1-2, div.columns-four div.col-3-4
-{
-    width: 50%;
-}
 
 
 
 div.columns-two, div.columns-three div.col-1-2, div.columns-four, div.columns-four div.col-1-2, div.columns-four div.col-3-4
 {
-    padding-right: 50%;
+
 }
 
 div.columns-three

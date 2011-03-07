@@ -6,26 +6,3 @@
         3items-2 style
 */
 
-div.block-view-3_items2 div.class-article
-{
-    background-position: left top;
-    background-repeat: repeat-x;
-    padding: 8px 12px 8px 12px;
-    position: relative;
-}
-
-div.block-view-3_items2 div.class-article div.attribute-header h2
-{
-   
-    font-size: 0.9em;
-    background-image: none;
-    text-transform: none;
-    padding: 0;
-    margin-bottom: 0;
-}
-
-
-div.block-view-3_items2 div.attribute-image
-{
-    margin-top: 0.25em;
-}

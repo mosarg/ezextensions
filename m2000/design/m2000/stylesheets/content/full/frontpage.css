@@ -10,17 +10,9 @@
 
 div.content-view-full div.class-frontpage
 {
-    background-color: #FFFFFF;
-    padding: 0 0.5em 0 0.25em;
+  
 }
-div.content-view-full div.class-frontpage div.attribute-billboard
-{
-    text-align: left;
-    margin-top: 0em;
-    padding-top: 0.25em;
-    background-color: #FFFFFF;
-    padding-bottom: 22px;
-}
+
 div.content-view-full div.class-frontpage div.columns-frontpage
 {
     padding: 0 246px 0 246px;

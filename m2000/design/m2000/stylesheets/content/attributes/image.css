@@ -34,3 +34,12 @@ div.content-view-embed div.attribute-image
     margin-right: 0.5em;
     margin-left: 0;
 }
+
+div.image-wrapper div.zoom{
+    display:none;
+}
+div.image-wrapper:hover div.zoom{
+    display:block;
+    position: absolute;
+    margin-top:-6em;
+}

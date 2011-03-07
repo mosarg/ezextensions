@@ -1,9 +1,33 @@
 .article_code{
-    background: #d1283b;
+    /*border-top:2px solid #d1283b;*/
+    border-bottom:2px solid #ef9e9e ;
+    -moz-box-shadow:0 -2px 0 #d1283b inset;
+    -webkit-box-shadow:0 -2px 0 #d1283b inset;
 }
 .folder_code{
-    background: #ff910f;
+    /*border-top:2px solid #ff910f;*/
+    border-bottom:2px solid #ffc888;
+    -moz-box-shadow:0 -2px 0 #ff910f inset;
+    -webkit-box-shadow:0 -2px 0 #ff910f inset;
 }
 .generic_code{
-    background: #5975d0;
+    /*border-top:2px solid #a2b0de;*/
+    border-bottom: 2px solid #a2b0de;
+     -moz-box-shadow:0 -2px 0 #5975d0 inset;
+    -webkit-box-shadow:0 -2px 0 #5975d0 inset;
+}
+
+
+.grey_back1{
+    background: #85868b;
+}
+
+.grey_back2{
+    background: #273236;
+}
+.orange_back1{
+   background: #ff6c1e;
+}
+.red_back1{
+    background: #a60304;
 }

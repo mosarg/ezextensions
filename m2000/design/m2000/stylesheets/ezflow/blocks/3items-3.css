@@ -6,21 +6,3 @@
         3items-3 style
 */
 
-div.block-view-3_items3 div.class-article
-{
-    padding: 0;
-    background-image: none;
-    padding: 4px;
-}
-div.block-view-3_items3 div.class-article div.attribute-header h2
-{
-    background-image: none;
-    text-transform: none;
-    padding: 0;
-    margin-bottom: 0.75em;
-}
-div.block-view-3_items3 div.attribute-image
-{
-    margin-top: 0;
-    float: none;
-}

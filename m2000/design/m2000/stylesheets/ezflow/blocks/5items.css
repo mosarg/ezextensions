@@ -6,10 +6,13 @@
         5items-1 block style
 */
 
-div.block-type-5items div
+div.block-type-5items 
 {
   width:100%;
+  
+  background:url(../images/backgrounds/bar_light.png) repeat-x;
 }
+
 div.block-type-5items p{
     text-transform: lowercase;
 }

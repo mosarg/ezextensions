@@ -16,56 +16,59 @@
 
 div#columns-wrapper
 {
- /*padding: 0 300px 0 14em;*/
+    /*padding: 0 300px 0 14em;*/
 
-  
-  background: url(../images/decorazioni/test_back1.png)
+
+    background: url(../images/backgrounds/grey.gif);
+    background-repeat: repeat-x;
 }
 
 
 div#columns
 {
-padding: 0 300px 0 14em;
+    padding: 0 300px 0 14em;
 
 }
 
 
 
 div#columns-position{
- border-color:#83868b;
- border-left:2px solid;
- border-right: 2px solid;
- padding-left:1.5em;
-  padding-right:1.5em;
-  margin-left:auto;
-  margin-right:auto;
-  max-width: 1000px;
- background: white;
+    /*border-color:#83868b;
+    border-left:2px solid;
+    border-right: 2px solid;*/
+    padding-left:1.5em;
+    padding-right:1.5em;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 1000px;
+    background: #fbfbfb;
 }
 div.nosidemenu div#columns
 {
- padding-left: 0;
+    padding-left: 0;
 }
 div.noextrainfo div#columns
 {
- padding-right: 0;
+    padding-right: 0;
 }
-div.content-view-rightbar{float:left;
-width:85%;}
+div.content-view-rightbar{
+    float:left;
+    width:85%;}
 
-div.rightbar{float:left;
+div.rightbar{
+    float:left;
     width:13%;
-margin-left:1%;
-padding-left:1%;}
+    margin-left:1%;
+    padding-left:1%;}
 
 
 /*registration info*/
 
 div.right-column{
-width:20%;
-float:left;
-margin:2%;
-padding:2%;
+    width:20%;
+    float:left;
+    margin:2%;
+    padding:2%;
 }
 div.left-column{
     width:60%;
