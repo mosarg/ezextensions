@@ -18,31 +18,66 @@ Input:
  zoom
 
 *}
-{default image_class=large
-         css_class=false()
-         zoom=false()
-         image_css_class=false()
-         alignment=false()
-         link_to_image=false()
-         href=false()
-         target=false()
-         hspace=false()
-         border_size=0
-         border_color=''
-         border_style=''
-         margin_size=''
-         alt_text=''
-         title=''}
 
-{let image_content = $attribute.content}
+{if is_set($image_class)|not}
+      {def $image_class=large}
+{/if}        
+{if is_set($css_class)|not}
+    {def $css_class=false()}
+{/if}
+{if is_set($zoom)|not}
+    {def $zoom=false()}
+{/if}
+{if is_set($image_css_class)|not}
+    {def $image_css_class=false()}
+{/if}
+{if is_set($alignment)|not}
+    {def $alignment=false()}
+{/if}
+{if is_set($link_to_image)|not}
+    {def $link_to_image=false()}
+{/if}
+{if is_set($href)|not}
+    {def $href=false()}
+{/if}
+{if is_set($link_to_image)|not}
+    {def $link_to_image=false()}
+{/if}
+{if is_set($target)|not}
+    {def $target=false()}
+{/if}
+{if is_set($hspace)|not}
+    {def $hspace=false()}
+{/if}
+{if is_set($target)|not}
+    {def $target=false()}
+{/if}
+{if is_set($border_size)|not}
+    {def $border_size=0}
+{/if}
+{if is_set($border_style)|not}
+    {def $border_style=''}
+{/if}
+{if is_set($margin_size)|not}
+    {def $margin_size=''}
+{/if}
+{if is_set($alt_text)|not}
+    {def $alt_text=''}
+{/if}
+
+{if is_set($title)|not}
+    {def $title=''}
+{/if}
+
+{def    $image_content = $attribute.content}
 
 {if $image_content.is_valid}
 
-    {let image        = $image_content[$image_class]
-         inline_style = ''}
+    {def $image        = $image_content[$image_class]
+         $inline_style = ''}
 
     {if $link_to_image}
-        {set href = $image_content['original'].url|ezroot}
+        {set $href = $image_content['original'].url|ezroot}
     {/if}
     {switch match=$alignment}
     {case match='left'}
@@ -69,17 +104,18 @@ Input:
         {if $title|not}
             {set $title = $alt_text}
         {/if}
-        {if $border_size|trim|ne('')}
-            {set $inline_style = concat( $inline_style, 'border: ', $border_size, 'px ', $border_style, ' ', $border_color, ';' )}
-        {/if}
+        
         {if $margin_size|trim|ne('')}
             {set $inline_style = concat( $inline_style, 'margin: ', $margin_size, 'px;' )}
         {/if}
+        
         <div class="image-wrapper">
         {if $href}<a href={$href}{if and( is_set( $link_class ), $link_class )} class="{$link_class}"{/if}{if and( is_set( $link_id ), $link_id )} id="{$link_id}"{/if}{if $target} target="{$target}"{/if}>{/if}
         <img class="{$image_css_class|wash}" src={$image.url|ezroot} width="{$image.width}" height="{$image.height}" {if $hspace}hspace="{$hspace}"{/if} style="{$inline_style}" alt="{$alt_text|wash(xhtml)}" title="{$title|wash(xhtml)}" />
              
         {if $href}</a>{/if}
+        
+       
         {if $zoom}
         <div class="zoom"><img src={'props/zoom.png'|ezimage()}/></div>
         {/if}
@@ -100,11 +136,6 @@ Input:
     {/case}
     {case/}
     {/switch}
-
-    {/let}
-
 {/if}
 
-{/let}
-
-{/default}
+{undef}

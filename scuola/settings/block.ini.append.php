@@ -39,8 +39,8 @@ NumberOfArchivedItems=5
 ManualAddingOfItems=enabled
 ViewList[]=2_items1
 ViewList[]=2_items2
-ViewName[2_items1]=2 Elementi (1)
-ViewName[2_items2]=2 Elementi (2)
+ViewName[2_items1]=2 Elementi Titolo
+ViewName[2_items2]=2 Elementi Senza Titolo
 
 
 [Manual3Items]
@@ -51,9 +51,9 @@ ManualAddingOfItems=enabled
 ViewList[]=3_items1
 ViewList[]=3_items2
 ViewList[]=3_risalto
-ViewName[3_items1]=3 Elementi (1)
-ViewName[3_items2]=3 Elementi (2)
-ViewName[3_risalto]=3 Risalto
+ViewName[3_items1]=  3 Elementi Titolo
+ViewName[3_items2]=  3 Elementi Senza Titolo
+ViewName[3_risalto]= 3 Elementi Non Omogenei
 
 [Manual4Items]
 Name=4 Elementi Manuale
@@ -63,9 +63,9 @@ ManualAddingOfItems=enabled
 ViewList[]=4_items1
 ViewList[]=4_items2
 ViewList[]=4_items3
-ViewName[4_items1]=4 Elementi (1)
-ViewName[4_items2]=4 Elementi (2)
-ViewName[4_items3]=4 Elementi Risalto
+ViewName[4_items1]=4 Elementi 
+ViewName[4_items2]=4 Elementi Grandi
+ViewName[4_items3]=4 Elementi Schema
 
 
 [Manual5Items]
@@ -128,9 +128,6 @@ ViewList[]=program_ajax
 ViewName[]
 ViewName[calendar_ajax]=Calendario Ajax
 ViewName[program_ajax]=Programma
-
-
-
 
 [3Notizie]
 Name=3 Notizie automatiche

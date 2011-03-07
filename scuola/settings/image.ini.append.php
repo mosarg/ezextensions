@@ -37,8 +37,8 @@ AliasList[]=gallerythumbnailsquare
 [articlethumbnailsmall]
 Reference=
 Filters[]
-Filters[]=geometry/scalewidth=100
-Filters[]=geometry/crop=100;80;0;0 
+Filters[]=geometry/scalewidth=120
+Filters[]=geometry/crop=100;70;0;0 
 
 [articlethumbnailwide]
 Reference=
@@ -100,8 +100,8 @@ Filters[]=geometry/scaledownonly=170;350
 [articlethumbnail]
 Reference=
 Filters[]
-Filters[]=geometry/scalewidth=200
-Filters[]=geometry/crop=200;190;0;0
+Filters[]=geometry/scalewidth=250
+Filters[]=geometry/crop=200;160;0;0
 
 [gallerythumbnail]
 Reference=

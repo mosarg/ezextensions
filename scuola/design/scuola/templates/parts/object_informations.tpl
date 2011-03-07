@@ -38,12 +38,12 @@
 {/case}
 {case match='ultracompact'}
  <div class="object_informations {$color_code}">
-  <div class="attribute-byline">
-       <p>
              {$node.class_name} {$node.object.published|l10n(shortdate)}
-             
-       </p>
-</div>
+  </div>
+{/case}
+{case match='block'}
+<div  class="object_informations {$color_code}">
+    <span title="{$node.class_name}">{$node.class_name|extract_left(1)}</span>
 </div>
 {/case}
 {case}

@@ -2,6 +2,11 @@
 
 <div class="block-type-5items block-view-{$block.view}">
 
+{if is_set($block.name)}
+ <div class="attribute-header-block"><h2>{$block.name}</h2></div>
+{/if}    
+    
+    
 <div class="two-columns">
 <div class="col-1">
 <div class="col-content float-break">
