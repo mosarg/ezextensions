@@ -5,7 +5,7 @@ $(document).ready(function() {
     var actionUrl =$('p[title="action"]').text();
     var editIcon=$('p[title="editIcon"]').text();
     var eventColors=new Object();
-    var $calendarLegend=$('<div id="calendar_legend" class="shadowmore"></div>').appendTo('#sidemenu');
+    var $calendarLegend=$('<div id="calendar_legend" ></div>').appendTo('#sidemenu');
     var $calendar = $('#calendar');
     var canEdit=$('p[title="can_edit"]').text();
     var calendarsToFetch=createCalendarsFetchList(calendars_list_data);

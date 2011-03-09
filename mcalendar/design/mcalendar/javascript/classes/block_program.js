@@ -13,6 +13,7 @@ var blockprogram={
         this._setupEventDelegation();
         this._fetchEvents();
         this._renderCalInterface();
+       
     },
     _updateDimensions:function(){
         var self=this;
@@ -34,68 +35,87 @@ var blockprogram={
     },
     _renderCalInterface:function(){
         var self=this;
-      
-        self.element.find('.upper-button').click(
+        var temp_date=new Date();
+        var months=self.options.months;
+        self.element.find('div.month-name').text(months[temp_date.getMonth()]).data('month-date',temp_date.getTime());
+        self.element.find('.next-button').click(
             function(event){
                 self._slideUp($(event.target));
             }
             );
-        self.element.find('.lower-button').click(
-            function(){
-                self._slideDown();
+        self.element.find('.previous-button').click(
+            function(event){
+                self._slideDown($(event.target));
             }
             );
     },
     _slideUp:function($button){
        
         var self=this;
+        var months=self.options.months;
         var $events=self.element.find('ul.events');
         var ev_container_height=self.options.ev_container_height,length,event;
         var old_date=new Date(),temp_date=new Date();
         var step=self.options.event_height,top_position=$events.position().top;
-
-    
-        //self.element.find('div.position').text(parseInt($events.position().top)+parseInt(ev_container_height));
         
-
+       
+       
+        
         if (parseInt($events.position().top)+parseInt(ev_container_height)<self.options.window_height+self.options.event_height) {
             $button.hide();
             $button.siblings('div.loading').show();
             event=self.element.find('ul.events li').last().data('event');
             old_date.setTime(event.end*1000);
             temp_date.setFullYear(old_date.getFullYear(),old_date.getMonth()+1,1);
+            $button.siblings('div.month-name').text(months[temp_date.getMonth()]).data('month-date',temp_date.getTime());
             self._setupTimeInterval(temp_date);
             self._addMonthInfo();
             self._fetchEvents();
 
         }
-
         $events.css({
-            "top":parseInt(top_position)-2*parseInt(step)+"px"
-        });
+                "top":parseInt(top_position)-2*parseInt(step)+"px"
+            } );
+    
            
     },
-    _slideDown:function(){
+    _slideDown:function($button){
         var self=this;
+        var months=self.options.months;
+        var today=new Date();
+        var old_date=new Date();
+        var temp_date=new Date();
+        var $month_label=$button.siblings('div.month-name');
+        old_date.setTime($month_label.data('month-date'))
         var $events=self.element.find('ul.events');
-        var ev_container_height=self.options.ev_container_height;
-        //self.element.find('div.position').text(parseInt($events.position().top)+parseInt(ev_container_height));
-        if (parseInt($events.position().top) <=self.options.event_height){
-            var step=self.options.event_height,top_position=$events.position().top;
-            self.element.find('ul.events').css({
-                "top":parseInt(top_position)+parseInt(step)+"px"
-            } );
+               
+        var step=self.options.event_height,top_position=$events.position().top;
+              
+        var ev_container_height=self.element.find('div.position').text(parseInt($events.position().top)+parseInt(ev_container_height));
+                
+        if (parseInt(top_position) < 0){
+           
+            temp_date.setFullYear(old_date.getFullYear(),old_date.getMonth()-1,1);
+            $month_label.text(months[temp_date.getMonth()]).data('month-date',temp_date.getTime());
+            $events.css('top',function(){
+            if (parseInt(top_position)+2*parseInt(step)>0){
+                $month_label.text(months[today.getMonth()]).data('month-date',today.getTime());
+                return 0;
+            }else{
+                return parseInt(top_position)+parseInt(step)+"px";
+            }            
+        });
+     
+            
+            
         }
-    //        self.element.find('ul.events').animate({
-    //            "top":parseInt(top_position)+parseInt(step)+"px"
-    //        },200);}
+
     },
     _addMonthInfo:function(){
         var self=this;
-        var $container=this.element.find('ul.events');
+        var $container=self.element.find('ul.events');
         var start=self.options.start;
         var end=self.options.end;
-
         var event={
             id:666,
             title:'Fake Event',
@@ -109,10 +129,11 @@ var blockprogram={
     _renderEvents:function(events){
         var $container=this.element.find('ul.events');
         var options=this.options;
-        var short_months=options.short_months;
+        var months=options.months;
         var temp_date=new Date();
-        //short_months[temp_date.getMonth()]
+               
         for (var i in events){
+            //alert(events[i].toSource());
             temp_date.setTime(events[i].start*1000);
             $('<li><a class="date_block" href="'+options[events[i].parentNodeId][1]+'" style="background:'+options[events[i].parentNodeId][0]+'"></a> \n\
                   <span class="title">'+events[i].title+'</span>\n\
@@ -134,8 +155,7 @@ var blockprogram={
     },
     _showCommands:function(){
         this.element.find('.commands .loading').hide();
-        this.element.find('.commands .arrow').show();
-        
+        this.element.find('.commands .arrow').show();      
     }
     ,
     _fetchEvents: function(){
@@ -147,6 +167,7 @@ var blockprogram={
         var calendars=options.calendars_list;
  
         var calendar_index=0;
+     
         self.element.data('events',[]);
         for (var i in calendars){
             var action= 'mcalendar::fetchEvents::'+calendars[i].node_id+'::'+Math.round(start.getTime()/1000)+'::'+Math.round(end.getTime()/1000)+'::ajaxweek';
@@ -154,9 +175,25 @@ var blockprogram={
             $.ez(action,{
                 postdata:'ready'
             },function(data) {
-                self.element.data('events',self.element.data('events').concat(data.content));
+  
+  
+             
                 self.element.data('calendar_index',calendar_index++)
-                               
+             
+                if (data.content.length==0){
+                         
+                    data.content.push({
+                        parentNodeId:calendars[self.element.data('calendar_index')].node_id,
+                        title:'Il calendario non contiene nessun evento',
+                        start: start.getTime()/1000,
+                        end:end.getTime()/1000,
+                        isMain:true,
+                        frequency:0
+                    });
+                }
+                
+                self.element.data('events',self.element.data('events').concat(data.content));
+                       
                 if(calendar_index==calendars.length){
                     self._renderEvents(self.element.data('events').sort(compareDates));
                     self._updateDimensions();

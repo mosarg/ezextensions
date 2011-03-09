@@ -12,7 +12,7 @@
 {/run-once}
 
 {if $node.object.state_id_array|contains('6')}
-        <div class="wip rounded shadowmore">
+        <div class="wip rounded">
             <p>{"Contenuto in preparazione non ancora visibile pubblicamente"|i18n('scuola/state')}</p>
         </div>
     {/if}

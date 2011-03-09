@@ -10,7 +10,7 @@ var legend={
         legend='<div class="legend_box"></div>';
         $legend=$(legend).appendTo(this.element);
         for (var i in options.list){
-         $calendar=$('<div class="calendar_element"><span class="rounded">'+options.list[i].calendar_name+
+         $calendar=$('<div class="calendar_element"><span >'+options.list[i].calendar_name+
                     '</span><input checked="checked" class="cal_toggle" type="checkbox" value="'+options.list[i].calendar_id+'"/></div>').appendTo($legend);
          $calendar.css('background', options.list[i].event_color);
         }

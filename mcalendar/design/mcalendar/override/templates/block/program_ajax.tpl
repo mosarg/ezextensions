@@ -8,18 +8,22 @@
 {def $calendar_list=array()}
 <div class="content-view-block">
     <div class="program-ajax-block" id="{$block.name}">
-        <div class="attribute-header">
+        {if $block.name|count_chars()|gt(0)}
+        <div class="attribute-header-block">
             <h2>{$block.name}</h2>
         </div>
+        {/if}
         <div class="program-list">
            <!-- <div class="position"></div>-->
-            <div class="upper-commands commands"><div class="loading"></div><div class="upper-button arrow"></div></div>
+            <div class="commands"><div class="loading"></div>
+                <div class="previous-button arrow rounded"><</div><div class="next-button arrow rounded">></div>
+                <div class="month-name"></div>
+            </div>
             <div class="visible-window">
             <ul class="events">
             </ul>
             </div>
-            <div class="lower-commands commands"><div class="lower-button arrow"></div></div>
-        </div>
+           </div>
    
             {foreach $block.valid_nodes as $calendar}
                      {set $calendar_list=$calendar_list|append(hash('node_id',$calendar.node_id,'color',$calendar.data_map.color.content,'url_alias',$calendar.url_alias|ezurl(no)))}
