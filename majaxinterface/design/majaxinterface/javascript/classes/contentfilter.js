@@ -25,12 +25,13 @@ var contentfilter  = {
         var self=this;
         var  options=self.options;
         var  $tabscontainer=self.element.find('ul.filter-tabs');
-        //var  $container=$('<li></li>');
-        for (var i in options.keys){
+        //append show all facelet
         
-         $('<li></li>').append($('<a class="filter_facelet">'+options.keys[i].title+'</a>').data('facelet',options.keys[i])).appendTo($tabscontainer);
-            //$('<li><a>'+options.keys[i].title+'</a>  </li>').appendTo($tabscontainer).data('facelet',options.keys[i]);
-           
+        $('<li></li>').append($('<a class="filter_facelet">'+options.show_all.title+'</a>').data('facelet',options.show_all)).appendTo($tabscontainer);
+        
+        for (var i in options.keys){
+            $('<li></li>').append($('<a class="filter_facelet">'+options.keys[i].title+'</a>').data('facelet',options.keys[i])).appendTo($tabscontainer);
+        //$('<li><a>'+options.keys[i].title+'</a>  </li>').appendTo($tabscontainer).data('facelet',options.keys[i]);
         }
     },
     _attachEvents:function(){
@@ -55,14 +56,15 @@ var contentfilter  = {
     _loadFilteredFragment:function($target){
         
         var self=this;
-        
         var facelet=$target.data('facelet');
         
         $('li.selected').removeClass('selected shadow');
         $target.parent('li').addClass('selected shadow');
-        
-        var ezaction='content/view/embed/'+facelet.node_id;
-        
+        if (facelet.depth){
+            var ezaction='content/view/embed/'+facelet.node_id+'/(depth)/'+facelet.depth;
+        }else{
+            var ezaction='content/view/embed/'+facelet.node_id;
+        }
         $.ezrun(ezaction,{
             postdata:'ready'
         },function(data){

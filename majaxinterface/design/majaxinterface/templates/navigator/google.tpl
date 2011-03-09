@@ -1,3 +1,8 @@
+{if is_set($depth)|not}
+    {def $depth=1}
+{/end}
+
+
 {default page_uri_suffix=false()
          left_max=7
          right_max=6}
@@ -18,7 +23,8 @@
       left_length=min($ViewParameter:current_page,$:left_max)
       right_length=max(min(sub($ViewParameter:page_count,$ViewParameter:current_page,1),$:right_max),0)
       view_parameter_text=""
-      offset_text=eq( ezini( 'ControlSettings', 'AllowUserVariables', 'template.ini' ), 'true' )|choose( '/offset/', '/(offset)/' )}
+      depth_text=concat('/(depth)/',$depth)
+      offset_text='/(offset)/'}
 {* Create view parameter text with the exception of offset *}
 {section loop=$view_parameters}
  {section-exclude match=eq($:key,offset)}
@@ -89,14 +95,18 @@
 {/if}    
 
 {if is_set($view_type)|not()}
-    {def $view_type='full'}
+    {def $view_type='view/full'}
 {/if}
+
+
+
 
 {if is_set($node_id)}
 <div id="navigator_elements" style="display:none">
              <p title="node_id">{$node_id}</p>
              <p title="box_type">{$box_type}</p>
              <p title="view_type">{$view_type}</p>
+             <p title="depth">{$depth}</p>
 </div>
 {/if}
 

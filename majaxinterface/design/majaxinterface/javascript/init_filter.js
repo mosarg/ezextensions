@@ -5,11 +5,13 @@ $(document).ready(function() {
    var $filter_interface=$('#filter' );
 
    var keys=jQuery.parseJSON($('#filter_elements p[title="keys"]').text());
+   var show_all=jQuery.parseJSON($('#filter_elements p[title="show_all"]').text());
    var pagenavigator=$('#filter_elements p[title="navigator"]').text();
 
    $filter_interface.contentfilter({
         keys:keys,
-        pagenavigator:pagenavigator
+        pagenavigator:pagenavigator,
+        show_all:show_all
    });
 
 });
