@@ -49,8 +49,10 @@ class scuolaHandler extends eZContentObjectEditHandler {
                 $newClassNode=eZContentObjectTreeNode::fetchByURLPath($school->SortKeyString.
                         '/classi/'.$class->SortKeyString);
                 array_push($cacheCleanNodes,$newClassNode->NodeID);
-                
+           
                 eZContentCache::cleanup($cacheCleanNodes);
+                break;
+            case 'progetto':
                 break;
 
         }

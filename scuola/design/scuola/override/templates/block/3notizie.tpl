@@ -1,16 +1,15 @@
 {def $valid_nodes = $block.valid_nodes}
-<!-- BLOCK: START -->
-<div class="block-type-dynamic3items">
+
+
+<div class="block-type-3items  block-type-dynamic3items">
+
+<div class="attribute-header-block">
+    <h2>{"Ultimi aggiornamenti"|i18n("design/scuola/blocks")}</h2>
+</div>
+
 
 <div class="border-content">
 
-<!-- BLOCK BORDER INSIDE: START -->
-
-<div class="border-box block-style1-box-inside">
-
-<div class="border-content">
-
-<!-- BLOCK CONTENT: START -->
 
 {foreach $valid_nodes as $valid_node}
 
@@ -22,17 +21,9 @@
 
 {/foreach}
 
-<!-- BLOCK CONTENT: END -->
+</div>
 
 </div>
 
-
-</div>
-
-<!-- BLOCK BORDER INSIDE: END -->
-
-</div>
-</div>
-<!-- BLOCK: END -->
 
 {undef $valid_nodes}

@@ -1,6 +1,8 @@
 <div class="border-box">
 
-
+{run-once}
+ {ezscript_require( array('classes/navigator.js','init_navigator.js'))}
+{/run-once}
 
 <div class="content-browse">
 
@@ -47,7 +49,10 @@
          page_uri=concat('/content/browse/',$main_node.node_id)
          item_count=$browse_list_count
          view_parameters=$view_parameters
-         item_limit=$number_of_items}
+         item_limit=$number_of_items
+         box_type='content-browse'
+         view_type='browse'
+         node_id=$browse.start_node}
 
 
 {if $browse.persistent_data|count()}

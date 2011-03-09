@@ -64,6 +64,7 @@
   <!-- Toolbar area: END -->
 
   <!-- Columns area: START -->
+  <div id="columns-wrapper">
   <div id="columns-position">
   <div id="columns" class="float-break">
 
@@ -99,6 +100,7 @@
 
     <!-- Extra area: END -->
 
+  </div>
   </div>
   </div>
   <!-- Columns area: END -->

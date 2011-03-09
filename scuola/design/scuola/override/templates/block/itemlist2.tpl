@@ -4,14 +4,14 @@
 
 <div class="block-type-itemlist">
 
-<div class="attribute-header">
-    <h2>{$block.name|wash()}</h2>
-</div>
+{if $block.name}
+ <div class="attribute-header-block"><h2>{$block.name}</h2></div>
+{/if}
+
 <div class="block-content">
 
-<div class="columns-two">
+<div class="two-columns">
 <div class="col-1">
-<div class="col-content">
 
     <ul>
     {foreach $valid_nodes as $valid_node max 6}
@@ -19,10 +19,10 @@
     {/foreach}
     </ul>
 
-</div>
+
 </div>
 <div class="col-2">
-<div class="col-content">
+
 
     <ul>
     {foreach $valid_nodes as $valid_node offset 6}
@@ -30,7 +30,6 @@
     {/foreach}
     </ul>
 
-</div>
 </div>
 </div>
 

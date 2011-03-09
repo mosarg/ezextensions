@@ -1,10 +1,9 @@
-<div class="border-box shadowmore">
+<div class="border-box">
     {def $left_menu_depth = $pagedata.current_menu|eq('LeftOnly')|choose( 1, 0 )}
     {def $docenti_node=''
     $menu_node=array()
     $menu_levels=hash('0','first','1','second','2','third','3','fourth','4','fifth')
     $menu_style=''}
-
 
     {foreach $module_result.path as $path_element}
     {if $path_element|contains('Docenti')}
@@ -17,7 +16,6 @@
     
     {def $menu_elements=treemenu($module_result.path, ,ezini( 'MenuContentSettings', 'LeftIdentifierList', 'menu.ini' ),3,4, ,2)}
 
-
     {cache-block keys=array($menu_elements)}
 
     {if ge($menu_elements|count,1)}
@@ -28,7 +26,7 @@
         <li>
       <a class="parent-menu"
                    href={$module_result.path[sub($module_result.content_info.node_depth,2)].url_alias|ezurl}>
-          {$module_result.path[sub($module_result.content_info.node_depth,2)].text|wash} ^
+          {$module_result.path[sub($module_result.content_info.node_depth,2)].text|wash}
        </a>
   </li>
         {foreach $menu_elements as $menu}
@@ -54,7 +52,7 @@
                      {else}
                      {set $menu_style=''}
                      {/if}
-                    <a {$menu_style} href={$menu.url_alias|ezurl}>{$menu.text|shorten(16)}<span> ></span></a>
+                    <a {$menu_style} href={$menu.url_alias|ezurl}>{$menu.text|shorten(16)}</a>
                </div><!--first concat end-->
             </li>
 

@@ -1,6 +1,8 @@
 {* top menu drop drown *}
 
 
+{def $no_sub_names=array('Albo')}
+
 {* if $module_result.uri|downcase|
 preg_match('/pendinglist|draft|notification\/settings|user2\/edit|collaboration/') *}
 
@@ -58,7 +60,7 @@ $used_node=2}
                 {/if}
 
 
-         {if $child_check|gt(0)}
+         {if and($child_check|gt(0),$no_sub_names|contains($menu_item_first.name)|not)}
                    <!--second level-->
                    </a>
                    {if $i|gt( $goleft )}

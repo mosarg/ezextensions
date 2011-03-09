@@ -5,8 +5,14 @@ AvailableClasses[]
 AvailableClasses[]=folder
 AvailableClasses[]=gallery
 AvailableClasses[]=dmsfolder
+AvailableClasses[]=folder_circolari
 AvailableSubtreeNode[]
 MultiuploadHandlers[]
+
+
+[FileTypeSettings_folder_circolari]
+FileType[]
+FileType[]=*.pdf
 
 [FileTypeSettings_folder]
 FileType[]

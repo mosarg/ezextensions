@@ -156,6 +156,8 @@ ClearCacheMethod[]=relating
 DependentClassIdentifier[]
 DependentClassIdentifier[]=dmsfolder
 DependentClassIdentifier[]=folder
+DependentClassIdentifier[]=folder_circolari
+DependentClassIdentifier[]=dir_circolari
 ClearCacheMethod[]
 ClearCacheMethod[]=object
 ClearCacheMethod[]=parent

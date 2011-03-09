@@ -1,5 +1,5 @@
 {* prof list left menu *}
-<div class="border-box shadowmore">
+<div class="border-box">
 {def $left_menu_depth = $pagedata.current_menu|eq('LeftOnly')|choose( 1, 0 )}
 {def $regexp=ezini( 'Regexp', 'classi', 'scuola.ini' )}
 {def $prof_nodes=array()
@@ -27,7 +27,7 @@
       <a class="parent-menu"
          
           href={$module_result.path[sub($module_result.content_info.node_depth,2)].url_alias|ezurl}>
-          {$module_result.path[sub($module_result.content_info.node_depth,2)].text|wash} ^
+          {$module_result.path[sub($module_result.content_info.node_depth,2)].text|wash}
        </a>
   </li>
 {foreach $menu_elements as $menu}
@@ -55,7 +55,7 @@
         {set $menu_style=''}
            {/if}
 
-         <a {$menu_style} href={$menu.url_alias|ezurl}>{$menu.text}<span> > </span></a>
+         <a {$menu_style} href={$menu.url_alias|ezurl}>{$menu.text}</a>
         </div>
         </li>
 

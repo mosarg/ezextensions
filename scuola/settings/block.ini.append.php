@@ -11,7 +11,7 @@ AllowedTypes[]=Manual4Items
 AllowedTypes[]=Manual5Items
 AllowedTypes[]=Gallery
 AllowedTypes[]=ItemList
-AllowedTypes[]=TagCloud
+
 AllowedTypes[]=Poll
 
 [PushToBlock]
@@ -75,8 +75,8 @@ NumberOfArchivedItems=5
 ManualAddingOfItems=enabled
 ViewList[]=5_items1
 ViewList[]=5_items2
-ViewName[5_items1]=5 Elementi (1)
-ViewName[5_items2]=5 Elementi (2)
+ViewName[5_items1]=5 Elementi con Titolo
+ViewName[5_items2]=5 Elementi senza Titolo
 
 [Gallery]
 Name=Galleria multimediale Manuale
@@ -96,17 +96,10 @@ ManualAddingOfItems=enabled
 ViewList[]=itemlist1
 ViewList[]=itemlist2
 ViewList[]=itemlist3
-ViewName[itemlist1]=Lista 1 colonna
-ViewName[itemlist2]=Lista 2 colonne
-ViewName[itemlist3]=Lista 3 colonne
+ViewName[itemlist1]=Lista 1 colonna titolo
+ViewName[itemlist2]=Lista 2 colonne titolo
+ViewName[itemlist3]=Lista 2 colonne senza titolo
 
-[TagCloud]
-Name=Nuvola etichette
-ManualAddingOfItems=disabled
-CustomAttributes[]=subtree_node_id
-UseBrowseMode[subtree_node_id]=true
-ViewList[]=tag_cloud
-ViewName[tag_cloud]=Nuvola etichette
 
 [Poll]
 Name=Sondaggio
@@ -130,13 +123,14 @@ ViewName[calendar_ajax]=Calendario Ajax
 ViewName[program_ajax]=Programma
 
 [3Notizie]
-Name=3 Notizie automatiche
+Name=3 Elementi Automatici
 NumberOfValidItems=3
 NumberOfArchivedItems=5
 ManualAddingOfItems=disabled
 FetchClass=csspLatestNews
 FetchFixedParameters[]
 FetchFixedParameters[Class]=article
+FetchFixedParameters[Class]=file
 FetchParameters[]
 FetchParameters[Source]=nodeID
 # Single / Multiple
@@ -145,6 +139,7 @@ FetchParametersIsRequired[]
 # True / False
 FetchParametersIsRequired[Source]=true
 ViewList[]=3notizie
-ViewName[3notizie]=3 Notizie raccolte automaticamente
+ViewName[3notizie]=  3 Notizie con Data
+
 
 */ ?>

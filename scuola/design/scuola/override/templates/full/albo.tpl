@@ -68,6 +68,7 @@
 </div>
 
 <div id="filter_elements" style="display:none">
+             <p title="show_all">{hash('node_id',$node.node_id,'url_alias',$node.url_alias|ezurl(no),'depth',2,'title','Mostra Tutto'|i18n( "design/scuola/filter" ))|json_encode()}</p>
              <p title="keys">{$json_structure_elements|json_encode()}</p>
              <p title="navigator">div.pagenavigator</p>
 </div>

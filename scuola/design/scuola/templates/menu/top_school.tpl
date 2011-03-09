@@ -2,7 +2,8 @@
     <!-- This menu is used to show school tabs -->
     <!-- School menu content: START -->
    
-    {def $macroarea=' '}
+    {def $macroaree=array()
+         $macroarea=' '}
     
     {if is_set($pagerootdepth)}
         {def $my_pagerootdepth=$pagerootdepth}
@@ -70,7 +71,7 @@
      {foreach $top_menu_items as $key => $item}
           {set $item_class=''}
           {if eq( $item.class_identifier, 'macroarea')}
-              {set $macroarea=$item}
+              {set $macroaree=$macroaree|append($item)}
            {else}
              <li  id="node_id_{$item.node_id}"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a class="" href={$item.url_alias|ezurl}>{$item.name|wash()}</a></li>
              {/if}
@@ -86,7 +87,8 @@
    
     <!-- School menu content END -->
 </div>
-{if is_string($macroarea)|not()}
-<div  id="macro-slide"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a href={$macroarea.url_alias|ezurl}>{$macroarea.name|wash()}</a></div>
- {/if}
+{foreach $macroaree as $current_macroarea}     
+
+<div  class="macro-slide" id="{$current_macroarea.name}" {if $item_class} class="{$item_class|implode(" ")}"{/if}><a href={$current_macroarea.url_alias|ezurl}>{$current_macroarea.name|wash()}</a></div>
+{/foreach}
 {undef}

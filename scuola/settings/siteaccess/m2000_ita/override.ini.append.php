@@ -8,6 +8,21 @@ Subdir=templates
 Match[class_identifier]=folder
 Match[url_alias]=Albo
 
+[albo-embed]
+Source=node/view/embed.tpl
+MatchFile=embed/dmsfolder.tpl
+Subdir=templates
+Match[class_identifier]=folder
+Match[url_alias]=Albo
+
+
+
+[progetti]
+Source=node/view/full.tpl
+MatchFile=full/progetti.tpl
+Subdir=templates
+Match[class_identifier]=macroarea
+Match[url_alias]=Progetti
 
 
 [media_folder]
@@ -259,6 +274,28 @@ Subdir=templates
 Match[type]=3Notizie
 Match[view]=3notizie
 
+[block_3notizie1]
+Source=block/view/view.tpl
+MatchFile=block/3_items1.tpl
+Subdir=templates
+Match[type]=3Notizie
+Match[view]=3_items1
+
+[block_3notizie2]
+Source=block/view/view.tpl
+MatchFile=block/3_items2.tpl
+Subdir=templates
+Match[type]=3Notizie
+Match[view]=3_items2
+
+[block_3notizie3]
+Source=block/view/view.tpl
+MatchFile=block/3_risalto.tpl
+Subdir=templates
+Match[type]=3Notizie
+Match[view]=3_risalto
+
+
 [edit_selezione_scuole]
 Source=content/datatype/edit/sckenhancedselection.tpl
 MatchFile=datatype/edit/selezione_materie.tpl
@@ -484,12 +521,6 @@ Subdir=templates
 Match[type]=ItemList
 Match[view]=itemlist3
 
-[block_tag_cloud]
-Source=block/view/view.tpl
-MatchFile=block/tag_cloud.tpl
-Subdir=templates
-Match[type]=TagCloud
-Match[view]=tag_cloud
 
 [block_poll]
 Source=block/view/view.tpl
@@ -1029,6 +1060,21 @@ Source=node/view/embed.tpl
 MatchFile=embed/dmsfolder.tpl
 Subdir=templates
 Match[class_identifier]=dmsfolder
+
+
+[embed_folder_circolari]
+Source=node/view/embed.tpl
+MatchFile=embed/folder_circolari.tpl
+Subdir=templates
+Match[class_identifier]=folder_circolari
+
+
+[embed_dir_circolari]
+Source=node/view/embed.tpl
+MatchFile=embed/folder_circolari.tpl
+Subdir=templates
+Match[class_identifier]=dir_circolari
+
 
 
 [embed_flash]

@@ -1,24 +1,24 @@
 {* dir circolari - Full view *}
+{run-once}
+ {ezscript_require( array('classes/contentfilter.js','init_filter.js','classes/navigator.js'))}
+{/run-once}
+
+{include uri='design:parts/global_variables.tpl' left_menu=false() left_nav_menu=false()}
 
 
-{include uri='design:parts/global_variables.tpl' left_menu=false() left_nav_menu=false() extra_menu=false()}
-
-
-<div class="border-box">
 <div class="content-view-full">
     <div class="class-dir_circolari">
 
         <div class="attribute-header">
             <h1>{$node.name|wash}</h1>
         </div>
-        
-        {if eq( ezini( 'folder', 'SummaryInFullView', 'content.ini' ), 'enabled' )}
+            
             {if $node.object.data_map.short_description.has_content}
                 <div class="attribute-short">
                     {attribute_view_gui attribute=$node.data_map.short_description}
                 </div>
             {/if}
-        {/if}
+        
 
         {if $node.object.data_map.description.has_content}
             <div class="attribute-long">
@@ -28,24 +28,37 @@
 
     
             {def $classes =array('folder_circolari')
-                 $children = array()
-                }
+                 $structure_elements = array()
+                 $json_structure_elements=array()}
                 
-             {set $children=fetch_alias( 'children', hash( 'parent_node_id', $node.node_id,
+             {set $structure_elements=fetch_alias( 'children', hash( 'parent_node_id', $node.node_id,
                                                           'offset', $view_parameters.offset,
                                                           'sort_by', $node.sort_array,
                                                           'class_filter_type', 'include',
                                                           'class_filter_array', $classes ) )}
 
-            {if gt($children|count,0)}
-             <div class="content-view-children">
-                 <h4>{"Elementi correlati"|i18n('scuola/folder/line')}</h4>
-                {foreach $children as $child }
-                    {node_view_gui view='folder_circolari_icon' content_node=$child}
-                {/foreach}
-            </div>
-            {/if}
-    </div>
-    {include uri='design:parts/object_informations.tpl' style='full'}
+
+
+
+<div id="filter">
+            <div id="interface"><ul class="filter-tabs"></ul></div>
+            <div id="data"></div>
+</div>    
+    
+    
 </div>
+
+    
+ {foreach $structure_elements as $structure_element}
+    {set $json_structure_elements=$json_structure_elements|append(hash(node_id,$structure_element.node_id,url_alias,$structure_element.url_alias|ezurl(no),title,$structure_element.name))}
+{/foreach}    
+
+<div id="filter_elements" style="display:none">
+             <p title="show_all">{hash('node_id',$node.node_id,'url_alias',$node.url_alias|ezurl(no),'depth',2,'title','Mostra Tutto'|i18n( "design/scuola/filter" ))|json_encode()}</p>
+             <p title="keys">{$json_structure_elements|json_encode()}</p>
+             <p title="navigator">div.pagenavigator</p>
+</div>                                                         
+                                                      
+
 </div>
+
