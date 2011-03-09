@@ -10,6 +10,7 @@ div.block-type-3items{
     overflow:hidden;
     margin-top:1.5em;
     width:100%;
+    float:left;
 }
 
 div.block-type-3items div.attribute-header>h2{

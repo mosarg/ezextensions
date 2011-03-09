@@ -6,13 +6,25 @@
     dmsfolder line view css
 */
 div.content-view-line div.class-dmsfolder h2{
-    height:4em;
+    height:3em;
     background:url(../images/icons/folder.png) no-repeat transparent;
-
+    float:left;
+    margin-right:3em;
+    min-width: 48px;
 }
 div.content-view-line div.class-dmsfolder h2 a{
     position:relative;
-    left:64px;
-    top:35px;
+    left:48px;
+    top:20px;
     color:gray;
+}
+
+div.content-view-line div.class-dmsfolder div.attribute-short{
+    float:left;
+    position:relative;
+    top:18px;
+    font-weight: bold;
+    font-family: sans-serifi;
+    color:#a60304;
+    
 }

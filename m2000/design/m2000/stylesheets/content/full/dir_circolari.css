@@ -5,16 +5,4 @@
     Description:
     dir_circolari full view css
 */
-div.class-dir_circolari div.content-view-children{
-    background:#e9f4f4;
-    padding:1em;
-    overflow:hidden;
-    text-align:center;
-    margin-top:2em;
 
-}
-div.class-dir_circolari div.content-view-children div.circolari_icon{
-    float:left;
-    margin:1em;
-
-}

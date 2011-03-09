@@ -1,4 +1,4 @@
-at/* 
+/* 
     Document   : common
     Created on : Nov 28, 2009, 6:05:36 PM
     Author     : mosa
@@ -65,7 +65,7 @@ div.content-view-full div.content-view-line div.attribute-byline p
 /*Headers*/
 div.attribute-header h1
 {
-    font-size: 3em;
+    font-size: 2.4em;
     font-weight: normal;
    
 }
@@ -172,14 +172,14 @@ ul li
 /*object informations*/
 
 div.object_informations{
-    color:white;
+    color:#85868b;
     padding-left:0.2em;
-    font-weight: bold;
-    
+    font-weight: 300;
+    margin-top:0.7em;
 }
 
 /*informations*/
-
+h
 div.informations{
     margin-bottom: 1em;
     overflow: hidden;

@@ -6,9 +6,6 @@
     dms_folder full view css
 */
 
-
-div.class-dmsfolder div.attribute-short{
-    position:relative;
-    left:64px;
-    top:-10px;
+div.content-view-full div.class-dmsfolder div.content-view-line{
+    margin:0;
 }

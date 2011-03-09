@@ -38,7 +38,7 @@ div.attribute-header-block{
     -moz-box-shadow:0 -2px 0 #cdcdcd inset;
     -webkit-box-shadow:0 -2px 0 #cdcdcd inset;
     
-    padding:0.5em;
+    padding:0.5em 0.5em 0.5em 0;
     margin-bottom: 1em;
 }
 div.content-view-full div.attribute-header-block>h2{

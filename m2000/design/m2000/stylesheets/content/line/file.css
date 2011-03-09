@@ -31,20 +31,23 @@ div.content-view-line div.class-file img{
 }
 div.content-view-line div.class-file div.attribute-description{
     float:left;
-    padding-top:4em;
-}
+    background:#bbbbbf;
+    padding:0.3em;
+    color:white;
+    width:100%;
+    display: none;
+ }
+ div.content-view-line div.class-file:hover div.attribute-description{
+     display: block;
+ }
+ 
 div.content-view-line div.class-file h2{
     float:left;
     padding-left:0.3em;
     padding-bottom:0.3em;
     width:100%;
 }
-div.content-view-line div.class-file h2 a{
-    color:white;
-}
-div.content-view-line div.class-file h2 a:hover{
-    color:black;
-}
+
 div.content-view-line div.class-file div.attribute-file
 {
     height:auto;
@@ -55,4 +58,9 @@ div.content-view-line div.class-file div.attribute-file
 }
 div.content-view-line div.class-file p.time{
   float:right;
+}
+div.content-view-line div.class-file p.extra_info{
+  float:right;
+  color:#a60304;
+  margin-right: 1em;
 }

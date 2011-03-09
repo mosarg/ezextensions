@@ -1,16 +1,31 @@
 div.visible-window{
     overflow:hidden;
-    height:450px;
+    max-height: 450px;
     background:white;
+    float:left;
+    clear:both;
    }
 div.program-list{
      overflow: hidden;
    
 }
+
+
+div.commands div.month-name{
+    font-size:1.3em;
+    font-weight: bold;
+}
+
+div.commands div.month-name:first-letter{
+   color:#bc3635; 
+}
+
 ul.events {
     display:block;
     position:relative;
     overflow: hidden;
+    margin:0;
+    padding:0;
 }
 
 ul.events li{
@@ -20,6 +35,7 @@ ul.events li{
     height:35px;
     padding:1em;
     margin-bottom:2px;
+    margin-left:0;
 }
 
 
@@ -39,27 +55,29 @@ div.position{
     height:1em;
 }
 
-div.arrow{
-    cursor: pointer;
-    text-align:center;
-    height:18px;
-    width:32px;
-    margin-left:auto;
-    margin-right:auto;
-}
 
-div.upper-button{
+div.next-button{
+     background: #ffc03d;
+     float:left;
+     margin-right:1em;
     /*background: url(../images/ajax/up_arrow.png) no-repeat center;*/
 }
 
-div.lower-button{
+div.previous-button{
+     background: #ffc03d;
+     float:left;
+     margin-right:1em;
     /*background: url(../images/ajax/down_arrow.png) no-repeat center;*/
 }
 
 div.commands{
     text-align:center;
-    height:18px;
+    height:23px;
     width:100%;
+    float:left;
+    clear:both;
+    margin-bottom:1em;
+    cursor:pointer;
 }
 div.commands a{
     display:block;
@@ -102,4 +120,11 @@ span.title{
     position: relative;
     top:9px;
     font-size: 1.1em;
+}
+
+div.arrow{
+    padding:0.3em;
+    font-weight: bold;
+    font-size: 1.1em;
+    color:white;
 }

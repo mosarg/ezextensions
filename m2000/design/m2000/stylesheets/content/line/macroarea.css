@@ -1,5 +1,7 @@
 div.content-view-line div.class-macroarea{
     padding:1em;
-    border:1px solid #85868b;
-    background: #ececec;
-}
+    border-bottom:2px solid white;
+    box-shadow:0 -2px 0 #cdcdcd inset;
+    -moz-box-shadow:0 -2px 0 #cdcdcd inset;
+    -webkit-box-shadow:0 -2px 0 #cdcdcd inset;
+   }

@@ -86,7 +86,7 @@ div #header div#school_menu li.current{
 
 
 
-div#header div#school_menu div#macro-slide{
+div#header div#school_menu div.macro-slide{
     float:right;
     height: 120px;
     position: relative;
@@ -96,8 +96,14 @@ div#header div#school_menu div#macro-slide{
     
 }
 
+div#header div#school_menu div#Progetti{
+    background: #a60304;
+    
+}
 
-div#header div#school_menu div#macro-slide a{
+
+
+div#header div#school_menu div.macro-slide a{
     color:white;
     font-size:2em;
     display:block;
@@ -106,7 +112,7 @@ div#header div#school_menu div#macro-slide a{
     
 }
 
-div#header div#school_menu div#macro-slide a:hover{
+div#header div#school_menu div.macro-slide a:hover{
     text-decoration: underline;
 }
 
@@ -117,15 +123,18 @@ div#header div#school_menu div#highlight_section{
     
     height: 120px;
     position: relative;
-    top:-60px;
+    float:left;
     background: #3c576a;
-    width:170px;
-    margin-left:20%;
+    width:230px;
     text-align: center;
+    display:table;
+   
 }
 div#header div#school_menu div#highlight_section a{
     color:white;
-    
+    display:table-cell;
+    font-size:3em;
+    vertical-align: middle;
 }
 
 
@@ -133,6 +142,7 @@ div#header div#school_menu div#current-school {
     float:left;
     padding-right:2em;
     margin-right:2em;
+    background:#f2f2f2;
 }
 
 div#header div#school_menu div#current-school a{
