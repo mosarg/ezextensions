@@ -1,0 +1,7 @@
+<?php /* 
+
+[EventSettings]
+ExtensionDirectories[]=setuser
+AvailableEventTypes[]=event_setuser
+
+*/ ?>
