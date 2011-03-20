@@ -26,7 +26,10 @@ div.content-view-full div.block-item div.block-element div.attribute-header h2{
     padding:0;
 }
 
+
+
 div.content-view-full div.block-item div.block-element a.go_on{
     display:block;
     width:100%;
+    background: url(../images/props/arrow.png) no-repeat center left;
 }

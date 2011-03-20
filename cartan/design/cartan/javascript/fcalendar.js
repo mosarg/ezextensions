@@ -1,3 +1,4 @@
+//cartan
 $(document).ready(function() {
     $("#event_edit_container").hide();
     var calendars_list=$('#tools_container p[title="calendars_list"]').text();
