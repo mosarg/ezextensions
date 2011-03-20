@@ -9,6 +9,7 @@
 {/run-once}
 
 
+
 <div class="border-box">
 
 <div class="content-view-full">
@@ -25,14 +26,14 @@
            {attribute_view_gui attribute=$node.data_map.description}
         </div>
 
-        {if $node.data_map.show_sub_gal}
+       {if $node.data_map.show_sub_gal.content}
 
               {def $child_gallery=fetch( 'content', 'list', hash( 'parent_node_id', $node.node_id,
                                                          'offset', $view_parameters.offset,
                                                          'class_filter_type', 'include',
                                                          'class_filter_array', array( 'gallery' ),
                                                          'sort_by',array('attribute',false(),'gallery/syear') ) )
-         $child_gallery_count=$child_gallery|count()}
+                   $child_gallery_count=$child_gallery|count()}
 
          {if $child_gallery_count}
             <div class="content-view-children">
@@ -41,7 +42,7 @@
             {def $syear='-1'}
             {foreach $child_gallery as $gallery}
                 {if ne($gallery.data_map.syear.value[0],$syear)}
-                    <h4 class="school-year rounded">{$gallery.data_map.syear.class_content.options[$gallery.data_map.syear.value[0]].name}</h4>
+                    <h4 class="school-year">{$gallery.data_map.syear.class_content.options[$gallery.data_map.syear.value[0]].name}</h4>
                     {set $syear=$gallery.data_map.syear.value[0]}
                     
                 {/if}
@@ -51,7 +52,7 @@
             </div>
           {/if}
 
-        {/if}
+        {else}
 
 
 
@@ -90,14 +91,7 @@
 		</div>
 		<div id="caption" class="caption-container"></div>
 	</div>
-
-
-        {include name=navigator
-                 uri='design:navigator/google.tpl'
-                 page_uri=$node.url_alias
-                 item_count=$children_count
-                 view_parameters=$view_parameters
-                 item_limit=$page_limit}
+        {/if}
     </div>
 </div>
 </div>
