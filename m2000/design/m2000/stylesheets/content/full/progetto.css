@@ -1,0 +1,36 @@
+div.content-view-full div.class-progetto div.attribute-header>div.attribute-image{
+    float:left;
+}
+
+div.content-view-full div.class-progetto div.attribute-image{
+    padding-right:1em;
+    padding-bottom:1em;
+}
+
+div.content-view-full div.class-progetto div.attribute-byline
+{
+    padding-bottom: 0;
+    margin-bottom: 1em;
+}
+
+
+div.content-view-full div.class-progetto div.attribute-header h1
+{
+    float:left;
+    padding-bottom: 0;
+    margin-bottom: 0.5em;
+    line-height: 0.9em;
+    max-width:83%;
+}
+
+div.content-view-full div.class-progetto h3{
+    float:left;
+    color:#a60304;
+}
+
+div.content-view-full div.class-progetto div.title-separator {
+    border:0;
+    border-top:4px solid #C4C5C6;
+    margin:0;
+    padding-top:1em;
+}

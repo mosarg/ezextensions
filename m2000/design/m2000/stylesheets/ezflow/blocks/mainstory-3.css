@@ -1,0 +1,13 @@
+div.block-view-main_story3 div.columns-two{
+    float: left;
+}
+
+
+div.content-view-full div.block-view-main_story3 div.columns-two div.col-1{
+    width:38%;
+}
+
+div.content-view-full div.block-view-main_story3 div.columns-two div.col-2{
+    width:56%;
+    text-align: justify;
+}
