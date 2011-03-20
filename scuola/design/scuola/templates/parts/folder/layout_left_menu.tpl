@@ -1,4 +1,7 @@
- <div class="content-view-full">     
+{run-once}
+ {ezscript_require( array('classes/navigator.js','init_navigator.js'))}
+{/run-once}
+<div class="content-view-full">     
 <div class="class-folder">
         {* contenuto in preparazione *}
         {if $node.object.state_id_array|contains('6')}
@@ -46,36 +49,33 @@
                   {node_view_gui view=line content_node=$semantic_element imagesize='articlethumbnail'}
                 {/foreach}
             </div>
-           {include name=navigator
-                     uri='design:navigator/google.tpl'
-                     page_uri=$node.url_alias
-                     item_count=$semantic_count
-                     view_parameters=$view_parameters
-                     item_limit=$page_limit}
+           
        {/if}
           
        {if gt($static_count,0)}
        <div class="static-elements-box">
            <div class="content-view-children">
                 <h4>{"Contenuti scaricabili"|i18n('scuola/folder/line')}</h4>
-                 <div class="sortbuttons" >
-                    <h4>Ordine:</h4>
-                    <a id="sortbuttonup"  class="rounded">Alfabetico ascendente</a>
-                    <a id="sortbuttondown"  class="rounded">Alfabetico discendente</a>
-                    <a id="timesortup" class="rounded">Temporale crescente</a>
-                    <a id="timesortdown" class="rounded">Temporale decrescente</a>
-                 </div>
+                 
                 {foreach $static_elements as $static_element }
                   {node_view_gui view=line content_node=$static_element}
                 {/foreach}
             </div>
-       </div> 
+       </div>
+  
        {/if}
     {/if}
     </div>
 
+         {include name=navigator
+                     uri='design:navigator/google.tpl'
+                     page_uri=$node.url_alias
+                     item_count=sum($static_count,$semantic_count)
+                     node_id=$node.node_id
+                     view_parameters=$view_parameters
+                     item_limit=$page_limit}
+    
+{include uri='design:parts/object_informations.tpl' style='full'}    
  </div>
 
-{include uri='design:parts/object_informations.tpl' style='full'}
-<script type="text/javascript" src={'javascript/tinysort.js'|ezdesign} ></script>
-<script type="text/javascript" src={'javascript/listsort.js'|ezdesign} ></script>
+

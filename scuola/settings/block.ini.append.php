@@ -28,8 +28,8 @@ ManualAddingOfItems=enabled
 ViewList[]=main_story1
 ViewList[]=main_story2
 ViewList[]=main_story3
-ViewName[main_story1]=Notizia principale (1)
-ViewName[main_story2]=Notizia principale (2)
+ViewName[main_story1]=Solo immagine
+ViewName[main_story2]=Immagine (grande) e testo
 ViewName[main_story3]=Notizia principale (3)
 
 [Manual2Items]

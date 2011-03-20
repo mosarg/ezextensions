@@ -120,6 +120,6 @@
 
 {* This comment will be replaced with actual debug report (if debug is on). *}
 <!--DEBUG_REPORT-->
-{include uri='design:page_analytics.tpl'}
+{* include uri='design:page_analytics.tpl' *}
 </body>
 </html>

@@ -360,8 +360,8 @@ Subdir=templates
 Match[class_identifier]=proffolder
 
 [prof_helper_class]
-Source=node/view/full.tpl
-MatchFile=full/helper_prof.tpl
+Source=node/view/embed.tpl
+MatchFile=embed/helper_prof.tpl
 Subdir=templates
 Match[class_identifier]=infoprof
 
@@ -382,6 +382,15 @@ Source=node/view/full.tpl
 MatchFile=full/profgroup.tpl
 Subdir=templates
 Match[class_identifier]=profgroup
+ 
+ 
+[profgroup-embed]
+Source=node/view/embed.tpl
+MatchFile=embed/profgroup.tpl
+Subdir=templates
+Match[class_identifier]=profgroup
+
+
 
 [classgroup]
 Source=node/view/full.tpl
@@ -661,9 +670,9 @@ MatchFile=full/event_calendar.tpl
 Subdir=templates
 Match[class_identifier]=event_calendar
 
-[full_event]
-Source=node/view/full.tpl
-MatchFile=full/event.tpl
+[embed_event]
+Source=node/view/embed.tpl
+MatchFile=embed/event.tpl
 Subdir=templates
 Match[class_identifier]=event
 

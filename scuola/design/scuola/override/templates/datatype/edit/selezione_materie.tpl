@@ -1,3 +1,9 @@
+{run-once}
+ {ezscript_require( array('modal_selection.js'))}
+{/run-once}
+
+
+
 {def $content=$attribute.content
      $classContent=$attribute.class_content
      $id=$attribute.id
@@ -23,7 +29,7 @@
         <option value="{concat($option.identifier,'-',$option.scuola)|wash}"
                 {if and($content|contains($option.identifier),contains($option.scuola))}
                 selected="selected"{/if}>
-            {$option.name|wash}
+            {$option.name}
         </option>
     {/foreach}
         

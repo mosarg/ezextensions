@@ -8,17 +8,15 @@
 {/if}
 
 <div class="content-view-full">
-   
-    <div class="class-macroarea">
-      
-        
-      {if $node.data_map.show_children.data_int|not()}   
+  <div class="class-macroarea">
+       
+ {if $node.data_map.show_children.data_int|not()}   
     <div class="attribute-header">
           <h1>{$node.data_map.name.content|wash()}</h1>
    </div>   
         
     <div class="title-separator"></div>
-        <div class="separator"></div>     
+    <div class="separator"></div>     
         
    <div class="image-block">
               {if $node.data_map.logo.has_content}
@@ -37,7 +35,7 @@
                     </div>
                 {/if} 
    </div>     
-        {/if}
+ {/if}
     {if is_set($node.object.data_map.descrizione)}
         <div class="attribute-short">
             {attribute_view_gui attribute=$node.object.data_map.descrizione}
@@ -50,9 +48,7 @@
         </div>
        {/if}
 
-    {if $node.data_map.show_children.data_int}
-
-
+ {if $node.data_map.show_children.data_int}
     {def         $children = array()
                  $children_count = ''
                  $counter=0
@@ -64,11 +60,6 @@
                                                           'class_filter_type', 'include',
                                                           'class_filter_array', $classes))
           $children_count=$children|count}
-
-
-
-
-
    {if gt($children_count,0)}
      {foreach $children as $child }
          <div class="content-view-children">
@@ -77,8 +68,10 @@
     
      {/foreach}
    {/if}
-   
-{include uri='design:parts/object_informations.tpl' style='full'}
+{/if}   
+
     </div>
+    
+    {include uri='design:parts/object_informations.tpl' style='full'}
 </div>
 {undef}

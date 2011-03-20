@@ -3,7 +3,7 @@
 {/if}
 <div class="class-article float-break">
         <div class="attribute-header">
-            <h2 class="rounded"><a href={$node.url_alias|ezurl()}>{$node.name|wash()}</a></h2>
+            <h2><a href={$node.url_alias|ezurl()}>{$node.name|wash()}</a></h2>
         </div>
        
         <div class="attribute-short">
@@ -12,7 +12,7 @@
             {$node.data_map.intro.content.output.output_text|smartshort(100,'...')}
         </div>
    
-     {include uri='design:parts/article/article_index_frontpage.tpl' used_node=$node}
+     {* include uri='design:parts/article/article_index_frontpage.tpl' used_node=$node *}
       <div class="read-on">
         <a href={$node.url_alias|ezurl()}>{'Continua'|i18n('scuola/block/mainstory')}...</a>
     </div>

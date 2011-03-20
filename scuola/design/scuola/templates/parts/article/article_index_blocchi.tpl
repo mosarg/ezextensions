@@ -10,7 +10,7 @@
 
             <ol>
             {if eq( $used_node.node_id, $node.node_id )}
-                <li class="rounded shadow current">
+                <li class="shadow current">
                 {if $used_node.data_map.index_title.has_content}
                 <span>{attribute_view_gui attribute=$used_node.data_map.index_title}</span>
                 {else}
@@ -18,7 +18,7 @@
                 {/if}
                 </li>
             {else}
-                <li class="rounded shadow"><a href={$used_node.url_alias|ezurl}>
+                <li class="shadow"><a href={$used_node.url_alias|ezurl}>
                  {if $used_node.data_map.index_title.has_content}
                     {attribute_view_gui attribute=$used_node.data_map.index_title}
                 {else}
@@ -28,7 +28,7 @@
             {/if}
             {foreach $article_subpages as $article_subpage}
                 {if eq( $node.node_id, $article_subpage.node_id )}
-                    <li class="rounded shadow current">
+                    <li class="shadow current">
                     {if $article_subpage.data_map.index_title.has_content}
                     <span>{attribute_view_gui attribute=$article_subpage.data_map.index_title}</span>
                     {else}
@@ -36,7 +36,7 @@
                     {/if}
                     </li>
                 {else}
-                    <li class="rounded shadow"><a href={$article_subpage.url_alias|ezurl}>
+                    <li class="shadow"><a href={$article_subpage.url_alias|ezurl}>
                     {if $article_subpage.data_map.index_title.has_content}
                         {attribute_view_gui attribute=$article_subpage.data_map.index_title}
                     {else}

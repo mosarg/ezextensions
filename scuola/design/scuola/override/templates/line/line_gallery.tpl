@@ -22,7 +22,7 @@
 
     </div>
 {else}
-    <div class="class-gallery-small square-icon">
+    <div class="class-gallery-small">
     <h2><a href={$node.url_alias|ezurl}>{$node.name|wash()}</a></h2>
      <div class="attribute-image">
     {if $node.data_map.icon.has_content}

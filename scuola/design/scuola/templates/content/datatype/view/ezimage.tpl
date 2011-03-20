@@ -111,7 +111,7 @@ Input:
         
         <div class="image-wrapper">
         {if $href}<a href={$href}{if and( is_set( $link_class ), $link_class )} class="{$link_class}"{/if}{if and( is_set( $link_id ), $link_id )} id="{$link_id}"{/if}{if $target} target="{$target}"{/if}>{/if}
-        <img class="{$image_css_class|wash}" src={$image.url|ezroot} width="{$image.width}" height="{$image.height}" {if $hspace}hspace="{$hspace}"{/if} style="{$inline_style}" alt="{$alt_text|wash(xhtml)}" title="{$title|wash(xhtml)}" />
+        <img class="{$image_css_class|wash}" src={$image.url|ezroot}  {if $hspace}hspace="{$hspace}"{/if} style="{$inline_style}" alt="{$alt_text|wash(xhtml)}" title="{$title|wash(xhtml)}" />
              
         {if $href}</a>{/if}
         

@@ -2,24 +2,17 @@
 
 {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true() extra_menu=false()}
 
-
-
-
     <div class="content-view-full ">
-        
         <div class="class-ufficio">
-        
-         <div class="attribute-header">
+        <div class="attribute-header">
             {if $node.data_map.logo.has_content}
                 <div class="attribute-image">
-                 
                    {attribute_view_gui attribute=$node.data_map.logo image_css_class='shadow' link_class=ezimage_zoom href=$node.data_map.logo.content[original].url|ezroot image_class=gallerythumbnailsquare}
-                 
                 </div>
             {/if}
             <h1>{$node.data_map.name.content|wash()}</h1>
         </div>
-  
+ 
 
         <div class="title-separator"></div>
         <div class="separator"></div>
@@ -29,6 +22,12 @@
 
          
 
+      {if $node.object.state_id_array|contains('6')}
+        <div class="wip">
+            <p>{"Contenuto in preparazione non ancora visibile pubblicamente"|i18n('scuola/state')}</p>
+        </div>
+        {/if}             
+                     
           {if gt($related_uffici|count,0)}
          <div class="uffici_correlati">
              <h2>{"Uffici Periferici associati:"|i18n("design/scuola/full/ufficio")}</h2>
@@ -51,8 +50,7 @@
     <div class="ufficio_extra-info">
         {if $node.object.data_map.evidenza.has_content}
                 <div class="attribute-page ">
-                    <h1>{"In evidenza:"|i18n("design/scuola/full/ufficio")}</h1>
-                    {attribute_view_gui attribute=$node.object.data_map.evidenza}
+                   {attribute_view_gui attribute=$node.object.data_map.evidenza}
                 </div>
 	{/if}
 

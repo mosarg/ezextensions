@@ -1,3 +1,16 @@
+<script type="text/javascript">
+{literal}    
+        $(function () {
+            $("#prof_selector").live("change", function () {
+               //alert($(this).val());
+               if ($(this).val()!=""){
+                $("#prof_form").submit();
+               }
+            });
+        });
+{/literal}        
+</script>
+
 <div class="border-box">
     {def $left_menu_depth = $pagedata.current_menu|eq('LeftOnly')|choose( 1, 0 )}
     {def $docenti_node=''
@@ -91,18 +104,15 @@
 
     {cache-block keys=array($altri_prof)}
     <div class="prof-choice">
-    <h4>{"Selezione docente: "|i18n('scuola/professori')}</h4>
-    <form action={"content/action"|ezurl} method="post">
-          
-
-        <select name="URL" title="Insegnante" class="select_prof">
+      <form id="prof_form" action={"content/action"|ezurl} method="post">
+        <select id="prof_selector" name="URL" title="Insegnante" class="select_prof">
+          <option value="" selected="selected">{"Cambia insegnante"|i18n("design/m2000/full/helper_prof")}</option> 
             {foreach $altri_prof as $altro_prof}
-            <option  value={$altro_prof.url|ezurl}>{$altro_prof.name}</option>
+              <option  value={$altro_prof.url|ezurl}>{$altro_prof.name}</option>
             {/foreach}
         </select>
-
-        <input type="submit" name="RedirectTo" value="{"Vai"|i18n('scuola/professori')}"/>
-               <input name="ContentObjectID" type="hidden" value="{$docenti_node}" />
+     <input name="ContentObjectID" type="hidden" value="{$docenti_node}" />
+     <input name="RedirectTo" type="hidden" value="Via" />
     </form>
     </div>
     {/cache-block}

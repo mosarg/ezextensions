@@ -34,7 +34,7 @@ $used_node=2}
         {* FIRST LEVEL *}
         {def $i=0}
         {if gt($module_result.path|count,1)}
-             {if $module_result.path[1].text|downcase|preg_match('/iti|liceo|itc|ipsia|ipsaa|ipssct|ipsc|azienda|convitto|macroaree/')}
+             {if $module_result.path[1].text|downcase|preg_match('/iti|liceo|itc|ipsia|ipsaa|ipssct|ipsc|azienda|convitto|macroaree|progetti/')}
                     {def $node_parent=$module_result.path[1].node_id}
              {else}
                    {def $node_parent=$top_cat}

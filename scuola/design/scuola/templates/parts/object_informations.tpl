@@ -3,7 +3,6 @@
 {/if}
 
 
-
 {switch match=$node.class_identifier}
     {case match='article'}
         {def $color_code='article_code'}
@@ -57,4 +56,4 @@
 </div>
 {/case}
 {/switch}
-{undef $color_code}
+{undef}

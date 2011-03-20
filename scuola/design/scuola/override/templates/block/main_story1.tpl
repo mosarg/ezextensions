@@ -1,19 +1,19 @@
 {def $vnode = $block.valid_nodes[0]}
 
-<!-- BLOCK: START -->
 
-<div class="block-type-mainstory">
+<div class="block-type-mainstory block-view-{$block.view}">
+    <div class="attribute-link">
+        <a href="{$vnode.url_alias|ezurl(no)}">{$vnode.name|wash()}</a>
+    </div>
     <div class="attribute-image">
         {attribute_view_gui href=$vnode.url_alias|ezurl() attribute=$vnode.data_map.image image_class='mainstory1'}
     </div>
 
-    <div class="trans-background">&nbsp;</div>
+    
 
-    <div class="attribute-link">
-        <a href="{$vnode.url_alias|ezurl(no)}">{$vnode.name|wash()}</a>
-    </div>
+    
 </div>
 
-<!-- BLOCK: END -->
+
 
 {undef $vnode}

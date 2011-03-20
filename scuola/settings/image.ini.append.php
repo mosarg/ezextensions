@@ -165,8 +165,8 @@ Filters[]=geometry/scalewidth=439
 [mainstory3]
 Reference=
 Filters[]
-Filters[]=geometry/scalewidth=201
-Filters[]=geometry/crop=201;239;0;0
+Filters[]=geometry/scalewidth=260
+Filters[]=geometry/crop=230;239;0;0
 
 [block2items1]
 Reference=

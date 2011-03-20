@@ -1,5 +1,7 @@
 {* Macroarea - Full view *}
-
+{run-once}
+ {ezscript_require( array('classes/navigator.js','init_navigator.js'))}
+{/run-once}
 
 {if $node.object.data_map.show_menu.data_int}
     {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
@@ -9,13 +11,12 @@
 
 <div class="content-view-full">
    
-    <div class="class-macroarea">
-      
-        
+    <div class="class-progetti">
+          
       {if $node.data_map.show_children.data_int|not()}   
-    <div class="attribute-header">
+        <div class="attribute-header">
           <h1>{$node.data_map.name.content|wash()}</h1>
-   </div>   
+        </div>   
         
     <div class="title-separator"></div>
         <div class="separator"></div>     
@@ -43,34 +44,23 @@
             {attribute_view_gui attribute=$node.object.data_map.descrizione}
         </div>
     {/if}
-
-       {if $node.data_map.page.has_content}
-        <div class="attribute-page">
-            {attribute_view_gui attribute=$node.object.data_map.page}
-        </div>
-       {/if}
+ 
 
 
-    {def         $children = array()
-                 $children_count = ''
-                 $counter=0
-                 $classes=array('progetto')}
+    {def    $page_limit=10
+            $classes=array('progetto')}
 
-    {set $children=fetch_alias( 'children', hash( 'parent_node_id', $node.node_id,
-                                                          'offset', $view_parameters.offset,
-                                                          'sort_by', $node.sort_array,
-                                                          'class_filter_type', 'include',
-                                                          'class_filter_array', $classes))
-          $children_count=$children|count}
-
-
-
-
-
-   {if gt($children_count,0)}
-     {foreach $children as $child }
+    {def $projects=fetch( 'content', 'related_objects',
+                           hash( 'object_id', $node.object.id,
+                                 'offset', $view_parameters.offset,
+                                 'all_relations', true(),
+                                 'limit', $page_limit))
+         $projects_count=$node.object.related_contentobject_count}
+ 
+   {if gt($projects_count,0)}
+     {foreach $projects as $project }
          <div class="content-view-children">
-             {node_view_gui view=line content_node=$child style='empty'}
+             {node_view_gui view=line content_node=$project.main_node imagesize='articlethumbnailsmall' style='compact' location="group" }
          </div>
     
      {/foreach}
@@ -78,5 +68,12 @@
  
 
     </div>
+    {include name=navigator
+                     uri='design:navigator/google.tpl'
+                     page_uri=$node.url_alias
+                     item_count=$projects_count
+                     node_id=$node.node_id
+                     view_parameters=$view_parameters
+                     item_limit=$page_limit}
 </div>
 {undef}

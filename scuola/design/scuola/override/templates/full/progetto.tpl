@@ -4,25 +4,32 @@
 {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
 
 
-
-<div class="border-box">
-
     <div class="content-view-full">
         <div class="class-progetto">
-
-        <div class="attribute-header">
-            <h1>{$node.data_map.title.content|wash()}</h1>
-            <h3>{$node.data_map.codice_progetto.content|wash()}</h3>
-        </div>
-
-        
-        
+    {if $node.object.state_id_array|contains('6')}
+         <div class="wip">
+                <p>{"Contenuto in preparazione non ancora visibile pubblicamente"|i18n('scuola/state')}</p>
+         </div>
+        {/if}
+            
+    
+      <div class="attribute-header">
             {if $node.data_map.logo.has_content}
                 <div class="attribute-image">
-                    {attribute_view_gui attribute=$node.data_map.logo image_class=medium}
-               </div>
+                 
+                   {attribute_view_gui attribute=$node.data_map.logo image_css_class='shadow' link_class=ezimage_zoom href=$node.data_map.logo.content[original].url|ezroot image_class=gallerythumbnailsquare}
+                 
+                </div>
             {/if}
-          <div class="attribute-long">
+            <h1>{$node.data_map.title.content|wash()}</h1>
+       </div>
+       
+      <div class="title-separator"><h3>{$node.data_map.codice_progetto.content|wash()}</h3></div>
+      
+      <div class="separator"></div>
+        
+        
+          <div class="attribute-short">
                 {attribute_view_gui attribute=$node.data_map.intro}
             </div>
         {if $node.data_map.body.content.is_empty|not}
@@ -95,5 +102,3 @@
         {include uri='design:parts/object_informations.tpl' style='full'}
     </div>
 
-
-</div>

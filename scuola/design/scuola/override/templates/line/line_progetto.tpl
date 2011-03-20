@@ -17,7 +17,12 @@
     </div>
     {/if}
     <span class="small_subtitle">{"Codice progetto:"|i18n("design/m2000/full/progetto")} {$node.data_map.codice_progetto.content|wash}</span>
-{include uri='design:parts/object_informations.tpl' style=$style}
-</div>
-</div>
+{if is_set($location)|not}
+      {include uri='design:parts/object_informations.tpl' style=$style}
+{/if}
+   
+      </div>
+
+ 
+ </div>
 {undef}

@@ -3,11 +3,20 @@
 {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true() extra_menu=false()}
 
 
+
+
+{run-once}
+{ezcss_require(array('javascript/gallery.css'))}
+{ezscript_require( array('classes/jquery.galleriffic.js','classes/jquery.history.js',
+'classes/jquery.opacityrollover.js','classes/jush.js','init_gallery.js' ))}
+{/run-once}
+
+
+
 <div class="border-box">
 
 <div class="content-view-full">
     <div class="class-gallery">
-
         <div class="attribute-header">
             <h1>{$node.name|wash()}</h1>
         </div>
@@ -20,21 +29,23 @@
            {attribute_view_gui attribute=$node.data_map.description}
         </div>
 
-        {if $node.data_map.show_sub_gal}
-            {def $child_gallery=fetch( 'content', 'list', hash( 'parent_node_id', $node.node_id,
+       {if $node.data_map.show_sub_gal.content}
+
+              {def $child_gallery=fetch( 'content', 'list', hash( 'parent_node_id', $node.node_id,
                                                          'offset', $view_parameters.offset,
                                                          'class_filter_type', 'include',
                                                          'class_filter_array', array( 'gallery' ),
                                                          'sort_by',array('attribute',false(),'gallery/syear') ) )
-                 $child_gallery_count=$child_gallery|count()}
-          {if $child_gallery_count}
+                   $child_gallery_count=$child_gallery|count()}
+
+         {if $child_gallery_count}
             <div class="content-view-children">
 
 
             {def $syear='-1'}
             {foreach $child_gallery as $gallery}
                 {if ne($gallery.data_map.syear.value[0],$syear)}
-                    <h4 class="school-year rounded">{$gallery.data_map.syear.class_content.options[$gallery.data_map.syear.value[0]].name}</h4>
+                    <h4 class="school-year">{$gallery.data_map.syear.class_content.options[$gallery.data_map.syear.value[0]].name}</h4>
                     {set $syear=$gallery.data_map.syear.value[0]}
                     
                 {/if}
@@ -44,11 +55,11 @@
             </div>
           {/if}
 
-        {/if}
+        {else}
 
 
 
-        {def $page_limit=12
+        {def $page_limit=30
              $children = fetch( 'content', 'list', hash( 'parent_node_id', $node.node_id,
                                                          'offset', $view_parameters.offset,
                                                          'limit', $page_limit,
@@ -59,36 +70,31 @@
 
 
         {if ge($children_count,1)}
-            <div class="attribute-link">
-                <p>
-                <a href={$children[0].url_alias|ezurl}>{'Guarda i contenuti in sequenza'|i18n( 'design/scuola/full/gallery' )}</a>
-                </p>
-            </div>
-
-           <div class="content-view-children">
-               {def $filters = ezini( 'gallerythumbnail', 'Filters', 'image.ini' )}
-               
-                {foreach $filters as $filter}
-                   {if or($filter|contains( "geometry/scale" ), $filter|contains( "geometry/scaledownonly" ), $filter|contains( "geometry/crop" ) )}
-                      {def $image_style = $filter|explode("=").1}
-                      {set $image_style = concat("width:", $image_style|explode(";").0, "px ;", "height:", $image_style|explode(";").1, "px")}
-                      {break}
-                   {/if}
-                {/foreach}
            
-               {foreach $children as $child}
-                   {node_view_gui view=galleryline content_node=$child}
-               {/foreach}
+           <div id="thumbs" class="content-view-children navigation">
 
+               <ul class="thumbs noscript">
+                          
+               {foreach $children as $child}
+               <li>
+                   {node_view_gui view=galleryline content_node=$child}
+               </li>
+               {/foreach}
+               </ul>
            </div>
+
+        
         {/if}
 
-        {include name=navigator
-                 uri='design:navigator/google.tpl'
-                 page_uri=$node.url_alias
-                 item_count=$children_count
-                 view_parameters=$view_parameters
-                 item_limit=$page_limit}
+        <div id="gallery" class="content">
+            <div id="controls" class="controls"></div>
+		<div class="slideshow-container">
+                    <div id="loading" class="loader"></div>
+                    <div id="slideshow" class="slideshow"></div>
+		</div>
+		<div id="caption" class="caption-container"></div>
+	</div>
+        {/if}
     </div>
 </div>
 </div>
