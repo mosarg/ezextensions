@@ -99,5 +99,5 @@ div#calendar_legend div.calendar_element span{
     position:relative;
     left:0.5em;
     top:0.5em;
-    background:white;
+    background:rgba(255,255,255,0.4);
 }

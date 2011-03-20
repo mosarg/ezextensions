@@ -86,6 +86,49 @@ $(document).ready(function() {
                 action:'edit',
                 params:dialogParams
             }).show();
+        }, eventMouseover:function(event, jsEvent, view){
+            //alert($event.html())
+            var $event=$(jsEvent.target);
+            var shown=false;
+            if(!$event.is('div.fc-event')){
+                $event=$event.parents('div.fc-event');
+            }
+            if(!canEdit) {
+                 $('.event-info-box').remove();
+       
+                $event.children('.event-info-box').each(function(){
+                    shown=true;
+                });
+                if(!shown){
+                    $(jsEvent.target).css('z-index',100);
+                    var $infobox=$('<div class="event-info-box rounded shadow" style="z-index:1000" ><div class="ajax-load-big"></div></div>').
+                    appendTo($event).hide().fadeIn(600);
+                    var ezaction='content/view/full/'+event.nodeId;
+                    if($event.offset().left+$infobox.outerWidth()>content_end){
+                    $infobox.offset({
+                            left:$infobox.offset().left-($infobox.outerWidth()-$event.width())
+                            });
+                     }
+               if($event.data('content')===undefined){
+                $.ezrun(ezaction,{
+                        postdata:'ready'
+                    },function(data){
+                        $infobox.html(data);
+                        $event.data('content',data);
+                        
+                    });
+               }else{
+                   $infobox.html($event.data('content'));
+               }
+
+                }
+            }
+
+           
+        },
+        eventMouseout:function(event,jsEvent,view){
+            $('.event-info-box').remove();
+            $(jsEvent.target).css('z-index',8);
         },
         eventRender:function(calEvent,$event) {
            
