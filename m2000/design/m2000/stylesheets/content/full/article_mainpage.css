@@ -23,6 +23,7 @@ div.content-view-full div.class-article-mainpage div.attribute-header h1
     margin-bottom: 0.5em;
     line-height: 0.9em;
     max-width:83%;
+    min-width: 30%;
 }
 
 div.content-view-full div.class-article-mainpage div.pagenavigator

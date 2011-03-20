@@ -14,6 +14,11 @@ div.content-view-line div.class-classe{
     overflow:hidden;
     text-align:center;
     margin-right:1em;
-    background:#ebefff;
-
+    background:#ff6c1e;
+    display:table;
 }
+
+div.content-view-line div.class-classe h2{
+    display:table-cell;
+    vertical-align: middle;
+    }

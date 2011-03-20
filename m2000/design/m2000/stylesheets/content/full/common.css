@@ -203,3 +203,99 @@ div.meccanografico{
     color:white;
     font-weight: bold;
 }
+/* ajax loader*/
+div.loader{
+    vertical-align: middle;
+    margin-left:auto;
+    margin-right: auto;
+    height:64px;
+    width:64px;
+    background: url(../images/ajax/ajax_preloader.gif) no-repeat;
+}
+
+div.navigator_loader{
+    position: absolute;
+    vertical-align: middle;
+    margin-left:auto;
+    margin-right: auto;
+    height:100%;
+    width:100%;
+    background: rgba(255,255,255,0.7) url(../images/ajax/ajax_preloader.gif) no-repeat center;
+   
+    
+}
+
+/*filter*/
+
+
+
+div.content-view-full div#filter div#data{
+    overflow: hidden;
+    float:left;
+    margin-left:1em;
+    padding:1em;
+    width:90%;
+    position:relative;
+    border-top:2px solid #ff6c1e;
+    border-bottom:2px solid #ff6c1e;
+    margin-bottom:2em;
+}
+
+
+div.content-view-full div#filter div#interface{
+    float:left;
+    margin-bottom:2em;
+   
+}
+
+
+div.content-view-full div#filter div#interface div.detach{
+    margin:2em;
+}
+
+div.content-view-full ul.filter-tabs{
+    margin-bottom:2em;
+}
+
+div.content-view-full ul.filter-tabs li{
+    display: block;
+        float:left;
+        padding:10px 5px;
+        background: #f2f2f2;
+        margin:0 5px 1em 0;
+              
+}
+
+div.content-view-full ul.filter-tabs li.selected{
+    background:#ff6c1e;
+   }
+div.content-view-full ul.filter-tabs li.selected:hover{
+    background: #ff6c1e;
+    color:white;
+}
+
+div.content-view-full ul.filter-tabs li.selected:hover a{
+    color:white;
+}
+
+div.content-view-full ul.filter-tabs li.selected a{
+    color:white;
+     }
+
+     
+ div.content-view-full  ul.filter-tabs li:hover{
+    background: #85868b;
+    color:white;
+}
+
+div.content-view-full ul.filter-tabs li:hover a{
+    color:white;
+}
+
+div.content-view-full ul.filter-tabs li a{
+    font-size:0.9em;
+    font-weight: bold;
+    color:#85868b;
+
+   
+    }

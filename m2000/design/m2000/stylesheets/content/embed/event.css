@@ -1,11 +1,3 @@
-/* 
-    Document   : event
-    Created on : Dec 7, 2009, 9:21:38 AM
-    Author     : mosa
-    Description:
-        Purpose of the stylesheet follows.
-        event embed view style
-*/
 
 a.remove-event{
     float:left;
@@ -21,4 +13,13 @@ a.remove-event{
 
 a.remove-event:hover{
     cursor:pointer;
+}
+
+div.content-view-embed div.class-event {
+    color:#273236;
+}
+
+div.content-view-embed div.class-event div.content-view-embed div.attribute-image a{
+    background: none;
+    border:0;
 }

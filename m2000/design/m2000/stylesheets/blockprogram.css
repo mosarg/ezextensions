@@ -4,6 +4,7 @@ div.visible-window{
     background:white;
     float:left;
     clear:both;
+    width:100%;
    }
 div.program-list{
      overflow: hidden;

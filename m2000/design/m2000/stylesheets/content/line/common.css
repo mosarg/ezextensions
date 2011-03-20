@@ -11,9 +11,6 @@ div.content-view-line{
     margin-bottom:1.3em;
 }
 
-div.content-view-line .line-header-common{
-    
-}
 
 div.content-view-line h2.line-header-common{
      margin: 0 0 0.1em;
@@ -32,4 +29,25 @@ div.content-view-line div.attribute-image
 
 .read-on {
     font-size:0.8em;
+     background: url(../images/props/arrow.png) no-repeat center left;
+}
+.read-on a{
+    margin-left:18px;
+}
+
+div.content-view-line  div.user-icon{
+    width:85px;
+    height:85px;
+    background:url(../images/icons/prof-icon.png) no-repeat center;
+    float:left;
+}
+
+div.content-view-line div.phone{
+    background: url(../images/icons/phone_small.png) no-repeat center left;
+    padding-left:22px;
+}
+
+div.content-view-line div.email{
+    background: url(../images/icons/email.png) no-repeat center left;
+    padding-left:32px;
 }

@@ -9,11 +9,12 @@
 */
 
 
-div.content-view-full div.class-profgroup div.show_all{
-    float:left;
-    margin-left:1em;
-    padding:0.5em;
-    background:gray;
+
+
+div.content-view-full div.class-profgroup ul.filter-tabs li.detach{
+    position: absolute;
+    margin-left:10em;
+    
 }
 div.content-view-full div.class-profgroup div.show_all a{
     color:white;
@@ -34,11 +35,11 @@ div.content-view-full div.class-profgroup div.content-view-line{
 div.content-view-full div.class-profgroup div.legend{
     width:100%;
     clear:both;
-    padding-left:100px;
+    padding-left:8%;
     margin-bottom:2em;
     overflow:hidden;
-    padding-top:0.5em;
-    height:2em;
+    padding-top:0em;
+    height:1.4em;
     background:#b6b3b9;
     color:white;
 

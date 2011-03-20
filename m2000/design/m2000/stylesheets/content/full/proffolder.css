@@ -8,79 +8,25 @@
 
 */
 
-table.related_class{
-    padding: 0.2em 2em 0 0.3em;
-}
-table.related_class td{
-    padding:0 1em 0.2em ;
+div.content-view-full div.class-folder_professore{
+    
 }
 
-div.teach_class{
-    width:100%;
+div.content-view-full div.class-folder_professore div.prof-personal_info{
     clear:both;
-    border-bottom:3px solid #A3A3A3;
-    border-top:2px solid #A3A3A3;
+    float:left;
+    width:100%;
+}
+div.content-view-full div.class-folder_professore div.left-column{
+    width:25%;
+}
 
+div.content-view-full div.class-folder_professore div.right-column{
+    width:55%;
 }
-div.prof_picture{
-    float:left;
-    padding-right:1em;
-    padding-bottom:2em;
+div.content-view-full div.class-folder_professore div.attribute-teachwhere{
+    
 }
-div.prof_description{
-    text-align:justify;
-}
-div#contatti{
-    padding:1em;
-}
-div#telefono{
-    padding-top:1em;
-}
-div.helper_prof_materie{
-    font-style:italic;
-    font-weight:bold;
-    padding-bottom:1em;
-}
-div.helper_prof_parlor div {
-    float:left;
-    padding:1em;
-    text-align:justify;
-    font-family:sans-serif;
-}
-div.helper_prof_orario{
-    clear:both;
-}
-table#docenti{
-    width:100%;
-}
-select.red{
-    background:red;
-    font-size:10em;
-}
-div.edit-prof{
-    width:100%;
-}
-div.edit-prof div.main-content{
-    float:left;
-    width:60%;
-}
-div.profile_info_col{
-    float:left;
-    width:40%;
-}
-div.edit-prof div.profile_info{
-    padding:1.5em;
-    width: 80%;
-    float: left;
-    background:#cdcdcd;
-    margin-bottom:3em;
-}
-div.edit-prof a{
-    color:white;
-}
-div.edit-prof a:hover{
-    color:gray;
-}
-div.class-folder_professore div.content-view-children div.content-view-line{
-    clear:none;
-}
+
+
+

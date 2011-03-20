@@ -1,10 +1,4 @@
-/* 
-    Document   : folder
-    Created on : Nov 28, 2009, 8:08:28 PM
-    Author     : mosa
-    Description:
-    folder full view
-*/
+
 div.content-view-full div.class-folder div.attribute-header>div.attribute-image{
     float:left;
 }
@@ -16,6 +10,5 @@ div.content-view-full div.class-folder div.attribute-image{
 
 div.content-view-full div.class-folder div.static-elements-box{
     padding:1em 1em 0.6em 1em;
-    border:4px solid #ffc03d;
     margin-bottom: 2em;
 }

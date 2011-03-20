@@ -1,10 +1,4 @@
-/* 
-    Document   : mainstory
-    Created on : Dec 7, 2009, 9:46:28 AM
-    Author     : mosa
-    Description:
-      Mainstory-1 block style
-*/
+
 div.block-type-mainstory div.trans-background
 {
     padding: 0;
@@ -20,31 +14,32 @@ div.block-type-mainstory div.trans-background
     z-index: 0;
 }
 
-div.block-type-mainstory div.attribute-link
+div.block-view-main_story1 div.attribute-link
 {
     width: 301px;
-    padding: 10px;
-    height: 37px;
-    visibility: visible;
-    color:#FFFFFF;
-    margin-top: -57px;
-    position: absolute;
-    z-index: 1;
+    height: 200px;
+    float:left;
+    width:25.5%;
+    background: #bcbcbc;
+    display:table;    
 }
 
-div.block-type-mainstory div.attribute-link a
+div.block-view-main_story1 div.attribute-link a
 {
-    font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: bold;
     color: #FFFFFF;
     text-decoration: none;
     display: block;
+    padding:1em;
+    display:table-cell;
+    vertical-align: middle;
+    font-size:1.6em;
 }
 
-div.block-type-mainstory div.attribute-image
+div.block-view-main_story1  div.attribute-image
 {
-    float: none;
-    margin: 0;
+    float: left;
+    margin:0;
 }
 
 div.block-type-mainstory div.attribute-image img
