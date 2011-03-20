@@ -5,6 +5,10 @@ var contentfilter  = {
  
         self._drawFilterInterface();
         self._setupEventDelegation();
+        
+        if (options.initial_view){
+           self._loadFilteredFragment($('#show_all'));
+        }
 
     },
     _initNavigator:function(){
@@ -27,53 +31,53 @@ var contentfilter  = {
         var  $tabscontainer=self.element.find('ul.filter-tabs');
         //append show all facelet
         
-        $('<li></li>').append($('<a class="filter_facelet">'+options.show_all.title+'</a>').data('facelet',options.show_all)).appendTo($tabscontainer);
+        
         
         for (var i in options.keys){
             $('<li></li>').append($('<a class="filter_facelet">'+options.keys[i].title+'</a>').data('facelet',options.keys[i])).appendTo($tabscontainer);
         //$('<li><a>'+options.keys[i].title+'</a>  </li>').appendTo($tabscontainer).data('facelet',options.keys[i]);
         }
+        $('<div class="detach"></div>').append($('<a id="show_all" class="filter_facelet">'+options.show_all.title+'</a>').data('facelet',options.show_all)).prependTo(self.element.children('#interface'));
     },
-    _attachEvents:function(){
-        var self=this;
-        var options=self.options;
-        self.element.find('.root_menu').mouseenter(function(event){
-            self._menuHover($(event.target));
-        }).mouseleave(
-            function(event){
-                var $target=$(event.target);
-                $('div#debug_one').html(parseInt($target.offset().top+$target.height())+' event_y '+event.pageY);
-                if(!(event.pageY>$target.offset().top+$target.height())){
-                    self._menuOut();
-
-                }
-            }
-            );
-        self.element.find('.sub').mouseleave(function(event){
-            self._menuOut();
-        });
-    },
-    _loadFilteredFragment:function($target){
+      _loadFilteredFragment:function($target){
         
         var self=this;
+        var cache=self.options.cache;
         var facelet=$target.data('facelet');
+        var view_parameters='';
+        //set ajax loader 
+        self.element.children("#data").html('<div class="loader"></div>');
         
-        $('li.selected').removeClass('selected shadow');
-        $target.parent('li').addClass('selected shadow');
-        if (facelet.depth){
-            var ezaction='content/view/embed/'+facelet.node_id+'/(depth)/'+facelet.depth;
-        }else{
-            var ezaction='content/view/embed/'+facelet.node_id;
+        $('li.selected').removeClass('selected shadow-inside');
+        $target.parent('li').addClass('selected shadow-inside');
+        
+        
+        if (facelet.view_parameters){
+            for (i in facelet.view_parameters){
+                view_parameters+='/('+i+')/'+facelet.view_parameters[i];
+            }
         }
+        
+        if (facelet.depth){
+            var ezaction='content/view/embed/'+facelet.node_id+'/(depth)/'+facelet.depth+view_parameters;
+        }else{
+            var ezaction='content/view/embed/'+facelet.node_id+view_parameters;
+        }
+        
+        if (cache[ezaction]){
+            self.element.children("#data").html(cache[ezaction]);
+            self._initNavigator();         
+        }else{
+        
         $.ezrun(ezaction,{
             postdata:'ready'
         },function(data){
-           
+            cache[ezaction]=data;
             self.element.children("#data").html(data);
             self._initNavigator();  
 
         });
-        
+        }
     },
     _setupEventDelegation : function() {
         var self = this;
@@ -96,7 +100,9 @@ $.ui.contentfilter.defaults ={
         interval: 50,
         timeout: 50
     },
-    is_opened:false
+    is_opened:false,
+    cache:new Object(),
+    initial_view:false
 };
 
 

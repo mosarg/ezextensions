@@ -1,7 +1,6 @@
 {if is_set($depth)|not}
     {def $depth=1}
-{/end}
-
+{/if}
 
 {default page_uri_suffix=false()
          left_max=7
@@ -97,9 +96,6 @@
 {if is_set($view_type)|not()}
     {def $view_type='view/full'}
 {/if}
-
-
-
 
 {if is_set($node_id)}
 <div id="navigator_elements" style="display:none">
