@@ -12,7 +12,7 @@
        
  {if $node.data_map.show_children.data_int|not()}   
     <div class="attribute-header">
-          <h1>{$node.data_map.name.content|wash()}</h1>
+          <h1>{$node.name|wash()}</h1>
    </div>   
         
     <div class="title-separator"></div>

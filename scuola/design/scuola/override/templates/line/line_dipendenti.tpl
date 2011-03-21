@@ -16,4 +16,7 @@
        {/if}
 
     </div>
+     <div class="read-on">
+        <a href={$node.url_alias|ezurl()}>{'Continua'|i18n('scuola/block/mainstory')}...</a>
+    </div>
 </div>

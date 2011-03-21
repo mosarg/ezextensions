@@ -28,5 +28,9 @@
     {/if}
     <span class="small_subtitle"> {"Referente macroarea"|i18n("design/m2000/full/progetto")}: {attribute_view_gui attribute=$node.data_map.referente}</span> 
     {include uri='design:parts/object_informations.tpl'}
+     <div class="read-on">
+        <a href={$node.url_alias|ezurl()}>{'Continua'|i18n('scuola/block/mainstory')}...</a>
     </div>
+    </div>
+    
 </div>

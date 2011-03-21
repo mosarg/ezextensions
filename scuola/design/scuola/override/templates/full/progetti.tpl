@@ -10,18 +10,17 @@
 {/if}
 
 <div class="content-view-full">
-   
     <div class="class-progetti">
-          
-      {if $node.data_map.show_children.data_int|not()}   
+    
+   {if $node.data_map.show_children.data_int|not()}   
         <div class="attribute-header">
           <h1>{$node.data_map.name.content|wash()}</h1>
         </div>   
         
-    <div class="title-separator"></div>
+      <div class="title-separator"></div>
         <div class="separator"></div>     
         
-   <div class="image-block">
+       <div class="image-block">
               {if $node.data_map.logo.has_content}
                      <div class="attribute-image">
                         {attribute_view_gui image_css_class='shadow' link_class=ezimage_zoom image_class='gallerythumbnailsquare' href=$node.data_map.logo.content[original].url|ezroot attribute=$node.data_map.logo}
@@ -37,8 +36,8 @@
                         {attribute_view_gui image_css_class='shadow' link_class=ezimage_zoom image_class='gallerythumbnailsquare' href=$node.data_map.logo2.content[original].url|ezroot attribute=$node.data_map.logo2}
                     </div>
                 {/if} 
-   </div>     
-        {/if}
+     </div>     
+  {/if}
     {if is_set($node.object.data_map.descrizione)}
         <div class="attribute-short">
             {attribute_view_gui attribute=$node.object.data_map.descrizione}
@@ -68,6 +67,7 @@
  
 
     </div>
+    {/if}
     {include name=navigator
                      uri='design:navigator/google.tpl'
                      page_uri=$node.url_alias

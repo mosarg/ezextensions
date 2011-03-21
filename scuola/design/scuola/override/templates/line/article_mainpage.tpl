@@ -27,6 +27,11 @@
     </div>
     {/if}
     {include uri=concat("design:parts/article/article_index_blocchi_lineview.tpl") used_node=$node}
+   
+     <div class="read-on">
+        <a href={$node.url_alias|ezurl()}>{'Continua'|i18n('scuola/block/mainstory')}...</a>
+    </div>
     {include uri='design:parts/object_informations.tpl' style=$style}
     </div>
+   
 </div>

@@ -15,3 +15,8 @@ php runcronjobs.php workflow
 pulisci collaborazione
 
 php update/common/scripts/cleanup.php workflow 
+
+dopo ever effettuato il deployment delle nuove definizioni delle classi è necessario aggiornare il database con 
+il comando:
+
+after_deploy_classes.php -s <siteaccess>

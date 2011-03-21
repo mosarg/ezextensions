@@ -12,4 +12,5 @@
         <img alt="folder" src={$node.data_map.icon.content[colorblock].url|ezroot} />
          {/if}
     </div>
+    
 </div>

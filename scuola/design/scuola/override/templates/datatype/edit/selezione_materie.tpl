@@ -10,6 +10,7 @@
      $i18n_context="scuola/materie/selezione/view"
      $available_options=$classContent.options}
 
+Contenuto {$content|attribute(show,2)}
 
 {if  and(is_set($classContent.db_options),count($classContent.db_options)|gt(0))}
     {set $available_options=$classContent.db_options}
@@ -27,7 +28,7 @@
         
     {foreach $available_options as $option}
         <option value="{concat($option.identifier,'-',$option.scuola)|wash}"
-                {if and($content|contains($option.identifier),contains($option.scuola))}
+                {if $content|contains(concat($option.identifier,'-',$option.scuola))}
                 selected="selected"{/if}>
             {$option.name}
         </option>

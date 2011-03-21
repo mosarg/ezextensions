@@ -2,8 +2,6 @@
 
 {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
 
-
-<div class="border-box">
 <div class="content-view-full">
     <div class="class-article-mainpage">
         {if $node.object.state_id_array|contains('6')}
@@ -45,5 +43,3 @@
         {include uri='design:parts/object_informations.tpl' style='full'}
     </div>
 
-
-</div>

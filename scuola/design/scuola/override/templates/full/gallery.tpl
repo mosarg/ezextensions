@@ -1,8 +1,6 @@
 {* Gallery - Full view *}
 
-{include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true() extra_menu=false()}
-
-
+{include uri='design:parts/global_variables.tpl' left_menu=false() left_nav_menu=false()}
 
 
 {run-once}

@@ -1,3 +1,7 @@
+{run-once}
+{ezcss_require(array('edit/school_list.css'))}
+{/run-once}
+
 {def $content=$attribute.content
      $classContent=$attribute.class_content
      $id=$attribute.id
@@ -46,6 +50,4 @@
 
 
 {undef $content $classContent $id $i18n_context $available_options}
-<script type="text/javascript">
-    $.include({"stylesheets/edit/school_list.css"|ezdesign});
-</script>
+
