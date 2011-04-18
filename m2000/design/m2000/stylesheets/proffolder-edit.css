@@ -1,0 +1,25 @@
+div.content-edit div.school-id{
+    background: #c6c6c6;
+    border:2px solid white;
+    float:left;
+    padding:0.5em;
+    width:15%;
+    
+}
+div.content-edit div.school-id span{
+    
+}
+
+div.content-edit div.school-id span.name{
+    
+}
+div.content-edit div.school-id span.checkbox-label{
+    display: block;
+    float:left;
+    overflow: hidden;
+    width:70%;
+}
+
+div.content-edit div.school-id input{
+    float:right;
+}

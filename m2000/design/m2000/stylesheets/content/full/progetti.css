@@ -1,0 +1,9 @@
+div.content-view-full div.class-progetti div.content-view-line{
+    border-bottom:2px solid white;
+    box-shadow:0 -2px 0 0 #cdcdcd inset;
+    -moz-box-shadow:0 -2px 0 0 #cdcdcd inset;
+    -webkit-box-shadow:0 -2px 0 0 #cdcdcd inset;
+    padding-bottom:1em;
+    
+}
+
