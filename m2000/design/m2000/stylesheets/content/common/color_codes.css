@@ -1,20 +1,20 @@
 .article_code{
     /*border-top:2px solid #d1283b;*/
     border-bottom:2px solid #ef9e9e ;
-    -moz-box-shadow:0 -2px 0 #d1283b inset;
-    -webkit-box-shadow:0 -2px 0 #d1283b inset;
+    /*-moz-box-shadow:0 -2px 0 #d1283b inset;
+    -webkit-box-shadow:0 -2px 0 #d1283b inset;*/
 }
 .folder_code{
     /*border-top:2px solid #ff910f;*/
     border-bottom:2px solid #ffc888;
-    -moz-box-shadow:0 -2px 0 #ff910f inset;
-    -webkit-box-shadow:0 -2px 0 #ff910f inset;
+    /*-moz-box-shadow:0 -2px 0 #ff910f inset;
+    -webkit-box-shadow:0 -2px 0 #ff910f inset;*/
 }
 .generic_code{
     /*border-top:2px solid #a2b0de;*/
     border-bottom: 2px solid #a2b0de;
-     -moz-box-shadow:0 -2px 0 #5975d0 inset;
-    -webkit-box-shadow:0 -2px 0 #5975d0 inset;
+    /* -moz-box-shadow:0 -2px 0 #5975d0 inset;
+    -webkit-box-shadow:0 -2px 0 #5975d0 inset;*/
 }
 
 

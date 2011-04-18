@@ -80,6 +80,8 @@ ShowUntranslatedObjects=disabled
 SiteLanguageList[]
 SiteLanguageList[]=ita-IT
 SiteLanguageList[]=eng-GB
+TranslationSA[m2000_ita]=Italiano
+TranslationSA[m2000_eng]=Inglese
 TextTranslation=enabled
 
 [FileSettings]

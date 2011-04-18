@@ -124,14 +124,13 @@ div#header div#school_menu div#highlight_section{
     height: 120px;
     position: relative;
     float:left;
-    background: #3c576a;
     width:230px;
     text-align: center;
     display:table;
+    border-right:3px solid gray;
    
 }
 div#header div#school_menu div#highlight_section a{
-    color:white;
     display:table-cell;
     font-size:3em;
     vertical-align: middle;

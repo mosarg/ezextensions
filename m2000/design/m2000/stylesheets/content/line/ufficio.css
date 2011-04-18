@@ -1,8 +1,12 @@
-/* 
-    Document   : ufficio
-    Created on : Nov 28, 2009, 8:32:38 PM
-    Author     : mosa
-    Description:
-      ufficio line icon view
-*/
+div.content-view-line>div.class-ufficio{
+    width:100%;
+    margin-bottom:1.5em;
+}
 
+div.content-view-line>div.class-ufficio div.attribute-short{
+    width:100%;
+}
+
+div.content-view-line>div.class-ufficio div.title-separator{
+    float:none;
+}

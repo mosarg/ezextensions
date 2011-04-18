@@ -3,7 +3,6 @@ div.block-view-3_risalto{
 }
 
 div.block-view-3_risalto div.class-generic {
-    margin-bottom:1em;
     border-bottom:2px solid white;
     box-shadow:0 -2px 0 #E8E8E8 inset;
     -moz-box-shadow:0 -2px 0 #E8E8E8 inset;
@@ -44,6 +43,12 @@ div.block-view-3_risalto  div.read-on{
     float:right;
     font-weight: bold;
     height:40px;
-    font-size: 2em;
+    display:table;
+    font-size: 1.5em;
     background: none;
+    padding:0;
+}
+div.block-view-3_risalto div.read-on a{
+    display: table-cell;
+    vertical-align: middle;
 }
