@@ -13,3 +13,4 @@
 *.aux
 *.log
 *.backup
+/nbproject/private/
