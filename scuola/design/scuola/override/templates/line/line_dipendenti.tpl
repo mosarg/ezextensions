@@ -4,9 +4,9 @@
     <div class="class-dipendenti">
 
         <h2 class="rounded"><a href={$node.url_alias|ezurl}>{$node.name|wash()}</a></h2>
-        {if $node.data_map.logo.has_content}
+        {if $node.data_map.image.has_content}
         <div class="logo">
-            <img alt="dipendenti" src={$node.data_map.logo.content[gallerythumbnail].url|ezurl}/>
+            <img alt="dipendenti" src={$node.data_map.image.content[gallerythumbnail].url|ezurl}/>
         </div>
         {/if}
         {if $node.data_map.short_description.has_content}

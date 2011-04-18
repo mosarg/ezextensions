@@ -29,7 +29,12 @@
        
        {if $node.data_map.materie.has_content}  
         <div class="subject">
+            {if is_set($filter)}
+              {attribute_view_gui attribute=$node.data_map.materie filter=$filter}
+            {else}
               {attribute_view_gui attribute=$node.data_map.materie}
+            {/if}
+            
          </div>
       {else}<div></div>{/if}
     </div>

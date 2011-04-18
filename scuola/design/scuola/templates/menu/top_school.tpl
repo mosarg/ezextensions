@@ -20,10 +20,12 @@
          $selected_key=''}
        {def $top_menu_items_node_ids=array()}
          {foreach $top_menu_items as $key=>$top_menu_item}
-            {if and(is_set($module_result.path[1]),eq($top_menu_item.node_id,$module_result.path[1].node_id) )}
+         {if is_set($module_result.path[1])}
+            {if and(is_set($module_result.path[1].node_id),eq($top_menu_item.node_id,$module_result.path[1].node_id) )}
                 {def $current_node_in_path=$module_result.path[1].node_id}
                 {set $selected_key=$key}
             {/if}
+          {/if}
          {/foreach}
     {if $top_menu_items_count}
 
@@ -58,7 +60,7 @@
                 {set $item_class = $item_class|append("lastli")}
             {/if}
             {if eq( $item.class_identifier, 'macroarea')}
-              {set $macroarea=$item}
+                {set $macroaree=$macroaree|append($item)}
             {else}
             
                 <li  id="node_id_{$item.node_id}"{if $item_class} class="{$item_class|implode(" ")}"{/if}><a class="" href={$item.url_alias|ezurl}>{$item.name|wash()}</a></li>

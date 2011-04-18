@@ -16,7 +16,6 @@ Match[class_identifier]=folder
 Match[url_alias]=Albo
 
 
-
 [progetti]
 Source=node/view/full.tpl
 MatchFile=full/progetti.tpl
@@ -45,6 +44,9 @@ MatchFile=edit/edit_alunno.tpl
 Subdir=templates
 Match[class_identifier]=alunno
 
+
+
+
 [edit_form]
 Source=content/edit.tpl
 MatchFile=edit/edit_form.tpl
@@ -70,6 +72,20 @@ MatchFile=pagelayout_docenti.tpl
 Subdir=templates
 Match[section]=16
 
+[pagelayout_macroaree]
+Source=pagelayout.tpl
+MatchFile=pagelayout_macroaree.tpl
+Subdir=templates
+Match[url_alias]=Macroaree
+
+[edit_proffolder]
+Source=content/edit.tpl
+MatchFile=edit/proffolder.tpl
+Subdir=templates
+Match[class_identifier]=proffolder
+
+
+
 [edit_m2000_front]
 Source=content/edit.tpl
 MatchFile=edit/frontpage.tpl
@@ -87,6 +103,13 @@ Source=content/edit.tpl
 MatchFile=edit/frontpage.tpl
 Subdir=templates
 Match[class_identifier]=macroarea
+
+[edit_global_layout]
+Source=content/edit.tpl
+MatchFile=edit/frontpage.tpl
+Subdir=templates
+Match[class_identifier]=global_layout
+
 
 [full_ecdl_skill_exam_form]
 Source=node/view/full.tpl
@@ -494,6 +517,24 @@ Subdir=templates
 Match[type]=Manual5Items
 Match[view]=5_items1
 
+ 
+[block_5_items2]
+Source=block/view/view.tpl
+MatchFile=block/5_items2.tpl
+Subdir=templates
+Match[type]=Manual5Items
+Match[view]=5_items2
+
+[block_7_items1]
+Source=block/view/view.tpl
+MatchFile=block/7_items1.tpl
+Subdir=templates
+Match[type]=Manual5Items
+Match[view]=7_items1
+
+
+
+
 
 [block_gallery1]
 Source=block/view/view.tpl
@@ -529,6 +570,13 @@ MatchFile=block/itemlist3.tpl
 Subdir=templates
 Match[type]=ItemList
 Match[view]=itemlist3
+
+[block_itemlist4]
+Source=block/view/view.tpl
+MatchFile=block/itemlist4.tpl
+Subdir=templates
+Match[type]=ItemList
+Match[view]=itemlist4
 
 
 [block_poll]
@@ -571,6 +619,14 @@ Source=node/view/block_item.tpl
 MatchFile=block_item/folder.tpl
 Subdir=templates
 Match[class_identifier]=folder
+ 
+
+[block_item_dmsfolder]
+Source=node/view/block_item.tpl
+MatchFile=block_item/folder.tpl
+Subdir=templates
+Match[class_identifier]=dmsfolder
+  
 
 [block_item_file]
 Source=node/view/block_item.tpl

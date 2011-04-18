@@ -18,7 +18,7 @@ window.onload = function ()
 
 <div class="selection_box" id="hideNoJ" style="display:none">
 {foreach $usersClasses as $userClassType}
-    <div class="selection_gen roundedmore" id="{concat('selection_',$userClassType)}">
+    <div class="selection_gen" id="{concat('selection_',$userClassType)}">
         <a href={concat('/user2/register2/classe/',$userClassType)|ezurl}>{$userClassType|upfirst()} </a>
     </div>
 {/foreach}

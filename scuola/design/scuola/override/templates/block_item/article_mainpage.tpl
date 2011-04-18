@@ -1,14 +1,16 @@
 {if is_set($style)|not()}
     {def $style='compact'}
 {/if}
-<div class="class-article float-break">
+<div class="class-article">
         <div class="attribute-header">
             <h2><a href={$node.url_alias|ezurl()}>{$node.name|wash()}</a></h2>
         </div>
        
         <div class="attribute-short">
-             <div class="attribute-image">{attribute_view_gui attribute=$node.data_map.image image_class=$image_class}</div>
-            
+             
+            {if $node.data_map.image.has_content}   
+            <div class="attribute-image">{attribute_view_gui attribute=$node.data_map.image image_class=$image_class}</div>
+            {/if}
             {$node.data_map.intro.content.output.output_text|smartshort(100,'...')}
         </div>
    

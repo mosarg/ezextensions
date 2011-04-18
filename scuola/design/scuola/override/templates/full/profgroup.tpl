@@ -9,7 +9,7 @@
 
 {include uri='design:parts/global_variables.tpl' left_menu=false() left_nav_menu=false() extra_menu=false()}
 
-{def $profHelperClasses=ezini( 'ClassIds', 'infoprof', 'scuola.ini' )
+{def $profHelperClasses=array('proffolder')
      $equivalentSchools=ezini( 'EquivalentSchools','School','scuola.ini')
      $parentNodeName=$node.parent.path_identification_string
      $faceletes=array()}

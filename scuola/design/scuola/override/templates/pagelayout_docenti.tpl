@@ -70,8 +70,7 @@
     <div id="columns" class="float-break">
 
     <!-- Side menu area: START -->
-     
-        
+   
 
     {if $pagedata.no_prof_menu}
         <div id="sidemenu-position"><!--start side menu position-->
@@ -80,15 +79,13 @@
                     {include uri='design:menu/menu_sezione_prof.tpl'}
            </div><!--end side menu-->
         </div><!--end side menu position-->
-
-
-                    {/if}
+    {/if}
          
     
     <!-- Side menu area: END -->
 
   {/cache-block}
-{/cache-block}
+  {/cache-block}
     <!-- Main area: START -->
     {include uri='design:page_mainarea.tpl'}
     <!-- Main area: END -->

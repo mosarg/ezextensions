@@ -23,9 +23,11 @@
        {$node.data_map.intro.content.output.output_text|smartshort(150,'...')}
     </div>
     {/if}
-    {include uri='design:parts/object_informations.tpl' style=$style}
-    </div>
-    <div class="read-on">
+     <div class="read-on">
         <a href={$node.url_alias|ezurl()}>{'Continua'|i18n('scuola/block/mainstory')}...</a>
     </div>
+    
+    {include uri='design:parts/object_informations.tpl' style=$style}
+    </div>
+   
 </div>

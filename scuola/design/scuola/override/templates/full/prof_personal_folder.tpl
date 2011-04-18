@@ -1,6 +1,14 @@
 {* Spazio personale prof - full view*}
 
 {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
+
+{def $equivalentSchools=ezini( 'EquivalentSchools','School','scuola.ini')
+     $parentNodeName=$node.parent.parent.path_identification_string}
+
+{if is_set($equivalentSchools[$parentNodeName])}
+    {set $parentNodeName=$equivalentSchools[$parentNodeName]}
+{/if}
+
 <div class="content-view-full">
     <div class="class-folder_professore">
       
@@ -41,7 +49,7 @@
                {if $node.data_map.materie.has_content}
                <div class="highlight1">
                     <h1>{"Discipline"|i18n("design/m2000/full/helper_prof")}</h1>
-                    {attribute_view_gui attribute=$node.object.data_map.materie}
+                    {attribute_view_gui attribute=$node.object.data_map.materie filter=$parentNodeName}
                </div>
                {/if} 
                {if $node.data_map.email.has_content}

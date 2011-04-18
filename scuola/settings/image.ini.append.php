@@ -147,7 +147,7 @@ Filters[]=geometry/crop=100;100;0;0
 
 [blockmenubig]
 Filters[]
-Filters[]=geometry/scalewidth= 130
+Filters[]=geometry/scalewidth= 200
 Filters[]=geometry/crop=130;130;0;0
 
 

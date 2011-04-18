@@ -48,20 +48,23 @@
         
     </div>
     <div class="ufficio_extra-info">
-        {if $node.object.data_map.evidenza.has_content}
-                <div class="attribute-page ">
-                   {attribute_view_gui attribute=$node.object.data_map.evidenza}
-                </div>
-	{/if}
-
+        
+    {if $node.object.data_map.resp_.has_content}
         <div class="resp_ufficio rounded">
              <h2>{"Responsabile ufficio:"|i18n("design/scuola/full/ufficio")}</h2>
              <span>{attribute_view_gui attribute=$node.data_map.resp_uff}</span>
         </div>
-         <div class="contatti rounded">
-                <h2>{"Contatti:"|i18n("design/scuola/full/ufficio")}</h2>
-                {attribute_view_gui attribute=$node.data_map.contatti}
-        </div>
+    {/if}
+    <div class="contatti rounded">
+            <h2>{"Contatti:"|i18n("design/scuola/full/ufficio")}</h2>
+            {attribute_view_gui attribute=$node.data_map.contatti}
+    </div>
+    
+    {if $node.object.data_map.evidenza.has_content}
+           <div class="attribute-page ">
+                {attribute_view_gui attribute=$node.object.data_map.evidenza}
+           </div>
+    {/if}
         
     </div>
 

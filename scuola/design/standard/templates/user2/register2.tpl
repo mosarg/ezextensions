@@ -18,6 +18,9 @@ window.onbeforeunload  = function() {
   }
 {/literal}
 </script>
+{if is_set($currentType)|not}
+    {def $currentType=''}
+{/if}    
 
 {def $chosen_class=or($currentType,$classType)}
 {* def $chosen_class=or($currentType,$view_parameters.class) *}

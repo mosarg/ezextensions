@@ -5,7 +5,7 @@
      $available_options=$classContent.options
      $select_class=''}
 
-
+     
 {if and(is_set($classContent.db_options),count($classContent.db_options)|gt(0))}
     {set $available_options=$classContent.db_options}
     {def    $selection_chain=$classContent.options}

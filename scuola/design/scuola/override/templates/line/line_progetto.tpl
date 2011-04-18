@@ -1,4 +1,12 @@
 {* progetto line view *}
+{if is_set($style)|not()}
+    {def $style='compact'}
+{/if}
+{if is_set($imagesize)|not()}
+    {def $imagesize='large'}
+{/if}
+    
+
 <div class="content-view-line">
 <div class="class-progetto">
     
@@ -13,18 +21,20 @@
     
     {if $node.data_map.intro.has_content}
     <div class="attribute-short">
-       {attribute_view_gui attribute=$node.data_map.intro}
+    {$node.data_map.intro.content.output.output_text|smartshort(150,'...')} 
     </div>
     {/if}
-    <span class="small_subtitle">{"Codice progetto:"|i18n("design/m2000/full/progetto")} {$node.data_map.codice_progetto.content|wash}</span>
-{if is_set($location)|not}
-      {include uri='design:parts/object_informations.tpl' style=$style}
-{/if}
-   
-      </div>
- <div class="read-on">
+    <div class="highlighted_attribute">{"Codice progetto:"|i18n("design/m2000/full/progetto")} {$node.data_map.codice_progetto.content|wash}</div>
+    <div class="read-on">
         <a href={$node.url_alias|ezurl()}>{'Continua'|i18n('scuola/block/mainstory')}...</a>
     </div>
+    
+     {if is_set($location)|not}
+         {include uri='design:parts/object_informations.tpl' style=$style}
+    {/if}
+   
+      </div>
+ 
  
  </div>
 {undef}

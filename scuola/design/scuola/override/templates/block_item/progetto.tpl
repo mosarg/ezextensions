@@ -19,7 +19,9 @@
         </div>
      {/if}
     <span class="small_subtitle">{"Codice progetto: "|i18n("design/m2000/full/progetto")}{$node.data_map.codice_progetto.content|wash}</span>
-
+ <div class="read-on">
+        <a href={$node.url_alias|ezurl()}>{'Continua'|i18n('scuola/block/mainstory')}...</a>
+    </div>
     {include uri='design:parts/object_informations.tpl' style=$style}
 </div>
 {undef}

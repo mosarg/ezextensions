@@ -10,9 +10,6 @@
     {set $parentNodeName=$equivalentSchools[$parentNodeName]}
 {/if}
 
-
-
-
 <div class="content-view-embed">
     <div class="class-profgroup">
         {def     $classes = array( 'proffolder' )
@@ -29,13 +26,13 @@
                                                           'sort_by', $node.sort_array,
                                                           'attribute_filter',array(array('proffolder/materie',
                                                                                           'like',
-                                                                                          concat('*',$view_parameters.subject,'*'))),
+                                                                                          concat('*',$view_parameters.subject,'-',$parentNodeName,'*') )),
                                                           'class_filter_type', 'include',
                                                           'class_filter_array', $classes) )
                $teachers_count=fetch_alias( 'children_count', hash( 'parent_node_id', $node.node_id,
                                                                     'attribute_filter',array(array('proffolder/materie',
                                                                                           'like',
-                                                                                          concat('*',$view_parameters.subject,'*'))),
+                                                                                          concat('*',$view_parameters.subject,'-',$parentNodeName,'*'))),
                                                                     'class_filter_type', 'include',
                                                                     'class_filter_array',$classes ) )}
                                        
@@ -45,7 +42,7 @@
    <div class="content-view-children">
                 {foreach $teachers as $teacher  }
                               
-                                {node_view_gui view='line' content_node=$teacher}
+                                {node_view_gui view='line' content_node=$teacher filter=$parentNodeName}
                       
                 {/foreach}
                     
@@ -81,7 +78,7 @@
     <div class="content-view-children">
              
                 {foreach $teachers as $teacher }
-                       {node_view_gui view='line' content_node=$teacher}
+                       {node_view_gui view='line' content_node=$teacher filter=$parentNodeName}
                 {/foreach}
         
      </div>

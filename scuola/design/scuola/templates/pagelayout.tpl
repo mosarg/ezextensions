@@ -23,6 +23,7 @@
      $current_node_id  = $pagedata.node_id
      $indexpage        = ezini( 'NodeSettings', 'RootNode', 'content.ini')
      }
+ 
 {include uri='design:page_head.tpl'}
 {include uri='design:page_head_style_scuola.tpl'}
 {include uri='design:page_head_script_scuola.tpl'}

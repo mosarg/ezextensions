@@ -4,7 +4,7 @@
     {def $style='compact'}
 {/if}
 
-<div class="class-article float-break">
+<div class="class-article">
    <div class="attribute-header">
       <h2 >
          <a href={$node.url_alias|ezurl()}>{$node.name|wash()}</a>

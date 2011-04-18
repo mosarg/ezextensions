@@ -11,14 +11,12 @@ AllowedTypes[]=Manual4Items
 AllowedTypes[]=Manual5Items
 AllowedTypes[]=Gallery
 AllowedTypes[]=ItemList
-
 AllowedTypes[]=Poll
 
 [PushToBlock]
 ContentClasses[]=school_front
 ContentClasses[]=m2000_front
 RootSubtree=1
-
 
 [MainStory]
 Name=Notizia principale
@@ -30,7 +28,7 @@ ViewList[]=main_story2
 ViewList[]=main_story3
 ViewName[main_story1]=Solo immagine
 ViewName[main_story2]=Immagine (grande) e testo
-ViewName[main_story3]=Notizia principale (3)
+ViewName[main_story3]=Immagine (piccola) e testo
 
 [Manual2Items]
 Name=2 Elementi Manuale
@@ -69,14 +67,16 @@ ViewName[4_items3]=4 Elementi Schema
 
 
 [Manual5Items]
-Name=5 Elementi Manuale
-NumberOfValidItems=5
-NumberOfArchivedItems=5
+Name=7 Elementi Manuale
+NumberOfValidItems=7
+NumberOfArchivedItems=7
 ManualAddingOfItems=enabled
 ViewList[]=5_items1
 ViewList[]=5_items2
-ViewName[5_items1]=5 Elementi con Titolo
-ViewName[5_items2]=5 Elementi senza Titolo
+ViewList[]=7_items_1
+ViewName[5_items1]=7 Elementi con Titolo
+ViewName[5_items2]=7 Elementi senza Titolo
+ViewName[7_items1]=7 Elementi immagine sinistra
 
 [Gallery]
 Name=Galleria multimediale Manuale
@@ -96,9 +96,11 @@ ManualAddingOfItems=enabled
 ViewList[]=itemlist1
 ViewList[]=itemlist2
 ViewList[]=itemlist3
+ViewList[]=itemlist4
 ViewName[itemlist1]=Lista 1 colonna titolo
 ViewName[itemlist2]=Lista 2 colonne titolo
 ViewName[itemlist3]=Lista 2 colonne senza titolo
+ViewName[itemlist4]=Selezione a tendina 
 
 
 [Poll]

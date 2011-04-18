@@ -10,6 +10,9 @@ AllowedTypes[]=Manual3Items
 AllowedTypes[]=GMap
 AllowedTypes[]=MainStory
 
+[PushToBlock]
+ContentClasses[]=frontpage
+RootSubtree=1
 
 [Calendario]
 Name=Calendario

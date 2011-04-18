@@ -1,9 +1,14 @@
 {scuolapagedata_set( 'left_menu', $left_menu )}
 {scuolapagedata_set( 'left_nav_menu', $left_nav_menu )}
 
+
 {if is_set($no_class_menu)}
     {scuolapagedata_set( 'no_class_menu', $no_class_menu)}
 {/if}
+{if is_set($no_prof_menu)}
+     {scuolapagedata_set( 'no_prof_menu', $no_prof_menu)}
+{/if}
+
 
 {if is_set($extra_menu)|not()}
 

@@ -1,5 +1,5 @@
 {run-once}
- {ezscript_require( array('modal_selection.js'))}
+ {ezscript_require( array('modal_selection2.js'))}
 {/run-once}
 
 
@@ -10,7 +10,6 @@
      $i18n_context="scuola/materie/selezione/view"
      $available_options=$classContent.options}
 
-Contenuto {$content|attribute(show,2)}
 
 {if  and(is_set($classContent.db_options),count($classContent.db_options)|gt(0))}
     {set $available_options=$classContent.db_options}
@@ -22,18 +21,16 @@ Contenuto {$content|attribute(show,2)}
 
  {/if}
 
+{foreach $available_options as $option}
+<div class="school-id {$option.scuola}"> <span class="checkbox-label">{$option.name}</span> <span class="name">{$option.scuola}</span> <input type="checkbox" name="ContentObjectAttribute_sckenhancedselection_selection_{$id}[]"
+                            value="{concat($option.identifier,'-',$option.scuola)|wash}"
+                           {if $content|contains(concat($option.identifier,'-',$option.scuola))}
+                           checked="yes"{/if}/></div>
+     
+       
+{/foreach}
+ 
+ 
 
-<select class={$select_class|wash} name="ContentObjectAttribute_sckenhancedselection_selection_{$id}[]"
-        {if $classContent.is_multiselect} multiple="multiple"{/if}>
-        
-    {foreach $available_options as $option}
-        <option value="{concat($option.identifier,'-',$option.scuola)|wash}"
-                {if $content|contains(concat($option.identifier,'-',$option.scuola))}
-                selected="selected"{/if}>
-            {$option.name}
-        </option>
-    {/foreach}
-        
-</select>
      
 {undef}
