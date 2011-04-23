@@ -37,8 +37,8 @@ NumberOfArchivedItems=5
 ManualAddingOfItems=enabled
 ViewList[]=2_items1
 ViewList[]=2_items2
-ViewName[2_items1]=2 Elementi Titolo
-ViewName[2_items2]=2 Elementi Senza Titolo
+ViewName[2_items1]=2 Elementi stretti   
+ViewName[2_items2]=2 Elementi larghi
 
 
 [Manual3Items]
@@ -49,8 +49,8 @@ ManualAddingOfItems=enabled
 ViewList[]=3_items1
 ViewList[]=3_items2
 ViewList[]=3_risalto
-ViewName[3_items1]=  3 Elementi Titolo
-ViewName[3_items2]=  3 Elementi Senza Titolo
+ViewName[3_items1]=  3 Elementi Stretti
+ViewName[3_items2]=  3 Elementi Larghi
 ViewName[3_risalto]= 3 Elementi Non Omogenei
 
 [Manual4Items]
@@ -73,9 +73,9 @@ NumberOfArchivedItems=7
 ManualAddingOfItems=enabled
 ViewList[]=5_items1
 ViewList[]=5_items2
-ViewList[]=7_items_1
-ViewName[5_items1]=7 Elementi con Titolo
-ViewName[5_items2]=7 Elementi senza Titolo
+ViewList[]=7_items1
+ViewName[5_items1]=7 Elementi immagini medie
+ViewName[5_items2]=7 Elementi immagini piccole
 ViewName[7_items1]=7 Elementi immagine sinistra
 
 [Gallery]
@@ -97,9 +97,9 @@ ViewList[]=itemlist1
 ViewList[]=itemlist2
 ViewList[]=itemlist3
 ViewList[]=itemlist4
-ViewName[itemlist1]=Lista 1 colonna titolo
-ViewName[itemlist2]=Lista 2 colonne titolo
-ViewName[itemlist3]=Lista 2 colonne senza titolo
+ViewName[itemlist1]=Lista 1 colonna 
+ViewName[itemlist2]=Lista 2 colonne 
+ViewName[itemlist3]=Lista 2 colonne con descrizione
 ViewName[itemlist4]=Selezione a tendina 
 
 

@@ -10,7 +10,7 @@
         {def $gallery_relation=$node.data_map.gallery_image.content.relation_list[0]
          $gallery_image=fetch(content,object,hash(object_id,
          $gallery_relation.contentobject_id,object_version,$gallery_relation.contentobject_version))}
-        <img alt="gallery_image" class="shadowmore" src={$gallery_image.data_map.image.content[blockmenubig].url|ezroot} />
+        <img alt="gallery_image" class="shadow" src={$gallery_image.data_map.image.content[blockmenubig].url|ezroot} />
     </div>
 {/if}
     <div class="attribute-short">

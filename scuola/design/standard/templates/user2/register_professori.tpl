@@ -1,10 +1,13 @@
 {*Pagina registrazione insegnanti*}
-
+{run-once}
+    {ezscript_require( array('classes/registration.js','init_registration.js'))}
+{/run-once}
+<div class="registration-form">
 <div class="left-column">
-<form enctype="multipart/form-data"  action={"/user2/register2/"|ezurl} method="post" name="Register" onsubmit="cancelOnUnload=false">
+<form id="user_registration_form" enctype="multipart/form-data"  action={"/user2/register2/"|ezurl} method="post" name="Register" onsubmit="cancelOnUnload=false">
 
 <div class="maincontentheader">
-<h1>{"Register user"|i18n("design/standard/user")}::Professore</h1>
+<h1>{"Register user"|i18n("design/standard/user")} Professore</h1>
 </div>
       <div>
           <p>{'Le voci contrassegnate con * sono obbligatorie'|i18n('scuola/register')}</p>
@@ -27,6 +30,11 @@
         {/if}
 
         {switch match=$ContentObjectAttribute.contentclass_attribute.identifier}
+            {case match='user_account'}
+            <div class="ezcca-edit-user_account">
+              {attribute_edit_gui attribute=$ContentObjectAttribute}
+            </div>
+            {/case}
             {case match='teachwhere'}
             <div class="ezcca-edit-teachwhere">
             <h4 class="{$mandatory}">{$ContentObjectAttribute.contentclass_attribute_name} (È possibile più di una scelta)</h4>
@@ -99,5 +107,5 @@
     per l'attivazione dell'account.
     
 </div>
-
+</div>
  {undef}

@@ -413,6 +413,11 @@ MatchFile=embed/profgroup.tpl
 Subdir=templates
 Match[class_identifier]=profgroup
 
+[embed_contatti]
+Source=node/view/embed.tpl
+MatchFile=embed/contatti.tpl
+Subdir=templates
+Match[class_identifier]=contatti
 
 
 [classgroup]

@@ -76,14 +76,14 @@
 
              <div class="content-view-children">
                 {foreach $articles as $article }
-                  {node_view_gui view=line content_node=$article}
+                  {node_view_gui view=line content_node=$article imagesize='articlethumbnail'}
                 {/foreach}
             </div>
 
             <div class="content-view-children">
                 <h4>{"Elementi correlati"|i18n('scuola/folder/line')}</h4>
                 {foreach $children as $child }
-                  {node_view_gui view='line' content_node=$child}
+                  {node_view_gui view='line' content_node=$child imagesize='articlethumbnail'}
                 {/foreach}
             </div>
 

@@ -1,3 +1,4 @@
+{ezcss_require( array('edit/browselist.css'))}
 {def         $class_content= $attribute.class_content
 	     $new_object_initial_node_placement=false()
 	     $related_items= array()
@@ -27,13 +28,10 @@
                                 </div>
                                 </li>
                                 {else}
-                                <li class="node-school-name roundedmore">
+                                <li class="node-school-name">
                                     {$rnode.name|wash}
                                 </li>
 				{/if}
 			{/foreach}
                 </ul>
 {undef}
-<script type="text/javascript">
-    $.include({"stylesheets/edit/browselist.css"|ezdesign});
-</script>

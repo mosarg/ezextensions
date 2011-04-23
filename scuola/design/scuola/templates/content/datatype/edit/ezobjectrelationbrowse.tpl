@@ -1,5 +1,3 @@
-
-{$attribute.class_content|attribute(show,2)}
 {default     class_content		= $attribute.class_content
 	     class_list			= fetch( class, list, hash( 'class_filter', $class_content.class_constraint_list,'sort_by', array( 'name', true() ) ) )
 	     class_create_list		= fetch( class, list, hash( 'class_filter', $class_content.class_create_constraint_list,'sort_by', array( 'name', true() ) ) )

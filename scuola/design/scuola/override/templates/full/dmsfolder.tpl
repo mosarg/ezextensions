@@ -10,13 +10,16 @@
     <div class="class-dmsfolder">
         {* contenuto in preparazione *}
         {if $node.object.state_id_array|contains('6')}
-        <div class="wip rounded shadowmore">
+        <div class="wip">
             <p>{"Contenuto in preparazione non ancora visibile pubblicamente"|i18n('scuola/state')}</p>
         </div>
         {/if}
         <div class="attribute-header">
             <h1>{$node.name|wash}</h1>
         </div>
+          
+        <div class="title-separator"></div>
+        <div class="separator"></div>
         {if $node.data_map.short_description.has_content}
                 <div class="attribute-short">
                     {attribute_view_gui attribute=$node.data_map.short_description}

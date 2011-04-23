@@ -2,7 +2,7 @@
 
 <div class="block-type-5items block-view-{$block.view}">
 
-<div class="columns-two">
+<div class="two-columns">
 <div class="col-1">
 <div class="col-content float-break">
 
@@ -10,7 +10,7 @@
 
 <!-- BLOCK CONTENT: START -->
 
-{node_view_gui view='block_item' image_class='articlethumbnail' content_node=$valid_nodes[0]}
+{node_view_gui view='block_item' image_class='gallerythumbnailsquare' style='line' content_node=$valid_nodes[0]}
 
 <!-- BLOCK CONTENT: END -->
 
@@ -27,7 +27,7 @@
 
 <!-- BLOCK CONTENT: START -->
 
-{node_view_gui view='block_item' image_class='articlethumbnail' content_node=$valid_nodes[1]}
+{node_view_gui view='block_item' image_class='gallerythumbnailsquare'  style='line' content_node=$valid_nodes[1]}
 
 <!-- BLOCK CONTENT: END -->
 
@@ -38,9 +38,11 @@
 </div>
 </div>
 
+<div class="float-break"></div>
+
 {foreach $valid_nodes as $valid_node offset 2}
 
-{node_view_gui view='block_item' image_class='articlethumbnail' content_node=$valid_node}
+{node_view_gui view='block_item' image_class='gallerythumbnailsquare' style='line' content_node=$valid_node}
 
 {/foreach}
 

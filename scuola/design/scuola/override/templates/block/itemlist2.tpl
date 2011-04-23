@@ -1,14 +1,10 @@
 {def $valid_nodes = $block.valid_nodes}
 
-<!-- BLOCK: START -->
-
 <div class="block-type-itemlist">
 
-{if $block.name}
+{if $block.name|preg_match('/notitle/')|not()}
  <div class="attribute-header-block"><h2>{$block.name}</h2></div>
 {/if}
-
-<div class="block-content">
 
 <div class="two-columns">
 <div class="col-1">
@@ -33,7 +29,7 @@
 </div>
 </div>
 
-</div>
+
 
 </div>
 

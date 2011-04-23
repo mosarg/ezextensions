@@ -58,7 +58,7 @@ Filters[]=geometry/crop=75;75;0;0
 [galleryfull]
 Reference=
 Filters[]
-Filters[]=geometry/scalewidth=550
+Filters[]=geometry/scalewidth=650
 
 
 

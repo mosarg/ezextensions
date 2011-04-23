@@ -1,27 +1,28 @@
 {* Laboratory - Full view *}
 
-
 {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
-    <div class="content-view-full">
-        <div class="class-laboratory">
 
-            <div class="attribute-header">
-                <h1>{$node.data_map.title.content|wash()}</h1>
-            </div>
-
-            <div class="attribute-byline">
-                <p class="date">
-                    {'Pubblicato il: '|i18n('scuola/dates')}{$node.object.published|l10n(shortdatetime)}
-                    {'Ultima modifica: '|i18n('scuola/dates')}{$node.object.modified|l10n(shortdatetime)}
-                    {'Versione Corrente: '|i18n('scuola/dates')}{$node.object.current_version}
-                </p>
-            </div>
-
-            {if $node.data_map.logo.has_content}
-            <div class="attribute-image">
-                {attribute_view_gui attribute=$node.data_map.logo image_class=medium}
-            </div>
-            {/if}
+<div class="content-view-full">
+     <div class="class-laboratory">
+          {if $node.object.state_id_array|contains('6')}
+             <div class="wip">
+                <p>{"Contenuto in preparazione non ancora visibile pubblicamente"|i18n('scuola/state')}</p>
+             </div>
+          {/if}
+     <div class="attribute-header">
+         {if $node.data_map.logo.has_content}
+             <div class="attribute-image">
+                 {attribute_view_gui attribute=$node.data_map.logo image_css_class='shadow' link_class=ezimage_zoom href=$node.data_map.logo.content[original].url|ezroot image_class=gallerythumbnailsquare}
+             </div>
+        {/if}
+        <h1>{$node.data_map.title.content|wash()}</h1>
+       </div>
+    
+      <div class="title-separator"></div>
+      <div class="separator"></div>
+        
+            
+            
             {if $node.data_map.responsabili.has_content}
             <h4> {'Docenti responsabili: '|i18n('scuola/teach')}</h4>
             <p class="responsabili">
@@ -97,6 +98,7 @@
 
 
         </div>
+          {include uri='design:parts/object_informations.tpl' style='full'}
     </div>
 
 

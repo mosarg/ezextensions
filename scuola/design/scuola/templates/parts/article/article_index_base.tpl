@@ -10,7 +10,7 @@
 
             <ol>
             {if eq( $used_node.node_id, $node.node_id )}
-                <li>
+                <li class="current">
                 {if $used_node.object.data_map.index_title.has_content}
                     {attribute_view_gui attribute=$used_node.object.data_map.index_title}
                 {else}
@@ -28,7 +28,7 @@
             {/if}
             {foreach $article_subpages as $article_subpage}
                 {if eq( $node.node_id, $article_subpage.node_id )}
-                    <li>
+                    <li class="current">
                     {if $article_subpage.object.data_map.index_title.has_content}
                         {attribute_view_gui attribute=$article_subpage.object.data_map.index_title}
                     {else}

@@ -3,9 +3,9 @@
 
 <div class="block-type-3items  block-type-dynamic3items">
 
-<div class="attribute-header-block">
-    <h2>{"Ultimi aggiornamenti"|i18n("design/scuola/blocks")}</h2>
-</div>
+{if $block.name|preg_match('/notitle/')|not()}
+ <div class="attribute-header-block"><h2>{$block.name}</h2></div>
+{/if}
 
 
 <div class="border-content">

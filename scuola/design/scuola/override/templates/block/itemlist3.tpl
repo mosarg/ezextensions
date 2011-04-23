@@ -1,17 +1,30 @@
 {def $valid_nodes = $block.valid_nodes}
 
+
+
 <!-- BLOCK: START -->
 
 <div class="block-type-itemlist">
 
-<div class="block-content">
+{if $block.name|preg_match('/notitle/')|not()}
+ <div class="attribute-header-block"><h2>{$block.name}</h2></div>
+{/if}
+
+
 
 <div class="two-columns">
 <div class="col-1">
 
     <ul>
     {foreach $valid_nodes as $valid_node max 6}
-       <li><a href={$valid_node.url_alias|ezurl()}>{$valid_node.name|wash()}</a></li>
+       <li><a href={$valid_node.url_alias|ezurl()}>{$valid_node.name|wash()}</a>
+           {if is_set($valid_node.data_map.intro)}
+            <span>{$valid_node.data_map.intro.content.output.output_text|smartshort(40,'...')}</span>
+           {/if}
+           {if is_set($valid_node.data_map.short_description)}
+              <span>{$valid_node.data_map.short_description.content.output.output_text|smartshort(40,'...')}</span>
+           {/if}
+       </li>
     {/foreach}
     </ul>
 
@@ -22,14 +35,21 @@
 
     <ul>
     {foreach $valid_nodes as $valid_node offset 6}
-       <li><a href={$valid_node.url_alias|ezurl()}>{$valid_node.name|wash()}</a></li>
+       <li><a href={$valid_node.url_alias|ezurl()}>{$valid_node.name|wash()}</a>
+           {if is_set($valid_node.data_map.intro)}
+            <span>{$valid_node.data_map.intro.content.output.output_text|smartshort(20,'...')}</span>
+           {/if}
+           {if is_set($valid_node.data_map.short_description)}
+             <span>{$valid_node.data_map.short_description.content.output.output_text|smartshort(20,'...')}</span>
+           {/if}
+       </li>
     {/foreach}
     </ul>
 
 </div>
 </div>
 
-</div>
+
 
 </div>
 

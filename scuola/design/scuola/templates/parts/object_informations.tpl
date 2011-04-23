@@ -35,6 +35,10 @@
 {/case}
 {case match='empty'}
 {/case}
+{case match='line'}
+ <div class="object_informations {$color_code}">
+ </div>
+{/case}
 {case match='ultracompact'}
  <div class="object_informations {$color_code}">
              {$node.class_name} {$node.object.published|l10n(shortdate)}

@@ -12,7 +12,7 @@
 
 
         <div class="attribute-header">
-            <h1>{$node.name}</h1>
+            <h2>{$node.name}</h2>
         </div>
         <table class="list" cellspacing="0">
             {if $node.data_map.contatti_esterni.has_content}
@@ -26,19 +26,16 @@
     </div>
 
 
+    
     {if $node.data_map.aggrega_contatti.data_int}
 
-    {def $subcontatti=fetch( 'content','list', hash( 'parent_node_id', $node.parent_node_id,
-    'depth','4',
-    'class_filter_type', 'include',
-    'class_filter_array', array('contatti')))}
-
+    {def $subcontatti=$node.object.reverse_related_contentobject_array}
 
     {foreach $subcontatti as $subcontatto}
-    {if ne($subcontatto.node_id,$node.node_id)}
-    <h2>{$subcontatto.url_alias|preg_replace('/\/.ontatti/','')}</h2>
-    {node_view_gui view=full content_node=$subcontatto style='empty'}
-    {/if}
+    
+    <h2 class="second-level">{$subcontatto.main_node.url_alias|preg_replace('/\/.ontatti|-/',' ')}</h2>
+    {node_view_gui view=embed content_node=$subcontatto.main_node style='empty'}
+  
     {/foreach}
     {/if}
 {include uri='design:parts/object_informations.tpl' style=$style}

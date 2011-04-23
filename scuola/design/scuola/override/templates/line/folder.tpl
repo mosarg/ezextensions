@@ -1,7 +1,7 @@
 {* Folder - Line view *}
 
 <div class="content-view-line">
-    <div class="{concat("class-folder ","folder_color_",rand(1,4))} square-icon">
+    <div class="class-folder">
 
         <h2><a href={$node.url_alias|ezurl}>{$node.name|wash()}</a></h2>
 

@@ -1,4 +1,20 @@
 {* prof list left menu *}
+
+<script type="text/javascript">
+{literal}    
+        $(function () {
+            $("#prof_selector").live("change", function () {
+               //alert($(this).val());
+               if ($(this).val()!=""){
+                $("#prof_form").submit();
+               }
+            });
+        });
+{/literal}        
+</script>
+
+
+
 <div class="border-box">
 {def $left_menu_depth = $pagedata.current_menu|eq('LeftOnly')|choose( 1, 0 )}
 {def $regexp=ezini( 'Regexp', 'classi', 'scuola.ini' )}
@@ -87,27 +103,33 @@
 
 {cache-block keys=array($menu_node)}
     {if $menu_node }
+    <div class="menu-highlight">
          {def $classe=fetch('content','node',hash('node_id',$menu_node.node_id))}
             {if eq($classe.class_identifier,'classe')}
-              <h4>{'Insegnanti '|i18n('scuola/classe/menu')}{$menu_node.text}</h4>
+              <h3>{'Insegnanti '|i18n('scuola/classe/menu')}</h3>
                 {def $objects=fetch( 'content', 'reverse_related_objects',
                      hash( 'object_id',$classe.contentobject_id,'attribute_identifier','professore/teachwhere') )}
 
               {if gt($objects|count,0)}
-              <ul class="menu-list">
-                {foreach $objects as $object}
+              
+              <form id="prof_form" action={"content/action"|ezurl} method="post">
+                <select id="prof_selector" name="URL" title="Insegnante" class="select_prof">
+                    <option value="" selected="selected">{"Scegli insegnante"|i18n("design/m2000/full/helper_prof")}</option> 
+          
+                 {foreach $objects as $object}
                  {set $prof_nodes=$object.related_contentobject_array[0].assigned_nodes}
                     {foreach $prof_nodes as $url_node}
                         {if $url_node.url_alias|downcase|contains($scuola|downcase) }
-                        <li>
-                            <div class="first_level_menu" >
-                            <a href={$url_node.url_alias|ezurl}>{$object.name|wash}<span>> </span></a>
-                            </div>
-                            </li>
+                           <option  value={$url_node.url_alias|ezurl}>{$object.name|wash}</option>
+                          </li>
                         {/if}
                     {/foreach}
-                {/foreach}
-                </ul>
+                {/foreach}      
+                </select>
+                  <input name="ContentObjectID" type="hidden" value="{$module_result.node_id}" />
+                  <input name="RedirectTo" type="hidden" value="Via" />
+              </form>
+    </div>
               {else}
                     <span>{"Nessun insegnante assegnato a questa classe"|i18n('scuola/classe/menu')}</span>
                 {/if}

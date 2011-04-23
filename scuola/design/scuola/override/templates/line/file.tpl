@@ -2,9 +2,6 @@
 
 <div  style="clear:both;" class="content-view-line" title="{$node.name}">
    <div class="class-file">
-       
-        
-
     <div class="attribute-file">
            <a href={$node.url_alias|ezurl}>
               <img alt="zoom" src={'images/icons/zoom.png'|ezdesign}/>

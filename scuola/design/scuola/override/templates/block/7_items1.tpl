@@ -2,48 +2,18 @@
 
 <div class="block-type-5items block-view-{$block.view}">
 
-<div class="columns-two">
-<div class="col-1">
-<div class="col-content float-break">
+{if $block.name|preg_match('/notitle/')|not()}
+ <div class="attribute-header-block"><h2>{$block.name}</h2></div>
+{/if}
 
-<div class="border-content">
-
-<!-- BLOCK CONTENT: START -->
-
-{node_view_gui view='block_item' image_class='articlethumbnail' content_node=$valid_nodes[0]}
-
-<!-- BLOCK CONTENT: END -->
-
-</div>
-
-</div>
-</div>
-<div class="col-2">
-<div class="col-content float-break">
+{foreach $valid_nodes as $valid_node}
+   {node_view_gui view='block_item' image_class='gallerythumbnailsquare' content_node=$valid_node style='line'}
+{delimiter}
 
 
-
-<div class="border-content float-break">
-
-<!-- BLOCK CONTENT: START -->
-
-{node_view_gui view='block_item' image_class='articlethumbnail' content_node=$valid_nodes[1]}
-
-<!-- BLOCK CONTENT: END -->
-
-</div>
-
-
-</div>
-</div>
-</div>
-
-{foreach $valid_nodes as $valid_node offset 2}
-
-{node_view_gui view='block_item' image_class='articlethumbnail' content_node=$valid_node}
+{/delimiter}
 
 {/foreach}
-
 
 </div>
 

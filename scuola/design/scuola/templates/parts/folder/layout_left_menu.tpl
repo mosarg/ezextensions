@@ -5,7 +5,7 @@
 <div class="class-folder">
         {* contenuto in preparazione *}
         {if $node.object.state_id_array|contains('6')}
-        <div class="wip shadowmore">
+        <div class="wip ">
             <p>{"Contenuto in preparazione non ancora visibile pubblicamente"|i18n('scuola/state')}</p>
         </div>
         {/if}

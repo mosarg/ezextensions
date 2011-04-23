@@ -3,7 +3,7 @@
 <!-- BLOCK: START -->
 
 <div class="block-type-itemlist">
-{if $block.name}
+{if $block.name|preg_match('/notitle/')|not()}
  <div class="attribute-header-block"><h2>{$block.name}</h2></div>
 {/if}
 

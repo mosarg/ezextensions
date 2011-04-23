@@ -1,4 +1,4 @@
-{* Macroarea - Full view *}
+{* Progetti - Full view *}
 {run-once}
  {ezscript_require( array('classes/navigator.js','init_navigator.js'))}
 {/run-once}
@@ -9,16 +9,29 @@
     {include uri='design:parts/global_variables.tpl' left_menu=false() left_nav_menu=false()}
 {/if}
 
+
+
+{def    $page_limit=10
+            $classes=array('progetto')}
+
+    {def $projects=fetch( 'content', 'related_objects',
+                           hash( 'object_id', $node.object.id,
+                                 'offset', $view_parameters.offset,
+                                 'all_relations', true(),
+                                 'limit', $page_limit))
+         $projects_count=$node.object.related_contentobject_count}
+
+
 <div class="content-view-full">
     <div class="class-progetti">
     
-   {if $node.data_map.show_children.data_int|not()}   
+ 
         <div class="attribute-header">
-          <h1>{$node.data_map.name.content|wash()}</h1>
+         <h2>{"Progetti in corso"|i18n("design/m2000/full")}:{$projects_count}</h2>
         </div>   
-        
+       
       <div class="title-separator"></div>
-        <div class="separator"></div>     
+      <div class="separator"></div>     
         
        <div class="image-block">
               {if $node.data_map.logo.has_content}
@@ -36,8 +49,7 @@
                         {attribute_view_gui image_css_class='shadow' link_class=ezimage_zoom image_class='gallerythumbnailsquare' href=$node.data_map.logo2.content[original].url|ezroot attribute=$node.data_map.logo2}
                     </div>
                 {/if} 
-     </div>     
-  {/if}
+
     {if is_set($node.object.data_map.descrizione)}
         <div class="attribute-short">
             {attribute_view_gui attribute=$node.object.data_map.descrizione}
@@ -46,15 +58,7 @@
  
 
 
-    {def    $page_limit=10
-            $classes=array('progetto')}
-
-    {def $projects=fetch( 'content', 'related_objects',
-                           hash( 'object_id', $node.object.id,
-                                 'offset', $view_parameters.offset,
-                                 'all_relations', true(),
-                                 'limit', $page_limit))
-         $projects_count=$node.object.related_contentobject_count}
+    
  
    {if gt($projects_count,0)}
      {foreach $projects as $project }

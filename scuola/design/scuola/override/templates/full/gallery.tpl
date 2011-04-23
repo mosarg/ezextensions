@@ -62,7 +62,7 @@
                                                          'offset', $view_parameters.offset,
                                                          'limit', $page_limit,
                                                          'class_filter_type', 'include',
-                                                         'class_filter_array', array( 'image','flash_player'),
+                                                         'class_filter_array', array( 'image'),
                                                          'sort_by', $node.sort_array ) )
              $children_count = $children|count()}
 

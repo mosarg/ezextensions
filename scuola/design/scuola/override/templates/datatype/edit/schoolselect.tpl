@@ -16,9 +16,10 @@
     {foreach $available_options as $option}
     
     {if $option.identifier}
-    <li class="node roundedmore">
+    <li class="node">
+        <label >{$option.name|wash}</label>
         <input  {$classContent.is_multiselect|choose('type="radio"','type="checkbox"')} name="ContentObjectAttribute_sckenhancedselection_selection_{$id}[]" value="{$option.identifier|wash}" {if $content|contains($option.identifier)} checked="checked"{/if}/>
-                <label >{$option.name|wash}</label>
+                
     </li>
     {/if}
 
@@ -36,9 +37,10 @@
     {foreach $available_options as $option}
     
     {if $option.identifier}
-    <li class="node roundedmore">
+    <li class="node">
+        <label>{$option.name|wash}</label>
         <input  {$classContent.is_multiselect|choose('type="radio"','type="checkbox"')} name="ContentObjectAttribute_sckenhancedselection_selection_{$id}[]" value="{$option.identifier|wash}"{if $content|contains($option.identifier)} checked="checked"{/if} />
-                <label>{$option.name|wash}</label>
+                
     </li>
     {/if}
 

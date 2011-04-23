@@ -1,14 +1,12 @@
 {def $valid_nodes = $block.valid_nodes}
 
 <div class="block-type-2items">
-<div class="border-content">
 
-{if is_set($block.name)}
+
+{if $block.name|preg_match('/notitle/')|not()}
  <div class="attribute-header-block"><h2>{$block.name}</h2></div>
 {/if}
 
-
-<div class="border-box block-style1-box-inside">
 
     <div class="border-content">
         {foreach $valid_nodes as $valid_node}
@@ -18,9 +16,9 @@
                 {/delimiter}
         {/foreach}
     </div>
-</div>
 
-</div>
+
+
 </div>
 
 

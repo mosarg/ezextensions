@@ -14,16 +14,15 @@
 div.ezcca-edit-teachwhere{}
 div.ezcca-edit-teachwhere div.class-element{float:left;
 margin-left:1em;
-border-left:2px solid gray;
+
 padding-left:1em;}
 div.ezcca-edit-teachwhere ul.selection-class{list-style:none;}
 div.ezcca-edit-teachwhere ul.selection-class li.node{float:left;
 }
 div.ezcca-edit-teachwhere ul.selection-class li.node-school-name{
-    background:#c1c1c1;
     clear:both;
     display:block;
-    color:white;
+    border-bottom: 2px dotted #767676;
     padding:0.5em;
     font-weight:bold;
 }

@@ -2,7 +2,7 @@
 
 <div class="block-type-5items block-view-{$block.view}">
 
-{if is_set($block.name)}
+{if $block.name|preg_match('/notitle/')|not()}
  <div class="attribute-header-block"><h2>{$block.name}</h2></div>
 {/if}    
     
@@ -30,11 +30,9 @@
 
 <div class="border-content float-break">
 
-<!-- BLOCK CONTENT: START -->
 
 {node_view_gui view='block_item' image_class='articlethumbnailsmall' style='ultracompact' content_node=$valid_nodes[1]}
 
-<!-- BLOCK CONTENT: END -->
 
 </div>
 
@@ -42,7 +40,7 @@
 </div>
 </div>
 </div>
-
+<div class="float-break"></div>
 {foreach $valid_nodes as $valid_node offset 2}
 
     {node_view_gui view='block_item' image_class='articlethumbnailsmall' style='ultracompact' content_node=$valid_node}
