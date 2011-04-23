@@ -1,5 +1,8 @@
 {* event calendar- line view *}
 
+{if is_set($style)|not()}
+    {def $style='compact'}
+{/if}
 <div class="content-view-line">
 <div class="event-calendar">
     <h2>
@@ -12,5 +15,6 @@
     </h2>
 
 </div>
+    {include uri='design:parts/object_informations.tpl' style=$style}
 </div>
 {undef}

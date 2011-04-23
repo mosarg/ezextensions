@@ -55,9 +55,9 @@ ShowHiddenNodes=false
 [DesignSettings]
 SiteDesign=m2000
 AdditionalSiteDesignList[]
-AdditionalSiteDesignList[]=mcalendar
 AdditionalSiteDesignList[]=majaxinterface
 AdditionalSiteDesignList[]=scuola
+AdditionalSiteDesignList[]=mcalendar
 AdditionalSiteDesignList[]=mmediagallery
 AdditionalSiteDesignList[]=ezflow
 AdditionalSiteDesignList[]=ezwebin

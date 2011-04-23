@@ -28,6 +28,17 @@ div.extrainfo-column-position
     float: left;
 }
 
+
+div.content-view-full div.static-elements-box{
+    border-top:2px dotted #273236;
+    border-bottom:2px dotted #273236;
+    margin-top:1em;
+    padding-top:1em;
+}
+
+div.content-view-full div.static-elements-box h4{
+    color:#ffb10a;
+}
 /*Attribute byline*/
 
 div.content-view-full div.attribute-byline p.author

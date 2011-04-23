@@ -41,38 +41,38 @@
             {if $node.object.data_map.show_children.data_int}
 
             {def $page_limit = 10
-            $classes = array('folder','event_calendar','gallery')
+            $classes = array('folder','event_calendar','gallery','dmsfolder')
             $children = array()
             $articles =array()
             $children_count = ''
             $articles_count=''}
 
             {set $articles=fetch_alias( 'children', hash( 'parent_node_id', $node.node_id,
-            'offset', $view_parameters.offset,
-            'sort_by', $node.sort_array,
-            'class_filter_type', 'include',
-            'class_filter_array', array('article','article_mainpage','article_subpage'),
-            'limit', $page_limit ) )
+                                        'offset', $view_parameters.offset,
+                                        'sort_by', $node.sort_array,
+                                        'class_filter_type', 'include',
+                                        'class_filter_array', array('article','article_mainpage'),
+                                        'limit', $page_limit ) )
             $articles_count=fetch_alias( 'children_count', hash( 'parent_node_id', $node.node_id,
-            'class_filter_type', 'include',
-            'class_filter_array',array('progetto','article','article_mainpage','article_subpage') ) )}
+                                         'class_filter_type', 'include',
+                                         'class_filter_array',array('article','article_mainpage') ) )}
 
 
 
 
             {set $children=fetch_alias( 'children', hash( 'parent_node_id', $node.node_id,
-            'offset', $view_parameters.offset,
-            'sort_by', $node.sort_array,
-            'class_filter_type', 'include',
-            'class_filter_array', $classes,
-            'limit', $page_limit ))
+                                        'offset', $view_parameters.offset,
+                                        'sort_by', $node.sort_array,
+                                        'class_filter_type', 'include',
+                                        'class_filter_array', $classes,
+                                        'limit', $page_limit ))
             $children_count=$children|count()}
 
 
 
 
             {if or(gt($children_count,0),gt($articles_count,0))}
-
+<div class="static-elements-box">
             <div class="content-view-children">
                 {foreach $articles as $article }
                 {node_view_gui view=line content_node=$article}
@@ -85,13 +85,7 @@
                 {node_view_gui view='line' content_node=$child}
                 {/foreach}
             </div>
-
-            {include name=navigator
-            uri='design:navigator/google.tpl'
-            page_uri=$node.url_alias
-            item_count=$articles_count
-            view_parameters=$view_parameters
-            item_limit=$page_limit}
+</div>
             {/if}
             {/if}
 

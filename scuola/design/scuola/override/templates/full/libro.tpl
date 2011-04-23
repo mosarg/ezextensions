@@ -3,7 +3,7 @@
 {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true() extra_menu=false()}
 
 
-<div class="border-box">
+
 <div class="content-view-full">
     <div class="class-libro">
 
@@ -40,5 +40,4 @@
         {/if}
 
     </div>
-</div>
 </div>

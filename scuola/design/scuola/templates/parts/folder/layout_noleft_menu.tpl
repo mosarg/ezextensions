@@ -89,5 +89,3 @@
 
 
 {include uri='design:parts/object_informations.tpl' style='full'}
-<script type="text/javascript" src={'javascript/tinysort.js'|ezdesign} ></script>
-<script type="text/javascript" src={'javascript/listsort.js'|ezdesign} ></script>

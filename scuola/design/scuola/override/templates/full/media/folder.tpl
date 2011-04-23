@@ -1,11 +1,10 @@
-{* Folder - Full view *}
+{* Folder - Full media view *}
+{run-once}
+ {ezscript_require( array('classes/navigator.js','init_navigator.js'))}
+{/run-once}
+{include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true() extra_menu=false()}
 
-
-{scuolapagedata_set( 'left_menu', true() )}
-{scuolapagedata_set( 'left_nav_menu', true() )}
-{scuolapagedata_set( 'extra_menu', false() )}
-<div class="border-box">
-   <div class="content-view-full">
+  <div class="content-view-full">
     <div class="class-folder">
          <div class="attribute-header">
             <h1>{$node.name|wash}</h1>
@@ -31,14 +30,7 @@
 
            {if gt($children_count,0)}
            <div class="content-view-children">
-             
-                 <div class="sortbuttons" >
-                    <h4>Ordine:</h4>
-                    <a id="sortbuttonup"  class="rounded">Alfabetico ascendente</a>
-                    <a id="sortbuttondown"  class="rounded">Alfabetico discendente</a>
-                    <a id="timesortup" class="rounded">Temporale crescente</a>
-                    <a id="timesortdown" class="rounded">Temporale decrescente</a>
-                 </div>
+     
                 {foreach $children as $child }
                   {node_view_gui view=line content_node=$child}
                 {/foreach}
@@ -49,12 +41,12 @@
                      page_uri=$node.url_alias
                      item_count=$children_count
                      view_parameters=$view_parameters
-                     item_limit=$page_limit}
+                     item_limit=$page_limit
+                     node_id=$node.node_id}
             {/if}
         
         
     </div>
 </div>
-</div>
-<script type="text/javascript" src={'javascript/tinysort.js'|ezdesign} ></script>
-<script type="text/javascript" src={'javascript/listsort.js'|ezdesign} ></script>
+
+

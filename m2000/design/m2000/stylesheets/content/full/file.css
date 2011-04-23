@@ -1,4 +1,6 @@
-
+div.content-view-full div.class-file div.attribute-header h1{
+    float:none;
+}
 div.class-file table.comparison-file{
     width:100%;
 }

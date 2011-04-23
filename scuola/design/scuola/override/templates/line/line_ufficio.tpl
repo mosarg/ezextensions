@@ -9,7 +9,7 @@
    </a></h2>
 <div class="title-separator"></div>
     
-    {if $node.object.data_map.resp_.has_content}
+    {if $node.object.data_map.resp_uff.has_content}
     <div class="resp_ufficio rounded">
        {"Responsabile ufficio:"|i18n("design/scuola/full/ufficio")}
        {attribute_view_gui attribute=$node.data_map.resp_uff}

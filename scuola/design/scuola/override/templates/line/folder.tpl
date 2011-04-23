@@ -1,5 +1,10 @@
 {* Folder - Line view *}
-
+{if is_set($imagesize)|not()}
+    {def $imagesize='colorblock'}
+{/if}
+{if is_set($style)|not()}
+    {def $style='compact'}
+{/if}
 <div class="content-view-line">
     <div class="class-folder">
 
@@ -11,7 +16,8 @@
         </div>
        {/if}
         {if $node.data_map.icon.has_content}
-        <img alt="folder" src={$node.data_map.icon.content[colorblock].url|ezroot} />
+        <img alt="folder" src={$node.data_map.icon.content[$imagesize].url|ezroot} />
          {/if}
     </div>
+    {include uri='design:parts/object_informations.tpl' style=$style}
 </div>
