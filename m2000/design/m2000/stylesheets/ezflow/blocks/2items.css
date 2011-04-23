@@ -5,7 +5,9 @@
     Description:
         2items block start
 */
-
+div.block-type-2items{
+    float:left;
+}
 
 div.block-type-2items div.class-article
 {

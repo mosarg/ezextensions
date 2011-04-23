@@ -1,8 +1,4 @@
-/* 
-    Document   : contatti
-    Created on : Nov 28, 2009, 6:15:21 PM
-    Author     : mosa
-    Description:
-        contatti css style full view
-*/
 
+div.content-view-full h2.second-level{
+    border-bottom:2px dotted #85868b;
+}

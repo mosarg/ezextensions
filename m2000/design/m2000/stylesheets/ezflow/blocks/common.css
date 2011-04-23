@@ -11,6 +11,8 @@ div.block-separator
 {
     height: 1px;
     margin: 0.5em 0 0.5em 0;
+    float:left;
+    width:100%;
 }
 div.block div.left
 {
@@ -37,13 +39,12 @@ div.attribute-header-block{
     box-shadow:0 -2px 0 #cdcdcd inset;
     -moz-box-shadow:0 -2px 0 #cdcdcd inset;
     -webkit-box-shadow:0 -2px 0 #cdcdcd inset;
-    
-    padding:0.5em 0.5em 0.5em 0;
+    padding:0.5em 0.5em 0.1em 0;
     margin-bottom: 1em;
 }
-div.content-view-full div.attribute-header-block>h2{
-    color:#273236;
-    font-size:1.5em;
+div#extrainfo div.attribute-header-block>h2,div.content-view-full div.attribute-header-block>h2{
+    color:#85868b;
+    font-size:1.4em;
     margin:0;
     padding:0.3em 0 0 0.3em;
 }

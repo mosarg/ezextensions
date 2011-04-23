@@ -76,6 +76,26 @@ div.attribute-header h1.long
     margin-bottom: 0;
 }
 
+div.content-view-full div.attribute-header>div.attribute-image{
+    float:left;
+}
+
+div.content-view-full  div.attribute-header h1
+{
+    float:left;
+    padding-bottom: 0;
+    margin-bottom: 0.5em;
+    line-height: 0.9em;
+    max-width:83%;
+    min-width:20%;
+}
+div.content-view-full div.attribute-header div.attribute-image{
+    padding-right:1em;
+    padding-bottom:1em;
+}
+
+
+
 /*quotes*/
 div.quote
 {
@@ -144,7 +164,7 @@ div.separator
 div.title-separator{
     border-bottom:4px solid #c4c5c6;
     margin-bottom:1em;
-    width:80%;
+    min-width:83%;
     float:left;
 }
 

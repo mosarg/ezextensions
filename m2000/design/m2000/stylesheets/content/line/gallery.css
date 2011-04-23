@@ -9,12 +9,12 @@
 
 
 div.content-view-line div.class-gallery{
-    overflow:hidden;
+    overflow:visible;
     margin-bottom:2em;
 }
 
 div.content-view-line div.class-gallery div.gallery-icon{
     float:left;
     margin-right:1.4em;
-    height:120px;
+   
 }

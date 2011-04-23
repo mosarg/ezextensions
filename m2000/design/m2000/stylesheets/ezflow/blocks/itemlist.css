@@ -9,39 +9,41 @@
 .block-type-itemlist
 {
     float:left;
-    overflow:hidden;
     width:100%;
 }
 
-.block-type-itemlist .block-content
+.block-type-itemlist  
 {
 
     padding-bottom: 0.25em;
 }
-.block-type-itemlist .block-content a
+.block-type-itemlist   a
 {
-    color: gray;
-    text-decoration: none;
+font-weight: 100;
 }
-.block-type-itemlist .block-content a:hover{
-    color:black;
+.block-type-itemlist span{
+    font-size:0.7em;
 }
-.block-type-itemlist .block-content ul
+.block-type-itemlist span p{
+    margin:0;
+    padding:0;
+}
+.block-type-itemlist   a:hover{
+
+}
+.block-type-itemlist   ul
 {
-        margin-left: 2em;
-    
+
+    margin:0; 
 }
 
-.block-type-itemlist .block-content ul li
+.block-type-itemlist   ul li
 {
-    list-style: square;
-    padding-left:0;
-    margin-left: 0;
-    margin-bottom: 0.1em;
-    margin-right:1em;
+    background: url(../images/lang-li-curr-bg.png) no-repeat left 5px;
+    margin:0;
 }
 
 .block-type-itemlist .two-columns .col-1,.block-type-itemlist .two-columns .col-2{
-   width:45%;
-   float:left;
+    width:45%;
+    float:left;
 }

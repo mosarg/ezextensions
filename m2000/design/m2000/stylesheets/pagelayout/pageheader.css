@@ -69,6 +69,7 @@ div#logo a{
     position:relative;
     color:white;
     font-size:3em;
+    left:0.1em;
 }
 div#languages
 {
@@ -86,10 +87,13 @@ div#languages ul{
 }
 div#languages a
 {
-    color: #42456c;
     text-decoration: none;
     font-weight:bold;
     font-size:1.1em;
+}
+
+div#languages a:hover{
+    color:#ffc03d;
 }
 div#languages ul li
 {

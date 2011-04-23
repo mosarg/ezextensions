@@ -1,11 +1,4 @@
-/* 
-    Document   : ufficio
-    Created on : Dec 6, 2009, 6:09:39 PM
-    Author     : mosa
-    Description:
-        Purpose of the stylesheet follows.
-        ufficio full view
-*/
+
 div.content-view-full div.class-ufficio{
     overflow:hidden;
 }
@@ -16,23 +9,6 @@ div.content-view-full div.class-ufficio {
     width:70%;
 }
 
-div.content-view-full div.class-ufficio div.attribute-header>div.attribute-image{
-    float:left;
-}
-
-div.content-view-full div.class-ufficio div.attribute-header h1
-{
-    float:left;
-    padding-bottom: 0;
-    margin-bottom: 0.5em;
-    line-height: 0.9em;
-    max-width:83%;
-}
-
-div.content-view-full div.class-ufficio div.attribute-image{
-    padding-right:1em;
-    padding-bottom:1em;
-}
 
 div.content-view-full div.ufficio_extra-info{
     float:right;

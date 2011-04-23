@@ -1,20 +1,4 @@
-/* 
-    Document   : macroarea
-    Created on : Dec 6, 2009, 5:59:54 PM
-    Author     : mosa
-    Description:
-        Purpose of the stylesheet follows.
-Macroarea full view style
-*/
 
-div.content-view-full div.class-macroarea div.attribute-header h1
-{
-    float:left;
-    padding-bottom: 0;
-    margin-bottom: 0.5em;
-    line-height: 0.9em;
-    max-width:83%;
-}
 
 div.content-view-full div.class-macroarea div.image-block{
     overflow: hidden;

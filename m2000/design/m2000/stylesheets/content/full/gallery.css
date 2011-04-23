@@ -1,21 +1,13 @@
-/* 
-    Document   : gallery
-    Created on : Dec 7, 2009, 9:13:21 AM
-    Author     : mosa
-    Description:
-        Purpose of the stylesheet follows.
-        gallery full view style
-*/
-
 div.content-view-full div.class-gallery div.content-view-children div.content-view-line
 {
-    clear: left;
+    float: left;
+    width:100%;
 }
 
 div.content-view-full div.class-gallery div.content-view-children h4.school-year{
     padding:0.5em;
     margin-bottom:2em;
-    background:#cdcdcd;
+    border-bottom: 2px dotted #85868b;
 }
 
 div.content-view-full div.class-gallery div.attribute-link

@@ -1,6 +1,8 @@
 div.calendar-ajax-block{
      height:310px;
      overflow:visible;
+     float:left;
+     width:100%;
  }
 div.calendar-ajax-block td:hover{
     background:gray;
