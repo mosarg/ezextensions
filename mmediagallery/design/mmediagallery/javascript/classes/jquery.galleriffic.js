@@ -643,6 +643,7 @@
 						.append('<span class="image-caption current"></span>')
 						.find('span.current').css('opacity', '0')
 						.append(imageData.caption);
+                                       this.$captionContainer.height(newCaption.height());
 				}
 
 				// Hide the loading conatiner
