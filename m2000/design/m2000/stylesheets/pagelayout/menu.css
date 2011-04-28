@@ -1,15 +1,4 @@
-/* 
-    Document   : menu
-    Created on : Jul 21, 2009, 8:52:40 AM
-    Author     : mosa
-    Description:
-        Purpose of the stylesheet follows.
-*/
 
-/* 
-   TODO customize this sample style
-   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
-*/
 
 /* PROF MENU*/
 ul.menu_indent{
@@ -75,7 +64,7 @@ div#header div#school_menu li a {
 
 div#header div#school_menu li a:hover{
     color:#a70206;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -91,8 +80,9 @@ div#header div#school_menu div.macro-slide{
     height: 120px;
     position: relative;
     top:-60px;
-    background: url(../images/decorazioni/macro_indent.png) no-repeat center left #3c576a;
-    width:170px;
+   /* background: url(../images/decorazioni/macro_indent.png) no-repeat center left #3c576a;*/
+   background:#3c576a;
+    width:135px;
     
 }
 
@@ -105,15 +95,16 @@ div#header div#school_menu div#Progetti{
 
 div#header div#school_menu div.macro-slide a{
     color:white;
-    font-size:2em;
+    font-size:1.9em;
     display:block;
     margin-top:40px;
-    padding-left:30px;
+    text-align: center;
     
 }
 
 div#header div#school_menu div.macro-slide a:hover{
-    text-decoration: underline;
+    text-decoration: none;
+    color:#ffc03d;
 }
 
 /*compact*/
@@ -185,16 +176,7 @@ div#header div#school_menu ul.top_school_big div.subtree_title{
     overflow:visible;
 }
 
-div#header div#school_menu li.micro_tabs{
-    background: none;
-    font-size:0.9em;
-    padding-right:0.5em;
-}
 
-
-div#header div#school_menu li.micro_tabs a{
-    color:#c6c6c6;
-}
 
 
 div#header div#school_menu a.sch_button_big{

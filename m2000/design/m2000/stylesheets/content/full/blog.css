@@ -19,22 +19,3 @@ div.columns-blog div.main-column
 {
     margin: 0 0.25em 0 0; 
 }
-div.class-blog div.attribute-byline p.tags
-{
-    margin-right: 0.2em;
-    display: inline;
-    font-size: 0.9em;
-}
-div.class-blog div.attribute-byline p.author
-{
-    margin-right: 0.2em;
-    display: inline;
-    font-size: 0.9em;
-}
-div.class-blog div.attribute-byline p.date
-{
-    margin: 0 0.2em 0 0;
-    display: inline;
-    color: #CCCCCC;
-    font-size: 0.9em;
-}

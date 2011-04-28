@@ -1,7 +1,4 @@
-div.content-view-full div.class-frontpage
-{
-  
-}
+
 
 div.content-view-full div.class-frontpage div.columns-frontpage
 {
@@ -68,7 +65,7 @@ div.content-view-full div.leftcolumn div.columns-frontpage div.left-column-posit
     margin-right: 1em;
 }
 div.frontpage-footer{
-    border-top:2px solid gray;
+   
     font-size:0.9em;
     margin-top:2em;
     text-align:justify;

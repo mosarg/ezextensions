@@ -8,7 +8,6 @@ div#footer
     min-height: 100px;
     border-top: 3px solid #ff6c1e;
     background: #273236; /* for non-css3 browsers */
-
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#273236', endColorstr='#000000'); 
     background: -webkit-gradient(linear, left top, left bottom, from(#273236), to(#000000)); 
     background:-moz-linear-gradient(center top , #273236, #000000) repeat scroll 0 0 transparent;

@@ -23,8 +23,8 @@ table.comparison th, table.comparison td
 table.comparison th
 {
     font-weight: bold;
-    color: #525345;
-    background-color: #DFDFDF;
+    color:white;
+    background-color: #ff6c1e;
     white-space: nowrap;
     text-align: left;
     background-repeat: repeat-x;
@@ -37,6 +37,12 @@ table.comparison td
 table.comparison th:first-child, table.comparison td:first-child
 {
     border-left: 1px solid #ffffff;
+}
+
+table.comparison td:first-child{
+    background:#273236;
+    color:white;
+    font-weight: bold;
 }
 table.comparison col.bglight, div.bglight
 {
@@ -52,11 +58,11 @@ table.comparison col.bgdark, div.bgdark
 }
 table.comparison tr.bglight:hover, table.comparison tr.bgdark:hover
 {
-    background-color: #F1F1ED;
+    background-color: #ffc03d;
 }
 table.comparison tr.bglight:hover td, table.comparison tr.bgdark:hover td
 {
-    background-color: #EAE9E1;
+    background-color: #ffc03d;
 }
 table.comparison a
 {

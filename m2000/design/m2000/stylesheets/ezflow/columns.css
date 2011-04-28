@@ -1,15 +1,4 @@
-/* 
-    Document   : columns
-    Created on : Jul 20, 2009, 11:05:54 PM
-    Author     : mosa
-    Description:
-        Purpose of the stylesheet follows.
-*/
 
-/* 
-   TODO customize this sample style
-   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
-*/
 
 div.leftcol-position
 {
@@ -101,12 +90,6 @@ div.columns-two div.col-1, div.columns-two div.col-2, div.columns-three div.col-
 }
 
 
-
-
-div.columns-two, div.columns-three div.col-1-2, div.columns-four, div.columns-four div.col-1-2, div.columns-four div.col-3-4
-{
-
-}
 
 div.columns-three
 {

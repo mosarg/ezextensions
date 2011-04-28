@@ -7,3 +7,18 @@ div.content-view-full div.class-progetti div.content-view-line{
     
 }
 
+div.content-view-full div.class-progetti div.two-columns{
+    float:left;
+    
+}
+div.content-view-full div.class-progetti div.two-columns .col-1{
+    float:left;
+    width:48%;
+    padding:1%;
+}
+
+div.content-view-full div.class-progetti div.two-columns .col-2{
+     float:left;
+    width:48%;
+    padding:1%;
+}

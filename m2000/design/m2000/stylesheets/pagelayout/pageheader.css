@@ -1,15 +1,3 @@
-/* 
-    Document   : pageheader
-    Created on : Jul 21, 2009, 8:54:59 AM
-    Author     : mosa
-    Description:
-        Purpose of the stylesheet follows.
-*/
-
-/* 
-   TODO customize this sample style
-   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
-*/
 div#page {
     width: 100%;
     text-align: left;
@@ -87,13 +75,14 @@ div#languages ul{
 }
 div#languages a
 {
+    color:#ffc03d;
     text-decoration: none;
     font-weight:bold;
     font-size:1.1em;
 }
 
 div#languages a:hover{
-    color:#ffc03d;
+    color:#ff6c1e;
 }
 div#languages ul li
 {
