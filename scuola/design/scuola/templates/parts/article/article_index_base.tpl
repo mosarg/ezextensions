@@ -6,7 +6,7 @@
 {if $article_subpages|count}
         <div class="attribute-article-index">
             <div class="border-box">
-            <h2>{'Article index'|i18n( 'design/ezwebin/article/article_index' )}</h2>
+            <h2>{'Indice'|i18n( 'design/ezwebin/article/article_index' )}</h2>
 
             <ol>
             {if eq( $used_node.node_id, $node.node_id )}

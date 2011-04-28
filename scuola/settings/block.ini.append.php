@@ -26,9 +26,12 @@ ManualAddingOfItems=enabled
 ViewList[]=main_story1
 ViewList[]=main_story2
 ViewList[]=main_story3
+ViewList[]=main_story4
 ViewName[main_story1]=Solo immagine
 ViewName[main_story2]=Immagine (grande) e testo
 ViewName[main_story3]=Immagine (piccola) e testo
+ViewName[main_story4]=Principale secondaria
+
 
 [Manual2Items]
 Name=2 Elementi Manuale

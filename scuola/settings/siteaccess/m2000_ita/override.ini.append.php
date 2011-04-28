@@ -473,6 +473,15 @@ Subdir=templates
 Match[type]=MainStory
 Match[view]=main_story3
 
+[block_main_story4]
+Source=block/view/view.tpl
+MatchFile=block/main_story4.tpl
+Subdir=templates
+Match[type]=MainStory
+Match[view]=main_story4
+
+
+
 [block_3_items1]
 Source=block/view/view.tpl
 MatchFile=block/3_items1.tpl

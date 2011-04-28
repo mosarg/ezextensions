@@ -20,6 +20,7 @@ AliasList[]=billboard
 AliasList[]=mainstory1
 AliasList[]=mainstory2
 AliasList[]=mainstory3
+AliasList[]=mainstory4
 AliasList[]=block2items1
 AliasList[]=block2items2
 AliasList[]=block3items3
@@ -70,7 +71,9 @@ Filters[]=geometry/scaledownonly=100;160
 [medium]
 Reference=
 Filters[]
-Filters[]=geometry/scaledownonly=200;290
+
+Filters[]=geometry/scalewidth=350
+Filters[]=geometry/crop=306;360;0;0
 
 [large]
 Reference=
@@ -167,6 +170,14 @@ Reference=
 Filters[]
 Filters[]=geometry/scalewidth=260
 Filters[]=geometry/crop=230;239;0;0
+
+[mainstory4]
+Reference=
+Filters[]
+Filters[]=geometry/scalewidth=350
+Filters[]=geometry/crop=300;250;0;0 
+ 
+
 
 [block2items1]
 Reference=

@@ -1,36 +1,38 @@
-/* 
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+(function($){
+    $.fn.removeTempContent = function(){
+    var tallest_title=0;
+    var tallest_description=0;
+    var tallest_image=0;
+    $('.content-view-full').find('.content-view-children').each(
+        
+       function(){
+        var descrition_height=$(this).find('.attribute-short').outerHeight(true);
+        var title_height=$(this).find('.line-header-common').outerHeight(true);
+        var image_height=$(this).find('.attribute-image').outerHeight(true);
+        if(descrition_height>tallest_description){
+            tallest_description=descrition_height;
+        }
+      
+        if(title_height>tallest_title){
+            tallest_title=title_height;
+        }  
+         if(image_height>tallest_image){
+            tallest_image=image_height;
+        }  
+        
+    });
+      $('.content-view-full').find('.content-view-children >.content-view-line>div').each(function(){
+          $(this).children('.line-header-common').height(tallest_title);
+          $(this).children('.attribute-image').height(tallest_image);
+          $(this).children('.attribute-short').height(tallest_description);
+        }); 
+      };
+})(jQuery)
 
 
-/*--------------------------------------------------------------------
- * JQuery Plugin: "EqualHeights"
- * by:	Scott Jehl, Todd Parker, Maggie Costello Wachs (http://www.filamentgroup.com)
- *
- * Copyright (c) 2008 Filament Group
- * Licensed under GPL (http://www.opensource.org/licenses/gpl-license.php)
- *
- * Description: Compares the heights or widths of the top-level children of a provided element
- 		and sets their min-height to the tallest height (or width to widest width). Sets in em units
- 		by default if pxToEm() method is available.
- * Dependencies: jQuery library, pxToEm method	(article:
-		http://www.filamentgroup.com/lab/retaining_scalable_interfaces_with_pixel_to_em_conversion/)
- * Usage Example: $(element).equalHeights();
-  		Optional: to set min-height in px, pass a true argument: $(element).equalHeights(true);
- * Version: 2.0, 08.01.2008
---------------------------------------------------------------------*/
 
-$.fn.equalHeights = function(px) {
-	$(this).each(function(){
-		var currentTallest = 0;
-		$(this).children().each(function(i){
-			if ($(this).height() > currentTallest) { currentTallest = $(this).height(); }
-		});
-		if (!px || !Number.prototype.pxToEm) currentTallest = currentTallest.pxToEm(); //use ems unless px is specified
-		// for ie6, set height since min-height isn't supported
-		if ($.browser.msie && $.browser.version == 6.0) { $(this).children().css({'height': currentTallest}); }
-		$(this).children().css({'min-height': currentTallest});
-	});
-	return this;
-};
+$(document).ready(function(){
+rescale_elements();}
+);
+
+
