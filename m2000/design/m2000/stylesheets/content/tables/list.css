@@ -1,0 +1,63 @@
+table.list /* Standard class usable for most regular tables presenting lists, with additional related styles */
+{
+    width: 100%;
+    margin: 1em 0 1em 0;
+    border: none;
+}
+
+table.list th, table.list td
+{
+    padding: 0.5em;
+    border-bottom: none;
+    vertical-align: top;
+}
+
+table.list th
+{
+    font-weight: bold;
+    background-color: #ff6c1e;
+    color:white;
+    white-space: nowrap;
+    text-align: left;
+    }
+
+table.list td
+{
+    border-bottom:1px dotted gray;
+    font-weight: normal;
+}
+
+table.list th:first-child, table.list td:first-child
+{
+    border-left: 1px solid #ffffff;
+}
+
+table.list tr.bglight
+{
+    background-color: #F1F1ED;
+}
+
+table.list tr.bgdark
+{
+    background-color: #EAE9E1;
+}
+
+table.list tr.bglight:hover, table.list tr.bgdark:hover /* This has no effect in IE6 and below */
+{
+    background-color: #ffffff;
+}
+
+table.list tr.bglight:hover td, table.list tr.bgdark:hover td
+{
+    border-color: #ffffff;
+}
+
+table.list a
+{
+    border-bottom-color: #EAE9E1;
+}
+
+table.list img
+{
+    vertical-align: middle;
+}

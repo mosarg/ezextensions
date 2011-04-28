@@ -1,0 +1,15 @@
+div.block-view-main_story4 {
+    float: left;
+    background: #ffd272;
+    padding:0.7em;
+}
+div.block-view-main_story4>h2{
+    
+}
+div.block-view-main_story4>h2 a{
+    color:white;
+    font-size:1.9em;
+    text-shadow:1px 1px 1px gray;
+    -moz-text-shadow:1px 1px 1px gray;
+    -webkit-text-shadow:1px 1px 1px gray;
+}
