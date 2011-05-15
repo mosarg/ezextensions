@@ -1,5 +1,3 @@
-
-
 div.attribute-image
 {
     margin: 0.25em 0 0.5em 0;
@@ -30,6 +28,7 @@ div.content-view-embed div.attribute-image
 
 div.image-wrapper div.zoom{
     display:none;
+    
 }
 div.image-wrapper:hover div.zoom{
     display:block;

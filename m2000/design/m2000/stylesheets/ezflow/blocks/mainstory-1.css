@@ -1,26 +1,27 @@
+div.block-view-main_story1 div.attribute-link div.attribute-short{
+    float:left;
+    padding:1em;
+   
+    
+}
 
-div.block-type-mainstory div.trans-background
-{
-    padding: 0;
-    background-color: #000000;
-    color: #FFFFFF;
-    opacity: 0.5;
-    -moz-opacity: .50;
-    filter: alpha(opacity=50);
-    position: absolute;
-    width: 321px;
-    height: 57px;
-    margin-top: -57px;
-    z-index: 0;
+div.block-view-main_story1 div.attribute-link  .read-on{
+    float:left;
+    margin-left:1em;
+    padding:0;
+}
+div.block-view-main_story1 div.attribute-link  .read-on a {
+    padding:0;
+    font-size:0.9em;
 }
 
 div.block-view-main_story1 div.attribute-link
 {
     width: 301px;
-    height: 200px;
+    height: 350px;
     float:left;
     width:25.5%;
-    background: #bcbcbc;
+    background: #FFD272;
     display:table;    
 }
 
@@ -31,9 +32,15 @@ div.block-view-main_story1 div.attribute-link a
     text-decoration: none;
     display: block;
     padding:1em;
+    padding-left: 0.5em;
+    padding-bottom: 0;
     display:table-cell;
-    vertical-align: middle;
+    float:left;
+    vertical-align: top;
     font-size:1.6em;
+    text-shadow:1px 1px 1px gray;
+    -moz-text-shadow:1px 1px 1px gray;
+    -webkit-text-shadow:1px 1px 1px gray;
 }
 
 div.block-view-main_story1  div.attribute-image
@@ -50,7 +57,7 @@ div.block-type-mainstory div.attribute-header  a{
     color:#273236;
 }
 
-div.block-type-mainstory div.attribute-header  h1:first-letter{
+/*div.block-type-mainstory div.attribute-header  h1:first-letter{
     font-size:1.1em;
      color:#a60304;
-}
+}*/

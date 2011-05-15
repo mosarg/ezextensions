@@ -13,12 +13,12 @@ div.block-type-3items{
 }
 
 div.block-type-3items div.attribute-header>h2{
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 div.block-type-3items div.attribute-header>h2>a
 {
-    color:#273236;
+    color:#767676;
     text-decoration: none;
     font-weight: bold;
 }
@@ -28,11 +28,11 @@ div.block-type-3items div.attribute-image>img{
     margin-left:auto;
     margin-right:auto;
 }
-
+/*
 div.block-type-3items div.attribute-header>h2:first-letter{
     color:#a10101;
     font-size: 1.3em;
-}
+}*/
 
 div.block-type-3items div.separator
 {

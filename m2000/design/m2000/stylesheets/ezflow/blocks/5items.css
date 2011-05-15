@@ -48,12 +48,12 @@ div.block-type-5items h2
 
 div.block-type-5items div.attribute-header>h2 a
 {
-    color:#273236;
+    color:#767676;
     text-decoration: none;
 }
 
-div.block-type-5items div.attribute-header>h2:first-letter{
+/*div.block-type-5items div.attribute-header>h2:first-letter{
     color:#a10101;
     font-size: 1.3em;
-}
+}*/
 

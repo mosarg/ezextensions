@@ -1,11 +1,3 @@
-/* 
-    Document   : classgroup
-    Created on : Nov 28, 2009, 6:12:32 PM
-    Author     : mosa
-    Description:
-    class group css full view
-*/
-
 div.class-classgroup{
     padding-right:2em;
 }
@@ -13,11 +5,18 @@ div.class-classgroup ul.corso_blocco{
     display:block;
     float:left;
     clear:both;
+    margin-left:0;
+    padding-left:0;
+    width:100%;
+    border-bottom:2px dotted gray;
 }
 div.class-classgroup ul.corso_blocco li{
     float:left;
 }
 div.class-classgroup ul.corso_blocco li.list_header{
-    width:6em;
+    width:10em;
     height:6em;
+    margin-left:0;
+    padding-left:0;
+    color:#d52e2e;
 }

@@ -6,7 +6,7 @@ Server=localhost
 Port=
 User=ez
 Password=sambackett
-Database=eztest2
+Database=m2000
 Charset=
 Socket=disabled
 SQLOutput=disabled
@@ -16,7 +16,6 @@ EmailReceiver=
 
 [SiteSettings]
 LoginPage=custom
-SiteList[]=m2000_site
 SiteList[]=m2000_ita
 SiteList[]=m2000_eng
 SiteList[]=m2000_site_admin
@@ -34,12 +33,10 @@ RegistrationEmail=
 
 [SiteAccessSettings]
 AvailableSiteAccessList[]
-AvailableSiteAccessList[]=m2000_site
 AvailableSiteAccessList[]=m2000_ita
 AvailableSiteAccessList[]=m2000_eng
 AvailableSiteAccessList[]=m2000_site_admin 
 RequireUserLogin=true
-RelatedSiteAccessList[]=m2000_site
 RelatedSiteAccessList[]=m2000_ita
 RelatedSiteAccessList[]=m2000_eng
 RelatedSiteAccessList[]=m2000_site_admin

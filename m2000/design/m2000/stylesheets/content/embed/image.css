@@ -1,5 +1,4 @@
 
-
 div.object-left div.content-view-embed div.class-image div.attribute-image
 {
     margin: 0;
@@ -27,10 +26,13 @@ div.object-center div.content-view-embed div.class-image div.attribute-image
 
 div.content-view-embed div.class-image div.attribute-caption
 {
-    background-color: #EAE9E1;
+   
     font-size: 0.8em;
     text-align: center;
     margin: 2px 0 0 0;
+    padding-top:0.5em;
+    font-style: italic;
+    
 }
 
 div.object-center div.content-view-embed div.class-image div.attribute-caption

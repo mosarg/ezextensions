@@ -12,7 +12,13 @@ div.content-view-full div.class-folder_professore div.left-column{
 div.content-view-full div.class-folder_professore div.right-column{
     width:55%;
 }
+div.attribute-teachwhere{
+    margin-bottom:1em;
+}
 
-
-
-
+div.content-view-full div.class-folder_professore h3,div.content-view-full div.class-folder_professore h2{
+    margin-bottom:0;
+}
+div.content-view-full div.class-folder_professore div.right-column div{
+    margin-bottom:0.5em;
+}

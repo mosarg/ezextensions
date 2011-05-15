@@ -1,11 +1,4 @@
-/* 
-    Document   : common
-    Created on : Dec 7, 2009, 9:45:38 AM
-    Author     : mosa
-    Description:
-        Purpose of the stylesheet follows.
-        common block styles
-*/
+
 
 div.block-separator
 {
@@ -39,14 +32,14 @@ div.attribute-header-block{
     box-shadow:0 -2px 0 #cdcdcd inset;
     -moz-box-shadow:0 -2px 0 #cdcdcd inset;
     -webkit-box-shadow:0 -2px 0 #cdcdcd inset;
-    padding:0.5em 0.5em 0.1em 0;
+    padding:0 0.5em 0.1em 0;
     margin-bottom: 1em;
 }
 div#extrainfo div.attribute-header-block>h2,div.content-view-full div.attribute-header-block>h2{
-    color:#85868b;
+    color:#ff6c1e;
     font-size:1.4em;
     margin:0;
-    padding:0.3em 0 0 0.3em;
+    padding:0 0 0 0;
 }
 
 .frontpage-select{

@@ -330,3 +330,10 @@ div.content-view-full ul.filter-tabs li a{
 
    
     }
+    
+    /*edit*/
+    div.manual-edit{
+        border-top:2px dotted gray;
+        border-bottom:2px dotted gray;
+        padding:1em;
+    }

@@ -63,7 +63,7 @@ div#languages
 {
     text-align: right;
     font-family: Tahoma, Arial, Helvetica, sans-serif;
-    width:30%;
+    
     float:right;
 }
 div#languages ul{
@@ -97,7 +97,11 @@ div#languages li.current_siteaccess a
     font-size:1.1em;
 }
 
-
+div#header_text{
+    float:left;
+    color:white;
+    padding-top:0.7em;
+}
 
 div#links{
     float:right;
@@ -130,7 +134,7 @@ div#searchbox
 
 div#searchbox div#search-form{
     float:left;
-    width:40%;
+    width:30%;
 }
 
 div#searchbox form#search-input{

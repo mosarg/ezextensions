@@ -1,6 +1,10 @@
+div.program-ajax-block{
+    float:left;
+}
+
 div.visible-window{
     overflow:hidden;
-    max-height: 450px;
+    height: 122px;
     background:white;
     float:left;
     clear:both;
@@ -8,7 +12,7 @@ div.visible-window{
    }
 div.program-list{
      overflow: hidden;
-   
+     
 }
 
 
@@ -27,6 +31,7 @@ ul.events {
     overflow: hidden;
     margin:0;
     padding:0;
+    top:0;
 }
 
 ul.events li{
@@ -38,7 +43,10 @@ ul.events li{
     margin-bottom:2px;
     margin-left:0;
 }
-
+li.noevent{
+    background:white;
+    
+}
 
 ul.events li span.date_block{
     display:block;
@@ -93,11 +101,7 @@ div.commands a{
     display:none;
     float:left;
 }
-li.noevent{
-    background:white;
-    font-weight: bold;
-    font-size:1.1em;
-}
+
 a.date_block{
     display:block;
     height:30px;
