@@ -34,9 +34,7 @@
                                                          'class_filter_type', 'include',
                                                          'class_filter_array', array( 'gallery' ),
                                                          'sort_by',array('attribute',false(),'gallery/syear') ) )
-                    $children_count = fetch_alias( 'children_count', hash( 'parent_node_id', $node.node_id,
-                                                                      'class_filter_type', 'include',
-                                                                      'class_filter_array',array('image','flash_player') ) )}
+                    $child_gallery_count = $child_gallery|count()}
 
 
          {if $child_gallery_count}
@@ -98,14 +96,17 @@
 		</div>
 		<div id="caption" class="caption-container"></div>
 	</div>
-        {/if}
-    </div>
-</div>
-    <div id="gallery_data" style="display:none">
+        
+        <div id="gallery_data" style="display:none">
              <p title="images_number">{$children_count}</p>
              <p title="keys"></p>
              <p title="navigator"></p>
              <p title="initial_view"></p>
+        </div>
+        
+        {/if}
+    </div>
 </div>
+
 
 </div>
