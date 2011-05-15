@@ -13,5 +13,4 @@ FrontendJavaScriptList[]=ezjsc::jqueryio
 FrontendJavaScriptList[]=majaxinterface::jqueryrun
 FrontendJavaScriptList[]=classes/jquery-ui-min.js
 FrontendJavaScriptList[]=classes/jquery.mousewheel.min.js
-FrontendJavaScriptList[]=classes/equal_height.js
 */ ?>

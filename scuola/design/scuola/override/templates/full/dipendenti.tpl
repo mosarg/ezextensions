@@ -9,7 +9,11 @@
 <div class="content-view-full">
     <div class="class-dipendenti">
         
-        
+        {if $node.object.state_id_array|contains('6')}
+         <div class="wip">
+                <p>{"Contenuto in preparazione non ancora visibile pubblicamente"|i18n('scuola/state')}</p>
+         </div>
+        {/if} 
         <div class="attribute-header">
             {if $node.data_map.image.has_content}
                 <div class="attribute-image">

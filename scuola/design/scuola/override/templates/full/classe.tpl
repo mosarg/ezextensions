@@ -12,8 +12,7 @@
            {if $node.can_edit}
 
            {run-once}
-            {ezscript_require( array( concat( 'ezjsc::', 'jqueryio' ),
-            'classes/jquery-ui-min.js','classes/classint.js','init_class.js'))}
+            {ezscript_require( array('classes/jquery-ui-min.js','classes/classint.js','init_class.js'))}
             {/run-once}
            <div class="students-list">
                <div id="hide">
@@ -51,7 +50,7 @@
          <div class="attribute-header">
                 <h1>{"Classe"|i18n('scuola/classi')} {$node.data_map.name.content}</h1>
                 {if $node.data_map.short_name.has_content}
-                    <h3 class="subtitle">{"Detta: "|i18n('scuola/classi')}</h3>
+                    <h3 class="subtitle">{"Detta"|i18n('scuola/classi')}: {$node.data_map.short_name.content}</h3>
                 {/if}
             </div>
             
@@ -73,7 +72,7 @@
             </div>
             <div id="config" style="visibility:hidden">
                 <p title="object_id">{$node.contentobject_id}</p>
-                <p title="email_subject">{"Messaggio dal prof. "|i18n('scuola/classi')}</p>
+                <p title="email_subject">{"Messaggio dal prof."|i18n('scuola/classi')} </p>
              </div>
 
         </div>

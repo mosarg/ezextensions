@@ -79,7 +79,7 @@
         
        {if $prof_object[0].data_map.teachwhere.has_content}
         <div class="attribute-teachwhere">
-            <h2>{"Insegno in"|i18n("design/m2000/full/proffolder")}</h2>
+            <h3>{"Insegno in"|i18n("design/m2000/full/proffolder")}</h3>
         {attribute_view_gui attribute=$prof_object[0].data_map.teachwhere}
         </div>
        

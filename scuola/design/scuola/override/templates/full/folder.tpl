@@ -11,7 +11,7 @@
 
 {include uri='design:parts/global_variables.tpl' left_menu=$left_menu_visibility left_nav_menu=$left_menu_visibility}
 
-{def     $structure_classes = array('folder','blog','dmsfolder','classe')
+{def     $structure_classes = array('folder','blog','classe')
          $structure_elements = array()
          $structure_count = ''
          $style=''}
@@ -29,7 +29,7 @@
 {if $node.data_map.show_children.data_int}
 
         {def     $page_limit = 10
-                 $static_elements_classes =array('file','image')
+                 $static_elements_classes =array('file','image','dmsfolder')
                  $semantic_elements_classes=array('gallery','course','laboratory','feedback_form','progetto','article','article_mainpage')
                  $semantic_elements = array()
                  $static_elements = array()

@@ -1,4 +1,4 @@
-    {def $node = $block.valid_nodes[0]}
+{def $node = $block.valid_nodes[0]}
 <!-- BLOCK: START -->
 <div class="block-type-mainstory block-view-{$block.view}">
      <h2><a href="{$node.url_alias|ezurl(no)}">{$node.name|wash()|shorten(40)}</a></h2>

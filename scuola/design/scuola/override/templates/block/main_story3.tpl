@@ -1,4 +1,4 @@
-    {def $node = $block.valid_nodes[0]}
+{def $node = $block.valid_nodes[0]}
 <!-- BLOCK: START -->
 <div class="block-type-mainstory block-view-{$block.view}">
             <div class="columns-two">

@@ -1,5 +1,8 @@
 {* Folder - Line view *}
 
+{if is_set($imagesize)|not()}
+    {def $imagesize='large'}
+{/if}
 <div class="content-view-line">
 
 {if and(is_set($style),eq($style,'big'))}
@@ -27,7 +30,7 @@
    <h2 class="line-header-common"><a href={$node.url_alias|ezurl}>{$node.data_map.name.content|wash}</a></h2>
      <div class="attribute-image">
       {if $node.data_map.icon.has_content}
-         <img alt="folder" src={$node.data_map.icon.content[colorblock].url|ezroot} />
+         <img alt="folder" src={$node.data_map.icon.content[$imagesize].url|ezroot} />
       {/if}
      </div>
     <div class="attribute-short">
@@ -37,6 +40,8 @@
      <div class="read-on">
         <a href={$node.url_alias|ezurl()}>{'Continua'|i18n('scuola/block/mainstory')}...</a>
     </div>
+        
+    {include uri='design:parts/object_informations.tpl' style=$style}
 </div>
 {/if}
 </div>

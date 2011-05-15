@@ -1,5 +1,8 @@
 {* Macroarea - Full view *}
 
+{run-once}
+ {ezscript_require( array('classes/equalize_blocks.js','init_equalize_blocks.js'))}
+{/run-once}
 
 {if $node.object.data_map.show_menu.data_int}
     {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
@@ -12,7 +15,11 @@
 
 <div class="content-view-full">
   <div class="class-macroarea">
-       
+   {if $node.object.state_id_array|contains('6')}
+         <div class="wip">
+                <p>{"Contenuto in preparazione non ancora visibile pubblicamente"|i18n('scuola/state')}</p>
+         </div>
+        {/if}    
  {if gt($node.depth,2)}   
     
   {set $children_style='full'}

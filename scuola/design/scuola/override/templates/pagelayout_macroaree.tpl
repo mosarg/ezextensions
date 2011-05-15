@@ -52,11 +52,6 @@
   
   <!-- Top menu area: END -->
 
-  <!-- Path area: START -->
-  {if $pagedata.show_path}
-    {include uri='design:page_toppath.tpl'}
-  {/if}
-  <!-- Path area: END -->
   
   <!-- Toolbar area: START -->
   {if and( $pagedata.website_toolbar, $pagedata.is_edit|not)}
@@ -67,6 +62,12 @@
   <!-- Columns area: START -->
   <div id="columns-wrapper">
   <div id="columns-position">
+      
+  <!-- Path area: START -->
+  {if $pagedata.show_path}
+    {include uri='design:page_toppath.tpl'}
+  {/if}
+  <!-- Path area: END -->
     <div id="columns" class="float-break">
 
     <!-- Side menu area: START -->

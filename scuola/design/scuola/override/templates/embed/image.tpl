@@ -15,6 +15,11 @@
         {/if}
         </a>
     </div>
+     <div class="attribute-caption">
+         {if $object.data_map.caption.has_content}
+           {attribute_view_gui attribute=$object.data_map.caption}
+         {/if}
+     </div>
       {if $object.can_edit}
     <div class="image-controls">
            <form action={"/content/action"|ezurl} method="post">

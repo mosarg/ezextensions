@@ -34,7 +34,10 @@
                                                          'class_filter_type', 'include',
                                                          'class_filter_array', array( 'gallery' ),
                                                          'sort_by',array('attribute',false(),'gallery/syear') ) )
-                   $child_gallery_count=$child_gallery|count()}
+                    $children_count = fetch_alias( 'children_count', hash( 'parent_node_id', $node.node_id,
+                                                                      'class_filter_type', 'include',
+                                                                      'class_filter_array',array('image','flash_player') ) )}
+
 
          {if $child_gallery_count}
             <div class="content-view-children">
@@ -57,14 +60,16 @@
 
 
 
-        {def $page_limit=30
+        {def $page_limit=15
              $children = fetch( 'content', 'list', hash( 'parent_node_id', $node.node_id,
                                                          'offset', $view_parameters.offset,
                                                          'limit', $page_limit,
                                                          'class_filter_type', 'include',
                                                          'class_filter_array', array( 'image'),
                                                          'sort_by', $node.sort_array ) )
-             $children_count = $children|count()}
+              $children_count = fetch_alias( 'children_count', hash( 'parent_node_id', $node.node_id,
+                                                                      'class_filter_type', 'include',
+                                                                      'class_filter_array',array('image','flash_player') ) )}
 
 
         {if ge($children_count,1)}
@@ -85,6 +90,7 @@
         {/if}
 
         <div id="gallery" class="content">
+              <h2>Children count: {$children_count}</h2>
             <div id="controls" class="controls"></div>
 		<div class="slideshow-container">
                     <div id="loading" class="loader"></div>
@@ -95,4 +101,11 @@
         {/if}
     </div>
 </div>
+    <div id="gallery_data" style="display:none">
+             <p title="images_number">{$children_count}</p>
+             <p title="keys"></p>
+             <p title="navigator"></p>
+             <p title="initial_view"></p>
+</div>
+
 </div>

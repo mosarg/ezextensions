@@ -1,5 +1,8 @@
 {* Frontpage m2000 - Full view *}
 
+{run-once}
+ {ezscript_require( array('classes/equalize_blocks.js','init_equalize_blocks.js'))}
+{/run-once}
 {if $node.data_map.show_menu.data_int}
     {include uri='design:parts/global_variables.tpl' left_menu=true() left_nav_menu=true()}
     {def $classes=array('file')}
@@ -13,7 +16,7 @@
  <div class="class-m2000_front">
 
      {if $node.object.state_id_array|contains('6')}
-        <div class="wip rounded shadowmore">
+        <div class="wip">
             <p>{"Contenuto in preparazione non ancora visibile pubblicamente"|i18n('scuola/state')}</p>
         </div>
         {/if}
@@ -21,14 +24,16 @@
      <div class="attribute-header">
          <h1 class="section_header">{$node.data_map.name.content}</h1>
      </div>
-     {if is_set($node.data_map.logo)}
+     {if $node.data_map.logo.has_content}
      <div class="attribute-image">
          <img src= {$node.object.data_map.logo.content[mainstory1].url|ezroot} alt="logo"/>
      </div>
      {/if}
+      {if $node.data_map.descrizione.has_content}
      <div class="attribute-short">
         {attribute_view_gui attribute=$node.data_map.descrizione}
      </div>
+      {/if}
 
    {if $node.data_map.page.has_content}
    <div class="attribute-page">

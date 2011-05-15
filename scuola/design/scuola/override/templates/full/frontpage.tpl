@@ -1,8 +1,12 @@
 {* Frontpage - Full view *}
 
+
+{run-once}
+ {ezscript_require( array('classes/equalize_blocks.js','init_equalize_blocks.js'))}
+{/run-once}
+
+
 {include uri='design:parts/global_variables.tpl' left_menu=false() left_nav_menu=false()}
-
-
 
 <div class="content-view-full">
     <div class="class-frontpage">

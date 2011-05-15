@@ -14,10 +14,10 @@
             
     
       <div class="attribute-header">
-            {if $node.data_map.logo.has_content}
+            {if $node.data_map.image.has_content}
                 <div class="attribute-image">
                  
-                   {attribute_view_gui attribute=$node.data_map.logo image_css_class='shadow' link_class=ezimage_zoom href=$node.data_map.logo.content[original].url|ezroot image_class=gallerythumbnailsquare}
+                   {attribute_view_gui attribute=$node.data_map.image image_css_class='shadow' link_class=ezimage_zoom href=$node.data_map.image.content[original].url|ezroot image_class=gallerythumbnailsquare}
                  
                 </div>
             {/if}

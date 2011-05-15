@@ -6,13 +6,42 @@
 {include uri='design:parts/global_variables.tpl' left_menu=false() left_nav_menu=false()}
 
 
+{def $classes =array('folder_circolari')
+               $structure_elements = array()
+                 $json_structure_elements=array()}
+                
+{set $structure_elements=fetch_alias( 'children', hash( 'parent_node_id', $node.node_id,
+                                                          'offset', $view_parameters.offset,
+                                                          'sort_by', $node.sort_array,
+                                                          'class_filter_type', 'include',
+                                                          'class_filter_array', $classes ) )}
+
+
 <div class="content-view-full">
     <div class="class-dir_circolari">
 
         <div class="attribute-header">
             <h1>{$node.name|wash}</h1>
         </div>
-            
+        
+          <div class="title-separator"></div>
+        <div class="separator"></div>
+        
+        {if $node.can_edit}
+               
+        <div class="manual-edit">
+            <h3>Link diretti alle sottocartelle per l'inserimento manuale
+                <img src={"icons/pencil.png"|ezimage}>
+            </h3>
+                {foreach $structure_elements as $structure_element}
+                <a href={$structure_element.url_alias|ezurl()}>{$structure_element.name}</a>
+                  
+                {/foreach}
+        </div>
+        
+        
+        {/if}
+        
             {if $node.object.data_map.short_description.has_content}
                 <div class="attribute-short">
                     {attribute_view_gui attribute=$node.data_map.short_description}
@@ -27,15 +56,6 @@
         {/if}
 
     
-            {def $classes =array('folder_circolari')
-                 $structure_elements = array()
-                 $json_structure_elements=array()}
-                
-             {set $structure_elements=fetch_alias( 'children', hash( 'parent_node_id', $node.node_id,
-                                                          'offset', $view_parameters.offset,
-                                                          'sort_by', $node.sort_array,
-                                                          'class_filter_type', 'include',
-                                                          'class_filter_array', $classes ) )}
 
 
 

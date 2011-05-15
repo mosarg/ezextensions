@@ -22,6 +22,9 @@
                 {/foreach}
             </h3>
         </div>
+           
+        <div class="title-separator"></div>
+        <div class="separator"></div>
          {if $node.object.data_map.short_description.has_content}
                 <div class="attribute-short">
                     {attribute_view_gui attribute=$node.data_map.short_description}

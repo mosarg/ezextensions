@@ -26,8 +26,8 @@
         
  {if eq($node.parent.class_identifier,'school_front')}
        {foreach $clas1[0].data_map.materie.content.db_options as $materia}
-           {if $materia|contains($parentNodeName)}
-              {set $faceletes=$faceletes|append(hash(node_id,$node.node_id,url_alias,$node.url_alias|ezurl(no),title,$materia.name|wash('javascript'),view_parameters,
+           {if eq($materia.scuola,$parentNodeName)}
+                    {set $faceletes=$faceletes|append(hash(node_id,$node.node_id,url_alias,$node.url_alias|ezurl(no),title,$materia.name|wash('javascript'),view_parameters,
                 hash('subject',$materia.identifier)))}
            {/if}    
        {/foreach}

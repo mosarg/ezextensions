@@ -29,7 +29,7 @@
      <div class="attribute-header">
             {if $node.data_map.icon.has_content}
                 <div class="attribute-image">
-                 
+              
                     {attribute_view_gui attribute=$node.data_map.icon image_css_class='shadow' link_class=ezimage_zoom href=$node.data_map.icon.content[original].url|ezroot image_class=gallerythumbnailsquare}
                  
                 </div>
@@ -38,6 +38,20 @@
         </div>
         <div class="title-separator"></div>
         <div class="separator"></div>
+        {if $node.can_edit}
+        <div class="manual-edit">
+            <h3>Link diretti alle sottocartelle per l'inserimento manuale
+                <img src={"icons/pencil.png"|ezimage}>
+            </h3>
+                {foreach $structure_elements as $structure_element}
+                <a href={$structure_element.url_alias|ezurl()}>{$structure_element.name}</a>
+                  
+                {/foreach}
+        </div>
+        
+        
+        {/if}
+        
    {if $node.data_map.short_description.has_content}
                 <div class="attribute-short">
                     {attribute_view_gui attribute=$node.data_map.short_description}

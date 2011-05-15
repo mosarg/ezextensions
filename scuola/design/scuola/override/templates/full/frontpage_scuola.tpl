@@ -2,6 +2,9 @@
 
 {include uri='design:parts/global_variables.tpl' left_menu=false() left_nav_menu=false()}
 
+{run-once}
+ {ezscript_require( array('classes/equalize_blocks.js','init_equalize_blocks.js'))}
+{/run-once}
 
 <div class="content-view-full">
  <div class="class-frontpage_scuola">

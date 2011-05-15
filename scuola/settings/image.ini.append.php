@@ -158,7 +158,7 @@ Filters[]=geometry/crop=130;130;0;0
 Reference=
 Filters[]
 Filters[]=geometry/scalewidth=468
-Filters[]=geometry/crop=468;200;0;0
+Filters[]=geometry/crop=468;350;0;0
 
 [mainstory2]
 Reference=

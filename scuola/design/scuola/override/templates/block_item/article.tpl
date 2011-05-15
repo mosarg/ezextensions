@@ -17,7 +17,8 @@
      {/if}
     <div class="attribute-short">
         
-      {$node.data_map.intro.content.output.output_text|smartshort(100,'...')}
+    {$node.data_map.intro.content.output.output_text|smartshort(100,'...')|pad(100,' ')}
+    
     
         </div>
     <div class="read-on">

@@ -23,20 +23,21 @@
 {/if}
         </div>
        
-       {if is_set($node.object.data_map.parlorhour)}
-        <div class="helper_prof_parlor">
-             <h1>{"Ricevimento:"|i18n("design/m2000/full/helper_prof")}</h1>
-            <h1>{attribute_view_gui attribute=$node.data_map.parlorday}</h1>
-            {attribute_view_gui attribute=$node.data_map.parlorhour}
-            <div>
-                <h1>{"Note:"|i18n("design/m2000/full/helper_prof")}</h1>
+       {if $node.object.data_map.parlorhour.has_content}
+        <div class="attribute-byline">
+            <h3>{"Ricevimento"|i18n("design/m2000/full/helper_prof")}:</h3>
+           {attribute_view_gui attribute=$node.data_map.parlorday}  {attribute_view_gui attribute=$node.data_map.parlorhour}
+          </div>
+        {/if} 
+        {if $node.object.data_map.parlornote.has_content}
+         <div class="attribute-byline">
+                <h3>{"Note:"|i18n("design/m2000/full/helper_prof")}</h1>
                 {attribute_view_gui attribute=$node.data_map.parlornote}
-            </div>
-        </div>
-        {/if}
-        <div class="helper_prof_orario">
+         </div>
+       {/if}
+        <div class="attribute-byline">
             {if $node.object.data_map.orario.has_content}
-                <div class="attribute-long">
+                <div>
                     {attribute_view_gui attribute=$node.data_map.orario}
                 </div>
              {/if}
