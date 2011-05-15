@@ -1,0 +1,7 @@
+aggiornamento sito:
+
+- dump della nuova definizione di classi
+- aggiornamento database versione precedente
+- allineamento della definizione delle classi
+- allineamento contenuti alla nuova definizione di classi
+- controllo e riorganizzazione contenuti
