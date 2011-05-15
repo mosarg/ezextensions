@@ -9,26 +9,24 @@ function compareDates(a,b){
 
 var blockprogram={
     _init:function(){
+        
         this._setupTimeInterval();
         this._setupEventDelegation();
         this._fetchEvents();
         this._renderCalInterface();
+        
        
     },
     _updateDimensions:function(){
         var self=this;
-
-        //var event_height=self.options.event_height;
-        
-        var event_height=self.element.find('ul.events li').innerHeight();
+         
+        var event_height=self.element.find('ul.events li').outerHeight()+2;
+       
         self.options.event_height=event_height;
         var events_number=self.element.find('ul.events li').length;
-        
-        //var events_number=self.element.find('ul.events li').css({
-        //    "height":event_height+"px"
-        //}).length;
+
         self.options.window_height=self.element.find('div.visible-window').height();
-        self.options.ev_container_height=events_number*event_height;
+        self.options.ev_container_height=events_number*self.options.event_height;
         self.element.find('ul.events').css({
             "height":self.options.ev_container_height+"px"
         });
@@ -37,6 +35,7 @@ var blockprogram={
         var self=this;
         var temp_date=new Date();
         var months=self.options.months;
+        
         self.element.find('div.month-name').text(months[temp_date.getMonth()]).data('month-date',temp_date.getTime());
         self.element.find('.next-button').click(
             function(event){
@@ -50,18 +49,18 @@ var blockprogram={
             );
     },
     _slideUp:function($button){
-       
+      
         var self=this;
         var months=self.options.months;
         var $events=self.element.find('ul.events');
         var ev_container_height=self.options.ev_container_height,length,event;
         var old_date=new Date(),temp_date=new Date();
-        var step=self.options.event_height,top_position=$events.position().top;
+        var step=self.options.event_height,top_position=parseInt($events.css('top').replace("px",""));
         
        
-       
+  
         
-        if (parseInt($events.position().top)+parseInt(ev_container_height)<self.options.window_height+self.options.event_height) {
+        if (top_position+parseInt(ev_container_height)<self.options.window_height+self.options.event_height) {
             $button.hide();
             $button.siblings('div.loading').show();
             event=self.element.find('ul.events li').last().data('event');
@@ -74,7 +73,7 @@ var blockprogram={
 
         }
         $events.css({
-                "top":parseInt(top_position)-2*parseInt(step)+"px"
+                "top":top_position-step+"px"
             } );
     
            
@@ -89,7 +88,7 @@ var blockprogram={
         old_date.setTime($month_label.data('month-date'))
         var $events=self.element.find('ul.events');
                
-        var step=self.options.event_height,top_position=$events.position().top;
+        var step=self.options.event_height,top_position=parseInt($events.css('top').replace("px",''));
               
         var ev_container_height=self.element.find('div.position').text(parseInt($events.position().top)+parseInt(ev_container_height));
                 
@@ -129,7 +128,6 @@ var blockprogram={
     _renderEvents:function(events){
         var $container=this.element.find('ul.events');
         var options=this.options;
-        var months=options.months;
         var temp_date=new Date();
                
         for (var i in events){
@@ -147,8 +145,9 @@ var blockprogram={
         }else{
             var current_date=new Date();
         }
-        this.options.start=new Date(current_date.getFullYear(),current_date.getMonth(),1);
-        this.options.end=new Date( current_date.getFullYear(), current_date.getMonth(),daysInMonth(current_date.getMonth(),current_date.getFullYear()) );
+
+        this.options.start=new Date(current_date.getFullYear(),current_date.getMonth(),current_date.getDate());
+        this.options.end=new Date( current_date.getFullYear(), current_date.getMonth(),current_date.getDate()+20 );
     },
     _setupEventDelegation:function(){
 
@@ -169,6 +168,7 @@ var blockprogram={
         var calendar_index=0;
      
         self.element.data('events',[]);
+        
         for (var i in calendars){
             var action= 'mcalendar::fetchEvents::'+calendars[i].node_id+'::'+Math.round(start.getTime()/1000)+'::'+Math.round(end.getTime()/1000)+'::ajaxweek';
             options[calendars[i].node_id]=[calendars[i].color,calendars[i].url_alias];
@@ -176,10 +176,8 @@ var blockprogram={
                 postdata:'ready'
             },function(data) {
   
-  
-             
-                self.element.data('calendar_index',calendar_index++)
-             
+               self.element.data('calendar_index',calendar_index++)
+            
                 if (data.content.length==0){
                          
                     data.content.push({
