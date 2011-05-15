@@ -9,8 +9,8 @@
  */
 ;(function($) {
 	// Globally keep track of all images by their unique hash.  Each item is an image data object.
-	var allImages = {};
-	var imageCounter = 0;
+            var allImages = {};
+            var imageCounter = 0;
 
 	// Galleriffic static class
 	$.galleriffic = {
@@ -723,7 +723,7 @@
 
 			// Updates the set of thumbnails that are to be displayed and the navigation controls.
 			rebuildThumbs: function() {
-				var needsPagination = this.data.length > this.numThumbs;
+				var needsPagination = this.imagesNumber > this.numThumbs;
 
 				// Rebuild top pager
 				if (this.enableTopPager) {
@@ -776,7 +776,7 @@
 
 			// Returns the total number of pages required to display all the thumbnails.
 			getNumPages: function() {
-				return Math.ceil(this.data.length/this.numThumbs);
+				return Math.ceil(this.imagesNumber/this.numThumbs);
 			},
 
 			// Rebuilds the pager control in the specified matched element.
@@ -784,6 +784,7 @@
 			buildPager: function(pager) {
 				var gallery = this;
 				var numPages = this.getNumPages();
+                                
 				var page = this.getCurrentPage();
 				var startIndex = page * this.numThumbs;
 				var pagesRemaining = this.maxPagesToShow - 1;

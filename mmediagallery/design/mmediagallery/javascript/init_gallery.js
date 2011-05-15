@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+     var images_number=$('#gallery_data p[title="images_number"]').text();
+   
+    //var formats=jQuery.parseJSON($('#page_elements p[title="formats"]').text());
+
     $('div.navigation').css({
         'width' : '300px',
         'float' : 'left'
@@ -18,6 +22,7 @@ $(document).ready(function() {
     
     
     var gallery = $('#thumbs').galleriffic({
+        imagesNumber:images_number,
         delay:                     3000, // in milliseconds
         numThumbs:                 15, // The number of thumbnails to show page
         preloadAhead:              40, // Set to -1 to preload all images

@@ -63,11 +63,13 @@
                                                          'class_filter_type', 'include',
                                                          'class_filter_array', array( 'image','flash_player'),
                                                          'sort_by', $node.sort_array ) )
-             $children_count = $children|count()}
+             $children_count = fetch_alias( 'children_count', hash( 'parent_node_id', $node.node_id,
+                                                                      'class_filter_type', 'include',
+                                                                      'class_filter_array',array('image','flash_player') ) )}
 
 
         {if ge($children_count,1)}
-           
+     
            <div id="thumbs" class="content-view-children navigation">
 
                <ul class="thumbs noscript">
@@ -84,6 +86,7 @@
         {/if}
 
         <div id="gallery" class="content">
+      
             <div id="controls" class="controls"></div>
 		<div class="slideshow-container">
                     <div id="loading" class="loader"></div>
